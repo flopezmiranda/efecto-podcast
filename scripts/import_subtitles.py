@@ -17,6 +17,7 @@ from pathlib import Path
 
 from common import ROOT, load_config, load_episodes, slugify
 from fetch_transcripts import OUT, vtt_to_text
+from review_transcripts import main as review_all
 
 INBOX = ROOT / "content" / "subtitulos"
 TIME_RE = re.compile(r"(\d+):(\d{2}):(\d{2})[.,](\d{3})|(\d+):(\d{2})[.,](\d{3})")
@@ -124,6 +125,10 @@ def main():
     for name, reason in unmatched:
         print(f"??  {name}: {reason}. Queda en la carpeta.")
     print(f"\n{len(claimed)} transcripciones importadas, {len(unmatched)} sin asociar.")
+    if claimed:
+        print("\nRevisión de frases delicadas:")
+        sys.argv = [sys.argv[0]] + [str(OUT / f"{vid}.txt") for vid in claimed]
+        review_all()
 
 
 if __name__ == "__main__":
