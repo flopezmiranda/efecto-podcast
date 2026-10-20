@@ -25,7 +25,7 @@ TERMS = re.compile(
 # Usos habituales que no son ofensivos.
 BENIGN = re.compile(
     r"blanco y negro|lista[s]? negras?|escenario negro|negro con|ad negro|fondo negro|"
-    r"humor negro|mercado negro|buen mono|mono animado de|chino mandarín|hoja negra|blanco negro|la India|hablar de mono|la hemos visto a negra",
+    r"humor negro|mercado negro|buen mono|mono animado de|chino mandarín|hoja negra|blanco negro|la India|hablar de mono|la hemos visto a negra|visto negra",
     re.IGNORECASE,
 )
 
