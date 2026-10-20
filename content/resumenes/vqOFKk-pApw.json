@@ -1,0 +1,55 @@
+{
+  "resumen": [
+    "En este episodio de Efecto Podcast, Felipe López Miranda conversa con Rodrigo Orellana, Founder & CEO de Futture y ex VP de Marketing Internacional de Scotiabank, sobre por qué el marketing actual no está fallando, sino que está mal diseñado. Orellana fue profesor de Felipe en el máster de Dirección de Marketing y Gestión Comercial de la Universidad Diego Portales, y desde esa relación la conversación recorre su salida de la banca, su diagnóstico sobre las gerencias de marketing y el rol de la inteligencia artificial.",
+    "Orellana explica que dejó un cargo regional a cargo de unos 15 mercados, entre ellos México, Canadá, Chile, Uruguay, Panamá, Costa Rica, Colombia y Jamaica, porque los roles directivos lo alejaron de la operación. Tras cerca de dos años sintió que se estaba quedando atrás frente a lo que ocurre en capacidades, personas y tecnología, y decidió volver al marketing con un proyecto propio para el mercado local. Su misión, dice, es reencantar a las empresas con el marketing, partiendo por Chile.",
+    "Su tesis central es que las gerencias de marketing operan como gerencias de promoción o publicidad, enfocadas en campañas, calendarios anuales y métricas de hace 20 años. Propone partir cada año con un presupuesto base cero, en vez de asumir que crecer 50% exige 50% más de inversión, y experimentar de forma controlada: por ejemplo, reducir 20% la inversión pagada en un producto para medir la elasticidad al medio y reasignar lo ahorrado a personas, tecnología u otros productos. Como ejemplo de desconexión menciona campañas del SOAP, un seguro cuyo margen por unidad ronda los 300 o 400 pesos, mientras el clic para ser competitivo puede costar mucho más.",
+    "En la conversación se aborda también la fragmentación entre áreas: equipos comerciales que no saben vender en digital, leads que nadie gestiona y equipos de marketing que no miden su impacto en revenue. Para Orellana, marketing es la única área con contacto de punta a punta con el cliente, los datos, la tecnología y los canales, por lo que debería sentarse al centro de la mesa junto a producto, analytics y finanzas. Felipe aporta su propia experiencia: al asumir una gerencia midió que cerca del 80% del tiempo de su equipo se iba en ejecución operativa y, en dos años y medio, logró bajarlo a alrededor de 20%.",
+    "Sobre inteligencia artificial, Orellana sostiene que es un habilitador y no un fin, y que una IA nunca hará mejor marketing que una persona, porque la comunicación y la emoción son humanas. Advierte que si diez competidores usan las mismas herramientas con el mismo benchmark, llegarán a soluciones similares y perderán ventaja. Comenta además la visión de Cristian Tala sobre empresas mucho más pequeñas, a partir de su experiencia vendiendo Pago Fácil con 13 personas, y la comparte con optimismo.",
+    "Al final presenta el modelo operativo de marketing nativo en IA de Futture: un conjunto de ocho agentes alimentados con memoria corporativa, balances, estrategia, prensa y estudios de mercado, que funcionan como asesores y cuyas propuestas siempre valida un humano. En la ronda rápida reconoce como su mayor error la implementación de un modelo de regionalización, destaca a su equipo como su mayor orgullo y ubica a Chile como pionero técnico en martech, aunque con espacio para crecer en creatividad."
+  ],
+  "ideas_clave": [
+    "El marketing no falla por falta de herramientas o talento, sino porque está diseñado como una función de promoción enfocada en campañas y calendarios anuales.",
+    "Planificar con presupuesto base cero obliga a justificar cada campaña según lo que el negocio necesita lograr, y no según lo que se hizo el año anterior.",
+    "Antes de apagar un medio pagado conviene reducirlo de forma controlada, por ejemplo un 20%, para medir su elasticidad y reasignar lo ahorrado a personas o tecnología.",
+    "Marketing debe medirse por su impacto en revenue y objetivos de negocio, no solo por métricas de campaña que no conversan con finanzas ni con el área comercial.",
+    "La inteligencia artificial debe usarse como habilitador y asesor validado por humanos; delegarle la estrategia hace que todos los competidores lleguen a las mismas soluciones.",
+    "Un equipo que dedica cerca del 80% de su tiempo a ejecución operativa no puede crecer; automatizar procesos libera tiempo para pensar y generar valor.",
+    "Chile destaca en la región por su calidad técnica y adopción de martech, pero según Rodrigo Orellana todavía tiene mucho espacio para crecer en creatividad."
+  ],
+  "citas": [
+    {
+      "texto": "Yo creo que es un error que hoy día las gerencias de marketing estén enfocadas en campaña. Por ejemplo, el calendario clásico temporal de actividades que guía a los equipos de marketing es un error.",
+      "autor": "Rodrigo Orellana"
+    },
+    {
+      "texto": "Mi misión es volver a reencantar al mundo, eh partiendo por Chile, ojalá eh con el marketing, con cómo debiera ser y también atrayendo a la tecnología en este camino.",
+      "autor": "Rodrigo Orellana"
+    },
+    {
+      "texto": "Marketing y de nuevo el marketing mal asociado con lo que estamos haciendo hoy día, llamémosle publicidad, tiene un toque humano de comunicación irreemplazable.",
+      "autor": "Rodrigo Orellana"
+    }
+  ],
+  "preguntas": [
+    {
+      "q": "¿Por qué se dice que el marketing está mal diseñado en las empresas?",
+      "a": "Según Rodrigo Orellana, CEO de Futture, en Efecto Podcast, muchas gerencias de marketing funcionan como gerencias de promoción: se concentran en campañas, calendarios anuales y métricas de hace 20 años, desconectadas del revenue. Además, marketing quedó como área de apoyo, separada de tecnología, finanzas y el área comercial, cuando es la única con contacto de punta a punta con el cliente, los datos y los canales."
+    },
+    {
+      "q": "¿Qué es el presupuesto base cero en marketing?",
+      "a": "Es planificar cada año asumiendo que no existe presupuesto previo y justificando cada gasto desde la necesidad del negocio. Rodrigo Orellana explica en Efecto Podcast que es un error suponer que crecer 50% exige 50% más de inversión. El enfoque base cero obliga a cuestionar cuántas campañas, qué medios y qué inversión pagada realmente generan valor, y a experimentar de forma controlada antes de decidir."
+    },
+    {
+      "q": "¿Puede la inteligencia artificial hacer mejor marketing que una persona?",
+      "a": "Para Rodrigo Orellana, entrevistado en Efecto Podcast, nunca. La IA es un habilitador que sirve para analizar documentos, generar ideas o debatir, pero la comunicación y la emoción son humanas. Además advierte un riesgo competitivo: si todas las empresas de un mercado usan las mismas herramientas con el mismo benchmark, obtendrán soluciones parecidas y perderán la ventaja que da una estrategia humana."
+    },
+    {
+      "q": "¿Qué es un modelo operativo de marketing nativo en IA?",
+      "a": "Es la propuesta de Futture, la empresa de Rodrigo Orellana: un sistema que integra estrategia, ejecución y datos mediante un conjunto de agentes de IA alimentados con la memoria corporativa, balances, estrategia, prensa y estudios de mercado. Los agentes actúan como asesores, por ejemplo alertando sobre movimientos de la competencia, y sus sugerencias siempre son validadas por una persona, según explicó en Efecto Podcast."
+    },
+    {
+      "q": "¿Cómo reducir el tiempo que un equipo de marketing dedica a tareas operativas?",
+      "a": "En Efecto Podcast, Felipe López Miranda contó que midió que cerca del 80% del tiempo de su equipo se iba en ejecución y, en dos años y medio, lo redujo a alrededor de 20% automatizando procesos. Advierte que el camino exige enfrentar legado técnico y bases de datos inexistentes, y Rodrigo Orellana agrega que liberar ese tiempo permite al equipo enfocarse en decisiones que generan valor."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "resumen": [
+    "En este episodio de Efecto Podcast, Felipe López Miranda conversa con Ángel Izurieta, ex Country Manager de Google Cloud Chile, sobre la inteligencia artificial de Google, el miedo al cambio tecnológico y las oportunidades que abre para personas, empresas y países. Izurieta, que también pasó por Accenture y dio recientemente una charla TEDx, cuenta cómo vivió desde dentro de Google los tres años en que la IA generativa cambió la industria.",
+    "Izurieta describe a Google como una startup muy grande, con un espíritu genuino de colaboración. Explica que la IA generativa nace del paper Attention Is All You Need, escrito por ocho investigadores de Google que buscaban mejorar el traductor; como la empresa comparte su investigación, startups como OpenAI, Anthropic y Mistral lo aprovecharon. Cuando ChatGPT democratizó el acceso, Google, que ya era una compañía basada en IA desde la visión de Larry Page en el año 2000, apostó por Gemini: un modelo multimodal desde la base, pensado como asistente universal capaz de entender texto, audio, video, imágenes y código.",
+    "La conversación aborda por qué ChatGPT es más conocido que Gemini y la confusión entre modelo y plataforma. Izurieta anticipa que se dejará de hablar de modelos para hablar de soluciones concretas, como control de fraude o atención en call centers, y que el mercado se consolidará en tres o cuatro actores. Destaca como ventaja de Google tener el stack completo, desde chips e infraestructura hasta modelos propios, además de la integración de Gemini en Workspace y en YouTube Shorts. Recomienda elegir una herramienta cómoda y no pagar varias suscripciones.",
+    "Sobre su charla TEDx, Izurieta recuerda que hace 600 años los escribanos quemaron las prensas de Gutenberg por miedo a perder su trabajo, pero luego surgieron productores de tinta y papel, libreros e ilustradores. La clave, dice, es cambiar la pregunta de qué me hará la tecnología a qué puedo hacer con ella. Cuenta que su padre informatizó la contabilidad de su fábrica en los años 80 y no despidió a ningún vendedor: los capacitó, visitaron más clientes y aumentaron las ventas. En la conversación también se mencionan campañas producidas con IA, como una de LATAM para turistas brasileños que viajaban a esquiar, que reducen costos y tiempos de producción.",
+    "Respecto de las empresas, Izurieta estima que en Chile se aprovecha apenas entre un 10% y un 20% del potencial de la IA. En 2023 abundaron los pilotos sin escalar, al punto de que un cliente le dijo tener más pilotos que una aerolínea, y desde mediados de 2024 aparecieron implementaciones reales, como call centers donde un sistema con IA resuelve hasta el 80% de los casos en la primera llamada. Menciona la diversificación de Copec como ejemplo de innovación permanente y sostiene que la creatividad y el criterio siguen siendo humanos.",
+    "En el cierre destaca la colaboración, la innovación permanente y el pensamiento 10x de Google, donde Google X celebra los fracasos. Señala la biotecnología, la computación cuántica y la robótica especializada como próximas fronteras, con ejemplos chilenos como el Patagonia Biotech Hub y una empresa de Concepción que fabrica chips cuánticos, y pide políticas públicas estables y con incentivos. Reconoce que se perderán empleos, pero confía en que surgirán muchos nuevos, y ve a Chile como líder regional gracias a programas como Start-Up Chile y casos como Miido."
+  ],
+  "ideas_clave": [
+    "La IA generativa nació del paper Attention Is All You Need, escrito en Google para mejorar el traductor y compartido abiertamente, lo que impulsó a startups como OpenAI.",
+    "Gemini fue diseñado como un modelo multimodal desde la base, porque Google apostó a que el valor está en un asistente universal y no solo en el texto.",
+    "No tiene sentido pagar varias suscripciones de IA: conviene elegir la herramienta que mejor se integra a tu trabajo y cambiar solo si otra da un salto real.",
+    "Frente al miedo a la IA, la pregunta útil deja de ser qué me hará la tecnología y pasa a ser qué puedo hacer yo con ella.",
+    "La historia muestra que cada revolución tecnológica elimina tareas pero crea nuevos oficios, como ocurrió con la imprenta de Gutenberg o con los community managers.",
+    "Muchas empresas se quedaron en pilotos de IA durante 2023; el valor aparece al escalar casos concretos, como call centers que resuelven la mayoría de las consultas.",
+    "Chile puede liderar en biotecnología y tecnologías cuánticas si el Estado mantiene reglas estables, legislación e incentivos tributarios, como antes hizo Corfo con el salmón."
+  ],
+  "citas": [
+    {
+      "texto": "Yo creo que en la vida una característica que deberíamos tener como ser humano es no perder nunca la curiosidad.",
+      "autor": "Ángel Izurieta"
+    },
+    {
+      "texto": "Pero van a haber 50 cargos que no existen hoy día, que si somos capaces de transformarnos para movernos a esos cargos, bacán, porque vamos a tener resuelto el problema.",
+      "autor": "Ángel Izurieta"
+    },
+    {
+      "texto": "Yo soy un tecnólogo super optimista, soy terriblemente optimista, hay gente que es terriblemente pesimista.",
+      "autor": "Ángel Izurieta"
+    }
+  ],
+  "preguntas": [
+    {
+      "q": "¿Cuál es el origen de la inteligencia artificial generativa?",
+      "a": "Según explica Ángel Izurieta, ex Country Manager de Google Cloud Chile, en Efecto Podcast, la IA generativa parte del paper Attention Is All You Need, publicado por ocho investigadores de Google que buscaban mejorar el traductor entendiendo el contexto gramatical de las frases. Como Google compartía su investigación, startups como OpenAI, Anthropic y Mistral vieron su valor y crearon sus propios modelos."
+    },
+    {
+      "q": "¿Qué diferencia a Gemini de ChatGPT?",
+      "a": "Ángel Izurieta cuenta en Efecto Podcast que Google decidió entrenar Gemini como un modelo multimodal desde la base, capaz de entender texto, audio, video, imágenes y código, porque apostó a construir un asistente universal. Además, Gemini está integrado en el ecosistema de Google, como Gmail, Workspace y YouTube Shorts. ChatGPT, en cambio, ganó notoriedad por salir primero y democratizar el acceso."
+    },
+    {
+      "q": "¿La inteligencia artificial va a quitar trabajos?",
+      "a": "Ángel Izurieta reconoce en Efecto Podcast que habrá roles y cargos reemplazados, pero sostiene que también surgirán muchos trabajos que hoy no existen. Recuerda que los escribanos temieron a la imprenta de Gutenberg y luego aparecieron libreros, ilustradores y productores de papel. Para él, lo clave es mantener la curiosidad y preguntarse qué se puede hacer con la tecnología, no qué hará ella con uno."
+    },
+    {
+      "q": "¿Cómo están usando la inteligencia artificial las empresas en Chile?",
+      "a": "Ángel Izurieta estima que en Chile se aprovecha apenas entre un 10% y un 20% del potencial de la IA. En 2023 las empresas acumularon pilotos que no escalaban, y desde mediados de 2024 comenzaron implementaciones reales, como cadenas logísticas con agentes y call centers donde la IA atiende la primera llamada y resuelve gran parte de los casos antes de derivar a una persona."
+    },
+    {
+      "q": "¿Qué tecnologías marcarán los próximos años después de la IA?",
+      "a": "Para Ángel Izurieta, ex líder de Google Cloud en Chile, las próximas fronteras son la biotecnología, la computación cuántica y la robótica. En Efecto Podcast menciona el almacenamiento de datos en ADN y la capacidad cuántica de resolver en minutos cálculos de años. En robótica, cree que se necesitarán robots especializados más que humanoides, y pide que Chile impulse estas industrias con políticas públicas."
+    }
+  ]
+}

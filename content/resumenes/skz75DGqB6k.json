@@ -1,0 +1,55 @@
+{
+  "resumen": [
+    "En este episodio de Efecto Podcast, Felipe López Miranda conversa con Benjamin Martínez Arenas, cofundador y COO de Miido.ai, una startup chilena que usa agentes de inteligencia artificial conectados a WhatsApp para digitalizar la información que se genera en el campo. Con 27 años, Martínez explica cómo una industria que todavía trabaja con papel, lápiz y planillas de Excel que no conversan entre sí puede capturar datos en terreno sin obligar a los agricultores a cambiar sus hábitos.",
+    "La historia parte en la universidad, cerca de 2018 y 2019, en plena crisis hídrica: su socio Nicolás vio que regaban el pasto mientras llovía y pensaron en usar sensores de humedad. Junto a Tomás ganaron un capital semilla de la Municipalidad de Providencia para instalar sensores de riego, pero la experiencia mostró que el ahorro de agua no era prioridad para ese cliente. Por eso se volcaron al agro, donde sin riego no hay producción. Siguieron un piloto de estación meteorológica con Carozzi, armada con sensores comprados en AliExpress, y un año desarrollando sensores de nitrógeno, fósforo y potasio con Concha y Toro, que no funcionaron.",
+    "De ese fracaso nació el Miido actual. Como en el campo todos se comunican por WhatsApp, crearon un MVP para registrar aplicaciones de fertilizante por ese canal, y Concha y Toro les dijo que servía para toda la operación. Tras dos años sin pagarse sueldo, apostaron a que la IA generativa, que recién aparecía con ChatGPT, maduraría rápido. Hoy un mensaje como \"apliqué 20 kg de nitrógeno en el sector 3\" se transforma en una tabla con producto, cantidad y unidad, y la plataforma registra riego, fertilización y labores diarias como el raleo.",
+    "Martínez explica que Miido se adapta al agricultor, a diferencia de otros software que obligan a adaptar la operación. Sobre esos datos, la plataforma actúa como asesor: advierte, por ejemplo, que una aplicación foliar con viento sobre 10 km/h no sirve, o avisa por WhatsApp cuando la humedad del suelo llega al límite. Una plaga no controlada a tiempo puede llevarse el 40% de una producción. Para él, la IA no sirve sin una base de datos estructurada y un buen prompt, y Miido acompaña a sus clientes para que formulen bien sus consultas.",
+    "La expansión fue más espontánea que planificada. Un contacto en Costa Rica los llevó a México, a la feria agroalimentaria de Guanajuato, y en 2024 ganaron el concurso Conecta Agro de la SNA, con 10 millones de pesos que les permitieron contratar a su primer desarrollador. Hoy trabajan con productores de Driscoll's, la mayor empresa de berries del mundo, con la Fundación Alpina en Colombia y con clientes de 1.000 hectáreas en el sur de Chile, con un equipo de solo ocho personas apalancado en IA.",
+    "Al cierre, Martínez cuenta que su momento más feliz fue el ingreso a SkyDeck, la aceleradora de la Universidad de Berkeley, que invirtió en la empresa y motivó el cambio de dominio de .cl a .ai. Proyecta un año fuerte en México y luego Estados Unidos, explica que el nombre viene de \"mido\", porque miden lo que pasa en el campo, y que las dos íes representan un gráfico de barras. Su consejo final es obsesionarse con generar valor antes que con el dinero."
+  ],
+  "ideas_clave": [
+    "Para digitalizar industrias poco tecnologizadas conviene usar herramientas que las personas ya dominan, como WhatsApp, en vez de exigirles aprender un software nuevo.",
+    "La inteligencia artificial no sirve sin una base de datos estructurada; el primer paso es capturar bien la información en terreno y luego definir buenos prompts.",
+    "Un MVP pensado para un solo proceso, como registrar fertilizantes, puede abrir un mercado mayor si el cliente descubre que sirve para toda su operación.",
+    "Las soluciones que se integran al core del negocio del cliente tienen menor churn, porque son lo último que se corta en una crisis.",
+    "Pivotar a tiempo es clave: Miido abandonó dos años de trabajo con sensores que no funcionaban para enfocarse en levantar datos por WhatsApp.",
+    "Un asesor de IA que envía alertas concretas por WhatsApp, como riego insuficiente o viento excesivo, aporta más valor que un dashboard que nadie revisa.",
+    "Latinoamérica funciona como un gran mercado agrícola con idioma y cultura similares, lo que permite a una startup chilena escalar a México con un equipo pequeño."
+  ],
+  "citas": [
+    {
+      "texto": "Miido es simplemente una una plataforma en que te ayuda a digitalizar información. Eh, estamos hoy en día en industria agrícola que imagínate, todavía se se está el papel y lápiz con información, ¿cierto?",
+      "autor": "Benjamin Martínez Arenas"
+    },
+    {
+      "texto": "Y un día mi socio Nico ve que estaban regando el pasto y estaba lloviendo y fue como con un sensor de humedad podéis saber si está lloviendo o no y no regar.",
+      "autor": "Benjamin Martínez Arenas"
+    },
+    {
+      "texto": "Pero todos los software que habían en la en ese momento, todos los que hay en la industria, todas las todos los agricultores se tienen que adaptar a ese software.",
+      "autor": "Benjamin Martínez Arenas"
+    }
+  ],
+  "preguntas": [
+    {
+      "q": "¿Qué es Miido.ai y cómo funciona?",
+      "a": "Miido.ai es una startup chilena que digitaliza la información agrícola mediante WhatsApp. Según explicó su cofundador y COO, Benjamin Martínez Arenas, en Efecto Podcast, los trabajadores envían mensajes o audios como \"apliqué 20 kg de nitrógeno en el sector 3\" y la plataforma los convierte en datos estructurados sobre riego, fertilización y labores. Luego un asesor de IA analiza esa información y envía alertas y recomendaciones."
+    },
+    {
+      "q": "¿Por qué usar WhatsApp para digitalizar procesos en la agricultura?",
+      "a": "Porque es la herramienta que la gente del campo ya usa a diario. Benjamin Martínez Arenas, de Miido.ai, explicó en Efecto Podcast que los software agrícolas tradicionales obligan al agricultor a adaptar su operación, por lo que muchos terminan volviendo a un Excel simple. Con WhatsApp no hay curva de aprendizaje y, como un agrónomo trabaja en terreno y no en una oficina, la información llega donde ya está."
+    },
+    {
+      "q": "¿Cómo se aplica la inteligencia artificial en la agricultura?",
+      "a": "En Efecto Podcast, Benjamin Martínez Arenas explica que la IA de Miido.ai transforma mensajes de terreno en datos y actúa como asesor del agricultor. Por ejemplo, advierte que una aplicación foliar con viento sobre 10 km/h pierde efectividad o avisa cuando la humedad del suelo llega al límite. Así ayuda a evitar errores costosos, como una plaga no controlada que puede llevarse el 40% de la producción."
+    },
+    {
+      "q": "¿Qué se necesita para que la inteligencia artificial sea útil en una empresa?",
+      "a": "Según Benjamin Martínez Arenas, cofundador de Miido.ai, entrevistado en Efecto Podcast, la IA no sirve si no existe una base de datos estructurada. Primero hay que capturar bien la información y después formular buenos prompts: una pregunta vaga como \"¿cómo gano más plata con mi cultivo?\" no entrega valor, mientras que pedir análisis en base a los datos disponibles sí lo hace."
+    },
+    {
+      "q": "¿Cómo pivotear una startup cuando el producto inicial no funciona?",
+      "a": "La historia de Miido.ai, contada en Efecto Podcast por Benjamin Martínez Arenas, es un ejemplo. Tras dos años con sensores de riego y de nutrientes que no resultaron, sin pagarse sueldo, el equipo eliminó los sensores y se enfocó en levantar datos por WhatsApp. Esa decisión, apoyada en la llegada de la IA generativa, dio origen al producto que hoy usan productores en Chile y México."
+    }
+  ]
+}
