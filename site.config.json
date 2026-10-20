@@ -1,7 +1,7 @@
 {
   "site_name": "Efecto Podcast",
-  "tagline": "Conversaciones que dejan efecto.",
-  "description": "Todos los episodios de Efecto Podcast: entrevistas y conversaciones completas, con resumen, capítulos y transcripción.",
+  "tagline": "Marketing, negocios y creatividad.",
+  "description": "Entrevistas sobre marketing, negocios, emprendimiento y creatividad con líderes y expertos de la industria. Todos los episodios de Efecto Podcast en un solo lugar.",
   "base_url": "https://efectopodcast.com",
   "language": "es",
   "locale": "es_CL",
@@ -20,8 +20,9 @@
   "contact_email": "contacto@efectopodcast.com",
   "social": {
     "youtube": "https://www.youtube.com/@efecto_podcast",
-    "instagram": "",
-    "tiktok": "",
+    "instagram": "https://www.instagram.com/efectopodcast",
+    "tiktok": "https://www.tiktok.com/@efecto_podcast",
+    "linkedin": "https://www.linkedin.com/company/efecto-podcast",
     "spotify": ""
   },
 

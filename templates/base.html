@@ -50,7 +50,7 @@
       <p class="muted">{{ site.tagline }}</p>
     </div>
     <nav aria-label="Redes">
-      {% for name, url in site.social.items() if url %}<a href="{{ url }}" rel="me noopener" target="_blank">{{ {'youtube': 'YouTube', 'tiktok': 'TikTok'}.get(name, name|capitalize) }}</a>{% endfor %}
+      {% for name, url in site.social.items() if url %}<a href="{{ url }}" rel="me noopener" target="_blank">{{ {'youtube': 'YouTube', 'tiktok': 'TikTok', 'linkedin': 'LinkedIn'}.get(name, name|capitalize) }}</a>{% endfor %}
     </nav>
     <nav aria-label="Legal">
       <a href="/sobre-nosotros/">Sobre nosotros</a>
