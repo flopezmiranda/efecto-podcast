@@ -34,7 +34,7 @@
       <ul class="takeaways">{% for i in ed.ideas_clave %}<li>{{ i }}</li>{% endfor %}</ul>
       {% if ed.citas %}
       <h2 id="citas">Frases destacadas</h2>
-      {% for c in ed.citas %}<blockquote class="quote"><p>«{{ c.texto }}»</p>{% if c.autor %}<cite>{{ c.autor }}</cite>{% endif %}</blockquote>{% endfor %}
+      {% for c in ed.citas %}<blockquote class="quote"><p>«{{ c.texto[0]|upper }}{{ c.texto[1:] }}»</p>{% if c.autor %}<cite>{{ c.autor }}</cite>{% endif %}</blockquote>{% endfor %}
       {% endif %}
       <h2 id="preguntas">Preguntas que responde este episodio</h2>
       <div class="qa">{% for q in ed.preguntas %}<h3>{{ q.q }}</h3><p>{{ q.a }}</p>{% endfor %}</div>

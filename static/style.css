@@ -201,3 +201,4 @@ main { padding-top: 40px; padding-bottom: 72px; min-height: 60vh; }
 .quote cite::before { content: "— "; }
 .qa h3 { font-size: 1.02rem; font-weight: 600; margin: 22px 0 6px; }
 .qa p { margin: 0; color: var(--muted); }
+.prose h2[id] { scroll-margin-top: 88px; }
