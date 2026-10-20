@@ -5,16 +5,17 @@ Sube los archivos a content/subtitulos/ y corre:
     python scripts/import_subtitles.py
 
 - .txt (transcripción copiada de YouTube): se asocia al episodio por el código del nombre
-  del archivo (por ejemplo «E12T2 - ...txt»).
+  del archivo (por ejemplo «E12T2 - ...txt») o, si no tiene código, por el título.
 - .srt, .vtt o .sbv (con cualquier nombre): se asocia comparando la duración de los
   subtítulos con la del video, porque YouTube Studio los descarga con nombres parecidos.
 Los archivos procesados se borran de content/subtitulos/.
 """
+import difflib
 import re
 import sys
 from pathlib import Path
 
-from common import ROOT, load_config, load_episodes
+from common import ROOT, load_config, load_episodes, slugify
 from fetch_transcripts import OUT, vtt_to_text
 
 INBOX = ROOT / "content" / "subtitulos"
@@ -60,6 +61,19 @@ def match_by_code(name, episodes):
     return found[0] if len(found) == 1 else None
 
 
+def match_by_title(name, episodes):
+    """Para archivos sin código de episodio: compara el nombre con los títulos."""
+    stem = slugify(Path(name).stem, 200)
+    scored = sorted(
+        ((difflib.SequenceMatcher(None, stem, slugify(e["title"], 200)).ratio(), e) for e in episodes),
+        key=lambda c: -c[0],
+    )
+    best = scored[0]
+    if best[0] >= 0.85 and (len(scored) == 1 or best[0] - scored[1][0] >= 0.05):
+        return best[1]
+    return None
+
+
 def match_by_duration(raw, episodes):
     end = last_timestamp(raw)
     candidates = sorted(
@@ -88,8 +102,8 @@ def main():
     for path in files:
         raw = path.read_text(encoding="utf-8", errors="replace")
         if path.suffix.lower() == ".txt":
-            ep = match_by_code(path.name, episodes)
-            reason = None if ep else "el nombre no empieza con un código de episodio conocido (ej. E12T2)"
+            ep = match_by_code(path.name, episodes) or match_by_title(path.name, episodes)
+            reason = None if ep else "el nombre no coincide con el código ni con el título de un episodio"
             text_source = "WEBVTT\n\n" + raw
         else:
             ep, reason = match_by_duration(raw, episodes)
