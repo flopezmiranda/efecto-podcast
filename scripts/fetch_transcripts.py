@@ -30,21 +30,32 @@ def vtt_to_text(vtt):
         if line and line != last:
             lines.append(line)
             last = line
-    text = " ".join(lines)
-    # Párrafos de ~6 oraciones para que se lea bien en la página.
-    sentences = re.split(r"(?<=[.!?])\s+", text)
-    return "\n\n".join(" ".join(sentences[i:i + 6]) for i in range(0, len(sentences), 6))
+    words = " ".join(lines).split()
+    # Párrafos de ~90 palabras, cortando en el fin de una oración cuando la hay
+    # (los subtítulos automáticos muchas veces vienen sin puntuación).
+    paragraphs, current = [], []
+    for word in words:
+        current.append(word)
+        if len(current) >= 140 or (len(current) >= 90 and word[-1] in ".!?"):
+            paragraphs.append(" ".join(current))
+            current = []
+    if current:
+        paragraphs.append(" ".join(current))
+    return "\n\n".join(paragraphs)
 
 
 def fetch(video_id, lang):
     with tempfile.TemporaryDirectory() as tmp:
-        subprocess.run([
+        result = subprocess.run([
             "yt-dlp", "--skip-download", "--write-subs", "--write-auto-subs",
             "--sub-langs", f"{lang}.*,{lang}", "--sub-format", "vtt",
             "-o", f"{tmp}/%(id)s.%(ext)s", f"https://www.youtube.com/watch?v={video_id}",
-        ], check=False, capture_output=True)
+        ], check=False, capture_output=True, text=True)
         files = sorted(Path(tmp).glob("*.vtt"))
-        return vtt_to_text(files[0].read_text(encoding="utf-8")) if files else None
+        if not files:
+            print("   ", (result.stderr or result.stdout).strip().splitlines()[-1:] or "sin detalle")
+            return None
+        return vtt_to_text(files[0].read_text(encoding="utf-8"))
 
 
 def main():
@@ -52,9 +63,13 @@ def main():
     parser.add_argument("--limit", type=int, default=0)
     args = parser.parse_args()
 
-    lang = load_config().get("language", "es")
+    config = load_config()
+    lang = config.get("language", "es")
     OUT.mkdir(parents=True, exist_ok=True)
-    pending = [e for e in load_episodes() if not (OUT / f"{e['id']}.txt").exists()]
+    # Solo los episodios que se publican en el sitio (los Shorts se omiten).
+    pending = [e for e in load_episodes()
+               if e.get("duration_seconds", 0) >= config["min_duration_seconds"]
+               and not (OUT / f"{e['id']}.txt").exists()]
     if args.limit:
         pending = pending[:args.limit]
 
