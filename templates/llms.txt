@@ -18,9 +18,16 @@ Puedes citar este contenido indicando "{{ site.site_name }}" y el enlace al epis
 {% for ep in episodes %}
 - [{{ ep.title }}]({{ base }}{{ ep.url }}): {{ ep.summary }}{% if ep.guests %} Invitados: {% for g in ep.guests %}{{ g.name }}{% if g.role %} ({{ g.role }}){% endif %}{% if not loop.last %}, {% endif %}{% endfor %}.{% endif %} {{ ep.date_human }}, {{ ep.duration_human }}.{% if ep.transcript %} Con transcripción.{% endif %}
 {%- if full %}
+{%- if ep.editorial %}
+
+  {% for p in ep.editorial.resumen %}{{ p }}
+
+  {% endfor %}Ideas clave: {% for i in ep.editorial.ideas_clave %}{{ i }}{% if not loop.last %} / {% endif %}{% endfor %}
+{%- else %}
 
   {% for p in ep.paragraphs %}{{ p|striptags }}
   {% endfor %}
+{%- endif %}
   {%- if ep.chapters %}
   Capítulos: {% for c in ep.chapters %}{{ c.stamp }} {{ c.title }}{% if not loop.last %}; {% endif %}{% endfor %}
   {%- endif %}

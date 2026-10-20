@@ -156,6 +156,7 @@ def prepare(config):
             "duration_iso": iso_duration(ep["duration_seconds"]),
             "transcript": [p for p in re.split(r"\n\s*\n", transcript) if p.strip()] if is_punctuated(transcript) else [],
             "notes": Markup(read_optional(CONTENT / "notes" / f"{ep['id']}.html")),
+            "editorial": json.loads(read_optional(CONTENT / "resumenes" / f"{ep['id']}.json") or "null"),
             "guests": [],
         })
         for g in extra.get("guests", []):
@@ -265,13 +266,19 @@ def episode_schema(ep, base, config):
                "about": [{"@type": "Thing", "name": t["name"]} for t in ep["topics"]] or None,
                "keywords": ", ".join(t["name"] for t in ep["topics"]) or None,
                "actor": guests or None, "associatedMedia": video}
+    graph = []
+    if ep["editorial"]:
+        episode["abstract"] = ep["editorial"]["resumen"][0]
+        graph.append({"@type": "FAQPage", "@id": url + "#preguntas", "isPartOf": {"@id": url + "#episodio"},
+                      "mainEntity": [{"@type": "Question", "name": q["q"], "acceptedAnswer": {"@type": "Answer", "text": q["a"]}}
+                                     for q in ep["editorial"]["preguntas"]]})
     if ep["number"] is not None:
         episode["episodeNumber"] = ep["number"]
         episode["partOfSeason"] = {"@type": "PodcastSeason", "seasonNumber": ep["season"], "partOfSeries": {"@id": base + "/#podcast"}}
     crumbs = {"@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Episodios", "item": base + "/"},
         {"@type": "ListItem", "position": 2, "name": ep["title"], "item": url}]}
-    return [prune(episode), crumbs]
+    return [prune(episode), crumbs] + graph
 
 
 def prune(value):

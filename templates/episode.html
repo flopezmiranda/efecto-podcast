@@ -26,7 +26,20 @@
   <div class="episode-layout">
     <div class="prose">
       {% if ep.notes %}{{ ep.notes }}{% endif %}
-      <h2>Sobre este episodio</h2>
+      {% set ed = ep.editorial %}
+      {% if ed %}
+      <h2 id="resumen">Resumen del episodio</h2>
+      {% for p in ed.resumen %}<p>{{ p }}</p>{% endfor %}
+      <h2 id="ideas-clave">Ideas clave</h2>
+      <ul class="takeaways">{% for i in ed.ideas_clave %}<li>{{ i }}</li>{% endfor %}</ul>
+      {% if ed.citas %}
+      <h2 id="citas">Frases destacadas</h2>
+      {% for c in ed.citas %}<blockquote class="quote"><p>«{{ c.texto }}»</p>{% if c.autor %}<cite>{{ c.autor }}</cite>{% endif %}</blockquote>{% endfor %}
+      {% endif %}
+      <h2 id="preguntas">Preguntas que responde este episodio</h2>
+      <div class="qa">{% for q in ed.preguntas %}<h3>{{ q.q }}</h3><p>{{ q.a }}</p>{% endfor %}</div>
+      {% endif %}
+      <h2>{% if ed %}Descripción en YouTube{% else %}Sobre este episodio{% endif %}</h2>
       {% for p in ep.paragraphs %}{{ p }}{% endfor %}
 
       {% if ep.topics %}

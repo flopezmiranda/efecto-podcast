@@ -194,3 +194,10 @@ main { padding-top: 40px; padding-bottom: 72px; min-height: 60vh; }
 .faq summary { cursor: pointer; font-weight: 600; padding: 12px 0; list-style-position: outside; }
 .faq summary:hover { color: var(--accent); }
 .faq details p { margin: 0 0 14px; color: var(--muted); }
+.takeaways li { margin-bottom: 8px; }
+.quote { margin: 18px 0; padding: 4px 0 4px 20px; border-left: 3px solid var(--violet); }
+.quote p { margin: 0 0 6px; font-size: 1.08rem; font-style: italic; }
+.quote cite { color: var(--muted); font-style: normal; font-size: .88rem; }
+.quote cite::before { content: "— "; }
+.qa h3 { font-size: 1.02rem; font-weight: 600; margin: 22px 0 6px; }
+.qa p { margin: 0; color: var(--muted); }
