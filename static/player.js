@@ -9,7 +9,10 @@
     player.innerHTML = '<iframe src="' + src + '" title="Reproductor" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
   }
 
-  player.querySelector(".player-facade").addEventListener("click", function () { load(0); });
+  // ?t=123 (enlaces de capítulos desde Google) empieza el video en ese segundo.
+  var start = parseInt(new URLSearchParams(location.search).get("t"), 10) || 0;
+  player.querySelector(".player-facade").addEventListener("click", function () { load(start); });
+  if (start) player.scrollIntoView({ block: "center" });
 
   document.querySelectorAll("[data-seek]").forEach(function (a) {
     a.addEventListener("click", function (e) {

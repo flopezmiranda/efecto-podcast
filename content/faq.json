@@ -1,0 +1,14 @@
+[
+  {"q": "¿Qué es Efecto Podcast?",
+   "a": "Efecto Podcast es un podcast chileno de conversaciones sobre marketing, negocios, emprendimiento, inteligencia artificial y creatividad. Cada episodio es una entrevista de alrededor de una hora con líderes, fundadores y expertos de la industria. Hasta hoy hay {episodios} episodios publicados."},
+  {"q": "¿Quién conduce Efecto Podcast?",
+   "a": "Efecto Podcast es conducido por Felipe López Miranda. Por sus conversaciones han pasado {invitados} invitados, entre ellos {ejemplos}."},
+  {"q": "¿De qué temas habla Efecto Podcast?",
+   "a": "Los temas más frecuentes son {temas}. También hay análisis de marcas y campañas, casos de startups chilenas y latinoamericanas, y consejos prácticos para emprender."},
+  {"q": "¿Dónde puedo ver o escuchar Efecto Podcast?",
+   "a": "Los episodios completos se publican en YouTube (@efecto_podcast) y en este sitio, donde cada episodio tiene su resumen, sus capítulos y, en muchos casos, la transcripción completa. Los clips se publican en Instagram, TikTok, Facebook y LinkedIn."},
+  {"q": "¿Cada cuánto sale un episodio nuevo?",
+   "a": "Se publica un episodio nuevo cada pocas semanas. El último salió el {ultimo}. Puedes suscribirte al canal de YouTube o al RSS del sitio para enterarte."},
+  {"q": "¿Cómo puedo proponer un invitado o una colaboración?",
+   "a": "Escríbenos a {email} con tu propuesta de invitado, tema, auspicio o colaboración."}
+]

@@ -1,14 +1,26 @@
 {% extends "base.html" %}
 {% from "_macros.html" import ad %}
-{% set title = topic.name ~ " — episodios" %}
-{% set description = "Episodios de " ~ site.site_name ~ " sobre " ~ topic.name ~ ": " ~ episodes|length ~ " conversaciones completas con resumen y capítulos." %}
+{% set title = topic.name ~ ": episodios y entrevistas" %}
+{% set description = (episodes|length) ~ " episodios de " ~ site.site_name ~ " sobre " ~ topic.name|lower ~ (", con " ~ topic.guests[:3]|join(", ") if topic.guests else "") ~ ". Conversaciones completas con resumen y capítulos." %}
+{% set schema = [
+  {"@type": "CollectionPage", "@id": canonical ~ "#pagina", "name": topic.name ~ " en " ~ site.site_name, "url": canonical,
+   "description": description, "isPartOf": {"@id": base ~ "/#sitio"}, "about": {"@type": "Thing", "name": topic.name},
+   "mainEntity": {"@type": "ItemList", "numberOfItems": episodes|length, "itemListElement": episodes|list_items}},
+  {"@type": "BreadcrumbList", "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Temas", "item": base ~ "/temas/"},
+    {"@type": "ListItem", "position": 2, "name": topic.name, "item": canonical}]}
+] %}
 {% block content %}
 <nav class="crumbs" aria-label="Ruta"><a href="/temas/">Temas</a> <span aria-hidden="true">/</span> <span>{{ topic.name }}</span></nav>
 <h1 class="section-title">{{ topic.name }} <span class="muted">· {{ episodes|length }} episodios</span></h1>
+<div class="intro prose">
+  {{ topic.intro }}
+  {% if topic.guests %}<p class="muted">Invitados en este tema: {% for g in topic.guests %}{{ g }}{% if not loop.last %}, {% endif %}{% endfor %}.</p>{% endif %}
+</div>
 <div class="grid">
 {% for ep in episodes %}
   {% include "_card.html" %}
-  {% if loop.index == 6 %}<div class="grid-ad">{{ ad(site.adsense_slots.list) }}</div>{% endif %}
+  {% if loop.index == 6 and site.adsense_client %}<div class="grid-ad">{{ ad(site.adsense_slots.list) }}</div>{% endif %}
 {% endfor %}
 </div>
 {% endblock %}

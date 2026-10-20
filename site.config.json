@@ -1,6 +1,7 @@
 {
   "site_name": "Efecto Podcast",
   "tagline": "Marketing, negocios y creatividad.",
+  "home_title": "Efecto Podcast: podcast de marketing, negocios y emprendimiento",
   "description": "Entrevistas sobre marketing, negocios, emprendimiento y creatividad con líderes y expertos de la industria. Todos los episodios de Efecto Podcast en un solo lugar.",
   "base_url": "https://efectopodcast.com",
   "language": "es",
@@ -18,6 +19,10 @@
     "episode_bottom": "",
     "list": ""
   },
+
+  "hosts": [
+    {"name": "Felipe López Miranda", "role": "Conductor de Efecto Podcast", "same_as": []}
+  ],
 
   "contact_email": "contacto@efectopodcast.com",
   "social": {
@@ -38,8 +43,7 @@
     "influencer marketing": "influencers"
   },
   "topic_names": {
-    "chatgpt": "ChatGPT",
-    "efecto wow": "Efecto WOW"
+    "chatgpt": "ChatGPT"
   },
-  "topic_blocklist": ["digital", "3 razones para lanzar tu mvp"]
+  "topic_blocklist": ["digital", "3 razones para lanzar tu mvp", "efecto wow"]
 }

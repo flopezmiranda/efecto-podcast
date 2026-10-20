@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% set title = guest.name ~ " en " ~ site.site_name %}
+{% set description = guest.name ~ (", " ~ guest.role if guest.role else "") ~ ". Mira " ~ ("su entrevista" if guest.episodes|length == 1 else "sus " ~ guest.episodes|length ~ " entrevistas") ~ " en " ~ site.site_name ~ ": " ~ guest.episodes[0].title ~ "." %}
+{% set image = guest.episodes[0].thumbnail %}
+{% set og_type = "profile" %}
+{% block content %}
+<nav class="crumbs" aria-label="Ruta"><a href="/invitados/">Invitados</a> <span aria-hidden="true">/</span> <span>{{ guest.name }}</span></nav>
+<h1 class="section-title">{{ guest.name }}</h1>
+<div class="intro prose">
+  {% if guest.role %}<p class="lead-small">{{ guest.role }}</p>{% endif %}
+  <p>{{ guest.name }} conversó en {{ site.site_name }} {% if guest.episodes|length == 1 %}en el episodio «{{ guest.episodes[0].title }}», publicado el {{ guest.episodes[0].date_human }}. {{ guest.episodes[0].summary }}{% else %}en {{ guest.episodes|length }} episodios: {% for e in guest.episodes %}«{{ e.title }}» ({{ e.date_human }}){% if loop.revindex == 2 %} y {% elif not loop.last %}, {% endif %}{% endfor %}.{% endif %}</p>
+</div>
+<h2 class="section-title">{% if guest.episodes|length == 1 %}Episodio{% else %}Episodios{% endif %}</h2>
+<div class="grid">
+{% for ep in guest.episodes %}{% include "_card.html" %}{% endfor %}
+</div>
+{% endblock %}

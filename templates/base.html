@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{% set page_title = (title ~ " | " ~ site.site_name) if title else (site.site_name ~ " — " ~ site.tagline) %}
+{% set page_title = (title if (title|length) + (site.site_name|length) > 62 else title ~ " | " ~ site.site_name) if title else (site.home_title or site.site_name ~ " — " ~ site.tagline) %}
 <title>{{ page_title }}</title>
 <meta name="description" content="{{ description or site.description }}">
 <link rel="canonical" href="{{ canonical }}">
-{% if noindex %}<meta name="robots" content="noindex, follow">{% endif %}
+{% if noindex %}<meta name="robots" content="noindex, follow">{% else %}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">{% endif %}
 {% if prev_url %}<link rel="prev" href="{{ base }}{{ prev_url }}">{% endif %}
 {% if next_url %}<link rel="next" href="{{ base }}{{ next_url }}">{% endif %}
 <meta property="og:site_name" content="{{ site.site_name }}">
@@ -27,6 +27,23 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
 <link rel="preconnect" href="https://i.ytimg.com">
 <link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{{ {
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type": "Organization", "@id": base ~ "/#organizacion", "name": site.site_name, "url": base ~ "/",
+     "logo": {"@type": "ImageObject", "url": base ~ "/static/img/logo.png", "width": 444, "height": 364},
+     "email": site.contact_email, "sameAs": site.social.values()|select|list},
+    {"@type": "WebSite", "@id": base ~ "/#sitio", "name": site.site_name, "url": base ~ "/", "inLanguage": site.language,
+     "publisher": {"@id": base ~ "/#organizacion"},
+     "potentialAction": {"@type": "SearchAction", "target": base ~ "/buscar/?q={q}", "query-input": "required name=q"}},
+    {"@type": "PodcastSeries", "@id": base ~ "/#podcast", "name": site.site_name, "description": site.description,
+     "url": base ~ "/", "image": base ~ "/static/img/og.jpg", "inLanguage": site.language, "webFeed": base ~ "/rss.xml",
+     "author": {"@id": base ~ "/#conductor"}, "publisher": {"@id": base ~ "/#organizacion"},
+     "sameAs": site.social.values()|select|list},
+    {"@type": "Person", "@id": base ~ "/#conductor", "name": host.name, "jobTitle": host.role,
+     "url": base ~ "/sobre-nosotros/", "worksFor": {"@id": base ~ "/#organizacion"}}
+  ] + (schema or [])
+}|tojson_safe }}</script>
 {% block schema %}{% endblock %}
 {% if site.ga4_id %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4_id }}"></script>
@@ -44,7 +61,8 @@
     <nav aria-label="Principal">
       <a href="/" class="nav-home"{% if path == '/' %} aria-current="page"{% endif %}>Episodios</a>
       <a href="/temas/"{% if path.startswith('/temas') %} aria-current="page"{% endif %}>Temas</a>
-      <a href="/sobre-nosotros/"{% if path == '/sobre-nosotros/' %} aria-current="page"{% endif %}>Nosotros</a>
+      <a href="/invitados/"{% if path.startswith('/invitados') %} aria-current="page"{% endif %}>Invitados</a>
+      <a href="/sobre-nosotros/" class="nav-about"{% if path == '/sobre-nosotros/' %} aria-current="page"{% endif %}>Nosotros</a>
       <a href="/buscar/" class="icon-link" aria-label="Buscar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
     </nav>
   </div>
@@ -63,6 +81,8 @@
     </nav>
     <nav aria-label="Legal">
       <a href="/sobre-nosotros/">Sobre nosotros</a>
+      <a href="/invitados/">Invitados</a>
+      <a href="/temas/">Temas</a>
       <a href="/contacto/">Contacto</a>
       <a href="/politica-de-privacidad/">Privacidad</a>
       <a href="/terminos/">Términos</a>

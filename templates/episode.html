@@ -4,32 +4,18 @@
 {% set description = ep.summary %}
 {% set image = ep.thumbnail %}
 {% set og_type = "video.episode" %}
-{% block schema %}
-<script type="application/ld+json">{{ {
-  "@context": "https://schema.org",
-  "@graph": [
-    {"@type": "PodcastEpisode", "name": ep.title, "url": canonical, "datePublished": ep.date_iso,
-     "description": ep.summary, "timeRequired": ep.duration_iso,
-     "partOfSeries": {"@type": "PodcastSeries", "name": site.site_name, "url": base ~ "/"},
-     "associatedMedia": {"@type": "VideoObject", "name": ep.title, "description": ep.summary,
-       "thumbnailUrl": ep.thumbnail, "uploadDate": ep.published, "duration": ep.duration_iso,
-       "embedUrl": "https://www.youtube.com/embed/" ~ ep.id,
-       "contentUrl": "https://www.youtube.com/watch?v=" ~ ep.id}},
-    {"@type": "BreadcrumbList", "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Episodios", "item": base ~ "/"},
-      {"@type": "ListItem", "position": 2, "name": ep.title, "item": canonical}]}
-  ]
-}|tojson_safe }}</script>
-{% endblock %}
 {% block content %}
 <article class="episode">
   <nav class="crumbs" aria-label="Ruta"><a href="/">Episodios</a> <span aria-hidden="true">/</span> <span>{{ ep.title }}</span></nav>
   <h1>{{ ep.title }}</h1>
-  <p class="meta"><time datetime="{{ ep.date_iso }}">{{ ep.date_human }}</time> · {{ ep.duration_human }}</p>
+  <p class="meta">{% if ep.label %}{{ ep.label }} · {% endif %}<time datetime="{{ ep.date_iso }}">{{ ep.date_human }}</time> · {{ ep.duration_human }}</p>
+  {% if ep.guests %}
+  <p class="guests">Con {% for g in ep.guests %}<a href="{{ g.url }}">{{ g.name }}</a>{% if g.role %}, <span class="muted">{{ g.role }}</span>{% endif %}{% if not loop.last %} y {% endif %}{% endfor %}</p>
+  {% endif %}
 
   <div class="player" data-id="{{ ep.id }}">
     <button type="button" class="player-facade" aria-label="Reproducir {{ ep.title }}">
-      {% if ep.thumbnail %}<img src="{{ ep.thumbnail }}" alt="" width="1280" height="720" fetchpriority="high">{% endif %}
+      {% if ep.thumbnail %}<img src="{{ ep.thumbnail }}" alt="{{ ep.title }}" width="1280" height="720" fetchpriority="high">{% endif %}
       <span class="play" aria-hidden="true"></span>
     </button>
   </div>
@@ -39,16 +25,16 @@
 
   <div class="episode-layout">
     <div class="prose">
+      {% if ep.notes %}{{ ep.notes }}{% endif %}
       <h2>Sobre este episodio</h2>
       {% for p in ep.paragraphs %}{{ p }}{% endfor %}
-      {% if ep.notes %}{{ ep.notes }}{% endif %}
 
       {% if ep.topics %}
       <div class="chips">{% for t in ep.topics %}<a class="chip" href="{{ t.url }}">{{ t.name }}</a>{% endfor %}</div>
       {% endif %}
 
       {% if ep.transcript %}
-      <h2 id="transcripcion">Transcripción</h2>
+      <h2 id="transcripcion">Transcripción completa</h2>
       <div class="transcript{% if ep.transcript|length > 4 %} collapsed{% endif %}">
         {% for p in ep.transcript %}<p>{{ p }}</p>{% if loop.index == 8 %}{{ ad(site.adsense_slots.episode_bottom) }}{% endif %}{% endfor %}
       </div>
@@ -58,7 +44,7 @@
 
     {% if ep.chapters %}
     <aside class="chapters" aria-labelledby="cap-title">
-      <h2 id="cap-title">Capítulos</h2>
+      <h2 id="cap-title">Capítulos del episodio</h2>
       <ol>{% for c in ep.chapters %}<li><a href="https://www.youtube.com/watch?v={{ ep.id }}&amp;t={{ c.seconds }}s" data-seek="{{ c.seconds }}"><span class="stamp">{{ c.stamp }}</span>{{ c.title }}</a></li>{% endfor %}</ol>
     </aside>
     {% endif %}

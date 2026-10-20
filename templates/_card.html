@@ -1,11 +1,12 @@
 <article class="card">
-  <a href="{{ ep.url }}" class="card-thumb">
-    {% if ep.thumbnail %}<img src="{{ ep.thumbnail }}" alt="" loading="lazy" width="480" height="270">{% endif %}
+  <a href="{{ ep.url }}" class="card-thumb" tabindex="-1" aria-hidden="true">
+    <img src="{{ ep.thumb_small }}" alt="{{ ep.title }}" loading="lazy" width="480" height="360">
     <span class="badge">{{ ep.duration }}</span>
   </a>
   <div class="card-body">
     <p class="meta"><time datetime="{{ ep.date_iso }}">{{ ep.date_human }}</time></p>
     <h3><a href="{{ ep.url }}">{{ ep.title }}</a></h3>
+    {% if ep.guests %}<p class="card-guest">Con {{ ep.guests|map(attribute='name')|join(' y ') }}</p>{% endif %}
     <p class="card-summary">{{ ep.summary }}</p>
   </div>
 </article>

@@ -23,6 +23,7 @@ MONTHS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
 URL_RE = re.compile(r"(https?://[^\s<]+[^\s<.,;:!?)\]'\"])")
 TIME_RE = re.compile(r"^\(?((?:\d{1,2}:)?\d{1,2}:\d{2})\)?\s*[-–—:|]?\s*(.+)$")
 HASHTAG_RE = re.compile(r"#([\wáéíóúñü]{3,})", re.IGNORECASE)
+CODE_RE = re.compile(r"^\s*(?:E(\d+)T(\d+)|#EfectoTip \d+|🔴\s*Especial (\w+))\s*[-|–]\s*")
 
 
 def to_seconds(stamp):
@@ -101,9 +102,24 @@ def read_optional(path):
     return path.read_text(encoding="utf-8").strip() if path.exists() else ""
 
 
+def episode_label(title):
+    """Temporada y número a partir del código del título de YouTube ("E13T2 - ...")."""
+    m = CODE_RE.match(title)
+    if not m:
+        return None, None, ""
+    if m.group(1):
+        season, number = int(m.group(2)), int(m.group(1))
+        return season, number, f"Temporada {season} · Episodio {number}"
+    if m.group(3):
+        return None, None, f"Especial {m.group(3)}"
+    return None, None, "Efecto Tip"
+
+
 def prepare(config):
     episodes = [e for e in load_episodes() if e.get("duration_seconds", 0) >= config["min_duration_seconds"]]
     episodes.sort(key=lambda e: e["published"], reverse=True)
+    editorial = json.loads(read_optional(CONTENT / "episodios.json") or "{}")
+    guests = {}
 
     def topic_key(text):
         return slugify(text, 40).replace("-", "")
@@ -116,11 +132,23 @@ def prepare(config):
     for ep in episodes:
         paragraphs, chapters, hashtags = parse_description(ep.get("description", ""))
         transcript = read_optional(CONTENT / "transcripts" / f"{ep['id']}.txt")
+        extra = editorial.get(ep["id"], {})
+        season, number, label = episode_label(ep["title"])
+        title = extra.get("title") or CODE_RE.sub("", ep["title"]).strip()
+        slug = extra.get("slug") or slugify(title)
         ep.update({
-            "url": f"/episodios/{ep['slug']}/",
+            "youtube_title": ep["title"],
+            "title": title,
+            "old_slug": ep["slug"],
+            "slug": slug,
+            "url": f"/episodios/{slug}/",
+            "season": season,
+            "number": number,
+            "label": label,
+            "thumb_small": f"https://i.ytimg.com/vi/{ep['id']}/hqdefault.jpg",
             "paragraphs": paragraphs,
             "chapters": chapters,
-            "summary": summary(ep.get("description", "")) or ep["title"],
+            "summary": extra.get("description") or summary(ep.get("description", "")) or title,
             "date_human": fmt_date(ep["published"]),
             "date_iso": parse_date(ep["published"]).date().isoformat(),
             "duration": fmt_duration(ep["duration_seconds"]),
@@ -128,7 +156,14 @@ def prepare(config):
             "duration_iso": iso_duration(ep["duration_seconds"]),
             "transcript": [p for p in re.split(r"\n\s*\n", transcript) if p.strip()] if is_punctuated(transcript) else [],
             "notes": Markup(read_optional(CONTENT / "notes" / f"{ep['id']}.html")),
+            "guests": [],
         })
+        for g in extra.get("guests", []):
+            gslug = slugify(g["name"], 60)
+            guest = guests.setdefault(gslug, {"slug": gslug, "name": g["name"], "url": f"/invitados/{gslug}/", "episodes": []})
+            guest["role"] = guest.get("role") or g.get("role", "")  # el rol del episodio más reciente
+            guest["episodes"].append(ep)
+            ep["guests"].append({**guest, "role": g.get("role", "")})
         # "#saludmental" y la etiqueta "salud mental" son el mismo tema: se agrupan por slug sin guiones.
         # Las etiquetas van primero porque traen espacios y dan mejores nombres.
         topics = []
@@ -172,7 +207,83 @@ def prepare(config):
         ep["newer"] = episodes[i - 1] if i > 0 else None
         ep["older"] = episodes[i + 1] if i + 1 < len(episodes) else None
 
-    return episodes, sorted(topics.values(), key=lambda t: -t["count"])
+    for t in topics.values():
+        t["intro"] = Markup(read_optional(CONTENT / "temas" / f"{t['slug']}.html"))
+        t["guests"] = list(dict.fromkeys(g["name"] for ep in by_topic[t["slug"]] for g in ep["guests"]))
+
+    return episodes, sorted(topics.values(), key=lambda t: -t["count"]), sorted(guests.values(), key=lambda g: g["name"])
+
+
+def redirect_page(target):
+    return (f'<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Redirigiendo…</title>'
+            f'<link rel="canonical" href="{target}"><meta name="robots" content="noindex">'
+            f'<meta http-equiv="refresh" content="0; url={target}"></head>'
+            f'<body><script>location.replace("{target}"+location.search+location.hash)</script>'
+            f'<p><a href="{target}">Este episodio cambió de dirección</a></p></body></html>')
+
+
+def faq(config, episodes, topics, guests):
+    names = [g["name"] for g in sorted(guests, key=lambda g: -len(g["episodes"]))][:5]
+    values = {
+        "episodios": len(episodes),
+        "invitados": len(guests),
+        "ejemplos": ", ".join(names[:-1]) + " y " + names[-1] if len(names) > 1 else "".join(names),
+        "temas": ", ".join(t["name"].lower() if t["name"] != "ChatGPT" else t["name"] for t in topics[:6]),
+        "ultimo": episodes[0]["date_human"] if episodes else "",
+        "email": config["contact_email"],
+    }
+    items = json.loads(read_optional(CONTENT / "faq.json") or "[]")
+    return [{"q": i["q"], "a": i["a"].format(**values)} for i in items]
+
+
+def person(g):
+    return {"@type": "Person", "@id": f"{g['base']}{g['url']}#persona", "name": g["name"], "jobTitle": g["role"] or None,
+            "url": g["base"] + g["url"]}
+
+
+def episode_schema(ep, base, config):
+    """PodcastEpisode + VideoObject con capítulos (Clip) para los "momentos clave" de Google."""
+    url = base + ep["url"]
+    chapters = ep["chapters"]
+    clips = [{"@type": "Clip", "name": c["title"], "startOffset": c["seconds"],
+              "endOffset": chapters[i + 1]["seconds"] if i + 1 < len(chapters) else ep["duration_seconds"],
+              "url": f"{url}?t={c['seconds']}"} for i, c in enumerate(chapters)]
+    video = {"@type": "VideoObject", "@id": url + "#video", "name": ep["title"], "description": ep["summary"],
+             "thumbnailUrl": [ep["thumbnail"]], "uploadDate": ep["published"], "duration": ep["duration_iso"],
+             "embedUrl": f"https://www.youtube.com/embed/{ep['id']}",
+             "contentUrl": f"https://www.youtube.com/watch?v={ep['id']}", "inLanguage": config["language"],
+             "interactionStatistic": {"@type": "InteractionCounter", "interactionType": {"@type": "WatchAction"},
+                                      "userInteractionCount": int(ep.get("view_count") or 0)}}
+    if clips:
+        video["hasPart"] = clips
+    guests = [person({**g, "base": base}) for g in ep["guests"]]
+    episode = {"@type": "PodcastEpisode", "@id": url + "#episodio", "name": ep["title"], "url": url,
+               "datePublished": ep["date_iso"], "description": ep["summary"], "timeRequired": ep["duration_iso"],
+               "inLanguage": config["language"], "image": ep["thumbnail"],
+               "partOfSeries": {"@id": base + "/#podcast"},
+               "author": {"@id": base + "/#conductor"}, "publisher": {"@id": base + "/#organizacion"},
+               "about": [{"@type": "Thing", "name": t["name"]} for t in ep["topics"]] or None,
+               "keywords": ", ".join(t["name"] for t in ep["topics"]) or None,
+               "actor": guests or None, "associatedMedia": video}
+    if ep["number"] is not None:
+        episode["episodeNumber"] = ep["number"]
+        episode["partOfSeason"] = {"@type": "PodcastSeason", "seasonNumber": ep["season"], "partOfSeries": {"@id": base + "/#podcast"}}
+    crumbs = {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Episodios", "item": base + "/"},
+        {"@type": "ListItem", "position": 2, "name": ep["title"], "item": url}]}
+    return [prune(episode), crumbs]
+
+
+def prune(value):
+    if isinstance(value, dict):
+        return {k: prune(v) for k, v in value.items() if v is not None}
+    if isinstance(value, list):
+        return [prune(v) for v in value]
+    return value
+
+
+AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User",
+           "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "Bingbot", "CCBot"]
 
 
 def write(rel, content):
@@ -186,11 +297,15 @@ def write(rel, content):
 def main():
     config = load_config()
     base = config["base_url"].rstrip("/")
-    episodes, topics = prepare(config)
+    episodes, topics, guests = prepare(config)
 
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=select_autoescape(["html"]))
+    env.filters["faq_item"] = lambda i: {"@type": "Question", "name": i["q"], "acceptedAnswer": {"@type": "Answer", "text": i["a"]}}
+    env.filters["list_items"] = lambda xs: [{"@type": "ListItem", "position": i, "url": base + x["url"], "name": x.get("name") or x["title"]}
+                                            for i, x in enumerate(xs, 1)]
     env.filters["tojson_safe"] = lambda v: Markup(json.dumps(v, ensure_ascii=False).replace("</", "<\\/"))
-    env.globals.update(site=config, base=base, year=datetime.now().year, top_topics=topics[:12])
+    env.globals.update(site=config, base=base, year=datetime.now().year, top_topics=topics[:12],
+                       host=config["hosts"][0] if config.get("hosts") else None)
 
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -210,11 +325,20 @@ def main():
         rel = "/" if n == 1 else f"/episodios/pagina/{n}/"
         render(rel, "list.html", "1.0" if n == 1 else "0.4", latest,
                episodes=episodes[(n - 1) * per_page:n * per_page], page=n, pages=pages, topics=topics,
+               faq=faq(config, episodes, topics, guests) if n == 1 else [],
                prev_url=None if n == 1 else ("/" if n == 2 else f"/episodios/pagina/{n - 1}/"),
                next_url=f"/episodios/pagina/{n + 1}/" if n < pages else None)
 
     for ep in episodes:
-        render(ep["url"], "episode.html", "0.8", ep["date_iso"], ep=ep)
+        render(ep["url"], "episode.html", "0.8", ep["date_iso"], ep=ep, schema=episode_schema(ep, base, config))
+        if ep["old_slug"] != ep["slug"]:
+            write(f"/episodios/{ep['old_slug']}/", redirect_page(base + ep["url"]))
+
+    for g in guests:
+        render(g["url"], "guest.html", "0.6", g["episodes"][0]["date_iso"], guest=g,
+               schema=[prune({**person({**g, "base": base}), "description": f"{g['name']}, {g['role']}. Conversó en {config['site_name']}.",
+                              "subjectOf": [{"@id": base + e["url"] + "#episodio"} for e in g["episodes"]]})])
+    render("/invitados/", "guests.html", "0.5", latest, guests=guests)
 
     for t in topics:
         eps = [e for e in episodes if t in e["topics"]]
@@ -231,7 +355,8 @@ def main():
 
     write("/search.json", json.dumps([
         {"t": e["title"], "u": e["url"], "d": e["date_human"], "s": e["summary"],
-         "k": " ".join(t["name"] for t in e["topics"])} for e in episodes], ensure_ascii=False))
+         "k": " ".join([t["name"] for t in e["topics"]] + [g["name"] for g in e["guests"]])} for e in episodes],
+        ensure_ascii=False))
 
     urls = []
     for rel, lastmod, prio in sitemap:
@@ -250,7 +375,11 @@ def main():
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
           'xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">\n' + "\n".join(urls) + "\n</urlset>\n")
 
-    write("/robots.txt", f"User-agent: *\nAllow: /\nDisallow: /buscar/\n\nSitemap: {base}/sitemap.xml\n")
+    # Los buscadores con IA (ChatGPT, Claude, Perplexity, Gemini) pueden leer y citar el sitio.
+    bots = "".join(f"User-agent: {b}\nAllow: /\n\n" for b in AI_BOTS)
+    write("/robots.txt", f"{bots}User-agent: *\nAllow: /\nDisallow: /buscar/\n\nSitemap: {base}/sitemap.xml\n")
+    write("/llms.txt", env.get_template("llms.txt").render(episodes=episodes, topics=topics, guests=guests, full=False))
+    write("/llms-full.txt", env.get_template("llms.txt").render(episodes=episodes, topics=topics, guests=guests, full=True))
     if config.get("adsense_client"):
         pub = config["adsense_client"].replace("ca-", "")
         write("/ads.txt", f"google.com, {pub}, DIRECT, f08c47fec0942fa0\n")
@@ -269,7 +398,8 @@ def main():
     if not domain.endswith("github.io"):
         write("/CNAME", domain + "\n")
 
-    print(f"Sitio generado en dist/: {len(episodes)} episodios, {len(topics)} temas, {len(sitemap)} URLs en sitemap")
+    print(f"Sitio generado en dist/: {len(episodes)} episodios, {len(topics)} temas, {len(guests)} invitados, "
+          f"{len(sitemap)} URLs en sitemap")
 
 
 if __name__ == "__main__":

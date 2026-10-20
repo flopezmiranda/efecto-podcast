@@ -1,0 +1,46 @@
+# {{ site.site_name }}
+
+> {{ site.description }} Podcast chileno en español conducido por {{ host.name }}. {{ episodes|length }} episodios publicados, {{ guests|length }} invitados.
+
+Cada página de episodio incluye un resumen, los invitados, los capítulos con marcas de tiempo y, en muchos casos, la transcripción completa de la conversación. Los videos están en YouTube: {{ site.social.youtube }}
+
+Puedes citar este contenido indicando "{{ site.site_name }}" y el enlace al episodio.
+
+## Páginas principales
+
+- [Inicio]({{ base }}/): último episodio y todos los episodios
+- [Sobre nosotros]({{ base }}/sobre-nosotros/): qué es {{ site.site_name }} y quién lo conduce
+- [Invitados]({{ base }}/invitados/): todas las personas entrevistadas
+- [Temas]({{ base }}/temas/): episodios agrupados por tema
+- [Contacto]({{ base }}/contacto/): {{ site.contact_email }}
+
+## Episodios
+{% for ep in episodes %}
+- [{{ ep.title }}]({{ base }}{{ ep.url }}): {{ ep.summary }}{% if ep.guests %} Invitados: {% for g in ep.guests %}{{ g.name }}{% if g.role %} ({{ g.role }}){% endif %}{% if not loop.last %}, {% endif %}{% endfor %}.{% endif %} {{ ep.date_human }}, {{ ep.duration_human }}.{% if ep.transcript %} Con transcripción.{% endif %}
+{%- if full %}
+
+  {% for p in ep.paragraphs %}{{ p|striptags }}
+  {% endfor %}
+  {%- if ep.chapters %}
+  Capítulos: {% for c in ep.chapters %}{{ c.stamp }} {{ c.title }}{% if not loop.last %}; {% endif %}{% endfor %}
+  {%- endif %}
+{% endif %}
+{%- endfor %}
+
+## Invitados
+{% for g in guests %}
+- [{{ g.name }}]({{ base }}{{ g.url }}){% if g.role %}: {{ g.role }}{% endif %}
+{%- endfor %}
+
+## Temas
+{% for t in topics %}
+- [{{ t.name }}]({{ base }}{{ t.url }}): {{ t.count }} episodios
+{%- endfor %}
+{% if not full %}
+
+## Optional
+
+- [Versión extendida]({{ base }}/llms-full.txt): descripciones completas y capítulos de cada episodio
+- [RSS]({{ base }}/rss.xml)
+- [Sitemap]({{ base }}/sitemap.xml)
+{% endif %}

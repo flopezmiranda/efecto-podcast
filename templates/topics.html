@@ -1,8 +1,9 @@
 {% extends "base.html" %}
-{% set title = "Temas" %}
-{% set description = "Explora los episodios de " ~ site.site_name ~ " por tema." %}
+{% set title = "Temas: marketing, negocios, emprendimiento e IA" %}
+{% set description = "Explora los episodios de " ~ site.site_name ~ " por tema: " ~ topics[:6]|map(attribute="name")|join(", ") ~ " y más." %}
 {% block content %}
 <h1 class="section-title">Temas</h1>
+<p class="intro muted">Todos los episodios de {{ site.site_name }} ordenados por tema. Elige uno para ver las conversaciones sobre ese tema.</p>
 {% if topics %}
 <ul class="topic-list">
   {% for t in topics %}<li><a href="{{ t.url }}">{{ t.name }}<span class="muted">{{ t.count }}</span></a></li>{% endfor %}

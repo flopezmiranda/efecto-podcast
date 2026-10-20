@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% set title = "Invitados" %}
+{% set description = "Todas las personas que han conversado en " ~ site.site_name ~ ": " ~ guests[:5]|map(attribute="name")|join(", ") ~ " y más." %}
+{% set schema = [{"@type": "CollectionPage", "@id": canonical ~ "#pagina", "name": "Invitados de " ~ site.site_name, "url": canonical,
+  "isPartOf": {"@id": base ~ "/#sitio"},
+  "mainEntity": {"@type": "ItemList", "numberOfItems": guests|length, "itemListElement": guests|list_items}}] %}
+{% block content %}
+<h1 class="section-title">Invitados</h1>
+<p class="intro muted">Líderes, fundadores y expertos que han conversado en {{ site.site_name }}.</p>
+<ul class="guest-list">
+  {% for g in guests %}
+  <li><a href="{{ g.url }}"><img src="{{ g.episodes[0].thumb_small }}" alt="{{ g.name }} en {{ site.site_name }}" loading="lazy" width="480" height="360"><span><strong>{{ g.name }}</strong><span class="muted">{{ g.role }}</span></span></a></li>
+  {% endfor %}
+</ul>
+{% endblock %}
