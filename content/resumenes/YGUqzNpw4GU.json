@@ -1,0 +1,55 @@
+{
+  "resumen": [
+    "En el primer episodio de la segunda temporada de Efecto Podcast, Felipe López Miranda conversa con Rodrigo Rojo, consultor en marketing digital e inteligencia artificial, ingeniero comercial y magíster en marketing de la Universidad de Chile, con más de 11 años de experiencia en marketing digital y estrategia de negocios. La conversación recorre su newsletter, la creación de contenido, la cultura de pedir ayuda, la documentación en las empresas, el impacto de la IA en los primeros empleos y el síndrome del impostor.",
+    "Rojo cuenta el origen del Resumen Resumido, su newsletter semanal, cuyo nombre viene de los resúmenes que hacía para estudiar en la universidad. Partió como un artículo dominical en su blog y, tras unas 30 ediciones, lo convirtió en newsletter; desde fines de 2022 lo publica cada semana. Su sistema consiste en guardar todo lo que consume en Reader, de Readwise, ordenar sus archivos con el método PARA de Tiago Forte y escribir a mano los sábados. Además publica más de una vez al día en LinkedIn y usa las reacciones para elegir temas. Desde la edición 50, cada título es el nombre de una canción, como \"La máquina de ser feliz\", de Charly García.",
+    "Para Rojo, el newsletter es un espacio propio frente a redes sociales cuyo algoritmo puede cambiar las reglas. Sus primeras 50 ediciones las leían unas 30 personas; hoy, en la plataforma Ghost, tiene una tasa de apertura del 60 %, porque solo se suscribe quien realmente se interesa. Parte de su audiencia son CEO de startups y gerentes, y recibe auspicios y apoyo vía Patreon. También defiende una North Star Metric ligada al valor entregado al cliente y no a los ingresos.",
+    "A partir del manual filtrado de MrBeast, \"How to Succeed at MrBeast Production\", destaca el consejo de contratar consultores: pedir ayuda es un atajo, algo que en Chile y Latinoamérica cuesta por la costumbre de arreglárselas solo. Por eso valora las comunidades como El Club de la IA, que nació como un grupo de WhatsApp de siete personas al aparecer ChatGPT y llegó a 2.000 integrantes. Sobre documentación, cita a Sebastián Binder, su exjefe en ComparaOnline, para quien las empresas remotas tendrán ventaja con la IA por tener sus procesos documentados.",
+    "Su mayor preocupación es que la IA haga mejor el trabajo de analista, el primer cargo de muchos egresados, y que desaparezca el espacio donde se aprendía el oficio. Como profesor en la Universidad de Chile, relata que en un curso de Excel y Python una estudiante preguntó qué era un archivo ZIP, porque su principal dispositivo es el celular, lo que obliga a repensar cómo se enseña.",
+    "Al hablarle a su yo de 18 años, Rojo reconoce que le costó más de diez años superar el síndrome del impostor, pese a haber sido CEO interino de una startup durante dos años; el cambio llegó entre 2022 y 2023 y lo llevó a independizarse. Cierra contando que invirtió, mediante crowdfunding en Broota, en Pawi, una startup de Concepción que desarrolla software para llevar el registro médico de mascotas y cobra a los veterinarios."
+  ],
+  "ideas_clave": [
+    "Un newsletter es un canal propio: a diferencia de las redes sociales, entrega datos de la audiencia y no depende de cambios de algoritmo ni de bloqueos de cuenta.",
+    "La constancia en la creación de contenido se sostiene con un sistema: capturar en un solo lugar lo que se consume y escribir después con el material ordenado.",
+    "Una audiencia pequeña pero comprometida vale más que un crecimiento masivo; el Resumen Resumido alcanza 60 % de apertura porque solo se suscribe quien se interesa.",
+    "La North Star Metric debe medir el valor entregado al cliente y no solo los ingresos, porque los resultados financieros llegan como consecuencia de una mejor experiencia.",
+    "Pedir ayuda a quien ya resolvió un problema es un atajo, y las comunidades profesionales son una fuente de conocimiento que las personas suelen desaprovechar.",
+    "Documentar procesos evita perder conocimiento cuando alguien deja la empresa y prepara a la organización para aprovechar la inteligencia artificial sobre su propia información.",
+    "La IA amenaza el primer empleo de analista, por lo que universidades y empresas deben replantear cómo se forman las habilidades que se aprendían en ese cargo."
+  ],
+  "citas": [
+    {
+      "texto": "Cada persona que sale de la universidad, su primer cargo es de analista, y eso lo va a hacer mejor una IA que tú.",
+      "autor": "Rodrigo Rojo"
+    },
+    {
+      "texto": "Lo que tenís que hacer es un KPI, una métrica, una North Star, que tenga que ver con el valor que le entregas al cliente",
+      "autor": "Rodrigo Rojo"
+    },
+    {
+      "texto": "lo principal que me diría a mí, y algo que me costó mucho, es asumir que era bueno, que lo que estaba haciendo lo estaba haciendo bien.",
+      "autor": "Rodrigo Rojo"
+    }
+  ],
+  "preguntas": [
+    {
+      "q": "¿Por qué tener un newsletter en vez de depender solo de redes sociales?",
+      "a": "Según Rodrigo Rojo en Efecto Podcast, en redes sociales el creador no controla la plataforma: si cambia el algoritmo, cambian las reglas, e incluso pueden bloquear la cuenta. Un newsletter es un espacio propio con audiencia cautiva, que entrega la base de datos de contactos y métricas como tasa de apertura, clics y engagement. Su newsletter, el Resumen Resumido, alcanza una tasa de apertura del 60 %."
+    },
+    {
+      "q": "¿Qué es una North Star Metric?",
+      "a": "Una North Star Metric es la métrica principal que orienta a todo un equipo. Rodrigo Rojo explica en Efecto Podcast que debe estar ligada al valor que se entrega al cliente y no definirse en términos de dinero o market share. Si todos trabajan en mejorar la experiencia del cliente, este paga más, recomienda el negocio y llegan nuevos clientes, de modo que los KPI financieros se cumplen como consecuencia."
+    },
+    {
+      "q": "¿Qué dice el manual de MrBeast para su equipo?",
+      "a": "En Efecto Podcast, Rodrigo Rojo comenta el documento filtrado \"How to Succeed at MrBeast Production\", una guía de onboarding para el equipo de MrBeast. Plantea que el objetivo es hacer los mejores videos del mundo, que se buscan personas de alto rendimiento y obsesivas con su trabajo, explica las métricas de YouTube que optimizan y recomienda contratar consultores, porque pedir ayuda a quien ya resolvió un problema es un atajo."
+    },
+    {
+      "q": "¿La inteligencia artificial reemplazará los trabajos de analista?",
+      "a": "Rodrigo Rojo plantea en Efecto Podcast que la IA analiza documentos y datos muy bien, por lo que hará mejor que una persona el trabajo de analista, que suele ser el primer empleo de los egresados. Su preocupación es dónde aprenderán los jóvenes las habilidades que se adquirían en ese cargo antes de ascender, y propone que universidades y empresas actualicen rápidamente lo que enseñan."
+    },
+    {
+      "q": "¿Cómo superar el síndrome del impostor?",
+      "a": "Rodrigo Rojo cuenta en Efecto Podcast que, pese a crecer rápido en su carrera y ser CEO interino de una startup, durante más de diez años atribuyó sus logros a la suerte. Lo superó al reconocer señales concretas, como las invitaciones a enseñar en magíster y MBA, y con el apoyo de su entorno. Asumir que su tiempo y su trabajo tenían valor lo llevó a independizarse."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "resumen": [
+    "En este episodio de Efecto Podcast, Felipe López Miranda recibe por segunda vez a Rodrigo Rojo, cofundador de Unlearni y de El Club de la IA, para conversar sobre cómo la inteligencia artificial deja de ser un chatbot y empieza a conectarse con los datos, los procesos y las decisiones de las empresas. Rojo, docente y advisor con más de 12 años en startups, sostiene que la IA es probablemente la tecnología más transformadora del presente y que, si no se adopta rápido, el golpe será muy duro.",
+    "Según Rojo, las empresas recién ahora integran la IA en serio. La primera capa es la aumentación: hacer más, mejor y en menos tiempo. Lo ilustra con su primer trabajo como analista de audiencias, descargando ratings de televisión para armar reportes, algo que hoy resuelve la IA. Advierte que los cargos junior serán los primeros en caer, lo que llevaría a empresas más chicas y más senior. La segunda capa son los agentes: él tiene uno propio al que le habla por Telegram, que revisa sus reuniones grabadas con Granola, anota tareas pendientes y crea leads en el CRM.",
+    "En la conversación se distingue entre un copilot, que ejecuta lo que se le pide, y un advisor, que recomienda decisiones. Rojo advierte que aceptar todo sin cuestionarlo atrofia el pensamiento crítico y resume su postura en \"más data, menos guata\", pero no sin guata. En performance, la IA permite probar diez títulos en paralelo en vez de dos, aunque un ROAS alto no sirve si no se mira el margen. Insiste en el contexto: las startups remotas, con sus procesos documentados en Notion, fueron las que vieron impacto más rápido.",
+    "Sobre adopción, plantea dos lados: habilitar a quienes hacen el trabajo diario y una decisión desde arriba, con licencias, capacitación y champions internos. Cuenta que un ejecutivo le dijo que usar IA \"es de flojos\" y recomienda a quienes reciben más de 200 correos diarios usar la IA para priorizarlos. Para él, el prompt ya no es lo más importante: lo decisivo son la tarea, el contexto y los modos de razonamiento. En gobernanza, cita a BioBioChile, que mantiene sus notas escritas por periodistas, y a BCI, que habilitó Gemini para 5.000 colaboradores pero decidió no ingresar el RUT por ser un dato sensible.",
+    "Mirando hacia adelante, anticipa agentes que funcionarán como colaboradores en Slack o Teams y, según rumores, modelos que se mejoren a sí mismos hacia 2028. Más que la ley de IA en trámite, le preocupa la educación: propone desarrollar comunicación, liderazgo y pensamiento crítico, carreras más cortas y aprendizaje continuo, en un mundo de trabajo cada vez más freelance como el suyo, que combina cursos propios con clases en ICARE, SOFOFA y el CENIA.",
+    "Para cerrar, recomienda a los founders probar las herramientas para entender sus límites, a los marketeros usar IA al menos para analizar datos y experimentar más rápido, y a las empresas tradicionales ordenar información no estructurada, como hace Miido con agricultores que se comunican por audios de WhatsApp. Su consejo central, inspirado en un podcast de Cal Newport, es encontrar el cuello de botella de cada operación y aplicar IA justo ahí."
+  ],
+  "ideas_clave": [
+    "La adopción de IA requiere una decisión estratégica desde la dirección y, al mismo tiempo, habilitar a los equipos con licencias, capacitación y champions internos.",
+    "Los cargos junior y de análisis serán los primeros en verse afectados, por lo que las empresas tenderán a ser más pequeñas, senior y deberán repensar cómo forman talento.",
+    "Cuando la IA pasa de ejecutar a recomendar, el criterio humano sigue siendo clave: más data, menos guata, pero sin aceptar propuestas sin cuestionarlas.",
+    "Documentar procesos, información clave y formas de trabajo es la condición previa para que la IA entregue respuestas útiles y adaptadas a cada negocio.",
+    "En el uso diario importa más entregar la tarea y el contexto que escribir el prompt perfecto; la ingeniería de prompts pesa cuando se paga por token vía API.",
+    "La gobernanza define dónde sí y dónde no usar IA, qué herramientas y qué datos se permiten, como hizo BCI al excluir datos sensibles de sus colaboradores.",
+    "Identificar el cuello de botella de la operación y aplicar IA justo en ese punto mejora el rendimiento completo más que intentar hacer más de todo."
+  ],
+  "citas": [
+    {
+      "texto": "Yo siempre hablo así más data, menos guata, pero no es sin guata.",
+      "autor": "Rodrigo Rojo"
+    },
+    {
+      "texto": "el humano sí es la única máquina que aprende todos los días, ¿cierto? Nosotros nacemos y todos los días aprendemos algo nuevo y todos los días somos mejores, una mejor versión.",
+      "autor": "Rodrigo Rojo"
+    },
+    {
+      "texto": "Elige uno de esos tres, empieza a hablarle, empieza a preguntarle de cómo te puede ayudar en lo que haces, cuéntale qué haces y te va a empezar a dar ideas.",
+      "autor": "Rodrigo Rojo"
+    }
+  ],
+  "preguntas": [
+    {
+      "q": "¿Qué es un agente de inteligencia artificial?",
+      "a": "Según Rodrigo Rojo en Efecto Podcast, un agente de IA es un asistente como ChatGPT pero con autonomía: se conecta a distintas herramientas y trabaja por la persona. Rojo usa uno propio al que le habla por Telegram, que revisa sus reuniones grabadas con Granola, anota sus tareas pendientes y crea oportunidades comerciales en el CRM, lo que le permite concentrarse en las tareas de mayor valor."
+    },
+    {
+      "q": "¿Sigue siendo importante el prompt engineering?",
+      "a": "Rodrigo Rojo explica en Efecto Podcast que el prompt sigue siendo útil, pero ya no es lo más importante. Como los modelos entienden cada vez mejor la intención, lo clave es explicar la tarea, el objetivo y el contexto, y activar los modos de razonamiento. La ingeniería de prompts sí importa al construir automatizaciones conectadas por API, donde se paga por token y conviene optimizar costos."
+    },
+    {
+      "q": "¿Cómo lograr que una empresa adopte la inteligencia artificial?",
+      "a": "Para Rodrigo Rojo, la adopción de IA tiene dos lados. Por un lado, la dirección debe decidir para qué y dónde usarla, comprar licencias, financiar capacitación y crear programas de champions internos. Por otro, hay que habilitar a quienes hacen el trabajo diario, porque los jefes ven resultados pero no cómo se hacen las tareas. Si falta alguno de los dos, según explica en Efecto Podcast, no hay adopción."
+    },
+    {
+      "q": "¿Cómo afectará la inteligencia artificial a los trabajos junior?",
+      "a": "En Efecto Podcast, Rodrigo Rojo advierte que los cargos de entrada, como analistas o asistentes, serán los primeros en verse afectados, porque la IA ya descarga, procesa y analiza datos. Esto llevaría a empresas más pequeñas y senior, y rompería la ruta en que los juniors se formaban y luego reemplazaban a sus jefes. Por eso propone repensar la educación y reubicar a las personas con upskilling."
+    },
+    {
+      "q": "¿Qué herramientas de inteligencia artificial conviene usar hoy?",
+      "a": "Rodrigo Rojo recomienda en Efecto Podcast tres tipos de herramientas: un asistente general, como Claude, ChatGPT o Gemini según el ecosistema de cada persona; una herramienta para transcribir reuniones, como Granola; y una aplicación para dictarle al computador, porque al hablar se piensa en vivo y se entrega más información. En cambio, considera que los navegadores con IA están algo sobrevalorados."
+    }
+  ]
+}
