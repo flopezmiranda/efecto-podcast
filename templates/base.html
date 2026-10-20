@@ -16,10 +16,15 @@
 <meta property="og:title" content="{{ title or site.site_name }}">
 <meta property="og:description" content="{{ description or site.description }}">
 <meta property="og:url" content="{{ canonical }}">
-{% if image %}<meta property="og:image" content="{{ image }}">{% endif %}
+<meta property="og:image" content="{{ image or (base ~ '/static/img/og.jpg') }}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" type="application/rss+xml" title="{{ site.site_name }}" href="/rss.xml">
-<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">
+<meta name="theme-color" content="#090619">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
 <link rel="preconnect" href="https://i.ytimg.com">
 <link rel="stylesheet" href="/static/style.css">
 {% block schema %}{% endblock %}
@@ -31,7 +36,7 @@
 <a class="skip" href="#main">Ir al contenido</a>
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">E</span>{{ site.site_name }}</a>
+    <a class="brand" href="/" aria-label="{{ site.site_name }}, inicio"><img src="/static/img/logo.svg" alt="" width="34" height="28"><span class="wordmark">{{ site.site_name }}</span></a>
     <nav aria-label="Principal">
       <a href="/" class="nav-home"{% if path == '/' %} aria-current="page"{% endif %}>Episodios</a>
       <a href="/temas/"{% if path.startswith('/temas') %} aria-current="page"{% endif %}>Temas</a>
@@ -46,11 +51,11 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div>
-      <p class="brand"><span class="brand-mark" aria-hidden="true">E</span>{{ site.site_name }}</p>
+      <p class="brand"><img src="/static/img/logo.svg" alt="" width="30" height="25"><span class="wordmark">{{ site.site_name }}</span></p>
       <p class="muted">{{ site.tagline }}</p>
     </div>
     <nav aria-label="Redes">
-      {% for name, url in site.social.items() if url %}<a href="{{ url }}" rel="me noopener" target="_blank">{{ {'youtube': 'YouTube', 'tiktok': 'TikTok', 'linkedin': 'LinkedIn'}.get(name, name|capitalize) }}</a>{% endfor %}
+      {% for name, url in site.social.items() if url %}<a href="{{ url }}" rel="me noopener" target="_blank">{{ {'youtube': 'YouTube', 'tiktok': 'TikTok', 'linkedin': 'LinkedIn', 'facebook': 'Facebook'}.get(name, name|capitalize) }}</a>{% endfor %}
     </nav>
     <nav aria-label="Legal">
       <a href="/sobre-nosotros/">Sobre nosotros</a>

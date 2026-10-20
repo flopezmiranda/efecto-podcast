@@ -18,10 +18,15 @@
 {% block content %}
 {% if page == 1 %}
 <section class="hero">
+  <img class="hero-logo" src="/static/img/logo.svg" alt="" width="104" height="85">
   <h1>{{ site.site_name }}</h1>
   <p class="lead">{{ site.description }}</p>
+  <div class="cta">
+    {% if episodes %}<a class="btn btn-primary" href="{{ episodes[0].url }}">▶ Ver el último episodio</a>{% endif %}
+    {% if site.social.youtube %}<a class="btn btn-ghost" href="{{ site.social.youtube }}?sub_confirmation=1" target="_blank" rel="noopener">Suscríbete en YouTube</a>{% endif %}
+  </div>
   {% if topics %}
-  <div class="chips">{% for t in topics[:10] %}<a class="chip" href="{{ t.url }}">{{ t.name }}</a>{% endfor %}</div>
+  <div class="chips">{% for t in topics[:8] %}<a class="chip" href="{{ t.url }}">{{ t.name }}</a>{% endfor %}</div>
   {% endif %}
 </section>
 {% if episodes %}
@@ -29,7 +34,7 @@
 <a class="featured" href="{{ ep.url }}">
   <div class="featured-thumb">{% if ep.thumbnail %}<img src="{{ ep.thumbnail }}" alt="" width="1280" height="720" fetchpriority="high">{% endif %}<span class="play" aria-hidden="true"></span></div>
   <div class="featured-body">
-    <p class="eyebrow">Último episodio</p>
+    <p class="eyebrow grad-text">Último episodio</p>
     <h2>{{ ep.title }}</h2>
     <p class="muted">{{ ep.summary }}</p>
     <p class="meta">{{ ep.date_human }} · {{ ep.duration_human }}</p>
