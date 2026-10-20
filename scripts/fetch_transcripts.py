@@ -30,7 +30,9 @@ def vtt_to_text(vtt):
         if line and line != last:
             lines.append(line)
             last = line
-    words = " ".join(lines).split()
+    # Las marcas de sonido que no aportan al lector se quitan; [risas] y [aplausos] se mantienen.
+    text = re.sub(r"\s*\[(?:música|carraspeo|resoplido|ovación)\]", "", " ".join(lines), flags=re.IGNORECASE)
+    words = text.split()
     # Párrafos de ~90 palabras, cortando en el fin de una oración cuando la hay
     # (los subtítulos automáticos muchas veces vienen sin puntuación).
     paragraphs, current = [], []
