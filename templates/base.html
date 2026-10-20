@@ -19,7 +19,7 @@
 <meta property="og:image" content="{{ image or (base ~ '/static/img/og.jpg') }}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" type="application/rss+xml" title="{{ site.site_name }}" href="/rss.xml">
-<link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/static/img/logo.png" type="image/png">
 <link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">
 <meta name="theme-color" content="#090619">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@
 <a class="skip" href="#main">Ir al contenido</a>
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="/" aria-label="{{ site.site_name }}, inicio"><img src="/static/img/logo.svg" alt="" width="34" height="28"><span class="wordmark">{{ site.site_name }}</span></a>
+    <a class="brand" href="/" aria-label="{{ site.site_name }}, inicio"><img src="/static/img/logo.png" alt="" width="34" height="28"><span class="wordmark">{{ site.site_name }}</span></a>
     <nav aria-label="Principal">
       <a href="/" class="nav-home"{% if path == '/' %} aria-current="page"{% endif %}>Episodios</a>
       <a href="/temas/"{% if path.startswith('/temas') %} aria-current="page"{% endif %}>Temas</a>
@@ -51,7 +51,7 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div>
-      <p class="brand"><img src="/static/img/logo.svg" alt="" width="30" height="25"><span class="wordmark">{{ site.site_name }}</span></p>
+      <p class="brand"><img src="/static/img/logo.png" alt="" width="30" height="25"><span class="wordmark">{{ site.site_name }}</span></p>
       <p class="muted">{{ site.tagline }}</p>
     </div>
     <nav aria-label="Redes">
