@@ -1,0 +1,30 @@
+{
+  "site_name": "Efecto Podcast",
+  "tagline": "Conversaciones que dejan efecto.",
+  "description": "Todos los episodios de Efecto Podcast: entrevistas y conversaciones completas, con resumen, capítulos y transcripción.",
+  "base_url": "https://efectopodcast.com",
+  "language": "es",
+  "locale": "es_CL",
+
+  "youtube_channel_id": "",
+  "youtube_handle": "@efecto_podcast",
+  "min_duration_seconds": 180,
+
+  "adsense_client": "",
+  "adsense_slots": {
+    "episode_top": "",
+    "episode_bottom": "",
+    "list": ""
+  },
+
+  "contact_email": "contacto@efectopodcast.com",
+  "social": {
+    "youtube": "https://www.youtube.com/@efecto_podcast",
+    "instagram": "",
+    "tiktok": "",
+    "spotify": ""
+  },
+
+  "episodes_per_page": 24,
+  "min_episodes_per_topic": 3
+}

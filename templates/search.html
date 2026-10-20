@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% set title = "Buscar" %}
+{% set noindex = True %}
+{% block content %}
+<h1 class="section-title">Buscar episodios</h1>
+<form class="search" role="search" onsubmit="return false">
+  <input id="q" type="search" placeholder="Invitado, tema o palabra clave…" aria-label="Buscar" autofocus>
+</form>
+<p id="count" class="muted" aria-live="polite"></p>
+<ul id="results" class="results"></ul>
+{% endblock %}
+{% block scripts %}<script src="/static/search.js" defer></script>{% endblock %}

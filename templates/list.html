@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% from "_macros.html" import ad %}
+{% set title = None if page == 1 else "Episodios — página " ~ page %}
+{% set noindex = False %}
+{% block schema %}
+{% if page == 1 %}
+<script type="application/ld+json">{{ {
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type": "WebSite", "name": site.site_name, "url": base ~ "/",
+     "potentialAction": {"@type": "SearchAction", "target": base ~ "/buscar/?q={q}", "query-input": "required name=q"}},
+    {"@type": "PodcastSeries", "name": site.site_name, "description": site.description, "url": base ~ "/",
+     "inLanguage": site.language, "sameAs": site.social.values()|select|list}
+  ]
+}|tojson_safe }}</script>
+{% endif %}
+{% endblock %}
+{% block content %}
+{% if page == 1 %}
+<section class="hero">
+  <h1>{{ site.site_name }}</h1>
+  <p class="lead">{{ site.description }}</p>
+  {% if topics %}
+  <div class="chips">{% for t in topics[:10] %}<a class="chip" href="{{ t.url }}">{{ t.name }}</a>{% endfor %}</div>
+  {% endif %}
+</section>
+{% if episodes %}
+{% set ep = episodes[0] %}
+<a class="featured" href="{{ ep.url }}">
+  <div class="featured-thumb">{% if ep.thumbnail %}<img src="{{ ep.thumbnail }}" alt="" width="1280" height="720" fetchpriority="high">{% endif %}<span class="play" aria-hidden="true"></span></div>
+  <div class="featured-body">
+    <p class="eyebrow">Último episodio</p>
+    <h2>{{ ep.title }}</h2>
+    <p class="muted">{{ ep.summary }}</p>
+    <p class="meta">{{ ep.date_human }} · {{ ep.duration_human }}</p>
+  </div>
+</a>
+{% endif %}
+<h2 class="section-title">Todos los episodios</h2>
+{% set grid = episodes[1:] %}
+{% else %}
+<h1 class="section-title">Episodios <span class="muted">— página {{ page }} de {{ pages }}</span></h1>
+{% set grid = episodes %}
+{% endif %}
+<div class="grid">
+{% for ep in grid %}
+  {% include "_card.html" %}
+  {% if loop.index == 6 %}<div class="grid-ad">{{ ad(site.adsense_slots.list) }}</div>{% endif %}
+{% endfor %}
+</div>
+{% if pages > 1 %}
+<nav class="pager" aria-label="Paginación">
+  {% if prev_url %}<a href="{{ prev_url }}">← Más recientes</a>{% else %}<span></span>{% endif %}
+  <span class="muted">Página {{ page }} de {{ pages }}</span>
+  {% if next_url %}<a href="{{ next_url }}">Anteriores →</a>{% else %}<span></span>{% endif %}
+</nav>
+{% endif %}
+{% endblock %}

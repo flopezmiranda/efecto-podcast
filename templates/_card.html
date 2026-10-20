@@ -1,0 +1,11 @@
+<article class="card">
+  <a href="{{ ep.url }}" class="card-thumb">
+    {% if ep.thumbnail %}<img src="{{ ep.thumbnail }}" alt="" loading="lazy" width="480" height="270">{% endif %}
+    <span class="badge">{{ ep.duration }}</span>
+  </a>
+  <div class="card-body">
+    <p class="meta"><time datetime="{{ ep.date_iso }}">{{ ep.date_human }}</time></p>
+    <h3><a href="{{ ep.url }}">{{ ep.title }}</a></h3>
+    <p class="card-summary">{{ ep.summary }}</p>
+  </div>
+</article>

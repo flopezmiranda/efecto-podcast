@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% set title = "Temas" %}
+{% set description = "Explora los episodios de " ~ site.site_name ~ " por tema." %}
+{% block content %}
+<h1 class="section-title">Temas</h1>
+{% if topics %}
+<ul class="topic-list">
+  {% for t in topics %}<li><a href="{{ t.url }}">{{ t.name }}<span class="muted">{{ t.count }}</span></a></li>{% endfor %}
+</ul>
+{% else %}
+<p class="muted">Aún no hay temas. Se crean solos a partir de los hashtags y etiquetas de tus videos.</p>
+{% endif %}
+{% endblock %}

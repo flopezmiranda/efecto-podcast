@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% from "_macros.html" import ad %}
+{% set title = topic.name ~ " — episodios" %}
+{% set description = "Episodios de " ~ site.site_name ~ " sobre " ~ topic.name ~ ": " ~ episodes|length ~ " conversaciones completas con resumen y capítulos." %}
+{% block content %}
+<nav class="crumbs" aria-label="Ruta"><a href="/temas/">Temas</a> <span aria-hidden="true">/</span> <span>{{ topic.name }}</span></nav>
+<h1 class="section-title">{{ topic.name }} <span class="muted">· {{ episodes|length }} episodios</span></h1>
+<div class="grid">
+{% for ep in episodes %}
+  {% include "_card.html" %}
+  {% if loop.index == 6 %}<div class="grid-ad">{{ ad(site.adsense_slots.list) }}</div>{% endif %}
+{% endfor %}
+</div>
+{% endblock %}

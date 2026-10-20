@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="{{ site.language }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% set page_title = (title ~ " | " ~ site.site_name) if title else (site.site_name ~ " — " ~ site.tagline) %}
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ description or site.description }}">
+<link rel="canonical" href="{{ canonical }}">
+{% if noindex %}<meta name="robots" content="noindex, follow">{% endif %}
+{% if prev_url %}<link rel="prev" href="{{ base }}{{ prev_url }}">{% endif %}
+{% if next_url %}<link rel="next" href="{{ base }}{{ next_url }}">{% endif %}
+<meta property="og:site_name" content="{{ site.site_name }}">
+<meta property="og:locale" content="{{ site.locale }}">
+<meta property="og:type" content="{{ og_type or 'website' }}">
+<meta property="og:title" content="{{ title or site.site_name }}">
+<meta property="og:description" content="{{ description or site.description }}">
+<meta property="og:url" content="{{ canonical }}">
+{% if image %}<meta property="og:image" content="{{ image }}">{% endif %}
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/rss+xml" title="{{ site.site_name }}" href="/rss.xml">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://i.ytimg.com">
+<link rel="stylesheet" href="/static/style.css">
+{% block schema %}{% endblock %}
+{% if site.adsense_client %}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense_client }}" crossorigin="anonymous"></script>
+{% endif %}
+</head>
+<body>
+<a class="skip" href="#main">Ir al contenido</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">E</span>{{ site.site_name }}</a>
+    <nav aria-label="Principal">
+      <a href="/" class="nav-home"{% if path == '/' %} aria-current="page"{% endif %}>Episodios</a>
+      <a href="/temas/"{% if path.startswith('/temas') %} aria-current="page"{% endif %}>Temas</a>
+      <a href="/sobre-nosotros/"{% if path == '/sobre-nosotros/' %} aria-current="page"{% endif %}>Nosotros</a>
+      <a href="/buscar/" class="icon-link" aria-label="Buscar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+{% block content %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="brand"><span class="brand-mark" aria-hidden="true">E</span>{{ site.site_name }}</p>
+      <p class="muted">{{ site.tagline }}</p>
+    </div>
+    <nav aria-label="Redes">
+      {% for name, url in site.social.items() if url %}<a href="{{ url }}" rel="me noopener" target="_blank">{{ {'youtube': 'YouTube', 'tiktok': 'TikTok'}.get(name, name|capitalize) }}</a>{% endfor %}
+    </nav>
+    <nav aria-label="Legal">
+      <a href="/sobre-nosotros/">Sobre nosotros</a>
+      <a href="/contacto/">Contacto</a>
+      <a href="/politica-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+    </nav>
+  </div>
+  <p class="wrap muted small">© {{ year }} {{ site.site_name }}</p>
+</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>
