@@ -10,7 +10,7 @@ import re
 
 from common import ROOT
 
-FORBIDDEN = re.compile(r"\bMario\b|Saavedra|Efecto ?Wow|\bMido\b|\bFuture\b", re.IGNORECASE)
+FORBIDDEN = re.compile(r"\bMario\b|Saavedra|Efecto ?Wow|(?-i:\bMido\b|\bFuture\b)", re.IGNORECASE)
 
 
 def norm(text):
