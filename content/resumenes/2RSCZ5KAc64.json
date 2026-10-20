@@ -1,0 +1,42 @@
+{
+  "resumen": [
+    "Este episodio de Efecto Podcast, conducido por Felipe López Miranda y sin invitado, explica qué son los GPT y los agentes de inteligencia artificial, por qué WhatsApp se ha convertido en uno de los canales más rápidos, económicos y sencillos para desplegarlos y por qué la IA debe entenderse más como una oportunidad que como una amenaza para el empleo. Es el primer capítulo grabado tras una mejora de cámaras y audio del programa.",
+    "La conversación parte con una noticia vista en LinkedIn: dos jóvenes peruanos de 16 años, Ignacio Rojas y Nicolás Alonso Bustamante Sánchez, crearon un emprendimiento que responde con IA los mensajes de WhatsApp de las marcas, porque detectaron que muchas pierden ventas por no contestar a tiempo. En el episodio se presenta como un ejemplo de cómo escalar un negocio de forma rápida, barata y eficiente, y de cómo en las empresas surgen pequeñas células de IA que cruzan áreas como growth, marketing, tecnología y producto.",
+    "Luego se definen conceptos. Un GPT es un asistente que responde dentro de un marco de información que se le entrega, como un sitio web o un documento, y funciona por probabilidades: predice la palabra siguiente más probable. A diferencia de los antiguos chatbots, que seguían ramas preprogramadas de respuestas, y de Google, que entrega resultados filtrados, un GPT permite conversar con una base de datos. Se destaca la memoria como el componente más caro, porque permite al sistema reaprender e incorporar preguntas que antes no sabía responder.",
+    "Un agente, en cambio, ejecuta una acción completa. El ejemplo es la compra de un pasaje a Argentina: un GPT encuentra la opción más barata, mientras que un agente selecciona el vuelo y llega hasta el pago. La relación es unidireccional: todo agente necesita un GPT por dentro, pero no al revés, por lo que es válido decir que se construye un agente estando todavía en la etapa GPT. Sobre el empleo, se plantea que la IA no quitará el trabajo, sino que generará un recambio similar al de la Revolución Industrial, con nuevas habilidades como el prompting y herramientas no code.",
+    "Otra idea central es que la información es el petróleo del mundo y que \"el mundo dejó de buscar, quiere conversar\". Se repasa la evolución de internet, desde las páginas saturadas de la burbuja puntocom y buscadores como Altavista hasta la página en blanco de Google y hoy la conversación por voz, por lo que un agente en WhatsApp debe poder recibir audios. De ahí se concluye que la magia no está en la respuesta, sino en saber hacer buenas preguntas.",
+    "El cierre analiza WhatsApp como plataforma transversal, usada por niños de cuatro años y adultos de más de 80, a diferencia de Estados Unidos, donde predomina Facebook Messenger, o de China, con WeChat. Se explica cómo cobra su API: las conversaciones que inicia el cliente cuestan menos que las proactivas, y las proactivas de marketing son las más caras; además, Meta rechaza cada vez más plantillas de utilidad con contenido comercial. La invitación final es investigar y experimentar con IA, pero sin adoptarla solo porque todos lo hacen."
+  ],
+  "ideas_clave": [
+    "Un agente de IA se diferencia de un GPT porque ejecuta una acción completa, como comprar un pasaje, mientras el GPT solo entrega la información o recomendación.",
+    "Todo agente necesita un GPT por dentro para decidir qué hacer, por lo que construir un buen GPT es la primera etapa válida de cualquier agente.",
+    "La inteligencia artificial no eliminará el trabajo, pero sí generará un recambio de puestos similar a la Revolución Industrial, con nuevas carreras como el prompting.",
+    "Los usuarios ya no quieren buscar en menús ni filtros, sino conversar; por eso WhatsApp, usado por todas las edades, es un canal ideal para agentes.",
+    "En la API de WhatsApp las conversaciones iniciadas por la empresa con fines de marketing son las más caras; las respuestas a clientes cuestan menos.",
+    "Antes de implementar IA conviene revisar el modelo de negocio, los costos asociados y la infraestructura disponible, en lugar de hacerlo solo porque todos lo hacen.",
+    "Saber hacer buenas preguntas es la habilidad clave en la era de la IA, tanto para definir el valor de un negocio como para escribir un buen prompt."
+  ],
+  "citas": [],
+  "preguntas": [
+    {
+      "q": "¿Cuál es la diferencia entre un GPT y un agente de inteligencia artificial?",
+      "a": "Según se explica en Efecto Podcast, un GPT es un asistente que responde dentro de un marco de información entregado, como un sitio web o un documento. Un agente, en cambio, ejecuta una acción completa: si un GPT encuentra el pasaje más barato a Argentina, un agente lo selecciona y llega hasta el pago. Todo agente necesita un GPT por dentro, pero no al revés."
+    },
+    {
+      "q": "¿La inteligencia artificial nos quitará el trabajo?",
+      "a": "En Efecto Podcast, Felipe López Miranda sostiene que es un concepto errado: la IA sigue siendo un instrumento y lo que provocará es un recambio de puestos, como ocurrió en la Revolución Industrial. Algunas tareas que no generan valor desaparecerán, como digitar en Excel durante años, y surgirán nuevas habilidades y carreras, como el prompting o el manejo de herramientas no code."
+    },
+    {
+      "q": "¿Por qué usar WhatsApp para crear agentes de inteligencia artificial?",
+      "a": "En Efecto Podcast se plantea que WhatsApp es uno de los caminos más rápidos, económicos y sencillos para desplegar agentes, porque es transversal a todas las edades, desde niños hasta adultos de más de 80 años, y porque los usuarios ya prefieren conversar antes que buscar. Por lo mismo, un agente en WhatsApp debería estar preparado para recibir audios, no solo texto."
+    },
+    {
+      "q": "¿Cómo cobra WhatsApp por usar su API en conversaciones con clientes?",
+      "a": "Según se explica en Efecto Podcast, la API de WhatsApp cobra distinto según quién inicia la conversación: cuando el cliente escribe primero, el costo es menor; cuando la empresa inicia el contacto, es mayor, y las conversaciones proactivas con contenido de marketing son las más caras. Las plantillas de utilidad sirven para información transaccional, como enviar una boleta, y Meta rechaza cada vez más las que incluyen avisos comerciales."
+    },
+    {
+      "q": "¿Qué es un GPT y cómo funciona?",
+      "a": "Como se explica en Efecto Podcast, un GPT es un asistente personalizado que responde a partir de la información que se le entrega, como una página web o un libro. Funciona por probabilidades: calcula cuál es la palabra siguiente más probable. A diferencia de los antiguos chatbots con respuestas preprogramadas, permite conversar con una base de datos, y su memoria le permite seguir aprendiendo."
+    }
+  ]
+}
