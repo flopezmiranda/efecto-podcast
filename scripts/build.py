@@ -13,6 +13,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup
 
 from common import ROOT, load_config, load_episodes, slugify
+from fetch_transcripts import is_punctuated
 
 DIST = ROOT / "dist"
 CONTENT = ROOT / "content"
@@ -125,7 +126,7 @@ def prepare(config):
             "duration": fmt_duration(ep["duration_seconds"]),
             "duration_human": human_duration(ep["duration_seconds"]),
             "duration_iso": iso_duration(ep["duration_seconds"]),
-            "transcript": [p for p in re.split(r"\n\s*\n", transcript) if p.strip()],
+            "transcript": [p for p in re.split(r"\n\s*\n", transcript) if p.strip()] if is_punctuated(transcript) else [],
             "notes": Markup(read_optional(CONTENT / "notes" / f"{ep['id']}.html")),
         })
         # "#saludmental" y la etiqueta "salud mental" son el mismo tema: se agrupan por slug sin guiones.

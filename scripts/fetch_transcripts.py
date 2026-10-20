@@ -32,18 +32,26 @@ def vtt_to_text(vtt):
             last = line
     # Las marcas de sonido que no aportan al lector se quitan; [risas] y [aplausos] se mantienen.
     text = re.sub(r"\s*\[(?:música|carraspeo|resoplido|ovación)\]", "", " ".join(lines), flags=re.IGNORECASE)
-    words = text.split()
-    # Párrafos de ~90 palabras, cortando en el fin de una oración cuando la hay
-    # (los subtítulos automáticos muchas veces vienen sin puntuación).
+    return to_paragraphs(text)
+
+
+def to_paragraphs(text, target=90):
+    """Párrafos de ~90 palabras que siempre terminan al final de una oración."""
     paragraphs, current = [], []
-    for word in words:
+    for word in text.split():
         current.append(word)
-        if len(current) >= 140 or (len(current) >= 90 and word[-1] in ".!?"):
+        if len(current) >= target and word[-1] in ".!?…":
             paragraphs.append(" ".join(current))
             current = []
     if current:
         paragraphs.append(" ".join(current))
     return "\n\n".join(paragraphs)
+
+
+def is_punctuated(text):
+    """Los subtítulos automáticos antiguos de YouTube vienen sin puntuación y no se publican."""
+    words = len(text.split())
+    return words > 0 and sum(text.count(c) for c in ".?!") * 1000 / words >= 15
 
 
 def fetch(video_id, lang):
