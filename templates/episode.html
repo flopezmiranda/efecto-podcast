@@ -40,7 +40,7 @@
   <div class="episode-layout">
     <div class="prose">
       <h2>Sobre este episodio</h2>
-      {% for p in ep.paragraphs %}<p>{{ p }}</p>{% endfor %}
+      {% for p in ep.paragraphs %}{{ p }}{% endfor %}
       {% if ep.notes %}{{ ep.notes }}{% endif %}
 
       {% if ep.topics %}

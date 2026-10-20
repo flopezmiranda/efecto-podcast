@@ -68,7 +68,7 @@ def parse_description(text):
             kept.append(line)
     hashtags = [h.lower() for h in HASHTAG_RE.findall(text)]
     body = "\n".join(kept).strip()
-    body = HASHTAG_RE.sub("", body)
+    body = re.sub(r"(?<![\w&])#\w+", "", body)
     paragraphs = []
     for block in re.split(r"\n\s*\n", body):
         block = block.strip()
@@ -76,7 +76,14 @@ def parse_description(text):
             continue
         safe = html.escape(block)
         safe = URL_RE.sub(r'<a href="\1" rel="nofollow noopener" target="_blank">\1</a>', safe)
-        paragraphs.append(Markup(safe.replace("\n", "<br>")))
+        lines = [l.strip() for l in safe.splitlines() if l.strip()]
+        if all(l[:2] in ("* ", "- ", "• ") for l in lines):
+            items = "".join(f"<li>{l[2:].strip()}</li>" for l in lines)
+            paragraphs.append(Markup(f"<ul>{items}</ul>"))
+        elif re.fullmatch(r"[━─—_=\-\s]+", block):
+            paragraphs.append(Markup("<hr>"))
+        else:
+            paragraphs.append(Markup(f"<p>{'<br>'.join(lines)}</p>"))
     return paragraphs, chapters, hashtags
 
 
@@ -96,6 +103,13 @@ def read_optional(path):
 def prepare(config):
     episodes = [e for e in load_episodes() if e.get("duration_seconds", 0) >= config["min_duration_seconds"]]
     episodes.sort(key=lambda e: e["published"], reverse=True)
+
+    def topic_key(text):
+        return slugify(text, 40).replace("-", "")
+
+    aliases = {topic_key(k): v for k, v in config.get("topic_aliases", {}).items()}
+    blocked = {topic_key(t) for t in config.get("topic_blocklist", []) + ["efectopodcast", "podcast"]}
+    forced_names = {topic_key(k): v for k, v in config.get("topic_names", {}).items()}
 
     topic_names = {}
     for ep in episodes:
@@ -118,12 +132,15 @@ def prepare(config):
         # Las etiquetas van primero porque traen espacios y dan mejores nombres.
         topics = []
         for raw in [t.lower() for t in ep.get("tags", [])] + hashtags:
-            key = slugify(raw, 40).replace("-", "")
-            if not key or key in topics or key in ("efectopodcast", "podcast"):
+            raw = aliases.get(topic_key(raw), raw)
+            key = topic_key(raw)
+            if not key or key in topics or key in blocked:
                 continue
             topics.append(key)
             if key not in topic_names or (" " in raw and " " not in topic_names[key][1]):
                 topic_names[key] = (slugify(raw, 40), raw.strip().capitalize())
+            if key in forced_names:
+                topic_names[key] = (slugify(forced_names[key], 40), forced_names[key])
         ep["topic_slugs"] = topics
 
     counts = Counter(t for ep in episodes for t in ep["topic_slugs"])

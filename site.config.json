@@ -26,5 +26,16 @@
   },
 
   "episodes_per_page": 24,
-  "min_episodes_per_topic": 3
+  "min_episodes_per_topic": 3,
+
+  "topic_aliases": {
+    "ia": "inteligencia artificial",
+    "chat gpt": "chatgpt",
+    "influencer marketing": "influencers"
+  },
+  "topic_names": {
+    "chatgpt": "ChatGPT",
+    "efecto wow": "Efecto WOW"
+  },
+  "topic_blocklist": ["digital", "3 razones para lanzar tu mvp"]
 }
