@@ -1,0 +1,602 @@
+0:000 segundosYo creo que es un error que hoy día las gerencias de marketing estén enfocadas en campaña. El calendario clásico temporal de actividades que guía a los
+0:099 segundosequipos de marketing es un error. Asumir que tengo que tener más presupuesto que el año anterior o o desearlo es un error. Hay muchos supuestos que hoy día
+0:1717 segundosnosotros damos por sentado, como por ejemplo el impacto de nuestras campañas, nuestro enfoque, nuestras métricas, que bajo mi punto de vista son erráticas, o
+0:2525 segundossea, son son de hace 20 años atrás y hoy día es un modelo relacional comercial increíblemente distinto y más complejo.
+0:3333 segundosEntonces, hoy día, ¿cuál es el error que veo yo? es seguir ejecutando marketing como lo era hace 20 años atrás en un contexto que es radicalmente distinto.
+0:4646 segundos[música]
+1:001 minuto[música]
+1:011 minuto y 1 segundoGrabando, grabando. Bienvenidos, bienvenidos todos a un nuevo episodio de Efecto W podcast. Estamos grabando un
+1:081 minuto y 8 segundosnuevo episodio, tenemos invitado que se mueren, el invitado que tengo. Estoy muy contento. A todos les digo lo mismo, pero es verdad, traigo gente que me hace
+1:161 minuto y 16 segundosse siente personal, ya lo están escuchando, me hace me hace estar muy muy contento. Ya les voy a decir quién es, ¿eh? Así que nada, bienvenidos a un nuevo episodio de
+1:241 minuto y 24 segundosEfecto WoW. Vamos a hablar hoy día de marketing y de otras cositas también. Yo creo que con la persona que está aquí al frente mío vamos a hablar de de cosas.
+1:321 minuto y 32 segundosPucha, hace tiempo que lo quería tener.
+1:341 minuto y 34 segundosTengo un listado de personas, te advierto que tengo un listado de personas y hoy día puedo tachar una más.
+1:391 minuto y 39 segundosEh, pero bueno, antes de empezar tengo que decir dos cosas. Primero, mención a nuestro auspiciador. Tenemos auspiciador, ¿sí? [música] Eh, sin ir más lejos, Toc toc, ya me sé
+1:481 minuto y 48 segundosla mención de memoria, Toc, auspicia este espacio. Si quieres buscar propiedades, por supuesto que sí. Si quieres financiar una propiedad, si
+1:551 minuto y 55 segundosquieres comprar una propiedad, entra a toccttoct.com.
+2:002 minutosSomos el Marketplace inmobiliario en Chile. Nos hacemos cargo de todo el ciclo inmobiliario. Hacemos asesorías totalmente gratuitas. Eh, la jefa de
+2:082 minutos y 8 segundosbranding siempre me manda como los tips, ideas de mensiones. Siempre me salgo, pero pero me habla de ah el toc toc,
+2:162 minutos y 16 segundosah, el ejercicio de marca. Ahí loemos hacer, lo podemos hacer, pero pero nada.
+2:202 minutos y 20 segundosToct.com, el sitio del marketplace inmobiliario, soluciones inmediatas.
+2:252 minutos y 25 segundosTenemos asesoría 247, tenemos inteligencia artificial aplicada para poder atenderlo tanto en la madrugada, en el día, cuando quieran. Ejecutivos
+2:332 minutos y 33 segundostambién funcionando. Así que nada, toc toc auspiciador de este espacio. Toc.
+2:382 minutos y 38 segundosEso. Y lo segundo, la gente ya lo escucha ya, pero ojalá hayan deducido ya quién es. Y lo segundo, nuestras plataformas oficiales, Spotify,
+2:462 minutos y 46 segundosYouTube e Efecto W podcast, Instagram, LinkedIn y TikTok, todo como efecto W
+2:542 minutos y 54 segundospodcast. Síganos, suscríbanse. Voy a vamos a llegar al millón de reproducciones. Qué buena. Pero hay poca gente que se suscribe ya.
+3:013 minutos y 1 segundoLa gente escucha, pero no se suscribe. Yo soy uno de esos. Lo voy a solucionar ahora.
+3:053 minutos y 5 segundosMuy bien, muy bien. Bueno, no me quiero dar más vueltas. Estoy muy contento porque conmigo está el señor Rodrigo Orellana.
+3:123 minutos y 12 segundosEncantado, feliz. [aplausos] Gracias [ovación] de aplauso. Muchas, muchas gracias. Muchas gracias.
+3:163 minutos y 16 segundosEstoy muy muy contento de que esté acá con nosotros, Rodrigo. Estoy muy eh siempre lo digo y lo voy a seguir
+3:243 minutos y 24 segundosdiciendo. La gente que yo invito a este podcast eh es porque yo siento que ha contribuido
+3:323 minutos y 32 segundoscon algo desde alguna arista, tecnología, innovación, negocio, marketing. Nosotros
+3:403 minutos y 40 segundossomos del market somos hijos del marketing. Eh, y yo creo que tuviera uno de esos como los anteriores invitados, Ángel Zuriet.
+3:503 minutos y 50 segundosBueno, pero [risas] como como lo fue Ángel Insurieta, Gloria, Jusam, Rodrigo Rojo, en fin, hay
+3:573 minutos y 57 segundosun montón de invitados, no quiero que se me quede nadie afuera, pero pero que yo realmente siento que han aportado eh a a
+4:044 minutos y 4 segundoshan han han generado un camino eh en donde yo me incluyo, muchos hemos seguido ese camino eh claramente con matices nuevos, porque de eso se trata,
+4:134 minutos y 13 segundospero pero estoy super honrado de que acá yo te conocí, esto lo voy a decir, eh tú fuiste mi profesor.
+4:194 minutos y 19 segundoshace hartos años atrás, no tanto, pero igual un par de buenos años atrás, pero fuiste mi profesor en un máster en la Portales. Hicimos, hice
+4:284 minutos y 28 segundosel el típico máster que yo creo que todo marquetero debe tener, independientemente si es bueno o malo, todo lo queráis, pero el máster de dirección de marketing y gestión
+4:364 minutos y 36 segundoscomercial e y después hemos seguido en contacto, bueno, eh eh [música] muy en rollo. Creo que todas las personas que yo yo por lo
+4:454 minutos y 45 segundosgeneral hago este análisis te lo trato de compartir, que cuando haces un posgrado como magíster o o un diplomado
+4:524 minutos y 52 segundostambién la el cuerpo docente se analiza y y particularmente en las personas que yo conozco que también las hecho clases,
+5:005 minutossiempre tengo muy buena referencia. Qué bueno.
+5:025 minutos y 2 segundosEso también yo la lo digo también es lógico.
+5:055 minutos y 5 segundosY tuyas también, o sea, yo me acuerdo que era excelente alumno aplicado, muy bueno para compartir ideas, para debatir. De hecho, me acuerdo de debates muy buenos
+5:135 minutos y 13 segundosque tuvimos. Desde ahí [carraspeo] que dije, no, a Félix lo debe tener cerca mío.
+5:165 minutos y 16 segundosHón, y mis compañeros me hacían bullying, por [risas] eso les molestaba que hablara tanto, digo, ya hay que irse a recreo, lo mismo,
+5:245 minutos y 24 segundos¿eh? Así que nada, Rodrigo, ese es el ejercicio y [carraspeo] hoy día vamos a estar una horita más o menos conversando de marketing, de marketing, de de de lo que ha pasado y de lo que se viene.
+5:365 minutos y 36 segundosTengo un listado de pauta de preguntas, pero pero nada, te quiero escuchar.
+5:405 minutos y 40 segundosExcelente. Bueno, primero gracias, gracias por la invitación. Yo había visto ya varios capítulos de del efecto wow. Ah, bacán.
+5:465 minutos y 46 segundosYo soy uno de los que no se suscribe, nunca me suscribe a nada, pero sí soy de los que proactivamente busca y consume el contenido y te consumo regularmente.
+5:535 minutos y 53 segundosOh, muchas gracias. Muchas gracias.
+5:545 minutos y 54 segundostremenda carrera y de verdad que me siento muy honrado por estar acá, ¿no? Hón, qué lindas palabras me está diciendo. Así que así que nada, eh, a ver, voy a dar un
+6:026 minutos y 2 segundospequeño contexto, Rodrigo. Bueno, un background impresionante para los que conocemos el el mundo del marketing y
+6:106 minutos y 10 segundosentendemos que eh voy de vuelta, hay aportado un montón. Eh, y sobre todo en los últimos 9 años. Me me quiero
+6:186 minutos y 18 segundosconcentrar en eso porque tenéis mucho más background atrás, tenéis también una mirada, no sé, pues desde tu participación en en organizaciones como
+6:276 minutos y 27 segundosLamba, eh digamos, todo lo que tiene que ver con con la Asociación Nacional de Avizadores, eh que tiene mucho que ver ahí, pero me quiero meter más como en la
+6:356 minutos y 35 segundosparte en la parte literal que hiciste en mercados que de repente es superdfícil llevar a cabo. voy a ir directamente al
+6:436 minutos y 43 segundosgrano. La banca [resoplido] llegaste a tener un un cargo global a nivel a nivel e institucional con Banco Scochabank y
+6:526 minutos y 52 segundoseso te abrió camino un poco también a ir innovando y ir a a esta es mi mirada, me podéis corregir, Rodrigo, pero flexibilizaste un mercado,
+7:017 minutos y 1 segundouna industria que durante muchos años o o quizás no no en su totalidad, pero ayudaste a flexibilizar una industria
+7:087 minutos y 8 segundosque es super poco flexible, es más rígida que esta tabla. es extremadamente rígida y nosotros lo veíamos, o sea, los que te seguimos y
+7:157 minutos y 15 segundoslos que de alguna manera entendemos cuál es tu background, lo veíamos, lo íamos, lo íbamos siguiendo, lo íamos celebrando de alguna manera. Te aprovecho de
+7:247 minutos y 24 segundoscomentar eso también. Entonces, nada, para mí, para mí, para mí lo que me pasa es e
+7:317 minutos y 31 segundosdesde ahí a lo que estáis hoy día como contexto [carraspeo] de salirte de ese mundo
+7:387 minutos y 38 segundosy decir, "No, yo necesito hacer algo." Un poco lo hablábamos fuera de micrófono, volver al marketing porque teníis un cargo de alto ejecutivo a
+7:477 minutos y 47 segundosnivel global en una compañía gigante. Me imagino que eso intrínsecamente hace que te salgas del marketing.
+7:527 minutos y 52 segundosClaro que sí. Pero esta necesidad de querer volver al marketing con Future, básicamente habla de que aquí seguimos,
+7:597 minutos y 59 segundosaquí estamos. Entonces, en ese contexto eh eh te quiero hacer una pregunta que un poco lo dice acá, pero quizá quiero escuchar más, quizá quizás antepuse la respuesta, pero ¿por qué el cambio?
+8:098 minutos y 9 segundosBuenísimo.
+8:108 minutos y 10 segundos¿Por qué por qué por qué salir de esa zona de confort ser BP de una de las empresas o de una empresa gigante a
+8:178 minutos y 17 segundosnivel mundial? e y lanzarse un poco al vacío, independientemente del background, que por lo demás que hiciste un estudio de
+8:258 minutos y 25 segundosmercado y y está un poquito más o menos pivoteado o no lo sé. Bueno, ahí me vay a decir más detalle, pero ¿por qué salirse de hacer ese cambio? Y por qué
+8:338 minutos y 33 segundoste hago la pregunta, porque en este mismo espacio yo siempre he defendido el contexto de, o sea, estoy en contra del del dicho, hay que salir de la zona de confort.
+8:428 minutos y 42 segundosClaro, claro.
+8:438 minutos y 43 segundosY yo soy de los que dice, "¿Y por qué tengo que salir mi zona de confort?" Perdón la expresión. ¿Por qué chucha confort si estoy supercmodo, me está yendo bien? ¿Puedo hacer cosas?
+8:538 minutos y 53 segundosComo que quiero entender eso, quiero quiero entenderlo.
+8:558 minutos y 55 segundosOye, y esa pregunta me la ha hecho y me la sigo haciendo todos los días. Antes antes si es que lo hacía no y ahora, ¿por qué lo hice? Perfecto.
+9:019 minutos y 1 segundoPero ya tengo una mirada bien consolidada. Primero, yo soy también fiel creyente de dos cosas eh relativas al trabajo. Primero, las personas
+9:109 minutos y 10 segundospasarlo bien, disfrutar, crear equipo, crear cultura, que uno trascienda a una reunión, básicamente que se termine la reunión y dejar algo en la gente. Por
+9:189 minutos y 18 segundosúltimo, una sonrisa, una energía, una visión, un desafío. Yo creo que eso es para mí son de las si lo vemos como una
+9:269 minutos y 26 segundoscapa, una capa impenetrable. No puede no pasar eso. Los que te conocemos sabemos que es así. Los que te conocemos sabemos que pasar.
+9:339 minutos y 33 segundosO sea, para mí es parte de lo que me mueve. Y segundo, por supuesto, la amor al marketing. Me encanta, me encanta. Fé muy muy similar a tu carrera, partiendo
+9:409 minutos y 40 segundosde roles mucho más técnicos. Yo partí haciendo campañas publicitarias eh para mercados que no eran chilenos en Reprice, en una agencia muy técnica que
+9:499 minutos y 49 segundosahora ya ha mutado bastante del grupo IPG eh al rol en el banco. Pero, ¿qué me pasó en el Intertanto? Tremendo desafío,
+9:569 minutos y 56 segundostremendo. Eh, son 15 mercados, eh, tremendo mercado como el mexicano también, el canadiense, chileno también, muy inpiente, un laboratorio uruguayo,
+10:0510 minutos y 5 segundospanameño, Costa Rica, Colombia, eh Trinidad y Toago, Guyana, Francesa, Jamaica y así son muchos más. Tremendo
+10:1310 minutos y 13 segundosdesafío con las personas, muy enfocado en las personas y eso creo que fue muy eh como relevante y constante dentro de
+10:2010 minutos y 20 segundosmi día. Sin embargo, la otra patita que era el marketing la está dejando lado. Perfecto.
+10:2510 minutos y 25 segundosPara cierto en esto, eh estos roles eh más eh directivos eh gerenciales tan alejados de la operación hacen que
+10:3410 minutos y 34 segundosinevitablemente uno en el día a día se enfoque en otros temas que son más estructurales. Eh y personalmente a mí, que yo soy una persona que me gusta
+10:4210 minutos y 42 segundosmeter mano, sentí que me estaba traicionando. Entonces fueron cerca de 2 años de esa traición. No lo voy a negar, lo disfruté. Eh, me encantó el desafío y
+10:5110 minutos y 51 segundosme siento muy honrado y agradecido del banco. Amo el banco y lo sigo mando y va a ser mi gran amor durante toda mi vida. Pero yo en la interna dije, ¿sabes qué?
+11:0011 minutosNecesito volver. Necesito volver. Están pasando muchas cosas.
+11:0311 minutos y 3 segundosEh, y un poco es de lo que vamos a hablar hoy día, de todo lo que está pasando a nivel de capacidades, personas, tecnología, entre otros. Y no me quería quedar atrás. dije, "Este es
+11:1211 minutos y 12 segundosmi momento. Estoy un muy buen eh día para dar vuelta a la página, muy buen momento para hacerlo. Eh, tomé la decisión y ahora me estoy lanzando con
+11:2011 minutos y 20 segundosalgo que nace de mi visión, 100% eh homemade, handbait eh para el mercado
+11:2611 minutos y 26 segundoslocal. Me encanta, me encanta, me encanta que sea honesto en decir, me estaba quedando atrás. Qué loco que
+11:3411 minutos y 34 segundosbueno no es tan loco quizás pensar que estáis tan arriba que te olvidaste del overall pues o más que te olvidaste no
+11:4211 minutos y 42 segundosteníis tiempo para el overall claro y y nunca me olvidé es ese el tema como siempre sentía que algo faltaba o veía algún problema del equipo operativo que
+11:5011 minutos y 50 segundosno lo podía resolver y yo trataba de hacer un espacio para ir y acompañarlo, o sea, y eso pero eso era inorgánico, no era parte del rol, así que eso me faltaba, así que por eso estoy acá.
+12:0012 minutosBueno, hay hay una razón también que tú lo planteas como la visión de Future, que es donde
+12:0712 minutos y 7 segundosestás hoy día, que que desde una mirada más como
+12:1512 minutos y 15 segundosno quiero decir como no quiero decir como superficial, pero sí que hoy día el marketing se está moviendo mucho desde la apariencia o sí, de hecho, literal, sí.
+12:2412 minutos y 24 segundosEh, pero también hay una premisa que habla de que el marketing no está fallando, sino que está mal diseñado.
+12:3212 minutos y 32 segundosSí.
+12:3412 minutos y 34 segundos¿Qué es eso? O sea, cuando habláis de mal diseñado, ¿habláis de una base conceptual de que no entendemos marketing o es una base más bien de que
+12:4312 minutos y 43 segundosestá cambiando tan rápido todo que no estamos dando el tiempo de entender herramientas, sistemas, productos que nos puedan hacer un mejor marketing.
+12:5112 minutos y 51 segundosYo creo que una mezcla las dos cosas.
+12:5312 minutos y 53 segundosPara mí el modelo hoy día es intolerable, no puede resistir más. Eh, estamos trabajando en la gerencia de marketing como gerentes de publicidad,
+13:0113 minutos y 1 segundoen concreto, gerente de promoción
+13:0313 minutos y 3 segundos[carraspeo]
+13:0313 minutos y 3 segundosy cada vez más el espectro de marketing se va acotando a campañas, a interacciones, a un trabajo mucho más
+13:1013 minutos y 10 segundosacotado de lo que debiera ser y adicionalmente el contexto general se mueve a una velocidad mucho más rápida de la que las gerencias de marketing hoy día pueden abordar. Me gusta eso. Eh,
+13:1913 minutos y 19 segundosentonces creo que hoy día hay un problema del origen del core, eh, y es un muy buen momento para repensarlo. Eh, ¿cuál va a ser el rol de marketing
+13:2613 minutos y 26 segundosdentro de la organización? Y si somos egoístas, yo creo que no hay ninguna área en cualquier empresa, de cualquier industria que pueda tener hoy día el
+13:3513 minutos y 35 segundoscontacto con el cliente, el ownership de las comunicaciones y también esa eh conexión inherente a la tecnología y los
+13:4313 minutos y 43 segundosdatos. Entonces, yo siempre he dicho, yo siempre soy un un defensor de marketing como el origen de ser esta área eh que
+13:5113 minutos y 51 segundostiene el punta a punta y que te permite impactar tanto al cliente como al negocio de forma transversal y que las otras áreas deberían ser áreas de apoyo, pero hoy día marketing es una función de apoyo.
+14:0014 minutosClaro.
+14:0114 minutos y 1 segundoEh, algo radicalmente contrario y que inhibe, yo creo que el potencial que hoy día tenemos. Claro, porque teóricamente hablando entendemos que marketing es el
+14:0814 minutos y 8 segundosresponsable de construir valor, por supuesto, construir valor y en en la recordemos la 6P, o sea, hoy día estamos muy enfocados
+14:1614 minutos y 16 segundosen promoción y a mi parecer hoy día con un mercado tan competitivo transversal creo que la promoción nos queda corta.
+14:2414 minutos y 24 segundosEntonces, bajo esa lógica dije, "¿Sabes qué? No quiero ser más gerente de promoción, eh quiero ser gerente de marketing o quiero apoyar a los gerentes de
+14:3214 minutos y 32 segundosmarketing, no es gerente de publicidad y proporción." Entonces, esa es mi mi misión. Mi misión es volver a reencantar al mundo, eh partiendo por Chile, ojalá
+14:4014 minutos y 40 segundoseh con el marketing, con cómo debiera ser y también atrayendo a la tecnología en este camino. Eh está pasando cosas
+14:4714 minutos y 47 segundosespectaculares y no quiero que marketing quede afuera. Entonces, ser un habilitador, un alguien que trae capacidades para que el equipo de
+14:5614 minutos y 56 segundosmarketing, muy bien dicho marketing, eh se haga parte de ellas y las ejecute de muy buena forma, rediseñando el modelo, es mi finalidad.
+15:0415 minutos y 4 segundosEstá entretenido eso porque la premisa es simple, pero el fondo es complejo, por supuesto.
+15:1015 minutos y 10 segundosY ahí, por ejemplo, yo soy Sim hoy día y voy a ser super como eh transparente en hacer la pregunta, o
+15:1715 minutos y 17 segundossea, yo creo que cometo muchos errores, cachá, pero de tu mirada, ¿cuál es un error hoy día que están cometiendo muchos chief marketing officer
+15:2615 minutos y 26 segundoseh más allá del más allá del del del rol? Entendamos que estos cargos que estos en inglés porque están asociados a una empresa de tecnología y todo lo
+15:3415 minutos y 34 segundosdemás, pero claro, pero ¿cuál es el error principal? ¿Qué qué están dejando de hacer o qué están haciendo mal, digamos, literalmente?
+15:4015 minutos y 40 segundosY y una visión, de nuevo, muy personal y y muy humilde bajo bajo mi punto de vista. Yo creo que es un error que hoy día las gerencias de marketing estén
+15:4715 minutos y 47 segundosenfocadas en campaña. Por ejemplo, el calendario clásico temporal de actividades que guía a los equipos de
+15:5515 minutos y 55 segundosmarketing es un error. Asumir que tengo que tener más presupuesto que el año anterior o o desearlo es un error.
+16:0316 minutos y 3 segundosHay muchos supuestos que hoy día nosotros damos por sentado, como por ejemplo el impacto de nuestras campañas, nuestro enfoque, nuestras métricas, que bajo mi punto vista son erráticas, o
+16:1216 minutos y 12 segundossea, son son de hace 20 años atrás y hoy día es un modelo relacional comercial increíblemente distinto y más complejo.
+16:2116 minutos y 21 segundosEntonces, hoy día, ¿cuál es el error que veo yo? es seguir ejecutando marketing como lo era hace 20 años atrás en un contexto que es radicalmente distinto.
+16:3216 minutos y 32 segundosQué loco lo que está diciendo, porque es como toda área de marketing, no es que sueñe, pero marketing en el
+16:4016 minutos y 40 segundosbuen sentido de la palabra es una es un área que invierte justo. Y esa área como un área de inversión está ávida de más presupuesto, pero la
+16:4916 minutos y 49 segundoslógica que estáis planteando es como sí, pero también puede ser que no. y usualmente no es problema de presupuesto, o sea, yo el ejercicio, por
+16:5616 minutos y 56 segundosejemplo, el modelo de future es partir con un cero based budget exercise. Eh, partir asumiendo que el próximo año no tengo presupuesto.
+17:0417 minutos y 4 segundosAh, bueno.
+17:0517 minutos y 5 segundosO sea, empezar a hacer cada una de mis planificaciones asumiendo que cada año es distinto y partiendo desde la necesidad. ¿Cuál es? ¿Y apalancado de qué, Rodrigo?
+17:1317 minutos y 13 segundosApalancado de qué? El negocio, por ejemplo, un año vendo 10 o una compañía tiene ,000 de revenue, tengo que generar
+17:2217 minutos y 22 segundos15,,000 de revenus. La matemática lineal logarítmica que estamos acostumbrados es decir, "Okay, necesito 50% más de presupuesto." Claro, si me están pidiendo crecer el 50, necesito 50.
+17:3217 minutos y 32 segundosY esa y esa, yo creo que la respuesta que todos en nuestro día a día damos a nuestras gerencias generales de finanzas, de presupuesto, pero radicalmente errónea. Eh, ¿por qué tengo
+17:4117 minutos y 41 segundosque asumir que esto es lineal? ¿Por qué no tengo que asumir que alguna de las del valor que yo genero en el año presente no se pueden trasladar al
+17:4917 minutos y 49 segundospróximo año? ¿O por qué ya que el desafío es tan grande, no repienso totalmente mi estrategia, cosa que a tu punto de la inversión no se transforma en un gasto de cara a finanzas? Claro.
+17:5917 minutos y 59 segundosEntonces, toda esa lógica del cero based budget la encuentro muy atractiva, ya que es partir una hoja en blanco y eso también nos obligas a la gerencia de
+18:0818 minutos y 8 segundosmarketing o ahora que son van a ser mis potenciales clientes, a los gerentes de marketing, a repensar también su planificación. Es necesario cuatro
+18:1618 minutos y 16 segundoscampañas, seis campañas, 10 campañas, es necesario tener publicidad apagada, es necesario tener televisión, o sea, empezar a cuestionarse el real
+18:2518 minutos y 25 segundosimpacto, no por la historia, sino que por lo que tenemos que lograr mañana, hoy.
+18:3018 minutos y 30 segundosEs desafiante, Rodrigo, porque más allá lo de future, sino que es como yo pelota al piso.
+18:4118 minutos y 41 segundosSi tú agarras hoy día cualquier gerente marketing o gerente general, un CEO, un un CCO o lo que sea
+18:4818 minutos y 48 segundosy tenía un negocio que estructuralmente puede estar apalancado de promociones, siguiendo el mismo ejemplo que estáis planteando, claro, hacer ese cambio es tomar riesgos super grande.
+18:5718 minutos y 57 segundosExacto.
+18:5718 minutos y 57 segundosY cuando no están las condiciones para tomar ese riesgo, ¿cómo cómo lo enfrentáis?
+19:0219 minutos y 2 segundosYo soy de la idea del que no se arriesga no gana. [risas] y y de nuevo y arriesgarse también de forma controlada.
+19:0819 minutos y 8 segundosPor ejemplo, si uno tiene en el banco teníamos cerca de tres o tres digamos tres unidades de negocio. Por último, partir con la más tradicional que tal
+19:1719 minutos y 17 segundosvez los esfuerzos de marketing no son tan eh eh decisores, tan eh tan impactantes, tan que muevan la aguja y
+19:2519 minutos y 25 segundosempezar a ejecutar algunas experimentación, por ejemplo, a nivel de presupuesto, a nivel de forma de hacer marketing, a nivel de medios, a nivel de
+19:3319 minutos y 33 segundosequipo. O sea, yo empezaría a probar ver el impacto y sobre eso empezar a a aprender y a crecer.
+19:4119 minutos y 41 segundosHay un me hace mucho sentido lo que estoy planteando. De hecho, tengo un ejemplo, te lo dije fuera micrófono, lo lo pelamos ahí, pero Javier Arriola, el
+19:5019 minutos y 50 segundosjef [resoplido] de brand de Compara, está está haciendo un poco eso, está como equilibrando su mix de medio, cosa
+19:5819 minutos y 58 segundosque a mí me parece extremadamente llamativa, porque yo soy fiel creador del equilibrio del mix de medio, o sea, a pagar todo el pago
+20:0620 minutos y 6 segundostampoco desde mi mirada es lo correcto, porque es como los huevos en distintas canastas, los huevos distintas canastas.
+20:1520 minutos y 15 segundosLa única salvedad que yo creo en ese caso es que, claro, en algunos casos Javier tiene, no sé si un cheque en blanco, pero tiene una billetera abierta
+20:2420 minutos y 24 segundospara poder, hizo su apuesta, pero tiene una billetera abierta para poder tomar decisiones riesgosas que digan,
+20:3120 minutos y 31 segundos"Estoy con un machete abriendo camino, viendo qué me puede resultar." Pero puede que tengáis negocios que no
+20:3820 minutos y 38 segundostenía esa billetera y y de repente yo creo que un tema cultural y de convencimiento también, pero pero cuando no se pueden,
+20:4620 minutos y 46 segundostú veis opciones de que se puede igual y y no es dejar de hacer marketing, es tal vez hacerlo de una forma distinta. un poco el el la invitación que tenemos
+20:5520 minutos y 55 segundosdesde Future es repensar o rediseñar las condiciones sobre las cuales tú operas hoy en día y que Future en este caso instale un
+21:0221 minutos y 2 segundosmodelo operativo en base a ejercicios como estos que te den más o menos certeza de que tus decisiones no van a estar tan erradas o que ojalá van a ser las decisiones correctas.
+21:1221 minutos y 12 segundosMe gusta.
+21:1221 minutos y 12 segundosEh, por ejemplo, lo que hablábamos recién de apagar paid, tal vez no necesario apagarlo apagarlo en un 100% pero disminuyamos un 20%. Veamos el
+21:2021 minutos y 20 segundosimpacto, veamos la elasticidad al medio, tal vez nos vamos a dar cuenta que no era necesario tener 10 millones de pesos en tal producto, sino que tal vez con
+21:2721 minutos y 27 segundosdos el rendimiento potencial decreciente, la verdad que era el impacto era menor y esos ocho restantes
+21:3521 minutos y 35 segundoso los ahorramos, cosa de dar una muy buena señal a la compañía o bien invertirlo en personas, invertirlo en nueva tecnología, invertirlo en PID, en
+21:4221 minutos y 42 segundosotros productos. Entonces ese juego, ese esa cintura es la que traemos sobre la mesa, empezar a hacer las cosas distintas, porque hoy día creo que el mercado lo requiere de esa forma.
+21:5321 minutos y 53 segundosEstá está bacar lo que me estáis planteando, como que como que sí, como que sí es sí cuesta,
+22:0122 minutos y 1 segundocuesta, cuesta porque estamos acostumbrados a hacerlo esa forma y porque además no sé si tenía mio, perdóname Rodrigo, pero como que me pasa
+22:0922 minutos y 9 segundosque que cada vez que converso con personas acá como que a rato siento que está super fragmentado todo,
+22:1622 minutos y 16 segundoscachá que eh los silos los silos están en los negocios, cachá.
+22:2222 minutos y 22 segundosy y se rompen, ¿cachá? Y te y cuando hablo de fragmentación, no hablo de que eh dos áreas tengan dos objetivos
+22:3122 minutos y 31 segundosdistintos, porque ya es como que está patas para arriba la empresa, pero cuando te hablo de fragmentación es que cuando efectivamente no sé pues eh
+22:3822 minutos y 38 segundoseh tenía un área comercial que no necesariamente sabe vender digital, por ejemplo.
+22:4322 minutos y 43 segundosExacto. O que que no le dé el valor también. Exacto. O cuando tenía un equipo de marketing que no entiende conceptos como Cherm o Revenue, ¿cachá?
+22:5222 minutos y 52 segundosEh, ¿cómo cómo veí eso tú?
+22:5422 minutos y 54 segundosYo creo que es es el gran desafío. Eh, hay un desafío cultural de las personas, pero también de los procesos. O sea, Future se se enfoca básicamente en
+23:0123 minutos y 1 segundorepensar el modelo de trabajo. Eso como de nosotros le llamamos modelo operativo, pero es desde cómo nos sentamos con las áreas de producto, de
+23:1023 minutos y 10 segundostecnología, de analytics BI, eh, y comercial en general. armar una estrategia conjunta donde todos tomemos
+23:1723 minutos y 17 segundosciertos riesgos, todos nos demos la mano y todos nos enfoquemos en hacer crecer esa apuesta. E la lógica es como la
+23:2423 minutos y 24 segundoscohesión, es como volver a traer a toda la mesa a conversar, porque a tu punto pasa así e miles de veces eh no no en el banco,
+23:3223 minutos y 32 segundospero en otras compañías colegas con los que habl me pasó esto.
+23:3823 minutos y 38 segundosNo sé, campañas que están derivando leads y que los lad no son gestionados o una campaña publicitaria para un producto que el producto pierde plata,
+23:4723 minutos y 47 segundospor ejemplo, los clásicos, los SOAP, los seguros obligatorios de accidentes personales para para los vehículos, donde el margen de cada producto son
+23:5423 minutos y 54 segundos400, 300 pesos. Claro, eso es volumen, absolutamente volumen.
+23:5823 minutos y 58 segundosY el click te cuesta 100, 1300 para ser competitivo. Entonces, ese tipo de desconexión es la que hoy día veo, bajo mi punto de vista, de nuevo, muy
+24:0624 minutos y 6 segundospersonal, eh riesgosa, eh creo que hoy día está inhibiendo el potencial de los profesionales de marketing. Por ende, mi
+24:1424 minutos y 14 segundosinvitación es repensemos, repensemos y eh traigamos la gente a la mesa.
+24:1824 minutos y 18 segundosmarketing siempre es el alma, para mi parecer, es el alma de las empresas, eh, porque son las mentes más creativas, más que se enfocan en el negocio, en las
+24:2524 minutos y 25 segundoscomunicaciones, le dan la cultura, ese ADN, eh, yo creo que es un área muy linda y creo yo que hemos también
+24:3324 minutos y 33 segundosperdido mucho de ese de esos atributos y no nos hemos autosituado en la esquina de la mesa, viene en un rincón solo, eh,
+24:4324 minutos y 43 segundosdonde el equipo de tecnología va por un lado, el equipo de procesos va por otro, el equipo de incentivos comerciales va por arriba, el equipo de finanzas va por
+24:5224 minutos y 52 segundosabajo. Nosotros estamos ahí, estamos ahí como que todavía no no estamos como sentando la mesa y yo creo que es un muy buen momento para definir una posición
+25:0025 minutosdentro de la mesa y mi posición es estar al centro.
+25:0325 minutos y 3 segundosTraigamos, conversemos y lleguemos la fiesta.
+25:0625 minutos y 6 segundosMe gusta como lo cómo lo planteáis porque sí es así, funciona mucho así, ¿eh? y
+25:1325 minutos y 13 segundoseso te va comiendo el día a día, te va comiendo, te come, te come y finalmente pasa ese incentivo perverso de enfocarte como equipo de marketing, finalmente como
+25:2225 minutos y 22 segundosestás en la esquina en campaña, en el cumplimiento del KPI. Exactamente.
+25:2525 minutos y 25 segundosY muchas veces que el KPI y de nuevo hay por supuesto hay caso y caso, pero hay muchas compañías grandes donde los departamentos marketing hoy día,
+25:3325 minutos y 33 segundoslamentablemente están enfocadas en, de nuevo, en métricas más varales, eh métricas de campañas publicitarias
+25:4025 minutos y 40 segundosy le preguntas el impacto en Reven Primacy, en ROR, no, no va. O sea, y eso yo creo que
+25:4825 minutos y 48 segundostambién una muy buena oportunidad para traer eh los números sobre la mesa, porque marketing hoy día y en Chile tenemos muy buena capacidad creativa,
+25:5425 minutos y 54 segundoseh, y muy buena ejecución, pero el marco que reúne todo esto es el negocio. Yo creo que ahí es donde existe como una desconexión eh preocupante.
+26:0426 minutos y 4 segundosSí, estoy de acuerdo. Estoy de acuerdo.
+26:0526 minutos y 5 segundosMe pasa que el el estos estos términos como de
+26:1226 minutos y 12 segundosanglosajones de repente sí, a veces son super innecesarios, pero también a veces son super necesarios también.
+26:1826 minutos y 18 segundosEh, sí, me gusta. Ahora el mientras escribía la pauta o la terminaba de escribir ayer, había una
+26:2626 minutos y 26 segundospregunta que que te quiero hacer que es como si mañana desaparece meta, Google, TikTok, todo.
+26:3526 minutos y 35 segundosEh, la mayoría de las empresas hoy día sabría o no sabría crecer. ¿Cómo? ¿Cómo crees que no?
+26:4226 minutos y 42 segundosNo, no. O sea, mira, crecer como hoy día estamos acostumbrados a crecer, no sabríamos. Crecer como realmente debiéramos crecer, menos.
+26:5226 minutos y 52 segundosEntonces, te cortan los brazos. Te cortan los brazos, pero lamentablemente en hacia ejecutar habilidades que tal vez no son las correctas.
+27:0027 minutosMi cuestionamiento es en concreto y es una reflexión que yo siempre invito en mis conversaciones. Eh, hoy día lo que estás haciendo realmente genera valor.
+27:0927 minutos y 9 segundosSi por ejemplo hablamos de la campaña SOAP, que todos compramos ahora en marzo el SOAP, si un banco no lo hace, ¿qué pierde? Claro, es ese esfuerzo pudo
+27:1827 minutos y 18 segundoshaber sido centrado eh viralizado en otra cosa.
+27:2327 minutos y 23 segundosEse tipo de de conversaciones creo que hoy día no se toman eh porque a marketing, creo yo, y las personas que
+27:3127 minutos y 31 segundostrabajamos marketing nos faltó valentía y me incluyo.
+27:3527 minutos y 35 segundosPasa que en estos dos años me di cuenta muchas cosas y ahora quiero ser parte del cambio, pero estar dentro de ese sistema, de esa
+27:4227 minutos y 42 segundosvelocidad, de ese nivel de interacción que una empresa de cualquier tamaño requiere hace que uno obie ciertas condiciones o ciertos cuestionamientos
+27:5027 minutos y 50 segundosque deberan ser intrínsecos en nuestra conversación del día a día. Sí.
+27:5327 minutos y 53 segundosY yo quiero traerlos de nuevo sobre la mesa.
+27:5527 minutos y 55 segundosSí, es necesario. Te genera valor.
+27:5727 minutos y 57 segundosEstá bueno, está bueno ese debate porque lo decíais como es verdad, las áreas de
+28:0528 minutos y 5 segundosmarketing se concentran en la promo, en la foto de fin de mes, en cumplir el KPI.
+28:1028 minutos y 10 segundosRodrigo Rojo, en esta misma vea nos planteaba que él también tiene una mirada de que el KPI
+28:1628 minutos y 16 segundoseh no no debería ser buscado, sino que se tienen que construir conceptos más como los North Stars Magrix. Exactamente.
+28:2328 minutos y 23 segundosEh, quizás objetivos más quality de alguna otra medida que que yo también estoy muy de acuerdo con eso, que finalmente te va a traer un resultado,
+28:3228 minutos y 32 segundospor cierto, que sí, pero no es ir a buscar el resultado perfecto.
+28:3628 minutos y 36 segundosSí, sí, estoy de acuerdo. Muy de acuerdo, muy de acuerdo.
+28:3728 minutos y 37 segundosMe gusta, me gusta eso porque además te ayuda como a concientizar un poco la situación. Exacto.
+28:4228 minutos y 42 segundosSí, a, o sea, por eso existe áreas de marketing y áreas comerciales.
+28:4828 minutos y 48 segundosSon cosas distintas y y el fin no es el medio.
+28:5128 minutos y 51 segundosFinalmente el fin es el al punto Rot, que me encanta Rot, saludos para Rot, muy amigos también. Salud.
+28:5628 minutos y 56 segundosEh, es lo que te mueve finalmente, ¿qué es lo que hoy día está movilizando una organización de x cientos decenas o miles de personas sobre algún objetivo
+29:0529 minutos y 5 segundosparticular? ¿Y qué es eso que estamos buscando? Y sobre eso yo creo que los equipos en particular de todas las corporaciones tienen capacidades plenas
+29:1329 minutos y 13 segundospara poder eh dirimir y definir un camino para llegar hacia ella. Ahora, ¿cómo se llega ese camino? Es mi cuestionamiento.
+29:2129 minutos y 21 segundosY solamente dejarlo más muy claro y no y no que hayan malinterpretaciones, pero tu tu discusión no está en si tenéis pait o no tenéis paid. No, no, no. Puede
+29:2929 minutos y 29 segundosque sí, puede que no, ni tampoco si tú si tú tenés tu crecimiento de manera orgánica o no. Ese no es tu discusión.
+29:3529 minutos y 35 segundosNo, si lo entiendo bien, Rodrigo, eh un poco entendiendo también por qué está ahí como de que me gusta mucho ese concepto
+29:4329 minutos y 43 segundostenerte de vuelta en marketing, cachá, está más asociado a que dejamos de hacer sistemas y empezamos, o sea, hoy día
+29:5129 minutos y 51 segundosestamos muy en el en el en el en el hype. De hecho, es más, quiero ir a eso como
+29:5929 minutos y 59 segundosy y lo quiero relacionar con otro tema, inteligencia artificial. Eh, ¿cómo cómo veis tú la actualidad entre en los
+30:0630 minutos y 6 segundosnegocios desde una mirada de marketing entre los entre los hype versus la realidad misma?
+30:1230 minutos y 12 segundosHay una una brecha, pero sobre todo con la inteligencia artificial, modelo agentístico y todo lo demás.
+30:1930 minutos y 19 segundosYo yo creo que y y de nuevo con los invitados que he tenido, lo hice mucho mejor que yo para y y comparto 100% su visión. Yo creo que hoy día la inteligencia artificial es un
+30:2830 minutos y 28 segundoshabilitador, no es un fin, es una capacidad, es una tecnología que está disponible, que incluso hoy día
+30:3530 minutos y 35 segundosutilizándola mal eh ya probablemente te va a generar un bien. Claro. Eh conocimiento.
+30:4230 minutos y 42 segundosEl, por ejemplo, cómo yo esto me lo imagino así a futuro. Básicamente nuestros roles humanos van a ser eh más
+30:5030 minutos y 50 segundosallá de de ese clásico como temor de que la inteligencia artificial nos va a quitar la pega. Yo creo que todo lo contrario. ¿Cómo van a ser unos copilotos reales que van a estar
+30:5730 minutos y 57 segundosprobablemente acá conversando con nosotros en el podcast, dándonos ideas de cómo poder fomentar alguna conversación? básicamente son
+31:0631 minutos y 6 segundoshabilitadores de nuestro trabajo y en esa lógica quitándonos capas operativas que hoy día creo yo, nosotros como
+31:1431 minutos y 14 segundoshumanos tenemos un potencial infinito que nosotros no las debiéramos estar haciendo. Entonces, nosotros debiéramos saber cómo se hace claramente la tarea
+31:2131 minutos y 21 segundosoperativa, ligarla a una capa de inteligencia artificial o tecnología, eh, como le queramos llamar a futuro, y nosotros enfocarnos en tomar decisiones que
+31:3031 minutos y 30 segundosgeneren valor y repensar y diseñar y cuestionarnos y pensar en el futuro. Claro. Muy de acuerdo. Muy de acuerdo.
+31:3631 minutos y 36 segundosTe voy a contar una experiencia muy cortita, pero eh yo asumí la un puesto subgerente en
+31:4331 minutos y 43 segundosmi empresa actual, después pasé a ser gerente y cuando una de las decisiones que me tocó tomar fue que hice un análisis en
+31:5131 minutos y 51 segundosel equipo que teníamos como cuánto tiempo de tu día y después lo exapol la semana mensual tú pasas ejecutando procesos.
+31:5831 minutos y 58 segundosY fue llamativo ese S porque meora raya para la suma un 80 82% del tiempo del equipo era ejecución.
+32:0732 minutos y 7 segundosDije, "No, esta ha está mala que y el otro 20% era lo que decías tú, eh, tiempo para pensar
+32:1532 minutos y 15 segundosy dije esta no puede ser es inviable. No, no, no esto, ¿cómo crezco con esto? No, no, no hay opciones de
+32:2232 minutos y 22 segundoscrecer." y y el y a tu punto, y perdón que te interrumpa, yo creo que inevitablemente bajo esa estructura de, no sé, 8020 uno inhibe la capacidad del
+32:3132 minutos y 31 segundosequipo. O sea, es un equipo que si tú lo formaste o bien te llegó y tú lo estás formando, tú quieres que den el 100% y
+32:4032 minutos y 40 segundosque generen el mayor valor posible y difícilmente operando, haciendo una operación básica, van a lograrlo.
+32:4632 minutos y 46 segundosEntonces, claro, nosotros mismos nos estamos traicionando con nuestras capacidades y también al equipo le estamos dando un enfoque, yo creo, eh eh poco desafiante. Absolutamente. No, no.
+32:5832 minutos y 58 segundosCuando yo planteaba esto como ya necesito meter innovación y desarrollo en esto, yo no quiero personas detrás de un computador viendo una tabla de Excel, no me interesa. No necesito personas
+33:0633 minutos y 6 segundospensantes, cachá. Y ahí bueno, el camino fue no fue simple porque esa curva de aprendizaje es compleja. Claro.
+33:1433 minutos y 14 segundosY en 2 años y medio logramos revertir eso ya el 20% del tiempo del equipo porque hay procesos manuales y, o sea,
+33:2233 minutos y 22 segundospensar que todo va a ser automatizado es es también ser un poco utópico, cachá, pero ya es distinto pensar que un 80% de
+33:3033 minutos y 30 segundostu tiempo lo pasáis ejecutando a un 20, a un 30. Ese camino fue muy valiente. Yo te pregunto a ti, Felix, ¿estás eh te arrepientes de haberlo hecho?
+33:3933 minutos y 39 segundosEh, no, en lo absoluto, pero sí, pero sí si me si me permito dar un consejo es como tenéis que estar dispuesto a
+33:4633 minutos y 46 segundospegarte cabezazos contra la pared. ¿Por qué? Porque ex porque aquí entran todos los procesos de no es que eso es legado legado técnico.
+33:5433 minutos y 54 segundosEh, es que no no existe la base de datos para poder hacer ese proceso automatizado. Son cosas del día a día,
+34:0234 minutos y 2 segundos¿cachá? Eh eh no es que no sabemos code, ni siquiera codear, no sabemos tirar un un código para un SQL server, no son
+34:1134 minutos y 11 segundoscosas que te van pegando en el día a día, que te son cabezazos que tienes que estar dispuesto a pegarte, por eso es la curva.
+34:1934 minutos y 19 segundosPero cuando ya te das cuenta que lo conseguiste, que las cosas empiezan a funcionar en un sistema, quizás Exacto.
+34:2634 minutos y 26 segundosTú decí, "Chucha, sí vale la pena." No puedo estar más de acuerdo. De hecho, me me encantaría escuchar el equipo en el fondo comparar cómo antes ejecutaba sus
+34:3334 minutos y 33 segundostareas respecto a o sea, esa convicción de de que se la jugaron y lo consiguieron. Ese hambre también de tal vez no ahora resolver como eh no sé
+34:4334 minutos y 43 segundosalguna fórmula Excel como googlearla y poder ejecutarla, sino que oye, ¿cómo en realidad le gano market a mi competencia? Es el tipo de de
+34:5034 minutos y 50 segundosmovilización, de pensamiento que tenemos que inculcar en los equipos hoy día. Me gusta, me gusta porque finalmente hoy día e
+35:0035 minutoscomo que también bueno tenemos toda la gente que está como este concepto de que está asustada, que no van a quitar la pega,
+35:0735 minutos y 7 segundospero si miráis la línea completa, tenéis los que están al otro lado, como hazlo con ida.
+35:1335 minutos y 13 segundosTampoco funciona así. No, no, no funciona así. No, no, no es que la no me vi cómo tú me decí es una herramienta. Y
+35:1935 minutos y 19 segundosahí en esa lógica, eh, voy a hacer una pregunta quizás media para la galería, pero
+35:2735 minutos y 27 segundoscomo instrumento y sobre todo con este modelo agentístico que está super de moda y con los amigos de Tropic que la están rompiendo un poco.
+35:3535 minutos y 35 segundos¿Tú crees que en algún momento una IA puede hacer mejor marketing que un marketero? Nunca. Nunca.
+35:4135 minutos y 41 segundosNunca. Nunca. Es una definición por concepto. Marketing y de nuevo el marketing mal asociado con lo que estamos haciendo hoy día, llamémosle
+35:4935 minutos y 49 segundospublicidad, tiene un toque humano de comunicación irreemplazable.
+35:5535 minutos y 55 segundosHoy día, de hecho, hemos visto miles de casos de de ejemplos donde se le da muchas atribuciones o libre albedríos a la para ejecutar actividades y queda la embarrada.
+36:0636 minutos y 6 segundosSí, ha quedado la embarrada. Ha quedado embarrada. Y eso yo creo que es una muestra y difícilmente va a cambiar porque esa las sensaciones de lo que
+36:1436 minutos y 14 segundospasa en una oficina de el caminar por la calle, el ver un anuncio publicitario, de conversar con el dueño del negocio,
+36:2236 minutos y 22 segundoseso es humano y las comunicaciones son humanas.
+36:2536 minutos y 25 segundosSin embargo, ¿cómo hoy día la te permite agregar capas de conocimiento, capacidades para que tu comunicación sea
+36:3236 minutos y 32 segundosmejor? Ahí donde viene la receta del éxito.
+36:3536 minutos y 35 segundosY de tu mirada hoy día, Rodrigo, perdón que haga harta referencia a este concepto de que estáis volviendo el marketing, porque me imagino que para
+36:4336 minutos y 43 segundostomar la decisión de salir de esa zona de confort en la que estáis para volver al marketing y partir un poco de cero, entre comillas, estudiaste demasiado y analizaste 20,000 casos.
+36:5436 minutos y 54 segundosEn esta mirada que me estáis planteando, ¿qué debería hoy día hacer una IA y qué no? Qué buena pregunta. Sí. Bueno, eh
+37:0337 minutos y 3 segundosprimero yo creo que la IA eh siempre es un complemento y cualquier tecnología es un complemento a una actividad humana.
+37:1237 minutos y 12 segundosEh, entonces desde, no sé, la redacción de preguntas, de analizar eh documentos, está perfecto que te entregue input, pero tú como humano lo tienes que leer,
+37:2137 minutos y 21 segundosincorporar, debatir, incluso te puede servir como un buen eh eh ah de los entrenadores de box,
+37:3137 minutos y 31 segundoseh un pingble, un claro, básicamente para generar cierto tipo de debate, interacción y pulir algo, pero nunca
+37:3937 minutos y 39 segundosdarle la la responsabilidad de ejecutar un atreado, definir por qué, qué va a pasar. Eh, competidores de TCT hay unos
+37:4737 minutos y 47 segundos10 más o menos en el mercado. De los relevantes son unos tres.
+37:5137 minutos y 51 segundosClaro, pero imagínate que los 10 utilizaran el mismo la misma suit de herramientas eh al unísono. El output que te va a otorgar bajo el mismo
+37:5937 minutos y 59 segundosmercado, bajo los mismos competidores, con el mismo benchmark, muy probablemente va a ser la misma solución. Claro.
+38:0538 minutos y 5 segundosEntonces, la competitividad que antes tenías, ya que era un humano con estrategia basado en en tecnología conocimiento, se pierde. Entonces
+38:1338 minutos y 13 segundostambién ese es un riesgo que algunas compañías están dispuestos a tomarlo.
+38:1838 minutos y 18 segundosEh, pero mi consejo es nunca hacerlo, nunca asumir que la inteligencia artificial hoy día va a reemplazar ciertas decisiones o ciertas visiones que las puede otorgar un humano.
+38:2838 minutos y 28 segundosestrategia humana. Estrategia humana.
+38:3038 minutos y 30 segundosLas comunicaciones son humanas y la nos complementa para que tengamos mejor y ajustar y encostar nuestro espacio para hacer ese ping ball que hablábamos
+38:3838 minutos y 38 segundosanteriormente para que el resultado sea lo más óptimo posible. Sin embargo, a la hay que tenerla ahí, hay que nos va a
+38:4638 minutos y 46 segundosacompañar, por supuesto, hay que considerarla como una muy buena herramienta, pero nunca al nivel de un ser humano que el cual puede generar un debate o tomar una definición.
+38:5538 minutos y 55 segundosNunca. Hay el marketing son emociones también. Además el marketing es corazón.
+39:0139 minutos y 1 segundoEs corazón y la no lo tiene.
+39:0239 minutos y 2 segundosClaro, claro. Independientemente que esté promesado que que bueno, Altman lo dijo, Zukenberg lo
+39:1039 minutos y 10 segundosha dicho, que 2028 va a ser el año el el punto de inflexión en donde vamos a ver cosas que en verdad no estamos ni siquiera preparados para ver.
+39:1839 minutos y 18 segundosMás allá de eso, más allá de que tú tú no creí tú no creí que efectivamente en algún minuto Skynet viva y tenga No, no.
+39:2539 minutos y 25 segundospara nada. De hecho, el si no nuestra sociedad con las condiciones eh de mercado cambiarían, o sea, ahí no sería
+39:3339 minutos y 33 segundosnecesario en en ese escenario utópico que a mí me parecer es irreal, eh el ser humano, ¿qué rol tendría? Si básicamente todos, al menos las tareas eh de
+39:4239 minutos y 42 segundosejecución eh serían hechas por la inteligencia artificial, la toma de decisiones también y el humano quería.
+39:4839 minutos y 48 segundosEntonces, ¿cómo el humano convive dentro de este contexto de tecnología, yo lo veo poco realizable?
+39:5339 minutos y 53 segundosEstá bueno est conversa. Me voy a meter dos minutitos ahí porque y voy a hacer referencia a un podcast que tiene justamente Rodrigo Rojo, nuevamente lo loitaba algo con Cristian Tala y con
+40:0240 minutos y 2 segundosDiego Muñoz Arias, perdón, e lanzaron a poquito un podcast y hablaba en su primer capítulo de de cómo
+40:0940 minutos y 9 segundoscómo va a evolucionar un poco el mercado laboral.
+40:1340 minutos y 13 segundosCristian Tala tiene una visión un poquito más apocalíptica, como lo dice, creo que dice, "Yo creo que aquí va a funcionar de la
+40:2140 minutos y 21 segundossiguiente manera. Eh, las empresas por definición van a bajar su su
+40:2940 minutos y 29 segundosheadccount va a bajar como el el peso, la la el el GC como dice la palabra, va a bajar y va a empezar a tener empresas de dos, tres personas, no más que eso.
+40:4040 minutos y 40 segundosPor lo que por consecuencia va a provocar que se van a amplificar el número de empresas y va a ser empresas prestándole servicios a empresas,
+40:4840 minutos y 48 segundospersonas prestándole servicios a personas. Esa es como la visión más de de Cristian Tala. Rodrigo tiene la suya y y Diego Arias también tiene la de él.
+40:5740 minutos y 57 segundos¿Tú lo veí realmente así como Cristian?
+40:5940 minutos y 59 segundosSí, claro, claro. O sea, es viable.
+41:0141 minutos y 1 segundoYo creo que sí. Y perdón, y ahí para para poder cerrar el el el argumento, lo que planteaba Rodrigo era que también
+41:0941 minutos y 9 segundoshabla desde una mirada de de cómo se tiene que ir capacitando, digamos, en este desarrollo de la A,
+41:1841 minutos y 18 segundos¿cachá? y de cómo se va entendiendo este proceso para poder decir, "Okay, yo hoy día no tengo trabajo, no tengo donde
+41:2641 minutos y 26 segundostrabajar, puedo crear una empresa, pero de qué, cómo, cuándo, dónde, a qué hora y ese desarrollo ir entregando para que efectivamente se pueda concretar.
+41:3441 minutos y 34 segundosAhora es viable porque hasta los formatos de trabajo van a cambiar, pues.
+41:3841 minutos y 38 segundosCachá este concepto que hablaba que e no sé si lo escuchado, pero ya como todo lo puede hacer una el estado te tiene que
+41:4641 minutos y 46 segundosgarantizar una renta porque si no no vay a tener pega, cachá. No sé cómo lo veis.
+41:5041 minutos y 50 segundosSí, yo soy mucho, no no no vi ni oí el podcast, pero estoy con Cristian. Okay.
+41:5541 minutos y 55 segundosYo creo que vamos hacia ya vamos a a la era de la compatibilidad [carraspeo] plena, plena, plena, donde una persona junto con tecnología le puede competir
+42:0442 minutos y 4 segundosal marketplace líder de la región. O sea, hoy día estamos en un punto bien de inflexión. Siempre que llegan estas tecnologías más disruptivas uno se
+42:1342 minutos y 13 segundoscuestiona, oye, este y las clásicas frases, el de nuevo, el CEO ha muerto, eh eh y así ha muerto todo. Pero yo de
+42:2142 minutos y 21 segundosverdad creo que esto es distinto, o sea, para mí esta es como la aparición de internet eh y el impacto que tuvo en la economía hoy día. la apari de la
+42:2842 minutos y 28 segundostecnología que te soporta, eh la tecnología que te apoya y que te permite tener en este caso, capacidades que son
+42:3542 minutos y 35 segundoscomparativamente hablando equivalentes a la de cualquier empresa hoy en día en cualquier lugar del mundo. O sea, hoy día realmente hoy es un momento perfecto
+42:4442 minutos y 44 segundospara repensar lo que uno está haciendo, su rol en la vida y cómo también uno va a competir como empresa, como persona en los próximos 20, 30 años. Es el momento.
+42:5442 minutos y 54 segundosYo creo de verdad y ahí y ahí soy mucho más apocalíptico como como Cristian.
+42:5842 minutos y 58 segundos[risas]
+42:5842 minutos y 58 segundoseh empezar que esto va a cambiar, va a cambiar, pero para bien. Yo creo que el rol humano eh y yo creo que con el
+43:0643 minutos y 6 segundosprobablemente con la aparición de las redes sociales y también la liviandad con que nos estamos tomando en general como sociedad, la educación, hemos
+43:1443 minutos y 14 segundosperdido mucho pensamiento crítico, el razonamiento se ha perdido, cosa ver los los números de páes e los resultados de de educación
+43:2243 minutos y 22 segundoscomo estamos hoy día y transversalmente y globalmente. Yo creo que esta este nuevo escenario nos va a obligar
+43:3043 minutos y 30 segundosa recapacitarnos, a repensar, si no vamos a quedar afuera. Sí, de todas maneras, de todas maneras me gusta que seáis positivo. Me gusta que seáis
+43:3843 minutos y 38 segundospositivo en esa mirada porque eh a pesar de que Rodrigo y Diego molestaban un poco a Cristian porque es
+43:4643 minutos y 46 segundosmuy apocalíptica su mirada, pero no deja tener razón Cristian Tala porque lo que lo que plantea cuando él vendió pago cuando él vendió pago fácil,
+43:5343 minutos y 53 segundosclaro. Lo decía, lo verbalizado, decía, "En ese minuto éramos, no sé, 13 personas en pago fácil y la empresa que
+44:0044 minutosnos compró eran 2,000 bichos y te aseguro que yo podría haber hecho la misma pega que esas 2,000 personas con 13 personas."
+44:0844 minutos y 8 segundosTe te sentáis a mirar ese ejemplo y no deja de tener razón, pues, cachá.
+44:1244 minutos y 12 segundosExao. No deja de tener razón, cachá, de 13 personas que pueden hacer la pega de 2000. O sea, es una mirada
+44:2044 minutos y 20 segundoseh eh no utópica, no onírica, es s es super real. Sí.
+44:2644 minutos y 26 segundosY y yo creo que es super positiva y la hace bien al mercado. O sea, yo de verdad eh soy de nuevo la clásica, soy
+44:3344 minutos y 33 segundosun fiel creyente, un fiel creyente de la competitividad.
+44:3744 minutos y 37 segundosY en este caso, si Cristian con 12 personas creó algo competitivo, real y que en este caso puede pelearle un marketer a un gigante,
+44:4544 minutos y 45 segundosclaro, espectacular. y y qué bueno que lo vendió y espero que Cristian saque un nuevo proyecto y que le haga bien al mercado general.
+44:5344 minutos y 53 segundosYo creo que esas son las eh instancias que se van a empezar a multiplicar. La inserción, eh la cuna de ideas, las de
+45:0145 minutos y 1 segundonuevas ideologías, de nuevos pensamientos soportados con tecnología, hoy más que nunca son válidos, son fértiles y nos van a permitir ser más competitivos.
+45:1045 minutos y 10 segundosme, o sea, lo está haciendo. De hecho, ecosistema startup, yo creo que ya no solo se concentra en algo, sino en uno,
+45:1745 minutos y 17 segundossino que tiene tiene una mirada también, ¿no? No sé si altruistas, pero sí de de estar eh ayudando como constantemente.
+45:2545 minutos y 25 segundosAsí que a mí me parece que que eso es un golazo.
+45:3045 minutos y 30 segundosMe quiero meter, quiero dejar, me quedan dos temas, ya llevamos 45 minutos, mira cómo pasa el tiempo, pero pero me quiero meter en dos temas, Rodrigo. Quiero
+45:3945 minutos y 39 segundosdejar future para el final, eh, pero sí me quiero meter como en en en en qué tiene que cambiar hoy día, digamos.
+45:4945 minutos y 49 segundosEh, cuál es el mayor desafío, si lo queréis, pero ¿qué es más difícil? ¿Cambiar la tecnología de un negocio o cambiar la
+45:5745 minutos y 57 segundosmentalidad de un negocio? Creo que la respuesta me la sé, pero más allá de eso, ese cambio, cualquiera que sea, ¿quién
+46:0646 minutos y 6 segundosdebería liderarlo dentro de una organización? Cachá como que me quiero meter ahí como para la gente que escucha es como ya una
+46:1546 minutos y 15 segundoscosa es lo que dice tu descriptor de cargo, pero otra cosa es lo que tú querés contribuir, cachá desde el no no te estoy hablando solamente que sea un
+46:2346 minutos y 23 segundosgerente de un área, sino que desde tu rol, porque para mí todos colaboran desde tu rol, ¿cómo lideras estos cambios que pueden
+46:3046 minutos y 30 segundosser tecnológicos, culturales, de mentalidad? No sé cómo lo veis todo eso.
+46:3446 minutos y 34 segundosQué buena. O sea, si me preguntas la la el primer punto si es más fácil cambiar desde la tecnología o la cultura tecnología pensamiento.
+46:4446 minutos y 44 segundosYo te diría que ambos son difíciles eh cambiar una mentalidad en una empresa, de nuevo, volviendo a mi caso, el banco,
+46:5146 minutos y 51 segundosuna empresa que hace banca hace 194 años.
+46:5546 minutos y 55 segundos[risas]
+46:5546 minutos y 55 segundosEs complejo, de verdad que es complejo, eh, es desafiante, eh, pero muy requisor. Adicionalmente, cambiar la
+47:0247 minutos y 2 segundoscultura de personas que integran esta organización de nuevo de 200 años, eh, que dan su ADN, lo incorporan dentro de la compañía, por ende, un ADN. Claro.
+47:1447 minutos y 14 segundosEh, generar cambios a esa escala también es muy complejo. O sea, yo diría que ambos, dependiendo de la compañía, eh, son desafíos que hay que abordar sí o sí. Uno va a ser más más fácil que otro.
+47:2647 minutos y 26 segundosDefinitivamente, usualmente la tecnología más sencilla de cambiar, al menos en si los astros se ayer hablaba
+47:3347 minutos y 33 segundoscon con una growth marketing officer de una startup chilena muy buena e y me
+47:4047 minutos y 40 segundosdecía Rodri, el founder cree en esto, por ende, para mí no es tema. Decía, estás en el 0,5% de las compañías en
+47:4847 minutos y 48 segundosChile donde el cual la tecnología no es tema. Se puede sa, perdón, solo si se puede.
+47:5347 minutos y 53 segundosBelén Gavilán, qué buena Belén. Belén, de hecho me encantó la conversación que tuvimos ayer. Muy buena. Me encanta Belén.
+47:5947 minutos y 59 segundosEh, la escucha es no es lo normal, pero qué rico. Y ella se puede enfocar ya en el cambio cultural. Claro. Sí, pero eso no es lo no es lo común.
+48:0848 minutos y 8 segundosY ahí, perdóname, hay para ser más incisivo. ¿A qué voy a ser incisivo? Si la mentalidad no se puede cambiar, ¿qué decisión hay que tomar? cambio equipo.
+48:1748 minutos y 17 segundosYo sí, yo soy de la idea de que la las personas siempre primero. Las personas siempre primero. Sin embargo, si las personas hoy día no van a la velocidad o
+48:2648 minutos y 26 segundosno tienen las capacidades para desafiar y cambiar a la organización, no es la organización para ello. Hay que tomar decisiones difíciles más una hora.
+48:3548 minutos y 35 segundosHace 10 años no podíamos licencia de planes de mejora, eh acompañamiento de 1 2 3 4 años o no tomar decisiones, que es
+48:4348 minutos y 43 segundoslo que usualmente se hacía. Pero hoy día ya esa brecha ya no existe, o sea, estamos perdiendo de nuevo competitividad y eso no puede pasar.
+48:5448 minutos y 54 segundosEstoy tengo millones de preguntas, Rodrigo. E y quién debería liberar ese cambio? Todos. Todos.
+49:0249 minutos y 2 segundosNo hay un responsable para No, no, para mí no. No, mira, pero que tiene que ver un poco como este cambio de mentalidad, ¿no?
+49:0649 minutos y 6 segundosSí. O sea, yo creo que todos y y incluso también asumiendo que hoy día tenemos input de nuevo, eh este cambio de de
+49:1449 minutos y 14 segundosmindset, yo creo que trasciende a las tecnologías que uno pueda tener eh como persona o la organización, pero ya asumiendo que cada uno de nosotros tiene una suite, en este caso
+49:2349 minutos y 23 segundosde inteligencia artificial o tecnología más o menos equivalente, por lo cual eh casos de uso, inspiración, debate, este putball, cada
+49:3149 minutos y 31 segundosuno de nosotros lo puede tener desde el analista, desde el ejecutivo, desde el guardia hasta el CEO. Entonces, hoy día cualquiera de nosotros podría ser un
+49:3949 minutos y 39 segundosmotivador, un habilitador de un nuevo, en este caso mindset, eh para hacer un cambio positivo en la compañía. Para mí,
+49:4749 minutos y 47 segundoseh, pequeños ajustes generan un gran cambio. Eh, y difícilmente si un CEO, por ejemplo, que puede tener una visión
+49:5549 minutos y 55 segundosespectacular sobre algo, pero no tienen las personas que tienen el hambre de poder ejecutarlo o de adaptarse, básicamente se va a quedar una muy linda
+50:0450 minutos y 4 segundosestrategia, una muy linda PPT que difícilmente se va a ejecutar. Esto tiene que pasar por toda la línea.
+50:0950 minutos y 9 segundosMe gusta eso porque eh me me preguntan siempre, me han invitado a podcast alguno y me dice así como, ¿cómo es Felipe?
+50:2050 minutos y 20 segundosY me gusta decir esto que es y creo que la línea lo que está diciendo, como yo no soy mucho del qué, como y si lo tengo como lugar es como de la doy mucha idea,
+50:3050 minutos y 30 segundospero pero no me siento tan partícipe del de darle idea, sino que soy más del cómo buenísimo.
+50:3650 minutos y 36 segundos¿Cómo ejecutar esa idea, soy muy de ejecutar? Exacto. Y y ahí donde sale la creatividad, porque el que nace de un objetivo de negocio.
+50:4350 minutos y 43 segundosBásicamente, si estamos con un desafío de incrementar, no sé, o disminuir el PCL para la banca, claramente sobre ese
+50:5250 minutos y 52 segundosdesafío inevitablemente el que va a aparecer. Sí, es parte porque es una necesidad.
+50:5750 minutos y 57 segundosExacto. Y y es supercara y es cosa de ver y enlazar básicamente el mundo financiero de negocios estratégico con marketing es una linealidad bastante
+51:0551 minutos y 5 segundossimple, pero el cómo ahí donde nace la creatividad y ahí de nuevo el toque humano de cuestionarse, de repensar de nuevo,
+51:1351 minutos y 13 segundoseh llega a la mesa y y eso yo creo que es lo que realmente nos va a desafiar a tener mejores resultados.
+51:1851 minutos y 18 segundosSí, absolutamente, porque buenas ideas todos tienen, todos, pero quien concreta esas buenas ideas son pocos. Exactamente.
+51:2551 minutos y 25 segundosY creo que esas son las personas claves. Excelencia la ejecución. Sí.
+51:2951 minutos y 29 segundosBasado en este caso con todas las condiciones que hba la otra vez escuchaba también un podcast de de
+51:3651 minutos y 36 segundosNico Cami, el CEO de Bambe, en donde estaba en inglés el podcast, pero plantea cuatro cosas dentro de su equipo y una de ellas era la excelencia.
+51:4651 minutos y 46 segundosMira, la excelencia también. Yo soy compromiso, como capacidad de innovación, pero excelencia, excelencia la ejecución
+51:5451 minutos y 54 segundosclase A. sea, como necesito gente clase A y eso es algo también que que al menos en y ahí de nuevo voy a voy a ser muy
+52:0152 minutos y 1 segundoegoísta con mi comentario, pero algo que personalmente me ha servido mucho es siempre y probablemente el el podcast lo
+52:0952 minutos y 9 segundosvan a leer y sea lo van a ver y escuchar muchas personas de de mi ex equipo, pero van a decir si R tiene razón, siempre la excelencia, la ejecución es uno de los
+52:1752 minutos y 17 segundospuntos que bueno, primero a ello, los motiva a hacer los mejores en su disciplina, el que mejora hace, el que mejor ve Web Analytics, el que mejor ve
+52:2652 minutos y 26 segundosla estrategia de pricing, el mejor programa lealtad, siempre buscar y dar esa visión de que el equipo actual puede lograr ser el número uno
+52:3452 minutos y 34 segundossin restricción, no hay ningún tipo limitante para ellos para ejecutarlo. Y nosotros en este caso cuestionando el cómo, porque el que ellos ya lo tienen
+52:4252 minutos y 42 segundosya de Sí, claro. Sí, claro.
+52:4552 minutos y 45 segundosDijiste, Rodri, el futuro de los negocios será operado desde marketing. Sí, explícame eso más allá de lo lógico de la frase, pero explícamelo.
+52:5552 minutos y 55 segundos¿Por qué creo? Y de verdad lo creo, eh, un poco enlazado con uno de los puntos que tocamos al al inicio. Marketing a mi
+53:0153 minutos y 1 segundoparecer no es empírico, en realidad se ve marketing es la única área en las compañías que tienen el contacto con el
+53:1053 minutos y 10 segundoscliente, contacto con los datos, contacto con tecnología, con los canales, con procesos, con riesgo, con operaciones, con contabilidad.
+53:2053 minutos y 20 segundosSi si te fijas, no hay otra área que tenga ese punta a punta. Entonces, y también repienso la la respuesta que te
+53:2753 minutos y 27 segundosdi antes de quién debiera liderarlo. Si de pregunta es respuesta simple, yo diría que son todos. Pregunta compleja o respuesta compleja, perdón, es marketing.
+53:3753 minutos y 37 segundosMarketing hoy día es el que tiene que traer el cliente y situarlo acá en un ambiente competitivo donde cualquiera
+53:4453 minutos y 44 segundospuede tocarlo de una forma particular, única, eh, pero también es el que trae la emocionalidad, el corazón, eh, que no
+53:5353 minutos y 53 segundoslo no te otorga la tecnología, perdón, como la inteligencia artificial. Y adicionalmente es un área que empata, que empalma eh directamente los
+54:0254 minutos y 2 segundosresultados tanto de negocio como creación de marcas, eh experiencia cliente. O sea, hoy día inevitablemente marketing es quien tiene todas las armas
+54:1054 minutos y 10 segundoseh sobre la mesa que podría activar eh para ir a una batalla, en este caso en busca de un cliente o transformar en una compañía.
+54:1754 minutos y 17 segundosMe gusta, es super desafiante eso. Super desafiante.
+54:2054 minutos y 20 segundosRodrigo, me voy a meter en el último tema, future, pero más en profundidad.
+54:2454 minutos y 24 segundos¿Qué es el Achieve Marketing Operation Mod? ¡Ufa! Eso es un fue un debate interno mío de cómo poder generar algo
+54:3454 minutos y 34 segundosdiferente e que realmente que se escuche bien, pero que también
+54:4054 minutos y 40 segundostenga patas tangibles, palpables y que generen impacto. Básicamente un sistema operativo, un modelo que estoy creando,
+54:4954 minutos y 49 segundosque ya está, pero de esto lo voy a subir en la web probablemente estos días.
+54:5454 minutos y 54 segundosEh, para porque quiero también que sea de de conocimiento muy muy mentalidad Google open, o sea,
+55:0255 minutos y 2 segundosperdón, e compartir todo eh oldure, digamos.
+55:0655 minutos y 6 segundosExactamente. Yo yo siempre digo abrir el quimono, voy a abrir el kimón, pero básicamente como eh marketing, un poco lo que hablamos recién a través de
+55:1355 minutos y 13 segundostecnología, eh con estos habilitantes de inteligencia artificial, que básicamente una suit de agente. Perfecto.
+55:1955 minutos y 19 segundosPero no conversacionales, sino que son eh de talent. Perfecto.
+55:2355 minutos y 23 segundosYo le voy a dar un input. Eh, por ejemplo, eh, te subo la memoria corporativa, los balances eh
+55:3255 minutos y 32 segundosinstitucionales, financieros, perdón. eh toda tu estrategia de agencia, eh notas
+55:3955 minutos y 39 segundosde prensa de los ejecutivos, cuál es tu competencia, benchmark de mercado, estudios de research, es decir, generar una una laguna de conocimiento que
+55:4855 minutos y 48 segundostrasciendas a cada uno de los en este caso, los agentes, eh los cuales van a ser eh perfeccionados tanto por el
+55:5555 minutos y 55 segundoscliente como por futur esa ese enfoque competitivo. ¿Y cuál es la lógica? tener un modelo de operación
+56:0256 minutos y 2 segundosque entre ellos ejecutenas eh que sean por supuesto validadas de nuevo por un humano nunca lidere albedrío y el humano enfocarse en
+56:1256 minutos y 12 segundoschalenguear al modelo para ser siempre más rentable. Entiendo. Eh, si lo muy advisor, ¿no?
+56:2056 minutos y 20 segundosComo muy advisor. Exactamente. Y eso, ¿qué nos permite?
+56:2356 minutos y 23 segundosPrimero escalar el clásico problema eh de nuestra de nuestro modelo actual. Eh, esa mirada logarítmica en un mundo
+56:3256 minutos y 32 segundosexponencial no vale. O sea, 1 + 1 no diría dos, pero en la actualidad 1 +s un
+56:3956 minutos y 39 segundospuede ser cinco, puede ser 10. Ese es el challenge. Es como el ADN del modelo donde cada acción, interacción, más allá
+56:4756 minutos y 47 segundosdel equipo de consultores, agencias que te acompañen, puedan brindar una vista que siempre sea exponencial, que no sea logaritmica, que no sea competitiva, que
+56:5556 minutos y 55 segundosno sea lo que tú esperas. Siempre darle como un enfoqueendo, real, distinto, impactante.
+57:0057 minutosY y ¿qué necesita la una? No, cambia la pregunta.
+57:0657 minutos y 6 segundos¿Qué empresas están preparadas para poder hacer eso y qué empresas no?
+57:1057 minutos y 10 segundosDe hecho, ese eso es algo que también me cuestioné mucho de yo aquí me estoy jugando mi visión y mi corazón.
+57:1657 minutos y 16 segundosPerfecto, perfecto. Obvio, por ende tengo como mi cliente ideal. Okay, bacante.
+57:2057 minutos y 20 segundosDe hecho, en la web subí cuáles necesito que sea mis clientes y cuáles no. Muchas gracias. conversemos y feliz de tenerlo y me parece perfecto, super transparente
+57:2957 minutos y 29 segundostambién, cuáles sí son los que realmente quieren hacer cambios, los que tienen capacidad de ejecutar cambio, los que ven la
+57:3657 minutos y 36 segundostecnología como un habilitador y no como un fin y e y las personas y que estén dispuestos a
+57:4557 minutos y 45 segundostomar decisiones también respecto a su equipo y sus personas y su estructura, ¿no? Pero bacán, ¿no? No lo veís como que que podríais ser mucho más
+57:5257 minutos y 52 segundostransaccional, decir, ¿cómo está construida tu base de datos? No, no me sirve. No, no, eso no es un problema. Es no no.
+57:5757 minutos y 57 segundosYo de verdad creo que ese tipo de es mucho más quali la lo el la admisión es mucho más quali, digamos. Exacto. O sea, ¿qué es lo que yo quiero?
+58:0558 minutos y 5 segundoses acompañar a mi contraparte a tener conversaciones difíciles con el gerente de finanzas o gerentes difíciles con el gerente general o ir al directorio con esta persona.
+58:1458 minutos y 14 segundosClaro, es acompañarlos, generar cambios, generar un modelo y después implementarlo que es lo sencillo. A tu punto, la base de datos, eh
+58:2358 minutos y 23 segundoseso sencillo y hoy día se puede solucionar si si nos ponemos de acuerdo no es problema, pero ese cambio radical de arriba, eso es distinto.
+58:3158 minutos y 31 segundosMe gusta, me gusta. ¿Qué? Ojo, para los que están escuchando hasta este minuto, un advisor no es lo mismo que un
+58:3958 minutos y 39 segundoscopilot, son cosas totalmente diferentes en en la esencia de un copilot, eh, o en
+58:4658 minutos y 46 segundosla esencia de un advisor. El advisor es el que efectivamente lo decías tú, el que te va te va a acompañar incluso en
+58:5358 minutos y 53 segundosun en una recomendación para poder decir, "No, eso no lo digas, di esto." Eh, versus que un copilot es un asistente. es literalmente hace esto,
+59:0159 minutos y 1 segundohace esto otro como a grandes rasgos tiene matices. Pero sí, de hecho, por ejemplo, uno de los casos de uso que estamos construyendo es eh bueno, transversalmente a los ocho
+59:1059 minutos y 10 segundosagentes que estamos construyendo eh que hagan eh scrapper de las apariciones de prensa, eh las e los mensajes que los
+59:1959 minutos y 19 segundosmismos ejecutivos, los altos ejecutivos de las compañías eh emitan. De modo que proactivamente un domingo, ojalá que no un domingo, un viernes, digamos, a las 3
+59:2759 minutos y 27 segundosde la tarde, te llegue un WhatsApp o te lle un correo eh con una sugerencia. Oye, de acuerdo al este input, no sé, aparición en
+59:3559 minutos y 35 segundosprensa de alto ejecutivo en medio A, B, C, este comentario, la tu competencia dijo esto hace 3 días, hagamos algo, está loco.
+59:4459 minutos y 44 segundosLancemos una campaña o lancemos un nuevo producto o repensemos la estrategia. ese tipo de input a tu punto de asesor es lo que le da fuerza y forma al modelo.
+59:5559 minutos y 55 segundosSeguro. De hecho, te voy a te voy a dejar un dato.
+59:5859 minutos y 58 segundosEl último capítulo de Efecto WoW vino Benjamín Martínez. ¿Quién es Benjamín Martínez? Founder y CCO de una empresa
+1:00:041 hora y 4 segundoschilena llamada Mido. ¿Qué hace Mido? Le fue a meter inteligencia artificial a los huasos en el campo en el sur. Buena. Oh, escúchalo.
+1:00:131 hora y 13 segundosEntonces, lo que hace y que lo esto es en mi cabeza no más, no sé si están posicionado así, pero en mi cabeza cuando me habláis de WhatsApp es mido. Claro.
+1:00:191 hora y 19 segundosY lo que hace es un advisor que les manda los wasos, con todo el respeto, información de sus predios en términos
+1:00:261 hora y 26 segundosde de agricultura a través de mensajes de WhatsApp. Es si tenía un minuto, escúchalo que te puede ayudar
+1:00:341 hora y 34 segundosy me hace mucho sentido lo que me estáis planteando en este roll de advisor.
+1:00:391 hora y 39 segundosExacto. Y que sea información de valor, porque hoy día el gran problema que tenemos es que tenemos tanta información sobre la mesa que con cuál de estas palancas tomamos
+1:00:471 hora y 47 segundosdecisiones. Entonces, el modelo es identificar lo que realmente te va a mover la aguja y que te lo proponga como una sugerencia de
+1:00:541 hora y 54 segundosactividad eh de acción y si tú lo validas que parta el trabajo, que parta la fiesta entre la hecho lo que planteaba Benjamín era que un agricultor
+1:01:021 hora, 1 minuto y 2 segundosen Chile por malas decisiones puede llegar a perder hasta $200,000 por malas decisiones que son decisiones totalmente evitables.
+1:01:091 hora, 1 minuto y 9 segundosEvitables, cachá. Y eso pasa siempre en eso.
+1:01:131 hora, 1 minuto y 13 segundosLoco, qué loco. Eh, Rober, estamos llegando al final, pero yo hago un jueguito. Quiero hacer un jueguito como de ping pong. Cachá eso.
+1:01:191 hora, 1 minuto y 19 segundosBueno, claro, claro. Eh, respuestas cortitas para poder entender bien y que sea un poquito entretenido, pero si no
+1:01:271 hora, 1 minuto y 27 segundosquería responder el paso siempre. No, no, no. Vamos, vamos. Yo me la juego.
+1:01:301 hora, 1 minuto y 30 segundosYa, perfecto. Voy a partir. Em, perdón la expresación, pero la mayor caga que te hay mandado haciendo marketing.
+1:01:381 hora, 1 minuto y 38 segundosLa mayor eh, yo creo que el modelo de regionalización, yo creo que lo
+1:01:461 hora, 1 minuto y 46 segundosimplementé de una forma que no debió haber sido en escucha.
+1:01:481 hora, 1 minuto y 48 segundosSí, pero lo que me estáis diciendo, Rodrigo, sí, puedes extrañarte, digamos. Llegué con una lógica, con un modelo, con una
+1:01:561 hora, 1 minuto y 56 segundosidea robusta, eh, compleja y la correcta. Sin embargo, la forma de implementarlo fue desastrosa.
+1:02:041 hora, 2 minutos y 4 segundosOy, qué loco. Sí. O sea, si miro hacia atrás, digo, eh, de nuevo, el fin era el correcto, ¿no? Sin ningún cambio,
+1:02:131 hora, 2 minutos y 13 segundospero la forma de implementarlo fue pero desastrosa. Desastroso. Sí, sí, sí, sí, sí. Y aprendimos mucho, aprendimos, yo creo que todos aprendimos mucho del
+1:02:211 hora, 2 minutos y 21 segundosproceso. Es que la la esta compañía es muy grande, es muy grande y obié muchas variables que debía considerado,
+1:02:291 hora, 2 minutos y 29 segundospero bueno, pero salimos de todo eso y hoy día el está funcionando muy bien.
+1:02:321 hora, 2 minutos y 32 segundosClaro, como que yo siempre valoro mucho cuando cuando me dicen cagado, por ejemplo, yo desconfío de las personas que me dicen, "No, no me he equivocado nunca." No, de los negocios que me dicen, "No, nuestros procesos son super.
+1:02:431 hora, 2 minutos y 43 segundosLo más probable es que no trabajaría contigo porque para mí el hacer marketing, hacer digital es echar a perder." Pues obvio. Sí, tiene mucho de eso.
+1:02:511 hora, 2 minutos y 51 segundosEh, voy para el otro lado.
+1:02:531 hora, 2 minutos y 53 segundosLo que más orgulloso te sentí en términos laborales. El equipo. El equipo yo hiciste. Yo sabía que me iba a responder eso.
+1:02:591 hora, 2 minutos y 59 segundosLa persona. La persona de hecho, en el banco fue increíble. Yo soy una persona super poco emocional. Yo soy bien robótico para mis cosas.
+1:03:081 hora, 3 minutos y 8 segundosEn serio.
+1:03:081 hora, 3 minutos y 8 segundosSí, sí. Pero sabes qué, eh, perdón, robótico en el sentido de que no demuestro mis emociones. Okay, ya. Pero soy muy emocional. Sí.
+1:03:161 hora, 3 minutos y 16 segundosEh, pero estas las semanas de despedidas fueron increíble, ¿no? Para mí el equipo me marcó y me va a seguir marcando, pero
+1:03:241 hora, 3 minutos y 24 segundosese amor, el cariño, el respeto, el compañerismo, esas ansias, los desafíos, lo agradezco y lo puedo agradecer siempre.
+1:03:311 hora, 3 minutos y 31 segundosQué lindo. Volveréis un banco 100%. Claro, pero yo como advisor, como advisor siempre veo que hay tanta oportunidad
+1:03:391 hora, 3 minutos y 39 segundosque me pican las manos por no trabajar con todos los bancos de Chile.
+1:03:431 hora, 3 minutos y 43 segundosQué loco, qué loco. Eh, el marketing en Chile, ¿en qué posición lo pones en la región?
+1:03:521 hora, 3 minutos y 52 segundosEn general, estoy hablando en general, incluyendo IA. Pionero de todas maneras. Soy pioneros. Técnicamente muy muy bueno. Muy bueno.
+1:03:591 hora, 3 minutos y 59 segundosDe hecho, tal como te comentabas, me tocó trabajar con 15 países dentro del continente.
+1:04:041 hora, 4 minutos y 4 segundosChile siempre estacó por su calidad técnica. Yo creo, ¿qué nos falta?
+1:04:081 hora, 4 minutos y 8 segundosPrimero, el chileno tiene una cultura de de creernos poco el cuento. Eh, por ende
+1:04:161 hora, 4 minutos y 16 segundosexponemos poco, mostramos poco, pero cuando mostramos la verdad que yo sentía un orgullo tremendo, en este caso de mi gerente marketing de Chile cuando
+1:04:241 hora, 4 minutos y 24 segundosmostraba actividades que se están haciendo acá que realmente inspiraban a otros mercados y los otros mercados copy paste se implementa. Eh, eso es muy
+1:04:331 hora, 4 minutos y 33 segundosbueno. Y qué que yo creo que no estamos tan bien en la creatividad. Oh, mira tú.
+1:04:391 hora, 4 minutos y 39 segundosSí, en temas técnicos, adopción de tecnologías, nuevas herramientas, Martech, super bien, super bien y siempre muy busquilla y sólido, pero creatividad estamos muy abajo.
+1:04:491 hora, 4 minutos y 49 segundosLos amigos argentinos, los argentinos, los colombianos, los peruanos. Perú es un país muy creativo. Qué loco. Eso está bueno.
+1:04:561 hora, 4 minutos y 56 segundosY es una cultura creativa, ¿no? Nosotros no somos más para dentro, más eh recatados, eh más proteccionistas, muy poco arriesgados. Yo creo que eso
+1:05:051 hora, 5 minutos y 5 segundostambién deriva en una creatividad mucho más limitada. Claro. Ángel Zurieta, ex CEO de Google Cloud y ahora está en Huawei. Huawei.
+1:05:131 hora, 5 minutos y 13 segundosHuawei, para que no nos reten eh VIP de Huawei Cloud.
+1:05:171 hora, 5 minutos y 17 segundosEh, hablaba lo mismo de ti, como que Chile era un era un pionero en términos de Marte hecho de tecnología, no hablaba, no habló lo de la creatividad,
+1:05:241 hora, 5 minutos y 24 segundoseso lo agregaste tú, pero pero hay un punto y yo lo veo como una gran oportunidad también para nosotros. Bueno, em
+1:05:321 hora, 5 minutos y 32 segundosRodrigo, Rodrigo Orellana tiene como eh ll cabecera a Open AI con CH GPT, Antropic con Cloud o Google con Gemini.
+1:05:421 hora, 5 minutos y 42 segundosChat GPT. Chat GPT.
+1:05:441 hora, 5 minutos y 44 segundosSí, soy de esa escuela. Pero sin sin mentirte, hoy día me estoy cuestionando.
+1:05:481 hora, 5 minutos y 48 segundosHoy día en la mañana me cuestioné tener en paralelo a Cloud. O sea, ocupo Cloud, pero la versión no par. Claro, claro. Pero muy probablemente me voy a migrar prontamente.
+1:05:571 hora, 5 minutos y 57 segundosYo meigré ya es loco.
+1:05:591 hora, 5 minutos y 59 segundosEstá, o sea, soy fiel. Yo hace un año y medio que tengo suscripción a chatt de hecho todavía la tengo. Pero te mantienes con las dos.
+1:06:061 hora, 6 minutos y 6 segundosSí, estoy estoy pagando también la la Clotone 4.6.
+1:06:121 hora, 6 minutos y 12 segundosúltimamente me sorprendendo loco está loco.
+1:06:161 hora, 6 minutos y 16 segundosEh, creo que soy un poco viudo de, o sea, no voy a podría ser, si me voy ahora sería como viudo de chat GPT, pero yo creo que esa voy a dejar de pagar
+1:06:241 hora, 6 minutos y 24 segundosuna, ¿sí? O o o tener las dos. Yo creo que es lo que estás haciendo. Yo lo uso las dos, pero pago solamente, ¿qué opináis de los ads en los LLM? de
+1:06:331 hora, 6 minutos y 33 segundosde los de los anuncios ADS en yo lo veo bien si eso te permite la clásica del término que lo encuentro muy populista pero el democratizar el acceso
+1:06:411 hora, 6 minutos y 41 segundosestá perfecto y estamos acostumbrados es algo que nos molesta o es algo más moralista. Mira, de hecho,
+1:06:501 hora, 6 minutos y 50 segundosno sé si viste un anuncio de que se ganaron muchos premios de Spotify, que por Spotify Ads free que sería como la
+1:06:591 hora, 6 minutos y 59 segundoslas sensaciones. Sí, espectacular. No sé, mostraban un brazo con Spotify, lo que creaba en las personas, no sé, los
+1:07:061 hora, 7 minutos y 6 segundospelos eh erizados, ads, bajaba, pero después volvía a erizarse. Qué loco.
+1:07:121 hora, 7 minutos y 12 segundosMás que centrarme en el momento que se dejan deizar los los pelos bacán. es eh te da la posibilidad también deizarte, o
+1:07:201 hora, 7 minutos y 20 segundossea, eh si sin eso probablemente limitaríamos el acceso a tecnologías que dieran ser universal.
+1:07:241 hora, 7 minutos y 24 segundosQué buena verlo así. Me gusta mucho verlo así.
+1:07:291 hora, 7 minutos y 29 segundosLa última que yo diría que que esta es la más importante de todas, eem,
+1:07:371 hora, 7 minutos y 37 segundos¿qué es lo que hoy día en un área de marketing como creencia está totalmente equivocado?
+1:07:431 hora, 7 minutos y 43 segundosCampañas, campañas, campañas. No es lógico que hoy día un equipo de marketing, un gerente
+1:07:501 hora, 7 minutos y 50 segundosmarketing, un ejecutivo, un brad manager sigan pensando una lógica de campaña comoérides, ¿no? Exacto. Eso es muy old school, muy
+1:07:591 hora, 7 minutos y 59 segundosold school y no responde a las necesidades reales del negocio. El negocio ya no es lineal. El negocio, no no recuerdo con quién lo hablaba el otro
+1:08:071 hora, 8 minutos y 7 segundosdía, si no te doy el nombre, pero me decían de un caso de una venta de chaquetas de Parcas, básicamente en
+1:08:151 hora, 8 minutos y 15 segundosverano, eh, y un no recuerdo a quién, pero básicamente le llegó la instrucción porque alguien tal vez del directorio
+1:08:231 hora, 8 minutos y 23 segundosdel board o algún C level vio esa campaña y en verano y quería estar y dijo, ¿no? Y dijo claramente, "No, pero ¿por qué? Pero si estaba en verano,
+1:08:311 hora, 8 minutos y 31 segundosplaya." Ah, ya te entiendo. Al revés. Claro, pero los números decían que la gente que va, no sé, a la nieve o a vacaciones, lo
+1:08:401 hora, 8 minutos y 40 segundosque sea, sí estaba comprando, por ende había un driver, una motivación de consumo real, los datos lo decían.
+1:08:461 hora, 8 minutos y 46 segundosEntonces esa lógica de la temporalidad o de tener ese calendario clásico anual, ya está muy solo.
+1:08:541 hora, 8 minutos y 54 segundosMe gusta, voy a hacerte una más.
+1:08:561 hora, 8 minutos y 56 segundosTodo tiene que ser con número en mano o no todo yo más que número objetivos de negocio. Objetivos de negocio.
+1:09:041 hora, 9 minutos y 4 segundosToda decisión tiene que ser con un número en mano o puede ser algo más de guata. Sí. No, yo creo que tiene que tener el número en mano, alguna visión,
+1:09:131 hora, 9 minutos y 13 segundosalgún objetivo, algún desafío. E te permite cuantificar, o sea, si tienes que crecer 300% no es lo mismo que crecer 2 o 3%. Estoy de acuerdo contigo.
+1:09:211 hora, 9 minutos y 21 segundosSin embargo, sí hay que agregarle la capa de emocionalidad de corazón. Eso es humano, eso necesario y no se puede perder.
+1:09:301 hora, 9 minutos y 30 segundosOye, se nos pasó el tiempo. Vamos a cumplir una hora y cuarto. Rodrigo, te que te contraagradezco, me voy a quedar con una frase que me quedó aquí, que es
+1:09:401 hora, 9 minutos y 40 segundoslo más probable que la gente que esté aplicando mal la IA ya le esté generando algo positivo, algo bien.
+1:09:461 hora, 9 minutos y 46 segundosEso, esa frase me es lo que me va a quedar. Rodrigo, te agradezco mucho, mucho tu tiempo. Hubiera estado aquí hablando tres horas más, pero no te
+1:09:551 hora, 9 minutos y 55 segundospuedo quitar tanto tiempo tampoco, así que estoy muy contento que hay estado acá. Se me pasó volando el episodio, lo pasé muy bien y
+1:10:041 hora, 10 minutos y 4 segundosy nada, seguir en contacto como siempre, eh, en lo que necesites. Yo estoy a disposición también, así que eso, te agradezco mucho. Para el cierre de la cámara es tuya, lo que tú queres decir.
+1:10:141 hora, 10 minutos y 14 segundosBueno, primero agradecerte a ti, Felipe.
+1:10:161 hora, 10 minutos y 16 segundosPrimero, bueno, son varias cosas que agradecerte. La primera es crear espacio de conversación.
+1:10:201 hora, 10 minutos y 20 segundosEso, créeme que hacerlo implica tiempo, implica eh dejar cosas de lado y tú lo estás haciendo de la forma muy desinteresada y generando mucho valor.
+1:10:301 hora, 10 minutos y 30 segundosYo he visto los efectos wow en el pasado y me he quedado con muchas cosas que de verdad me han servido. Así que de verdad te lo agradezco enas.
+1:10:381 hora, 10 minutos y 38 segundosSegundo, la invitación. Eh, te conozco hace muchos años, he visto tu carrera impactante, eres un referente y creo que
+1:10:451 hora, 10 minutos y 45 segundosa todo el mundo le gusta escucharte, le gusta tu capacidad comunicacional de dar mensajes claros, yo creo que nos sirve a todos también como una inspiración.
+1:10:531 hora, 10 minutos y 53 segundosMuchas gracias. Muchas gracias.
+1:10:541 hora, 10 minutos y 54 segundosY tercero, por la conversación en este momento, que personalmente para mí es bien e de punto de quiebre. Perfecto.
+1:11:011 hora, 11 minutos y 1 segundoAsí que tener conversiones como esta también me hacen repensar algunas cosas, mi discurso, los mensajes, eh también tus preguntas también muy adecuadas
+1:11:111 hora, 11 minutos y 11 segundosy me sentí muy cómodo, lo pasé muy bien feliz, de verdad estoy muy honrado que estés diciendo eso. Así que nada, amigo mío, le agradezco mucho
+1:11:191 hora, 11 minutos y 19 segundostoda la gente que llegó hasta aquí. Voy a hacer cambio de cámara ahora. Toda la gente que llegó hasta aquí, le agradezco mucho, mucho. Sigan nuestras redes sociales. Tengo que hacer la última
+1:11:261 hora, 11 minutos y 26 segundosmención a Toct. Toct.com, el auspiciador de este espacio efecto WoW. Ingresen a tokt toct.com para buscar propiedades,
+1:11:331 hora, 11 minutos y 33 segundospara financiar una propiedad. Tenemos alianza con Banco Itaú directamente y con algunas entidades financieras también les podemos ayudar a buscar su hipotecario. También tenemos opciones de
+1:11:421 hora, 11 minutos y 42 segundosayudarle a comprar una propiedad, oferta y hablamos con nuestros clientes inmobiliarios, las hacemos todas, nos hacemos cargo de todo el ciclo
+1:11:491 hora, 11 minutos y 49 segundosinmobiliario toc toct.com auspiciador de este espacio. Rodrigo, me vuelvo a despedir de ti, amigo mío. Que esté muy bien. Un abrazo a todos. Nos vemos en un
+1:11:581 hora, 11 minutos y 58 segundospróximo episodio. Que esté muy bien. Ch
+
+Sincronizar con el tiempo del vídeo

@@ -1,0 +1,1567 @@
+0:00
+¿Cómo eso, huevón? Cuando te encontráis con un C level que no tiene idea de lo que está hablando o sea, yo creo que hubo momento en que
+0:07
+me dio raya porque [risas] alguien, un C level de una empresa, no voy a decir cuál, me dice, "Es que yo creo que
+0:13
+ocuparía es de flojos." Entonces, claro, ¿cómo veis? ¿Cómo el equipo de él va a querer ocupar la meterla en los precios
+0:18
+optimizar lo que está haciendo? ¿Cachá? Entonces, claro, esto normalmente yo siempre digo como que la estrategia de opción en la empresa tiene dos lados.
+0:24
+Uno es habilitar a la gente que va a ocupar la herramienta, pero por otra parte si no hay una decisión desde arriba de por qué queremos hacer esto,
+0:31
+cuáles son las dónde queremos meterle y dónde no que son decisiones editoriales de negocios, ¿cierto? Y cuáles son las
+0:37
+los megaproyectos donde en verdad la idea nos podría ayudar, ¿cierto? Si no está ese como esa ese flujo desde como
+0:42
+de arriba hacia abajo el top down, pero también habilitar para que surjan bot. Si eso no ocurre, no va a haber
+0:47
+adopción. [música]
+0:58
+[música] Grabando, grabando. Bienvenidos, bienvenidos todos a un nuevo episodio de
+1:04
+Efecto W podcast. Uh, tenemos invitado, ya lo están escuchando, nuevo episodio
+1:09
+de Effecto Podcast. Estoy muy contento. Ya vamos en la en la temporada 2, capítulo 20, si no me equivoco. Y eh hoy
+1:17
+día tengo un gran gran invitado que [música] lo tenía prometido, lo tenía para las personas que me habían
+1:23
+preguntado, pero antes de presentarte tengo que hacer dos cosas. Uno, primera mención, auspiciador de Efecto World
+1:29
+Podcast. Toc toc, auspiciador de este espacio hace ya varios capítulos, te
+1:35
+informo. Eh, no sé cómo habrá llegado aquí, pero bueno. Eh, y la jefa de de del equipo de branding me manda siempre
+1:42
+las menciones. Toc toc, ¿quién es tu advisor en términos hipotecarios? Te
+1:48
+cuento. ¿Qué Toc tiene? La posibilidad de buscar propiedades, financiarte una propiedad, eh venderte una propiedad,
+1:55
+ayudarte en todo ese ciclo de compra. toct.com tiene 247 atención
+2:01
+personalizada para todas las personas que estén buscando una inversión, una primera vivienda, quieran buscar un
+2:06
+crédito hipotecario, nada, tokt.com, ingresen ahora Toct, pueden encontrar
+2:11
+información de mercado de propiedades nuevas, de propiedades usadas, arriendo, eh los precios, información detallada en
+2:18
+las fichas, en fin, toc, toc.com de este espacio. Lo segundo, tenemos nuestras
+2:25
+redes sociales, eh, Spotify y YouTube como plataformas principales para poder escuchar este capítulo y además
+2:33
+Instagram, TikTok, LinkedIn, todo como efecto WoW podcast. Búsquennos que ahí estamos. Así que nada, sin más
+2:39
+preámbulos, sin mucho más que decir, con nosotros, y estoy muy contento que esté aquí, con nosotros está el señor Rodrigo
+2:47
+Rojo. ¿Qué tal? ¿Cómo estás? Aplauso para Rodrigo. [aplausos] Segunda vez acá. Segunda vez. Sí,
+2:53
+está bueno eso, ¿no? Sí, feliz. Feliz. Sí, pero en la primera estuvo Mario con nosotros. Estábamos los tres. Mario que
+2:59
+era co cohost de de de Efecto W podcast. Hoy día ya estoy en una mirada un
+3:05
+poquito más solitaria. Claro. Saludo a Mario que está tapado en pega por eso no. [risas] Mario CEO de una empresa con eso capo.
+3:13
+Entonces con eso le digo todo. Pero eh siempre está muy atento al podcast,
+3:18
+siempre me escribe, siempre está ahí diciéndome, me está dando consejo, así que cuando quiera puede volver, no hay ningún problema. Ahora, Rodrigo, segunda
+3:26
+vez aquí y esta invitación estaba hace un rato planteada.
+3:32
+Básicamente, ¿por qué? Porque desde que viniste hace un par de meses hasta ahora,
+3:37
+eh, han pasado cosas, muchas cosas, muchas cosas. [risas] Eh, ¿y sobre qué? Bueno, yo siempre hago
+3:45
+un un backup, Rodrigo, un background de las personas que yo traigo al al podcast e un poco yo estoy
+3:53
+lejos de chuparte las patas, Rodrigo, pero [risas] eh para mí era el número uno de Chile en
+3:58
+términos de inteligencia artificial, eso y no solo lo digo yo, sino que lo dice lo dicen desde ranking Fabicon y otros
+4:06
+hasta eh tu alumno, las personas que toman clases contigo, en fin. Eh, pero
+4:11
+tu carrera es mucho más amplia que la IA, tiene que ver con marketing, tiene que ver con tecnología, tiene que ver
+4:17
+con con desarrollos de innovación. Y en este caso, eh, nos convoca la inteligencia artificial, porque vuelvo,
+4:23
+voy de vuelta, para mí erí el número uno de Chile. Eh, pero tenía una una trayectoria que
+4:29
+también habla un poco como de los ejercicios de comunidad, el famoso club de la IA, ya lo fundaste tú. Eh, estáis
+4:35
+hoy día también impartiendo cursos que tienen que ver con IA para todos, que de eso también yo creo que hablo un poco
+4:41
+como, no sé si llamarle evangelización de esto, pero sí un poco de democratización. Claro. Yo yo creo que efectivamente la
+4:47
+es una de las tecnologías, sino la tecnología más eh como radical en términos de o transformadora en en del
+4:54
+mundo actual. Y al final, para mí, por lo menos, siento que que es algo que todos debiesen saber o todos debiesen integrar
+5:00
+en su día a día de de Rey a Paje. Todos debiesen aprender a ocupar la e involucrarla porque en verdad es muy habilitadora y y
+5:08
+también permite que la gente pueda aprender cosas nuevas de forma mucho más rápida. Entonces, eh por lo menos yo estoy un convencido
+5:14
+de que el mundo va a ser con en adelante y si no nos movemos rápido para que la gente lo empiece a ocupar, el golpe va a
+5:20
+ser muy duro. Es verdad. hay docente, ha sido advisor de empresa, más de 12
+5:27
+años en startup, en fin, no no voy a decir mucho más. Yo creo que las credenciales hablan por sí sola, e pero
+5:33
+tengo un hook para partir la conversación. A ver, tengo un hook que me me a mí me gusta esto porque porque
+5:39
+siempre como que trato de mirar más allá, que es como hoy todos hablan de la inteligencia artificial, eso es un hecho, todos hablan y y desde el jefe
+5:46
+que te dice, huón, quiero que todo sea con hasta un tipo que en verdad está haciendo cosas y estoy hablando en
+5:51
+territorio chileno, está haciendo cosas fenomenales. Pero y ya y todo el mundo habla de ella
+5:59
+y qué se viene para dónde vamos, que que como que como que cuando te invité para
+6:06
+acá, mi mirada de la invitación, además de tener un ratito bacán de conversar los dos, era como de decir, "Ya, pero
+6:13
+estamos acá, he escuchado tu podcast también con Cristian Tal y con y con Diego Aria." Es la hora de
+6:18
+aprenderse. Lo pueden buscar en Spotify, YouTube, Apple Podcast. Muy bien, muy bien, muy bien. Y me gustó mucho un
+6:25
+capítulo que tuvieron, creo que fue el primer o el segundo, no me acuerdo, un capítulo en donde hablaba donde donde hablaban primero ustedes le hacían una
+6:32
+especie de bullying a Cristian por siempre hacemos bullying [risas] por esta mirada más apocalíptica que
+6:38
+tiene del presente futuro. Claro. Eh, me gustaba también tu mirada de cómo cómo se iban cómo se iba a
+6:44
+llevar a cabo esta renovación en la forma de trabajar de la empresa, pero ya
+6:50
+pues, pero y todos hablan de IA, pero I. Claro, o sea, la la IA está con nosotros hace rato ya, ¿cierto? Llega el desde el
+6:57
+final de 2022 que empieza a aparecer chat GPT y empiezan a aparecer los otros y hoy en día, por lo menos, lo que yo
+7:03
+veo es que efectivamente ya está, por fin las empresas lo están integrando ya de forma seria. ¿Tú lo sientes así? Sí, si me toca
+7:09
+cuando me toca trabajar con empresas en temas de capacitación, habilitación de efectivamente ahora si están como ya
+7:14
+están tarde, yo creo, pero efectivamente lo están haciendo, o sea, están dándole cuentas a las personas, lo están
+7:20
+haciendo de una forma un poquito más eh con mayor tasa de éxito, por llamarlo así, porque al principio no, como igual
+7:25
+que la no viene como las instrucciones el aprender tecnología tampoco. hay ciertas buenas prácticas de de desde que
+7:31
+instaláis SAP o un CRM o lo que sea. Siempre en todos estos cambios tecnológicos hay que tener una adopción,
+7:37
+hay cambios culturales, cambio de procesos de personas, etcétera. Y la es lo mismo, lo que pasa es que la además es muy poderosa,
+7:42
+¿cierto? Entonces estamos viendo como eh está esta este primera capa que es de aumentación, que es donde a la persona
+7:49
+tú le das y ahora es capaz de hacer más, de hacer mejor, de hacer menos tiempo, ¿cierto? de potenciar un poco el cómo él
+7:55
+trabaja. Claro. Pero eso es que hace más de lo mismo. Claro, cierto. Y quizás en algunos casos ni
+8:01
+menos personas. Por ejemplo, yo mi primera pega era analista de audiencia, trabajaba en BTR, yo descargaba los
+8:07
+ratings de la tele del día anterior o del último periodo y hacía análisis con eso y crea presentaciones, reporte y
+8:12
+cosas. Eso hoy día lo hace así. Es verdad, ¿cierto? Entonces, claro, igual alguien tiene que darle la instrucción o alguien
+8:17
+tiene que estar mirando la automatización o como lo quieras hacer, pero hay que dar uno, no cinco. Pero
+8:22
+cierto, entonces tienes un cambio ahí super potente. Sí, es verdad. Y sin ir más lejos, en ese mismo capítulo, creo que fue, no me
+8:28
+acuerdo ya, eh Cristian hablaba de ese ejemplo que ustedes lo lo desglosaron,
+8:34
+pero era como cuando él vendió pago fácil, cuando estos canadienses le compraron, canadienses creo que eran eh
+8:39
+eran, no sé, una empresa de 1000 huevones y pago fácil eran 13 y y Tala decía, yo estaba seguro que con
+8:46
+desarrollo, innovación, inteligencia artificial, yo podría haber hecho la pega a esa empresa con 13 personas. habla un poco de lo mismo, ¿no? Y y en
+8:53
+base a lo mismo que estáis planteando, el ejemplo de tu antigua pega, tú la última vez que estuviste acá lo dijiste, o sea, tu gran temor era
+9:01
+como eh una persona que se mete en el mundo laboral parte de los roles de
+9:07
+asistentes. Claro. Entonces ahí y ahí tenemos un problema importante porque el estos cargos que son los primeros en caer ante
+9:13
+la a por decirlo así, Claro. Claro. Eh, son los cargos donde además tú teníis, no sé, entraban cinco,
+9:19
+de los cuales uno de esos sería convertir en jefe después y teníais una ruta de de donde capturabas talento, se
+9:27
+desarrollaba ese talento y luego tenías reemplazo natural. Claro. Hoy si entra uno o quizá en uno, va a
+9:33
+ser muy difícil para la empresa generar ese talento y potenciarlo. Entonces, yo lo que estoy viendo sí es por un lado
+9:39
+con la con esta rol de aumentación que efectivamente hay ciertos roles que van a cambiar, ¿cierto? de que las empresas
+9:45
+probablemente van a ser empresas que van a tener menos junior y más senior, porque en el fondo la estrategia, la
+9:51
+visión de negocio, la decisión la pone la persona, ¿cierto? el criterio lo pone la persona y eso básicamente es que la I
+9:58
+aumenta sobre lo que tú tu talento natural, tu experiencia, tu conocimiento. Entonces, claro, van a ser empresas más
+10:04
+senior, pero los junior van a tener lo más complicado. Entonces, hay un desafío también a nivel educacional después que
+10:11
+hay que tener supercaro de todas maneras, pero eso todavía quedan un par de años para que pase, pero lo que debiese pasar es que las empresas se achiquen un poco,
+10:17
+que las empresas nuevas sean más chicas y como potenciadas con IAID y habilitadas con IA en todos los procesos. Pero aparte, yo creo que el
+10:25
+otro gran cambio que se viene que ver con que efectivamente estamos ya finales del año pasado, principios de esto,
+10:32
+estamos viendo todo lo de los agentes ya entrando de oro, ¿cierto? Y el agente de ella al final es un asistente, es como
+10:38
+tu chat GPT, pero que ahora tiene autonomía, entonces se puede conectar a distintas herramientas y puede trabajar por ti o ayudarte en ciertas cosas. Por
+10:44
+ejemplo, yo tengo uno mío que vi en un computador chico en mi casa, yo le hablo por Telegram y cada vez que yo tengo una
+10:50
+reunión la grabo con una herramienta que se llama Granola y él detecta que llegó una reunión nueva,
+10:57
+revisa y me dice, eh, y si hay una tarea que yo tengo pendiente, me la anota mi aplicación de tarea automáticamente.
+11:02
+Claro. Entonces, yo ya no tengo que andar procesando yo eso después, sino que yo salgo de la reunión y después abro mi
+11:08
+lista de tarea y ya está la tarea nueva. Lo mismo con ve que es una oportunidad comercial, me crea el lead en el CRM.
+11:14
+H Entonces, de alguna forma eh son cosas operativas chicas, pero que al final a
+11:20
+mí yo trabajo solo, ¿cierto?, como independiente, entonces me potencia y me habilita a concentrarme en las áreas de
+11:26
+mayor valor. Entonces, lo que estamos empezando a ver es que efectivamente estos agentes, no todos, algunos sí, depende si el equipo
+11:33
+de de la empresa lo desarrolló bien, pero en general lo que estamos empezando a ver es que ya puedes como no solo
+11:39
+aumentar a la persona, sino que tenga un asistente personalizado que no no le tengas que explicar todo
+11:44
+todas las veces, sino que él ya sabe la información de la empresa, ya sabe los procesos, conéctal con sistema. Ahora,
+11:49
+por [resoplido] ejemplo, salió yendo al tema del marketing la semana pasada, eh, Meta anuncia su MCP.
+11:56
+Exacto. Absolutamente. Que el MCP es el el Model Context Protocol, que es un protocolo que inventó la gente de Antropic de Cloud
+12:02
+para conectar herramientas entre sí, pero que la lo pueda trabajar. Ahora, por cierto, con el contexto en que
+12:09
+efectivamente plataformas de pago sí te permiten trabajar con IA, que estaba la noticia de que claro, bloqueando, ahora se puede, ahora
+12:15
+se puede. Entonces, claro, tiene este conector oficial, entonces claro, yo le podría pedir ahí y él va a poder ir a consumir la data de
+12:21
+mis campañas y trabajar con esa información y incluso le podía pedir que haga cambios dentro de eso, ¿cierto? Entonces, la gracia es
+12:27
+que estamos viendo un momento en donde la IA ya no ya deja de ser como el chatbot no más, donde yo le hago preguntas y me responde,
+12:33
+sino que empieza a almacenar documentación, tus procesos, cómo trabajas, etcétera, que la memoria y
+12:40
+también las bases de conocimiento, pero además se conecta con los sistemas con los que operáis. Entonces, eso va a
+12:45
+tener un impacto super alto en la velocidad de los equipos, eh, y también va a impactar porque hay, yo estoy
+12:52
+seguro, especialmente en las empresas más grandes, que hay gente que su rol es descargo esto, lo proceso y lo veo con
+12:57
+esta carpeta y eso la sí lo va a reemplazar, lamentablemente o favorablemente. Entonces, va a depender, va a depender.
+13:03
+Yo creo que es favorable porque al final son tareas que tienen poco valor, entonces esa persona tú la deberías mover a un área donde aporte más,
+13:09
+permite también la evolución laboral. Claro, pero el desafío está que efectivamente para hacer eso tienes que
+13:15
+capacitar a esa persona, tienes que identificar dónde de sus fortalezas dónde las puedes explotar mejor en la
+13:20
+empresa para o eh realocarlo, hacer upskilling, hacer eh
+13:27
+distintas estrategias que se tienen que hacer. Yo yo ahí siendo tiendo a ser un poquito más positivista pensando en que
+13:33
+si lo hacemos bien y desde el principio empezamos a pensar que se viene este desafío, probablemente podemos reconfigurar la empresa sin tener que
+13:39
+sacar a las personas. Claro, cuando ya te pega y no tení ese camino pensado, la opción obvia es, oye, lo voy a sacar.
+13:46
+Pero igual tiene conocimiento, igual tiene valor y conoce el negocio mejor. Pues que un poco esa esa era tu mirada
+13:52
+distinta a la de a la de a esta visión apocalíptica que es como Claro,
+13:57
+está como este ley motive de decir que en el futuro vamos a ser empresas de dos, tres personas prestando los
+14:02
+servicios entre nosotros mismos. Lo que tú planteas era eso, era como no necesariamente pues si claro, o sea, van a haber empresas de
+14:08
+dos personas que van a estar rompiéndola, pero la apocalíptica era cuando la apocalíptica era como todos despedidos.
+14:13
+Claro, claro. Yo creo que todavía no. Yo creo que efectivamente van a haber empresas nuevas que reemplacen a otras que van a
+14:18
+ser de muchas menos personas y una facturación brutal y servicios automatizados y todo,
+14:24
+pero igual requiere roles hasta hasta el por mientras no tenemos ninguna que aprenda en vivo y que eh se mejore a sí
+14:31
+mismo y cada vez sea más capaz. Mientras eso no pase, cierto, el humano sí es la única máquina
+14:37
+que aprende todos los días, ¿cierto? Nosotros nacemos y todos los días aprendemos algo nuevo y todos los días somos mejores, una mejor versión.
+14:43
+Espero, cierto, cuestionónelo, [risas] pero sí, obvio, una mejor versión. Aspiramos a hacer una mejor versión de nosotros mismos. La
+14:49
+máquina no, la máquina nace, ya tiene todo lo que tiene. Me quiero meter ahí. Me quiero meter ahí porque claro, eh en este análisis está
+14:56
+como el concepto de decir la capa humana te mete todo lo que es la cualitatividad, emocionalidad, que hoy
+15:01
+día una no la tiene. Pero quiero conectarlo con el punto anterior cuando habláis de que estamos en un en un
+15:08
+contexto agentístico, pero desde una mirada muy asistente, muy copilot si queríach. Pero cu mirada con respecto a
+15:16
+que hemos visto hoy día Metaanalyst con esta visión que está teniendo Meta y no solo Meta Google etcétera,
+15:21
+estaba en un rol de advisor, cachá, en donde ya no solo te dice qué pasó, sino que te recomienda,
+15:27
+sino que te dice qué tenéis que hacer. ¿Cómo cómo veí eso? Porque porque estáis de acuerdo conmigo que un advisor
+15:33
+no es lo mismo que un copilot, pero ambos son agentes, cachá. ¿Cómo cómo veí esa evolución? ¿Cómo cómo la
+15:39
+cómo la palpá, Rodrigo, ahora? ni siquiera es como claro ahí yo creo que efectivamente eso
+15:44
+nos va a celebrar un montón porque efectivamente ya no es solo como estos son los números, sino que en base a estos números estas son decisiones que puedes hacer y tú le dices okay y las ha
+15:51
+y las implementa. Entonces logra una aceleración brutal. ¿Cuál es el riesgo? Que tú le digas que
+15:56
+sí, sin cuestionarte tú y sin poner tu visión y tu guata en el tema. Yo siempre hablo así más data, menos guata, pero no
+16:03
+es sin guata. Claro, o sea, la intuición, la experiencia previa siempre aportan y la gran gracia es que si uno ve los negocios exitosos
+16:10
+del mundo, los que la rompen, los Steve Jobs, los Jeff Besos, los Elon Musk, etcétera, mucho de la decisión que toman
+16:17
+son super racionales, pero hay algo desde la guata que los mueve, ¿cierto? es como esto para para allá vamos y lo y
+16:24
+lo cuestionan y presionan y todo. Entonces, yo creo que en eso el humano todavía tiene un rol super relevante.
+16:29
+Eso significa que la persona tiene que ser dueño de lo que hace y de su valor y de su propuesta. O sea, en el fondo, si
+16:36
+tú no sabes de lo que estás haciendo, la yo siempre digo, la idea es superhabilitadora, la señora Juanita del minimarket y tú podrían pedirle un plan
+16:42
+de marketing. Pueden acceder a la misma cuenta, es gratuita de chat GPT, por ejemplo, para
+16:47
+hacerlo, pero probablemente ella va a llegar a un plan super genérico que va a ser bueno para su realidad porque
+16:54
+probablemente no tiene nada, entonces igual le va a aportar. Pero tú que tienes mucha más experiencia en performance, en distintas cosas,
+16:59
+probablemente vas a tener vas aun hacer una mejor pregunta, vas a darle más contexto, vas a tener el objetivo más
+17:06
+claro y por lo tanto vas a acceder como a a con mayor profundidad el conocimiento que hay de la IA en en
+17:12
+favor de lo que quieres conseguir. Entonces, si bien es super habilitador en que es democrático, todos podemos acceder a esta tecnología, al final tu
+17:19
+experiencia y tu conocimiento te permiten explotarlo y desarrollarlo de una capacidad mucho más alta. Exacto.
+17:25
+CTO. Por ejemplo, yo cuando hago mis cursos siempre digo, las personas que pasa por mi curso, vas a ver ocupar mejor la herramienta que yo. ¿Por qué? Porque yo
+17:32
+lo que te enseño ocupar la herramienta. Eh, te doy casos de de uso, ideas, etcétera, pero tú la pones en
+17:38
+disposición de lo que haces en el día a día y ahí se van a ocurrir se van a ocurrir un montón de cosas que
+17:43
+quizás a mí no se me han ocurrido, ¿cachá? Entonces ahí está el potencial, yo creo, de efectivamente este humano
+17:49
+habilitado por potenciado por IA. Entonces, claro, estas tecnologías, los agentes y cosas,
+17:55
+eh, te pueden asustar o te pueden quitar un poquito de de de que sea automatizar,
+18:00
+etcétera, pero al final el rol del humano, el rol de tener la capacidad de cuestionar, de mirar, de planificar, eso
+18:09
+sí va a seguir siendo relevante. El tema es que mucha gente, y yo creo que ahí está el riesgo, le dice la oye, hazme un
+18:15
+plan de una estrategia para esto. Después le dice, "Muchas gracias." y lo manda y no lo cuestiona. Entonces es ahí donde
+18:21
+está el desafío. Como si yo dejo, por eso lo cuando decí lo de copilot me gusta porque claro, un advisor te
+18:27
+recomienda el copilot hace por ti. Si tú le pides haz tal y lo hace, el riesgo es
+18:34
+muy bajo. ¿Por qué? Porque está haciendo lo que tú le pediste. Pero tú le dices, "Haz tal cosa, la te propone y la
+18:41
+ejecuta." Y tú le dices, "Sí, sí, vamos, vamos, vamos." Tu pensamiento crítico se empieza a trofear. Entonces, eh yo creo
+18:48
+que efectivamente hay que mirar esto advisor bien porque efectivamente tienen conocimiento, tienen información,
+18:53
+analizan muchos más datos que tú, etcétera, pero tienen que ir en virtud de tu estrategia, de tu conocimiento, tu
+18:58
+expertiz. Eh, si tú le pasas un auto de carrera a un niño que no sabe manejarlo, oye, va a apretar el y va a chocar,
+19:05
+¿cachá? Entonces, eh el desafío está, yo creo, efectivamente en cómo los ocupo. Ahora, lo bueno es que te acelera, o
+19:12
+sea, si una persona que sabe lo que está haciendo usando estas herramientas se multiplica y hace cosas que antes eran
+19:17
+imposibles de hacer, ¿no? Y y de una mirada más de negocio abaratáis costos, eficientis tiempos.
+19:25
+¿Cuánto? Volvamos al del performance, al ejemplo del performance. ¿Cuántas veces tú revisáis la campaña a la semana y le
+19:32
+hací ajustes porque encontráis algún dato? Una vez a la semana, si hay una revisión así, quizás a veces tú dices, "No, lo
+19:39
+voy a dejar dos semanas para que colecte data y no sé qué." Bueno, la quizás con la data que ya tiene suficientes señales
+19:44
+para tomar una decisión o hacer un ajuste y vas a poder multiplicar los experimentos. O sea, cuando hací
+19:50
+performance tú, ah, voy a cambiar dos títulos y voy a probar cuál funciona mejor, por dando el ejemplo más clásico.
+19:56
+Oye, ahora puedo probar 10 10 ejemplos en paralelo y que la vaya optimizando sobre el que va ganador siempre y siempre esté
+20:02
+testeando otro título y no y no y no aguanta tanto tiempo. Entonces, te da una velocidad, te da un tema, eh,
+20:07
+te da un una potencia muy alta, pero si tú no tienes idea de lo que estás haciendo, claro, lo puedes
+20:13
+dejar en piloto automático, pero después no vayas a saber si está bien o mal. Exacto. Y tampoco vas a aprender en el
+20:18
+camino, no vas aprender. Entonces yo creo que por eso siendo prefiero la visión positiva de decir esto es una
+20:23
+herramienta que te aumenta a ti. Es como como cuando uno ve los exoesqueletos de los chinos, ¿cierto? Para que el abuelito pueda caminar, tener una mejor
+20:29
+vida. Para mí es esoí. Y efectivamente hay un montón de tareas donde automatización sirve, o sea, por
+20:35
+ejemplo, extraer datos, limpiarlos y dejarlos disponibles para el análisis o
+20:40
+incluso con los insight. Oye, enfócate acá que hay ciertas señales y alertas que el humano lo haga. Sí, lo puede
+20:47
+hacer, pero quizás la alerta llegó tarde. Absolutamente. O lo puede hacer, pero quizás el justo
+20:52
+esa semana estaba full. Entonces, el reporte se demoró un poco en llegar y no tenía sentido porque el valor no
+20:58
+estaba sobre eso. Entonces, claro, tú podrías automatizar la extracción de datos, el análisis está y que la persona le lleguen los insight y le haga las
+21:04
+preguntas ahí y haga el análisis fuerte y tomen las decisiones, pero lo otro además puede que tenga menos tasa de
+21:09
+error o sea menos un cuello botella. Absolutamente. Hay tareas donde efectivamente vale la pena automatizar,
+21:15
+pero para automatizar obviamente tienes que tener super claro tú cuál es el proceso, el [risas] cómo trabaja. Diciendo muchas cosas importantes. Me
+21:22
+quiero meter en el ejemplo de performance. Solamente me a tomar el espacio decirlo, que se ha dado y he leído harto en LinkedIn y en plataformas
+21:28
+que eh concepto en donde eh el integrar
+21:35
+tecnología e inteligencia artificial de una en proceso de performance eh en plataformas como Meta, por ejemplo, no
+21:40
+es óptimo porque la base es que Meta todos invierten ahí y Meta no quiere que
+21:47
+uno sobresalga sobre otro. No puedo estar más en contra de eso. Es como impresionantemente es como no para mí no
+21:54
+es eso, digamos. Es un poco lo que estoy Claro, si uno lo piensa esa de esa línea, entonces cualquier agencia de marketing me serviría
+22:01
+el algoritmo optimizar. Claro, el algoritmo es parejo para todos, ¿no? El algoritmo es parejo para todos en las
+22:07
+reglas. En la la las reglas son las mismas para todos. tú puedes cumplirl cumples mejor o las
+22:13
+cumples peor. Claro, básicamente eso. Entonces, si tú haces una mejor campaña, porque uno piensa, "No, mira, claro, perfecto, pero tú puedes ver un video de
+22:20
+una campaña en Instagram, ponte tú, y otro, y tiene mejor mejor juego, conecta mejor con la audiencia, más entretenido
+22:26
+y están jugando las mismas reglas, pero le va mejor, ¿cierto? Hay un montón de test de esa línea. Entonces, claro, si tú metes IA
+22:32
+en el proceso, lo que estáis haciendo y principalmente dónde está el valor de la IA en lo que es en análisis rápido los
+22:37
+datos y levantar las decisiones y alternativas. Absolutamente. Entonces, y ahí para mí un advisor en esta línea
+22:43
+es clave, huevón. Es clave porque finalmente siempre he predicado de que en performance no gana el que llega
+22:51
+primero, cachá, sino que gana el que llega mejor. Eso es una definición. Yo creo que incluso más que el que llega
+22:57
+mejor, el que optimiza mejor. Porque al final también pasa que muchas veces la gente compara en performance y dice, "Oye, sí, pero oye, si tu producto vale
+23:05
+30 luc y tenía un margen de cinco lucas, el juego que estáis jugando es distinto a si tú vendí un producto B2B y que
+23:11
+tenéis que ir a volumen o ten que ir se meses de de negociación, pero que al final metí un gol que son 30 palos."
+23:18
+Exacto. Te dicen, "¿Cómo pagáis un CAC de o un CAC de 500 lucas, huevón?"
+23:23
+Porque el ro de esa huevada son millones de dólares sentido. Quizás un un servicio de suscripción o entonces las
+23:29
+reglas que juega cada uno son distintas y hay reglas distintas si tú eres una tienda que vende productos por Shopify dropshipping y si es un B2B que está
+23:36
+generando leads para para alimentar el fanel. Entonces, eh dado que esa regla es distinta porque el el naturaleza del
+23:42
+producto, etcétera, claramente una que pueda interpretarlo en función de tu negocio, si lo conoces bien, si tienes
+23:47
+la data, va a tomar mejor decisiones. O sea, el el ejemplo clásico ahí, el ejemplo clásico es el del ROAS.
+23:54
+Sí. Llega la gente y te dice, "Oye, sí, tengo ROAS de 15, me está yendo espectacular." Ya, ¿cuánto cerraste?
+24:00
+No. Y te dice, "¿Cuánto cerraste?" "Tanto, no la estamos rompiendo ya." Pero, ¿cuánto era tu margen? Exacto.
+24:05
+No, y he visto gente que dice, "No, tengo un R de 12, de 15, así números estúpidos." Y después tú vayas a ver la rentabilidad
+24:11
+de eso real. Y la rentabilidad de eso fue que le pagué al cliente para que se llara mi producto,
+24:17
+¿cachá? Entonces, claro, si la IA, porque muchas veces, ¿qué pasa cuando trabajamos performance? Tenemos que armarnos sistemas por paralelo para
+24:23
+capturar la data de Google, de Meta, de todas las plataformas y calcular esas cosas fuera y en base a eso tomar decisiones para allá. Claro,
+24:29
+pero si la está mirando esta data es capaz de optimizar el otro lado, entonces va a tomar te va a dar buenas
+24:35
+decisiones. Entonces yo creo que ahí el desafío está en pensar y no solo en performance, esto lo podemos aplicar en marketing
+24:41
+a negocios puro y duro. Señora Juanita, que me quiero decir algo ahí también. Pero, pero, pero ahí para mí la clave está en el contexto. Hoy ya no se trata
+24:49
+tanto de la como, "Ah, la es poderosa, si es poderosa y es Einstein, básicamente. Pero si tú no entiendes tu proceso de
+24:55
+negocio, si no tienes la data de tus docum de tu negocio, los documentos, los procesos, la información clave, no vay a
+25:02
+poder explotar la leía, ¿no? De todas maneras. Y normalmente eso vive dónde, en la cabeza de algunos de la empresa. Entonces, hay un trabajo
+25:08
+previo que es clave que es documentar para poder explorar, explotar esa documentación y convertirla en formatos
+25:15
+y adaptarlo y que la ya la pueda explorar y tomar decisión en base a eso. ¿Tú creí la documentación? Sí, hoy más que nunca. Sí, porque porque
+25:21
+veníamos como de un de un de un contexto, sobre todo en desarrolladores, no quiero hablar de mal, en donde
+25:28
+hablaban no está muy en contra de la documentación, ¿no? Pero que ellos igual que los vendedores, ellos les importa el
+25:33
+resultado. Entonces el al programador, si tú vayas a ver su lista de tickets, tiene el título del ticket, pero no
+25:38
+tiene nada dentro de información y el vendedor vaya a ver el CRM y tiene el título del lead, ¿cuánto es? Y no
+25:44
+veéis cuántas veces se reunión porque nunca actualiza el CRM, ¿cierto? Ahora con se puede mejorar, pero pero lo que voy es que
+25:50
+efectivamente hoy si tú tienes los procesos documentados, la información clave documentada, tú se la pasas a la
+25:56
+IA y automáticamente la IA tiene criterio nuevo, útil en relación a lo que haces tú.
+26:01
+Entonces, por ejemplo, cuando empezamos a ver todo este auge de la IA, las empresas que más rápido vieron un impacto en su operación fueron startups
+26:09
+que estaban remotas. ¿Por qué? Porque al estar remotas, ¿qué significa? que tenían un notion con todos los procesos
+26:14
+de la empresa, con todos los documentos y lo pudieron explotar. Exo, mientras que otras empresas hoy todavía
+26:19
+dependen del el típico típica persona de la empresa, voy a decir el típico Juanito, que Juanito sabe hasta cómo la maña de
+26:25
+la puerta para entrar a la oficina, pero si Juanito se enferma, todos giran en círculo porque la empresa no pueda funcionar. Verdad es como la para el pandemia que
+26:32
+es como cuando hací encuesta y que es lo que más costaba la digitalización de la empresa.
+26:38
+yo nací en una empresa nativa digital, no tuve ese problema. un poco lo mismo. Claro.
+26:43
+Oye, y me quiero quiero solamente destacar el punto que dijiste de la señora Juanita, que podía ocupar chatión
+26:50
+gratis y lo más probable que su resultado le va a ayudar. Rodrigo Orellana fue el último invitado de este
+26:56
+podcast, capo seco y se tiró una frase que me quedó acá. dijo,
+27:01
+"Hoy día te aseguro que una persona puede estar ocupando mal la inteligencia artificial, pero aún así le está
+27:06
+beneficiando." Sí, pues todo el rato, todo. O sea, la persona que yo yo estoy super de acuerdo porque piensa,
+27:12
+piénsalo de esta manera. La persona que está ocupando la como si fuera Google se está ahorrando abrir 50 links para
+27:17
+encontrar la respuesta porque la los abre por ella y le entrega el resultado precocinado. Ya eso en términos de
+27:23
+tiempo para esa persona. Sí. A a pesar de que no está accediendo, imagínate que la la la las posibles
+27:28
+respuestas fueran como una esfera. Claro, se está quedando en la superficie no más y en un campo de respuesta super chiquitito, pero ya eso significa que se
+27:35
+ahorró una hora diaria, ¿cachá? Entonces, el beneficio de la IA eh es muy alto. Ahora, yo creo que la IA
+27:42
+no es que se ocupe mal, si es un chat, entonces tú le hablas y te, o sea, hablando de generativa, ¿cierto? lo que tú le pides y te responde lo que tú
+27:48
+pediste. Entonces, te va a responder en la medida de lo que le estáis pidiendo. Entonces, el criterio tuyo vuelve a ser relevante. Entonces, no es que haya
+27:54
+alguien que lo ocupe mal, lo que pasa es que se puede ocupar mejor. Hay mejores formas de explotar esa capacidad de cómputo, de explorar el conocimiento que
+28:00
+hay dentro. Y ahí yo creo que efectivamente me ha tocado porque me ha tocado hacer clases desde directorios de empresa
+28:07
+hasta equipos de bodega de empresas. Así como ¿Cómo es eso huón? Cuando te encontráis con un C level que no tiene idea de lo
+28:14
+que estáis hablando? O sea, yo creo que hubo un momento en que me dio rabia [risas] porque alguien, un C level de
+28:19
+una empresa, no voy a decir cuál, me dice, "Es que yo creo que ocuparía es de flojos."
+28:26
+Entonces, claro, ¿cómo veis cómo el equipo de él va a querer ocupar la meterla en los precios optimizar lo que está haciendo? ¿Cachá? Entonces, claro,
+28:32
+esto normalmente yo siempre digo como que la estrategia de opción en la empresa tiene dos lados. Uno es habilitar a la gente que va a ocupar la
+28:37
+herramienta, que hace los procesos que las cosas en el día a día, porque los jefes, ¿qué ven? ven el resultado de lo
+28:44
+que esa persona hace, pero no ven el cómo lo hace. Entonces, si tú no habilitas a la persona, nunca van a mejorar el cómo.
+28:49
+Pero por otra parte, si no hay una decisión desde arriba de por qué queremos hacer esto, cuáles son las
+28:54
+dónde queremos meterle y dónde no, que son decisiones eh editoriales de negocios, ¿cierto? Eh, y para cuáles son
+29:03
+las los megaproyectos donde en verdad la idea nos podría ayudar, ¿cierto? si no ahí está ese como esa ese flujo desde
+29:08
+como de arriba hacia abajo el top down, pero también habilitar para que surjan bot. Claro que es como Sí, pues como la la
+29:14
+curva inmensamente proporcional. Sí, claro. Tú ten que habilitar los dos. ¿Por qué? Porque de ese mix es donde la entrra uno entra en todas partes.
+29:21
+¿Cachá? Entonces el de arriba tiene que comprar las licencias, tiene que poner programas de capacitación, tiene que
+29:27
+generar programas de Champions interno y cosas así. Si eso no ocurre, no va a haber adopción. Entonces, claro, cuando me toca ver eh capacitar gente que pucha
+29:35
+que trabaja en una tienda y que no sé qué, que se metan a mis cursos, para ellos ocupar la vida de repente son
+29:41
+cosas super triviales, pero que te quitan mucho tiempo. ¿Por qué? Porque es una empresa de cinco personas y tienen
+29:46
+que pucha mandar correos automáticos y y tienen beneficios hacer cosas chicas de
+29:51
+que para otros sería bajo impacto, pero que le resuelven un dolor diario gigante. Y en cambio los directores
+29:57
+también, o sea, los Level eh yo siempre le hago la la pregunta, ¿cuántos correos
+30:02
+reciben al día? Levanten la mano si reciben más de 100 y nadie levanta la mano, reciben más de 200 y ahí empiezan
+30:07
+los level a levantar la mano. ¿Cómo administráis 200 correos diarios? [resoplido] Entonces la te puede ayudar a hacer el
+30:13
+triatch de eso, ¿cierto? filtrar cuáles son urgentes, cuáles son importantes, cuáles atacar e incluso podéis ocuparas
+30:19
+tan simples como, y esto una recomendación que que le di a mi amigo Ricardo Iváñez de de Grupo de Defensa, un crack, le dije, ocupa estas de
+30:26
+dictado. Entonces, tú abres el micrófono y le dices a la en el mail, una que
+30:32
+transcriba eh, "Hola, Felipe, gracias por la invitación al podcast, no sé qué, pum." Y la [carraspeo] misma toma lo que
+30:38
+le dijiste y no se lo transcribe, sino que entendiendo que es un mail, lo escribe en el formato mail. [resoplido] esa persona lee va a hablar más rápido
+30:46
+de lo que va a escribir. Ya te da una ventaja va a contestar de los 100 correos 50. Si la te dijo, te hizo una
+30:52
+primera revisión y te dijo, revísalo en este orden. Claro, más encima. Claro. Eh, te va a ayudar.
+30:57
+Claro, te escorea te escorea la importancia del mail, ¿cachá? Entonces si haces eso y tienes información tuya, porque obviamente para
+31:03
+que escoree bien, no es como ve tu criterio, tú tienes que darle el criterio. Entonces ahí hay un beneficio
+31:08
+gigante. Entonces independiente si esty ocupando la ella para una cosa muy chiquitita o para el mega proyecto que
+31:13
+automatiza todos los procesos de la empresa, hay impacto, ¿cachá? Entonces va a haber un valor
+31:19
+agregado. Está loco, está loco. Te quiero hacer una pregunta para poder avanzar. Te quiero hacer una pregunta que te voy a
+31:24
+hacer dos preguntas. En la segunda, expláate todo lo que queráis. La primera, dime, ¿sí o no? Ya, perfecto.
+31:30
+No, [risas] en los negocios hoy día que están
+31:36
+implementando y ya que me lo habí planteado, lo más importante es el prom. No, no,
+31:41
+no, en serio. O pensé que i a decir que sí. ¿Qué es lo más importante? Entonces, el prom era importante, o sea, sigue
+31:47
+siendo importante, pero no es lo más importante. ¿Te puedo hacer la segunda pregunta que te iba a decir? como si me decíis que sí y esto es como super genuino, te iba a
+31:55
+preguntar si era necesario tener un un prom engineer o un o un especialista en
+32:00
+prompting. Depende, depende la yo creo que la respuesta es depende. ¿Qué es lo que pasa? Que los modelos cada vez son más
+32:05
+inteligentes. O sea, hoy día estamos con GPT 55, eh Clodus 4.7, Geminy 3.1.
+32:11
+Seguramente en dos semanas más va a ser Geminyight 3.5 porque siempre el ciclo va así, ¿cierto? Grock 4, hace todos los
+32:18
+días sale uno nuevo. Entonces, cada vez son más inteligentes en entender la intención de lo que quieres lograr. O
+32:23
+sea, si yo voy y haciendo la misma estrategia de abro micrófono y le vomito todo lo que quiero hacer y le cuento todo el cuento, la va a entender bien
+32:31
+con eso qué queres lograr, qué información es clave, etcétera, y debiese explotarlo
+32:36
+bien. Entonces ya esos prom muy estructurados que yo siempre la receta de el rolo persona, la tarea, el
+32:43
+contexto, el formato, etc. Esto esto es de tu clase, digamos, sigue sirviendo, pero al final lo que es
+32:49
+clave ahí es la tarea que quieres resolver, cuál es el objetivo y qué información necesita la vida entender para resolverlo. Yo siempre digo el
+32:56
+ejemplo de, imagínate esa persona, un amigo que te empieza a contar, no es que me junté con Javier y Javier esto,
+33:01
+aquello bla y tú cómo sabí, no sé, y tú no tenés idea quién es Javier, no conoces nada de Javier, pero el otro
+33:06
+asume que tú sabes, siempre todos tenemos ese amigo que como que te cuenta tu día como todo
+33:12
+como que subiera todo el contexto y no lo tienes. la tampoco lo tiene. Entonces, a menos que se lo demos el contexto, no va a poder poner su
+33:18
+capacidad de cómputo y conocimiento en función de lo que estáy haciendo. Entonces, la tarea y el contexto son clave. El resto te ayuda, si quería el
+33:25
+formato, escríbemelo de esta forma porque lo voy a ocupar en una presentación o cosas se puede hacer, pero al final es hablar natural qué
+33:30
+quieres conseguir. Entonces, el prompt es útil en el estoy pensando en el trabajador que trabaja
+33:36
+con su asistente de en el día a día. Pero, por ejemplo, si tú diseñas una automatización, si diseñas un sistema
+33:43
+que usa por detrás conectado por API para que resuelva ciertas cosas, ahí el prompt engineering sí es efectivo. ¿Por
+33:49
+qué? Porque ahí tú pagas por token. Absolutamente. Para allá es que no no quería caer en lo técnico, pero por ejemplo
+33:55
+tomándome el bloque anterior que era una era agentística, copilot advisor, hoy
+34:01
+día mis agentes son prom. Claro. Entonces, si tú vas y creas un sistema y
+34:07
+te conectas por API y y pagas por uso, ahí sí te sirve ser más efectivo en el
+34:12
+cómo diseñas el prompt para que pese menos y también cómo diseñas el contexto o la información para que en el fondo
+34:18
+ahorrar costo y ser efectivo. Si tú estás ocupando una suscripción de $ o $100 de chat GPT, cloud Geming la que
+34:24
+sea, mientras no llegues a los límites, háblanle como quieras. Lo importante es que le des la
+34:31
+información clave que necesita para tomar una decisión. Un caso clásico. Le pasas un Excel con los resultados de una campaña y le dices, analiza esta
+34:38
+campaña. ¿Cuál es el objetivo de la campaña? Eh, ¿qué estáis tratando de vender? ¿Cuál es el precio del producto? ¿Cuál
+34:44
+es el margen, te lo va a analizar bien o no? Va a hacer un análisis. Normalmente, ¿qué pasa? Te hace si le das ese prompt y con
+34:50
+ese Excel te da un análisis descriptivo y te va a dar ideas, pero tú a le dices, "Oye, te estoy entregando los resultados
+34:56
+de una campaña que corrí. en mayo, ¿cierto? En el contexto del día del trabajador y no sé qué, enfocada en tal
+35:04
+cosa, el precio del producto que estamos vendiendo es tanto, el ciclo de venta es tanto, eh porque quizás no es no es
+35:09
+llegar y comprar. Entonces, si le das la información, el análisis va a ser mucho mejor. Entonces, claro, eso tú lo puedes
+35:15
+decir, tener un problema estructurado o se lo puedes contar como corriente a la conciencia, pero mientras tú le digas el
+35:20
+objetivo y el contexto clave, hoy en día la IA ya es más capaz de entender lo que tiene que hacer igual. Y ahí un tip para
+35:26
+que funcione mejor eso es activar los modos de razonamiento, ¿cierto? Porque es muy distinto si yo voy y le pongo usa
+35:32
+el modelo de razonamiento o el modelo de pensamiento o no, porque eso hace que la se planifique
+35:39
+simplificando, pero que vea el problema, trate de encontrar las mejores aristas y se cuestionen los resultados también.
+35:44
+Entonces ya el el ser más efectivo con el prompt es menos importante que
+35:50
+pasarle la información correcta que debe manejar. Pero en una capa con esa salvedad, en
+35:55
+una capa más operacional, en una capa más técnica, sigue siendo muy relevant. O sea, si tú estás desarrollando con
+36:02
+claro y te haciendo un sistema automático en la empresa con con sistemas, ya sea desde código o con herramientas no Code
+36:09
+tipo Make o N8N, claro, ahí el ser efectivo con el token y todo tiene impacto económico.
+36:14
+Absolutamente. Entonces, pero lo llev solamente un impacto económico. Lo llevo para allá. Si tú estás y me pasan las clases que alguien dice, "Ah,
+36:19
+pero es que por ejemplo ahora que estoy haciendo el curso de cloud, que voy a lanzar las nuevas fechas ahí, si búsquenme tienda.m, m.
+36:25
+Muy bien. Eh, si tú vas y me dicen, "No, es que eso
+36:31
+consume muchos muchos token." ¿Cierto? En la aplicación tú no ves los token. Tú de repente ves que te se te dice como ya
+36:37
+me cansé de ti, vuelven 5 horas. ¿Cierto? Tú puedes ir a ver el límite de uso diario y semanal,
+36:42
+pero si tú estás ocupándolo y le hablá, no quería hacer ciertas cosas porque te va a ocupar muchos tokens y al final ves el consumo
+36:49
+semanal, le ocupaste el 20% de la capacidad de tu suscripción. Claro. Sí, lo mismo.
+36:54
+Estáis sub explotando la herramienta. Entonces, da lo mismo la optimización ahí solo optimiza
+36:59
+si tú estás ocupando, por ejemplo, Cloud, que Cloud tiende a ser como a a a ser más tener límites más bajos, o sea,
+37:05
+que se cansa de ti más rápido. Sí. Solo optimiza si estáis llegando frecuentemente a los límites.
+37:10
+Absolutamente. O sea, si no está llegando a los límites, pone el modelo más capaz con el razonamiento activado y ocúpalo a
+37:15
+destajo. Claro. Si si después de eso te das cuenta que todos los días estás llegando, claro, ahí empieza a optimizar cómo lo ocupa.
+37:22
+Ah, voy a ocupar el modelo más liviano y sin pensamiento para hacer una búsqueda y después no sé qué. Pero para el humano
+37:28
+de pie que está trabajando en la oficina que tiene que resolver las tareas y hacerlas más rápido y ojalá salir a la hora, pucha, ocupar la mayor capacidad
+37:34
+que tenga para desarrollar y solucionar los problemas. Super bueno el ejemplo que diste del de la tabla de datos. Eh,
+37:41
+voy a contar una anécdota, más que una anécdota, voy a contar un un voy a desclasificar algo. Eh, yo publiqué 365
+37:49
+días seguidos un post en LinkedIn. El 95% de esos post era performance. Y me
+37:54
+daba mucha risa cuando la gente me escribía, "Ah, lindo post hecho conía."
+38:00
+Eh, era poca igual, poca gente me me hateaba, pero siempre existe el hate. Y
+38:05
+es como, "Sí, pues, huevón, ocupé guía a esto." ¿Y cómo ocupéa? Porque te estoy entregando un análisis de data de un año
+38:13
+y medio que a mano no lo voy a hacer. Por supuesto que le fui a preguntar a la
+38:18
+a la IA, "Analízame esto." Y le di el contexto que me estáis dando tú. Efectivamente. Y los resultados eran
+38:24
+esto, esto, esto, otro. Y después yo interpreto eso. Por supuesto que lo hice así, cachá. Entonces, claro, lo que pasa es que aparte yo yo
+38:32
+ahí seguí de cerca tu tu 365 de post. ¿Qué es lo que pasa? Porque aparte tú estás ocupando todas las estrategias de
+38:37
+storytelling, de buenas prácticas, de publicar en LinkedIn, de la narrativa, del párrafo corto, del salto de línea,
+38:44
+de dar una pausa, del hook, todas esas cosas que qué es lo que pasa que la gente hoy cuando hace postconía
+38:50
+le mete esas mismas técnicas, entonces los posts empiezan a parecer mucho a los que escribíamos antes con con no está
+38:57
+hecho con puede estar escrito con Yo, por ejemplo, los postos yo no los escribo con yo la como editor, o sea,
+39:03
+no. Sí, yo también. De hecho, yo lo yo lo escribía, lo que hacía era como corrígeme la ortografía y lo que ocupaba mucha era, huevón, dame los highlight
+39:11
+del fucking eh Excel que te estoy cargando, porque te estoy dando cinco
+39:17
+láminas de 100 filas cada cada lina.
+39:22
+Y aparte que que aparte que tú trabajas [risas] y además además porque eso me sirve para poder aplicarlo en mi pedo. Sí, pero pero tú no vives de contenido
+39:28
+en LinkedIn, entonces no más puesón, imagínate dedicar ahí ese análisis de todos esos resultados de un año y medio.
+39:34
+Es una tarde completa. Noón metí Rodrigo, metí data de los distintos cuentas comerciales que tengo
+39:40
+acceso por distintas razones. Metía data de últimos dos años. Sí. Pues entonces la la el tiempo que te
+39:45
+tomar a ti analizar es muy poco, entonces es mucho y y con hacerlo con valor en ese sentido. ¿Por qué? Porque
+39:51
+al final el sentido del el para qué lo estás haciendo se lo estáis dando tú. Absolutamente. ¿Cierto? Y el después el escribir el
+39:57
+post y la historia del jefe y todo el tema y darle el formato. O sea, la gente también dice, "Ay, no, sí, oye, todos
+40:03
+los todas las negritas que aparecen en esos posts de LinkedIn significa que yo copié ese texto a mano, lo llevé una herramienta que lo convierte en otro
+40:10
+formato." Fancy Tex lo dijo ahora. Fancy Tex es el que ocupaba yo, huón. Y después lo pegas al otro lado. O sea,
+40:16
+en crear el post ya igual hay tiempo, obvio, cachá. y revisar y cuestionarte el hook y validar. Entonces sí puede parecer
+40:23
+hecho con ella y puede haber ella involucrada en el proceso. Y ahí me recuerdo hay un alta hablar de las reglas de negocio, ¿cierto? Definir
+40:29
+dónde quiero que la esté y dónde no. Hay un caso que me encanta que es el de bioviochile.cl. Biovideochile.cl. Ellos dijeron, "Todos
+40:35
+nuestros post están escritos por humanos. Todos los artículos de ellos están escritos por el periodista, excepto los
+40:41
+que son bio viío en 5 minutos, que es un resumen conía de las noticias que sí escribió su humano. Entonces, tú puedes
+40:46
+rápidamente elegir qué noticia y hacerle clic para ir para para ir a explorarla. Entonces, ayuda con el discover, el
+40:52
+disco elity del de la noticia, pero es una decisión de ellos como medio. Yo quiero, mi propuesta de valor es que mi
+40:58
+periodista escribe esto y le da un sentido. Ellos pueden ocupar notebook Elen, ocupan otras también para encontrar las tendencias, etcétera.
+41:04
+¿Para qué? Para analizar más rápido, para poder generar la noticia. Pero ellos la escriben y el editor las corrige. Es un proceso humano. Hay otros
+41:11
+medios, no voy a nombrar cuáles, que yo sé de primera fuente que ocupanía para crear los post y quedan buenos también.
+41:17
+Claro. ¿Está bien o está mal usar la en esos procesos? Depende. Es una decisión de
+41:24
+negocio. Pero, pero, pero creo que te estoy siguiendo. No es la pregunta, no es desde el punto de vista ético.
+41:30
+No, no, no. Da lo mismo porque te informaste. El resultado está bueno, está bueno. Ahora
+41:36
+es la decisión de dónde está el valor, dónde pones tú el valor. Por ejemplo, pasa mucho con los artistas que ahora
+41:41
+están todas las asotativas, de imágenes, videos, etcétera, que se ponen completamente a la IA. ¿Por qué? Porque está entrenada en base
+41:48
+a cosas robadas, está entrenada en base a cosas así. Hay modelos que sí, hay modelos que no. CL.
+41:54
+Por ejemplo, ahora está, justo pasó el caso de Blender, que Blender es esta herramienta para diseñar en 3D, open source, de código abierto, etcétera.
+42:02
+Antropic hizo un conector para que tú desde cloud le puedas pedir cosas en Blender. Funciona espectacular. Hicieron
+42:09
+una donación y se habían puesto como sponsor de la Fundación Blender para comprometer plato que equivalía como a
+42:14
+cuatro desarrolladores full time. Qué loco. Y la comunidad se tiró en contra de eso.
+42:20
+¿Cómo la I estos actos creativos y no sé qué? Oye, es una herramienta más tu
+42:25
+capacidad. Yo si le pido algo en Blender a Cloud, haz esto en Blender, voy a
+42:30
+lograr un esto un poquito. Pero si la persona va alguien que es artista 3D y
+42:35
+le pide a la herramienta, oye, corrígeme esto que estuve aquí, no sé qué, va a poder explotarla mucho más porque está poniendo su experiencia en en virtud.
+42:42
+Entonces, claro, los artistas están muy en contra de la ¿Por qué? porque
+42:48
+efectivamente les quita la creatividad, pero al final la herramienta sola no es creativa. ¿Qué es lo que me pasa a mí?
+42:55
+que veo, por ejemplo, gente hoy que nunca nunca tuvo la eh se dedicó a aprender música, por ejemplo, pero que
+43:02
+siempre tenía ideas de canción y tarariaba y no sé qué y ahora están creando canciones con Suno, o sea, está habilitando.
+43:08
+Pero efectivamente si un compositor tomara eso podría hacer cosas mucho mejores. Entonces, para mí es un tema de
+43:14
+tu visión de la herramienta. Si lo ves como una herramienta más del stack, funciona espectacular. Otro ejemplo,
+43:21
+corridor crew. No sicas con los de corridor crew. No es que me tiré ahí, hón, que me imagino corridor crew, búsquenlo en YouTube, es
+43:27
+un canal de una unos tipos que hacen eh técnicas de video, análisis como de de
+43:33
+cinematográfico, hacen cortos, etcétera, son una son una genialidad. Y hace poquito lanzaron una que si tú
+43:40
+tuvieras un fondo verde, puedes remover el fondo verde, pero por ejemplo voy a tomar el vaso que tenía acá. Típico que
+43:46
+cuando tú pones un vaso como este con un fondo verde, te va a quedar el borde del verde acá se va atrás porque es
+43:53
+reflectante. Entonces, ¿qué es lo que pasa? Ellos hicieron una que hace que eso no le
+43:59
+aplica el croma y le quita el tono verde. Entonces queda como si nada transparente completamente
+44:05
+y la gente está diciendo, "No, eso lo hicieron con ida que la cuestión." Oye,
+44:11
+Peter Jackson cuando hizo el documental de los Beatles, el el hón levantó Sí, obvio.
+44:18
+Levantó registros musicales. Sí, exacto. E hizo y le mostró hizo una
+44:23
+tecnología para poder restaurar, por ejemplo, la última canción de los Beatles que salió salió gracias a una a
+44:28
+que diseñó el equipo de de Peter Jackson. Entonces, el uso dónde la ocupo y dónde no es una
+44:36
+decisión. Y ya me quiero, está muy buena la conversa. Lo tenía como
+44:41
+pregunta en la pauta. Entonces, para ti es una decisión. Es una decisión igual límites. O sea, la Ioy de vuelta con la
+44:48
+pregunta. ¿Cuál es el límite? El límite el que le quieras poner tú. Si tú si tú quieres ser una empresa que
+44:53
+pongo todo automático y hago que la haga todo y tome las decisiones y todo, lo puedo hacer.
+44:59
+Lo puedo hacer. Yo podría automatizar un negocio y desde el punto de vista de la IA como como desarrolladores, como cuál es el
+45:06
+límite de Antropic o el límite de o el límite de Openi o el límite de Grock o el límite de
+45:12
+hoy en día, por ejemplo, hay rumores de tanto Cloud Maitos, que es este modelo gigante que sacó Antropic que no lo
+45:18
+liberó a público. Sí, que si no íbamos íbamos todos porque es una brutalidad. ¿Y qué hizo?
+45:24
+Se lo entregó a las compañías Apple, Amazon, Google, etcétera, que son las casas en servicios. ¿Para qué? para que endurezcan su ciberseguridad ocupando
+45:30
+este modelo. Claro, porque si lo liberaban antes, alguien mal intencionado podría habernos hackeado todos, ¿cachá? Entonces, ya
+45:36
+estamos viendo que dentro de los laboratorios hay señales de que hay cosas superpererosas pasando y y hay un
+45:43
+hay una capa de de ética. Claro. Entonces, ¿qué qué es lo que pasa? El límite lo pone a uno, ¿cierto?
+45:50
+Entonces, nosotros llamamos cuando hablamos la empresa de eso de la gobernanza de la o de las herramientas.
+45:55
+Claro. Entonces son decisiones tan prácticas como, ¿qué herramientas sí, qué herramientas no? Claro.
+46:00
+¿Cierto? Es una decisión, en qué proceso sí, en qué proceso no. Volviendo lo de vivío, el artículo lo
+46:07
+escribe la persona, pero se puede asistir con investigar o para analizar la información más rápido, pero lo
+46:12
+escribe la persona. Pero otro puede decir, "Yo lo escribo con IA." Y y es una decisión también. Eh, por ejemplo,
+46:19
+doy voy a dar un caso que es público, que es el de BCI. Ya no lo BCI. BCI. Ellos tienen habilitaron con
+46:26
+Yemina ya 5000 colaboradores. Yo tengo la suerte de hacerle webinar con alta frecuencia a ellos trabajando con ellos
+46:33
+y ellos Google les pasó las cuentas, hicieron el hacking de todo el tema,
+46:40
+pero una política de la empresa es no le puedes pasar los rotini a pesar de que
+46:46
+la IA probobaron, hicieron el jack, hicieron todo, no no encontraron ningún riesgo, pero es una decisión. ¿Por qué?
+46:52
+Porque es un dato sensible. cierto, tiene la ley de protección de personal a fin de año y un montón de otras cosas. Entonces, es una decisión que tomaron
+46:58
+ellos brutal. Brutal. ¿Por qué? Porque tú podrías pasar la data. Sí. Y no hay
+47:04
+riesgo. No hay demostrado que no hay riesgo por Google
+47:09
+Pero igual deciden no hacerlo. Entonces la gobernanza tiene que ver con esa ética, con el dónde sí, dónde no? ¿Qué
+47:16
+herramientas sí? ¿Qué herramientas no, qué procesos sí? ¿Qué procesos no? Entonces, claro, el límite donde está donde lo pongamos nosotros. H
+47:23
+la herramienta cada vez va a ser más poderosa. Entonces yo podría hacer un negocio automatizado de punta codo,
+47:28
+¿cierto? No, que haga una tienda falsa en internet, eh, que la IA administre los pedidos, los manda a imprimir,
+47:35
+imagínate, ponemos una tienda de poleras online y ponemos los diseños y cada vez que llega uno le mando automático el mail al a chino en patronato para que
+47:41
+imprime y mande y vamos negociamos y puedo mandar a la que negocie por mí y que arme el flujo punta a punta. Todavía
+47:48
+podríamos, entre comillas, armar algo así con los agentes actuales y con triggers automáticos y cosas. Se podría
+47:57
+y alguien lo debe estar haciendo, cachá. Eso es lo más Sí, ¿verdad? Entonces, ¿a ti te gustaría hacer un
+48:02
+negocio donde tú no estés involucrado? Depende. Sí, depende. ¿Por qué? que claro, si si el el este
+48:10
+podcast podríamos armar un guion y hacer nuestros avatar digitales que estén conversando dos horas tal cual
+48:15
+y digan más o menos si a cada uno le puse una gente por detrás con mi conocimiento nuestras posturas y y lo pueden replicar y se puede hacer
+48:22
+pero está el valor en eso o está el valor en la conversa que surge de esto. Entonces, eh para mí el límite y y el
+48:29
+límite obviamente a nivel personal es más amplio porque tú puedes ocupar la idea para lo que queráis en tu casa, pero en el trabajo tienen que las
+48:36
+empresas poner un punto, me gusta, cachá. Y tienen que definir cuál es la gobernancia, dónde sí, dónde no. Hay empresas que van a decir, "¿Sabéis qué?
+48:42
+Acá vamos con todo no más y metamos la full, tengamos cuidado con los datos y chacar. Y van a haber otras que van a
+48:47
+ser mucho más precisas y controladas y y con decisiones editoriales al final del tema que también está bien.
+48:53
+Está perfecto. Claro. Entonces ahí la única pregunta que le hago a la gente es piensen dónde está el valor que entregan a la empresa. ¿Dónde
+48:59
+está el valor que entrega la empresa? Y también los colaboradores de la empresa. Ese es lo que debésemos cuidar. Me gusta eso. No sé si tení al respecto.
+49:06
+A lo mejor te tiro los leones, pero ¿qué ha pasado el 2028? El CEO de Open habló hace un par de meses. ¿Qué creéis que va
+49:13
+a pasar? A a ver qué qué señales tenemos respecto al futuro. Eh, estamos con los
+49:19
+agentes hoy en día, pero los agentes todavía tienes que darle tú una instrucción, tienes que configurarlos tú, etcétera. Lo que estamos empezando a
+49:25
+ver es agentes con más autonomía, ¿ya? Entonces, vamos a empezar a ver agentes que básicamente es un colaborador más de
+49:31
+la empresa que va a vivir en el Slack o en el Microsoft Teams y va a estar ahí y lo van a ver configurado para hacer
+49:37
+ciertas cosas. Yo siempre digo, "Hágan el agente de recursos humanos para responder las dudas de beneficio." Háganlo, eso es muy bueno. Claro.
+49:42
+Y van a haber cargos donde efectivamente el valor no está en lo que hace la persona, en en la tarea, sino que está en lo que
+49:48
+ella piensa. Entonces, esa persona tiene que mutar. Claro. Y quizás la se va a quedar con esa parte. Entonces, ese es el primer cambio que vamos a empezar a ver, que son
+49:53
+colaboradores de IA. Pero lo que se calcula que va a pasar de aquí al 2028 es que vamos a empezar a
+50:00
+ver los primeros modelos que se mejoran a sí mismos. Hoy en día cuando sale un
+50:05
+modelo tiene la capacidad mental de Einstein, todo el conocimiento del humano hasta la cierta fecha y no aprende nada más nunca más. O sea, ese
+50:11
+modelo es estático. Sale GPT5 y después si queremos mejoras tenemos que crear un
+50:16
+nuevo modelo que va a ser GPT 5.2, 5.3, 54, 55. Obviamente mejoran distintas
+50:21
+etapas del entrenamiento de la I, algunas en el preentrenamiento, otras en la data, otras como un fine tuning o o
+50:27
+cosas que ocurren después, pero cada vez es una versión nueva del modelo, ¿cierto? que aprenda algo nuevo o mejora
+50:33
+ciertos comportamientos, pero el anterior se pierde, o sea, queda ahí legacy, ¿cierto? Que me da risa que
+50:39
+hayan modelos legacy con menos de 3 años de de que pudiste recopilar. Claro, sí, pero pero en el fondo se van eliminando.
+50:45
+Pero, ¿qué es lo que pasa? que va a llegar un momento y calculan que en 2028, en el tercer trimestre, es los
+50:50
+últimos rumores que escuché, van a haber modelos que van a ser como auto como recursivos, auto van a tener aprendizaje
+50:58
+propio, entonces van a estar vivos, en vivo más que vivos, en vivo, pero va a
+51:04
+aprender de los errores, va a aprender de las cosas. Entonces, el modelo va a dejer que salga una versión nueva
+51:11
+para que incorpore sus aprendizajes, sino que la misma versión va a ir actualizándose. Entonces, ¿qué pasa hoy en día? Si tú vas a un chat GPT y le
+51:18
+desactivas el que busca en internet, el último modelo tiene datad año pasado,
+51:23
+más o menos. Si yo activo el busque en internet, va a buscar y va a incorporar eso. Pero con estos componentes de que
+51:29
+vayan aprendiendo, de que vaya el modelo generándose a sí mismo, efectivamente
+51:34
+vamos a tener un modelo que ya se va a empezar a eh a crecer mucho, acelerar mucho más rápido. Y ahí pasa, corrégeme lo que entiendo,
+51:41
+pero pasa que ese autoaprendizaje
+51:47
+eh va a estar basado en la experiencia más no en la información de internet.
+51:52
+en la experiencia y puede que en la información también, depende cómo lo resuelva. Aquí voy con mi pregunta que hoy día el 60% 70% de la información en
+51:59
+internet es falsa, digamos, cachá, y tenía ese margen de error. En cambio, si aprende o autoaprende de lo empírico,
+52:07
+claro. O sea, debiese aprender, debiesen atribuirle y eso depende cómo lo desarrollen, pero debiesen atribuirle más peso a la conversación con el
+52:13
+usuario y aprender de eso, claro, que a la data pública. Ahora, la data pública ya la ocupan para entrenar estos
+52:19
+modelos. O sea, se calcula que hoy están escraeando todos los videos de YouTube para metérselo a los modelos, todos los libros para meterse a los modelos,
+52:25
+etcétera. Entonces, data está y ahí que normalmente hacen que al meter toda esa
+52:31
+data empiezan a salir los patrones, empiezan a aparecer los puntos de más peso, ¿cierto? La autoridad, ¿cierto?
+52:36
+Entonces es distinto si yo bajé la data de Wikipedia que tiene todos los criterios de los editores dentro para
+52:42
+cuidarla, que si la bajé de blogs que pueden replicar hecho y cosas que chasconía. Entonces, claro, va a haber
+52:47
+un punto en donde efectivamente tiene que si quiere aprender de la data pública, eh, hay que encontrar cuáles
+52:53
+son las señales de que es buena data versus no mala data, ¿cierto? Entonces ahí va a depender de
+52:58
+cómo lo desarrollen, pero efectivamente en el momento en que tenemos una que aprende en vivo y que se va mejorando a sí misma, lo que empieza a pasar es que
+53:04
+también el humano que la está mirando pierde el control del desarrollo de esa no absolutamente
+53:10
+sí ahí empieza va a empezar a generar conocimiento nuevo y eso puede que
+53:16
+marque un antes y después versus lo que tenemos hoy, ¿cierto? Porque puede que imagínate esaía empieza a aprender y
+53:22
+define que los humanos somos una plaga [risas] Skynet. Skynet, cierto, o define que
+53:28
+efectivamente, oye, el humanos no tienen que trabajar más, yo me encargo de todo y tenemos que solucionar otras cosas.
+53:33
+Ahora, una cosa que tú el que decía eso que que si pasa eso, no sé si te lo
+53:38
+escucha a ti, Rodrigo, he escuchado tanta gente, pero que hablaba que ahí ya tenéis como hasta políticas públicas,
+53:43
+pues. Hón, el estado tiene que redimirte con un sueldo, porque el ingreso único universal
+53:49
+distintos patrones. A mí, ¿qué me pasa con todo esto de la IA, con lo de la IA, los agentes y este futuro donde vamos a
+53:55
+tener IA más que aprenden solas y otros y otros escenarios que a mí me gusta ese escenario porque siento que la IA es una
+54:00
+herramienta muy buena, pero también hay escenarios donde sea por Skynet y super complicado. Pero, ¿qué es lo que veo yo? Que
+54:06
+efectivamente esto significa que los patrones que hemos aprendido de cómo trabajamos, de cómo se hace empresa, de
+54:12
+los sistemas sociales, etcétera, tienen que cambiar. Cuando aparece internet y empieza la globalización.
+54:18
+Me gusta esa mirada, huevón. este, cuando empieza la globalización, las reglas del juego cambiaron.
+54:24
+Tú podías estar en Chile y que hoy día tenemos eh gente en Chile trabajando para las empresas más grandes del mundo,
+54:31
+eh y están sentados en su casa acá afuera, ¿cierto?
+54:36
+Entonces hay espacio y cambió la regla. O sea, antes tú eras impensado que ibas, por lo menos a mí, por ejemplo, eh era
+54:44
+impensado que yo estuviera haciendo cursos en Colombia, en Ecuador, en distintos lados. Yo hoy viajo para allá
+54:49
+habitualmente a que te toque, los podías hacer perfectamente desde acá. Los puedo hacer desde acá. O sea, de hecho, en mis cursos de IA, que los hago
+54:54
+por Zoom, eh, tengo alumnos de Perú, de Bolivia, de Panamá, de Argentina. ¿Qué
+55:00
+país de por qué viajema formatos no más? No, eh, Colombia porque porque me toca Platzi allá para allá, pero un tema
+55:06
+formato de Platzi y ellos tienen sus estudios allá armados y tienen todo el proceso como tú tenías acá para grabar el podcast. Entonces, yo
+55:12
+me siento, hago el curso y automáticamente le llegan los comentarios al editor de que tienen que editar y lo sacan. producción que tienen
+55:18
+es genial. Ya, perfecto, cachá. Pero pero claro, también tiene la opción de que yo pudiera grabar algunas cosas desde acá. Obviamente requiere de
+55:24
+mi setup, cachá, pero pero se puede. Entonces el desafío, claro, pero de repente me dicen, "Oye, hay un evento
+55:30
+acá, queremos que sea una charla o oye, ven para acá." Este año me ha tocado ir a a a Talca, a un montón de lados
+55:39
+Chillán, fuiste a Chillán también a a varias partes, a hacer talleres, cachá. Y y y también hay
+55:45
+valor en la presencialidad y en hacer los en vivo. ¿Te gusta la presencialidad? Me gusta, me gusta, no me encanta. O
+55:51
+sea, me encanta también hacer poder hacer cosas online, pero ponte tú si quiero hacer cosas prácticas que la gente, no sé, un taller
+55:57
+para una empresa, me gusta que sea presencial porque los desconectáis del trabajo deora. Si es online, están ahí viendo el mail al lado, cachá. Entonces,
+56:04
+pero volviendo al tema, la IA va a cambiar las reglas del juego. A mí me carga la ley de IA que están tramitando
+56:10
+acá en el gobierno o en más que el gobierno, en el Senado y en la Cámara de Diputados. Y a propósito, podéis meter también este
+56:16
+mismo en esta misma mirada la nueva ley de protección de datos como Perfecto. También también también porque porque aparte la ley de protección de
+56:21
+datos quedó buena. Quedó buena. Es duraísima, un mazazo, pero es buena, pero es buena,
+56:27
+cachá. Entonces, claro, hay cosas que tú decís, "Oye, pero en la ley de están tratando de meter algo que ya está cubierto allá, entonces, ¿para qué lo
+56:32
+vamos a meter?" Pero al final, yo creo que la discusión no tiene que ver tanto con la ley de sino que tiene que ver con
+56:39
+qué va a cambiar a nivel social. Por ejemplo, los cabros que están estudiando en la U hoy.
+56:45
+¿Te preocupa ese tema, Rodrigo? A m me preocupa, pero gigante. Y lo que están en el colegio también.
+56:50
+¿Por qué? porque no tienen el criterio todavía formado, lo van a aprender en algún momento. Y si la empresa en 3 años cuando ellos salgan de la U va a pedir,
+56:57
+va a contratar a un analista, oye, si no estamos enseñando emprendimiento, si no le estamos enseñando ocupar la si
+57:03
+estamos enseñando habilidades blandas y algunas técnicas, pero blandas en
+57:08
+particular para poder explotar eso, eh, van a quedar tirados, ¿cachá? Porque por ejemplo, si tú ocupas, lo primero que
+57:15
+tienes que hacer es saber describir lo que quieres.
+57:21
+Una habilidad comunicacional. Uno ve a los cabros chicos y que están six, sí, y no te comunican nada, cachá.
+57:30
+Entonces hay un desafío de que aprendan a comunicar su idea. Bueno, para qué
+57:35
+hablar de tanto adulto que también tiene que aprender eso, ¿cierto? De hecho, partiendo de la base, que yo creo que yo siendo periodista profesión nunca me
+57:41
+queda al periodismo, pero eh todas las carreras deberían tener una base de reacción, por ejemplo, o de comunicación
+57:47
+y hoy más que nunca, cachá. Entonces tengo que saber comunicar la idea, entonces hay una cosa por ahí, pero por otra parte a la trato
+57:54
+como si fuera un empleo. Entonces, también tengo que saber liderazgo. Claro. ¿Por qué? Porque si no sé por dónde la voy a liderar, oye, la idea te va a
+58:00
+liderar a ti. Hagamos esto, ¿okay? Hagamos esto, ¿okay? hagamos esto y tú eres un tú pasas a ser el copiloto.
+58:07
+Entonces, [risas] entonces el desafío es como tú no dejas de eso. Si uno va a ver, por ejemplo, el el World Economic Forum, saca un estudio
+58:14
+del año pasado con las habilidades que eran claves para el 2030 y hay big data la parte técnica, pensamiento analítico,
+58:21
+pensamiento en sistemas, eh liderazgo, eran puras habilidades blandas que se
+58:26
+necesitan hoy día, creatividad, cachá. Una la otra vez en un evento se me acerca una persona al final de la charla
+58:32
+y me dice, "Oye, ¿sabes qué? Tengo que hacer una duda. Am en Fundación Chile y me dice, "Tengo una pregunta. Tengo que
+58:38
+meter a mi hijo al colegio este año." Fue como enero. Qué buena pregunta. Ya sé para dónde va la buena pregunta.
+58:43
+¿Dónde lo meterías tú? Sí. Y yo le dije, "Yo lo metería en un Montesori, en un Baldorf, alguno de
+58:50
+estos que tienen la porque las habilidades que tienen que aprender, el conocimiento de la guaya lo tiene adentro.
+58:56
+Las habilidades que tienen que aprender son otras. Tienen que aprender creatividad, tienen que aprender a eh
+59:01
+pucha pensamiento creativo, pensamiento analítico. Es otro las habilidades que
+59:08
+tienen que aprender y el conocimiento lo van a aprender y cada vez más fácil. Si tú quieres aprender algo, chat GPT, oye, quiero aprender esto, guíes, meses pu
+59:14
+[carraspeo] se puede, el conocimiento está disponible en YouTube, en todas partes. Entonces, el conocimiento para mí no es
+59:19
+el problema. el el el es el la forma de pensar y si no preparamos a la gente para que cuando para el mundo que se
+59:25
+viene que a tener otras reglas, empresas más chicas, más ágiles, de partida, la
+59:31
+como no tiene manual de instrucción hay mucha prueba y error y aquí castigamos el error, entonces condenamos a morir,
+59:36
+entonces hay hay un desafío gigante en
+59:42
+en pensar cómo vamos cómo va a ser este mundo nuevo, cómo van a ser las reglas nuevas del juego,
+59:47
+porque efectivamente, por ejemplo, Eh, viene la Jig economy, por ejemplo, cachá. Eh, yo, por ejemplo, mis ingresos
+59:55
+son, tengo mi curso online, pero hago clases para otros también, ¿cierto? Hago clases en Icare, hago clases con SOFOfa,
+1:00:00
+hago clases con el Senia, que es el Centro Nacional de Inteligencia Artificial, eh hago clases para empresas si me piden, pero también hago mis
+1:00:06
+cursos abiertos para todos, ¿cachá? Entonces, y tengo mi comunidad y tengo algunos de Patreon y tengo por acá y me
+1:00:12
+llega por las cárceles de plats. Entonces, yo vivo en la Y Economy, o sea, yo mi sueldo me lo hago con un poquito en cada pedazo, ¿cierto?
+1:00:19
+Eh, y con eso genero mi plata y no estoy contratado por nadie. Claro. Cachá. Entonces, eh, yo lo veo ahora y
+1:00:25
+para mí es superfácil porque igual yo ya me me fui posicionando y fui creando las cosas, pero vamos a vivir en un mundo
+1:00:31
+muy mucho del freelancer que colabora acá, colabora allá, que no sé qué o que hace su propio proyecto
+1:00:37
+y menos de el camino formal que era que tú salías de la U, eh, si eráis abogado teníais que entrar a un estudio de
+1:00:43
+abogado grande y si era un de marketing entraba una eh, no sé, era tratabis de
+1:00:49
+entrar como category manager o o analista y si estaba allí en
+1:00:55
+periodista, ah que tengo que trabajar en un medio y voy a trabajar en investigación primero porque no no salí en pantalla cuón. Ya hay hoy día
+1:01:01
+que te arma un medio de comunicación en un en un segundo. Entonces el el ese mundo va a cambiar, ¿cachá? Porque la la
+1:01:10
+se construyó en base a que no había tecnología que lo sostenía. Claro. Y ahora hay tecnología que no solo lo
+1:01:15
+sostiene, sino que lo hace más eficiente en ciertas partes. Entonces, el si no pensamos en cómo
+1:01:22
+tiene que ser el talento necesario para que viva ahí, lo que nos
+1:01:28
+vamos a encontrar es que van a salir los cabros de la U y no van a encontrar pega porque van a contratar a uno de entre 10. Cachá. Lo que va a pasar es que los
+1:01:35
+otros nueve no van a saber emprender o no van a poder hacer sus propios proyectos. lo más probable
+1:01:41
+el ecosistema. Por suerte en Chile tenemos startup Chile, Corfo, etcétera, pero tiene va a tener que absorber mucho
+1:01:48
+más, cachá. Entonces, y Chile es un mercado chico que además tenemos el problema que tenemos menos hijos de los que
+1:01:53
+deberíamos por familia. Tenemos la otra vez el número es como 1,6 o 1,5 por familia y la familia son
+1:02:01
+dos, o sea, no te estáis reemplazando. Entonces, vamos a ir hacia abajo. Hay una tasa de mortalidad más alta que la natalidad. Entonces, entonces si no
+1:02:08
+repensamos la sociedad, no pensamos cuáles son las habilidades clave que tenemos que desarrollar, no pensamos la forma en que enseñamos los sistemas, o
+1:02:14
+sea, la PCU, o sea, ya no es la PCU o la, no, ya no me acuerdo cómo se llama, la PAES, ¿cierto? Y los sistemas de
+1:02:20
+selección y lo que enseñamos en las UES, etcétera, y no empezamos a incorporar estas cosas que probablemente
+1:02:26
+signifiquen que sean carreras más cortas, que sean carreras mis carreras de 2 años. Para mí se, o
+1:02:31
+sea, la la U te enseña a pensar ciertas cosas, pero el tema es que eh hay ciertas cosas que te enseñan la U que
+1:02:36
+probablemente tenemos que enseñar en el colegio, primero, el pensamiento crítico, sistema, en la forma en que evaluamos, etcétera.
+1:02:43
+Entonces, yo iría a carreras más cortas y pensando, porque esta lo que está pasando además que hay periodistas en
+1:02:49
+marketing y empiezan eh la gente no está trabajando en lo que necesariamente en lo que estudió. Antes era obvio el
+1:02:56
+camino, ahora no. Entonces, si ahora no, imagínate en dos años más, un tr años más, cuando ya tengamos la va a ser
+1:03:02
+mucho más distinto. Absoluto. Y está bueno igual que pase así. Entonces, tenemos que ir a carreras más cortas que te enseñen las herramientas
+1:03:08
+clave para poder salir al mercado laboral y jugar ahí, pero el aprendizaje lo vaya a tener que tomar allá y la
+1:03:13
+empresa va a tener que hacerse cargo también de los procesos de educación. O sea, hablamos del live long learning, o
+1:03:20
+sea, la persona no para de estudiar, ¿cachá? La persona está todos los días ahí aprendiendo, buscando cosas.
+1:03:26
+Entonces, hay que formalizar un poco esas rutas para la vida, porque claro, imagínate, llegáis a los 50, llegáis a
+1:03:32
+los 50 y te das cuenta que el mundo cambió. ¿Dónde aprendís lo que tenés que aprender? Más allá de que es como contradictorio
+1:03:38
+porque tenéis la información al alcance de la mano, pero no es no es así de
+1:03:44
+simple. Claro, lo pasa que es como una opción cultural. Además además cada uno aprende de formas
+1:03:50
+distintas. O sea, por ejemplo, yo yo hago mis cursos en vivo, eh, online, pero en vivo. O sea, es una clase donde
+1:03:55
+tú me podías hacer preguntas y todo. De hecho, tú tomaste uno de los cursos. Yo lo hago así porque hay gente que le gusta aprender así. Yo podría hacer ese
+1:04:03
+curso grabado. De hecho, en plats está el otro formato que tengo, que tengo el curso Star GPD, el de Cloud, el de Yemin. El curso está
+1:04:09
+grabado y tú lo tomas a tu propio ritmo, microcápsulas de 5 o 10 minutos,
+1:04:14
+etcétera. Lo tomáis cuando vay en el micro, en la en el baño, donde donde queráis lo podéis. sincrónico. Claro,
+1:04:20
+pero la gente que toma uno o el otro son super distintas entre sí. ¿Por qué? Porque quizás uno está tapado
+1:04:25
+en pega y no sé qué y ve el video entre medio y no tiene tiempo a meterse en otro curso o el otro lo que quiere es
+1:04:30
+poder responder sus dudas y adaptarlo a su trabajo. Y hay gente que ni le interesa a los dos y se mete a aprender
+1:04:36
+solo y experimentando y jugando y se mete a la herramienta de juego y le pregunta chat GPT, quiero aprender esto, que paso a paso. Así.
+1:04:42
+Yo metiendo las manos. Yo metiendo las manos. Yo soy muy de de sale algo nuevo, pago, meto, juego, aprendo y después yo
+1:04:51
+hago clases hace mucho tiempo. Yo partí haciendo clase el 2015 en diplomado y era diplomado, era un diplomado
+1:04:56
+marketing digital y yo era el profe de semiceo. Perfecto. Entonces, claro, el SEMCEO en 2015
+1:05:02
+entenderás que estaba cambiando todo, era todo. Entonces, al final yo lo que enseñaba era práctico, cachá, no te enseñaba la teoría, o sea, te tenía que
+1:05:08
+enseñar cierta teoría, ¿cierto? Que la keyword, que no sé qué, pero al final era cómo hací el keyboard research, cómo hací la planificación del
+1:05:14
+tema y tenía que hacer esa baja. Entonces, claro, el foco m las manos y
+1:05:20
+obviamente estudiar o buscar la información, pero tenéis que estar encontrándola en el camino. Absolutamente. Oye, llevamos una hora 5
+1:05:27
+minutos. Chao, [resoplido] cuídense mucho, que est muy bien. Qué loco. Me queda, me queda un poquito minuto, siempre me paso y tengo quiero
+1:05:35
+hacer quiero hacer dos cosas más. Tengo una pregunta más que tiene que ver como muy accionable, como qué debería hacer
+1:05:40
+hoy día un founder de una empresa, un marquetero de un área de marketing y un
+1:05:46
+tipo que está en una empresa tradicional en términos de IA. ¿Qué debería ser un founder de una empresa? Un founder de una empresa debería entender sí o sí
+1:05:53
+cuáles son las capacidades que tiene la IA hoy, como dónde está la frontera. No
+1:05:59
+dice saber manejarla completamente él, pero sí debiese entender bien para qué para empujar a los equipos que lo
+1:06:04
+ocupen. Porque si estás fundando una empresa hoy, si estáis fundando una empresa sin tenerla en consideración, ¿cómo le te puede ayudar? Está está ahí
+1:06:11
+fuera. Y en segundo lugar yo creo que también debe meter las manos, no necesariamente para él estar desarrollando todo, pero seréis founder
+1:06:17
+el negocio lo entendíis. podíis de repente encontrar ciertos dolores y y llevar y llevar el tema a la práctica.
+1:06:23
+Por ejemplo, un un ejemplo que me gusta mucho que está pasando hoy en día en White Combinator, que es la el fondo del
+1:06:28
+bici más grande, la celora más grande del mundo, Garritan, que es uno de los cofundadores de que salieron estos
+1:06:34
+agentes y cosas, estado sacando cosas para los agentes open source, así como no, el cerebro para mi agente, la
+1:06:40
+herramienta de investigación con todas las preguntas hechas y tips y trucos y cosas y está metiendo las manos con un
+1:06:45
+cante. ¿Por qué? Porque con eso también entiende con los límites de lo que hay hoy en día y no necesariamente está en
+1:06:50
+función de lo que haces. A veces sí, pero si no estáis metiendo las manos y probando y te quis como en la teoría, no
+1:06:56
+vais a estar sintiendo dónde va el límite. Entonces, para el founder eso, para el de marketing, el de marketing hoy día depende, obviamente en qué parte
+1:07:02
+de marketing está ahí, pero hoy debieses estar ocupando la para analizar datos, pero por lo mínimo, mínimo, mínimo,
+1:07:08
+mínimo mínimo, porque no vas a analizar los datos más rápido que la no vas a hacerlo y es data que está ahí que los
+1:07:14
+sistemas te la entregan lista que está en bruto y la te lo ordena. No tenéis que perder tiempo en la data. Tienes que
+1:07:19
+perder tiempo. ¿En dónde? En la estrategia. ¿En qué hago con los ins que me da esa data? ¿En cómo trabajo esto
+1:07:25
+para mejorar las campañas? Y después ocuparía para ejecutar más rápido. O sea, ir a mano a modificar los títulos
+1:07:30
+de SEM, de la estrategia de SEM o los copies en meta, ya no tiene sentido, cachá. tení que tener un sistema que lo
+1:07:36
+haga por ti. Tú tienes que poner la dirección, la decisión de por qué lo estamos haciendo, etcétera. Pero tienes
+1:07:41
+eso y aparte en la parte más de la la campaña, la parte más creativa, hoy con todas las guías de generación de
+1:07:47
+imágenes, video, audio, etcétera, que ya están a un super buen nivel, uno tendría
+1:07:52
+la capacidad citar más buenos sistemas, por ejemplo, con eh tanto locales como conffe UI, como con Freepic, que ahora
+1:07:58
+se llama Magnific o Hickfield u otras de este tipo, en que tú puedes armar sistema en que subes el K Visual y te
+1:08:04
+genera todas las variaciones. Entonces, acelera y multiplica o te permite probar, ¿cierto? Porque hay que pensar
+1:08:10
+siempre el marketing, yo siempre lo pienso desde el growth y el performance, ¿cierto? Como sin experimentación ya no se puede hacer marketing, entonces
+1:08:17
+eh te permite probar y experimentar mucho más rápido y eso significa que aprendes más rápido y por lo tanto tu
+1:08:23
+campaña mejora más rápido y tienes mejores resultados. Entonces el de marketing tienes que hacerlo. Y por otro lado, la persona da pie que
+1:08:29
+la empresa tradicional una minera en el norte, una una salmonera en el sur.
+1:08:36
+Yo creo que hay tres partes donde les puede impactar. uno información, o sea, la IA te permite
+1:08:42
+capturar la información, modificar la información y transformarla mucho más rápido. Entonces, eh si está en una minera, una salmonera, una empresa
+1:08:48
+adicional, etcétera, el tomar los datas, que antes, claro, en digital te llega el reporte exportar reporte de meta, listo,
+1:08:55
+pero acá tú le puedes pasar los documentos sucios, los mail, todo y que la te lo ordene. By the way, te recomiendo, no sé si los conocéis demás
+1:09:01
+que los tenía el radar, Mido. Seba Martínez, fundador de Mido, este ya parezco embajador huevón de Mido, una
+1:09:08
+empresa, este huevón fue al sur, a la agricultura, a meterle ahí a los huasoseno.
+1:09:13
+Entonces el tipo les decía, se daba cuenta que los tipos llegaban a perder $200,000 al año por malas decisiones. Lo
+1:09:19
+que hablamos un poquito antes. Y el tipo que dijo, "¿Cómo le hago? Les metió CRM, software y él se dio cuenta
+1:09:25
+que un gozo se mandaban por audio de de WhatsApp." Es que por eso es más simple. Hoy puedes hablarle a tu agente
+1:09:30
+por WhatsApp, le mando un audio, me contesta en audio incluso, pero estoy haciendo el potencial que hay dentro. Entonces, la persona de pie, toda esa
+1:09:37
+información hay que ver cómo la pasamos de información no estructurada a información estructurada, ¿cierto? ese
+1:09:43
+audio que le mandáis con la información se documenta, bases de datos, tablas de bases de ahí un área gigante, pero hay
+1:09:50
+otra área donde porque claro, estamos hablando de generativa en general, pero todo el internet de las cosas, todos los
+1:09:56
+sensores, todas las cosas que se pueden meter en esa operación, esa data en vivo tú la puedes sacar y procesar.
+1:10:01
+Internet de las cosas, esa frase, huevón, es antiguísima, pero hasta el día de hoy funciona. Funciona. Lo que pasa que el internet de
+1:10:06
+las cosas internet distintos aparatos que podéis meter en la operación. La minera tú podrías tener sensores que eh
+1:10:13
+que están con que la cámara está capturando, pero le metes una guía generativa de de video que lea lo que
+1:10:19
+está pasando y mande una alerta al cinturón de la persona si está muy cerca de la máquina y no se dio cuenta
+1:10:25
+para reducir accidente o podéis meter un sensor en la salmonera, ¿cierto? que tú ocupabas ahí para ver la calidad del
+1:10:31
+agua, pero que una esté recibiendo esa señal todo el rato y cuando ve que hay
+1:10:36
+una pequeña variación manda el mail a la persona encargada de donde vaya a revisar. Por ejemplo, el Centro Nacional
+1:10:41
+de Inteligencia Artificial con Google y unos franceses habían armado un sistema que con cámaras lo entrenaron para
+1:10:49
+detectar humo de los bosques. Entonces ponían cámara en la las casetas de la CONAF en medio del bosque
+1:10:56
+y si y si detectaba con un 30% de probabilidad, no con el 90, no, con una baja probabilidad, tenía 30% de
+1:11:02
+seguridad de que eso podía ser un incendio, mandaba la alerta igual. ¿Por qué? que la posibilidad de que en ese
+1:11:08
+llegue la persona a pagar el incendio, si es un incendio es más alta y si no es un incendio la descarta, pero no podía
+1:11:13
+esperar a que tenga cierta esa entonces eh para la persona que está de pie en su
+1:11:19
+industria, va a haber forma en que la ella te puede ayudar. Y lo que te tienes que preguntar, yo siempre hago siempre lo
+1:11:25
+digo como que el gran desafío es que la persona se pregunte dónde está el dolor
+1:11:33
+que tienes hoy en día. Venía escuchando un podcast cuando venía para acá de de Carl Newport. Carl Newport, no sé si lo
+1:11:38
+conocen, pero es el de del que escribió el libro Deep Work. Ah, ya. Okay. Sí.
+1:11:44
+Y justo en el podcast está entrevistando a alguien sobre un concepto que llamaban la teoría de las de la del del como de
+1:11:50
+las limitaciones, ¿ya? y que básicamente era que eh en vez de preocuparte en cómo
+1:11:57
+hago más, tenemos que preguntarnos dónde está mi cuello de botella, dónde está mi cuello botella hoy. Y muchos de los
+1:12:03
+casos que hablaban era como, oye, eh un un atleta, por ejemplo, decía,
+1:12:09
+"Pucha, yo me di cuenta que mi limitación era que mi recuperación era muy mala." Entonces, ¿qué pasaba? que daba bote, no
+1:12:16
+tenía un buen rendimiento porque era entrenamiento, al día siguiente descanso, entrenamiento, descanso, entrenamiento, pero no alcanzaba a recuperarse. Entonces, se saltó el
+1:12:22
+entrenamiento a mitad de semana, entrenaba el lunes y al viernes para el siguiente entrenamiento ya estaba bien y su rendimiento empezó a mejorar mucho
+1:12:29
+más que antes y empezó a lograr récords y cosas entrenando menos que el resto. ¿Por qué? Porque su problema no era la
+1:12:35
+capacidad, era que su cuerpo nunca estaba en la recuperación. Entonces, si tú identificas cuál es el cuello de
+1:12:41
+botella que tienes en tu operación, si tú identificas dónde están las cosas que estamos haciendo más lento, con esas
+1:12:47
+dolores, típico que tú un compañero que te enojáis con él, que no te mandó la data tiempo porque justo andas en una reunión y no sé qué, buscar esos lugares
+1:12:53
+donde donde te está restringiendo el crecimiento y meto I ahí para habilitar
+1:12:59
+ese cuello de botella, automáticamente el rendimiento completo mejora. Entonces el esa operación, esa
+1:13:07
+persona de a pie, la empresa tradicional, etcétera, se identifica dónde están los cuellos. Por ejemplo, mi cuello de botella, que yo por la
+1:13:14
+naturaleza de lo que hago, estoy en en el podcast acá, hago después un taller, después estoy acá, entonces estoy en
+1:13:20
+bloques de 2 tr horas donde yo no reviso WhatsApp, no reviso el correo, ¿por qué? Porque no puedo, porque estoy en esto.
+1:13:25
+Entonces después me dicen, "Mándame una propuesta." Salgo a la reunión, ¿en qué momento hago la propuesta? Entonces, mi cuello de botella lo resolví una parte
+1:13:31
+porque todavía no me atrevo, no quiero automatizar mi respuestas en en WhatsApp, pero quizás lo tengo que
+1:13:36
+hacer. Eh, pero ¿qué hago? Me hice un skill con Cloud donde yo le meto, oye, salí la
+1:13:44
+nota de Granola. Oye, revisa Granola. Tuve reuniones con Felipe de Toc toc y quiere tal cosa
+1:13:49
+y me arma la propuesta en base a las reglas de negocio que definí yo. O sea, yo con la IA estuvimos toda una mañana hablando mis precios, mis productos, mis
+1:13:56
+cosas, ta ta ta tal, el formato de la propuesta, etcétera, y ahora llega y lo transforma directamente y lo entrega. Listo.
+1:14:01
+Entonces, yo identifico un cuello de botella, tengo varios más, pero en la capacidad de que eres capaz de encontrar un cuello
+1:14:07
+de botella, meterle a eficientar ese proceso o mejorarlo, ya te va a dar
+1:14:12
+mejores resultados automáticamente. Sí, de todas maneras. me quedan un montón de cosas, pero voy a ir al último. Hago una especie de pin pong.
+1:14:18
+Rodrigo, sí, sí. Tengo cinco preguntas, preguntas super respuestas super acotadas.
+1:14:23
+Perfecto. Para ir terminando. Una herramienta de día que sí o sí hay que usar hoy día. Espérate. By the way,
+1:14:29
+hiciste una encuesta en 100, 2000 respuestas, pero ya sé la respuesta. una
+1:14:35
+que tienes que ocupar hoy en día, eh, yo lo resumo en tres. Una para como
+1:14:41
+asistente general, que ahí yo recomiendo Cloud, pero Jemy K muy bueno y también, o sea, son es comparar a Feder, Nadal y
+1:14:47
+Diokovic en su mejor momento. Elige la que más te acomode según lo que haces tú. Okay. Si estás en el mundo Google, Yamin si
+1:14:53
+estás en los mundos, chat GPT Cloud. Perfecto. En mi caso es cloud. Eh, una para tomar
+1:14:59
+transcripciones, o sea, granola transcribe, no pierdas tiempo tomándonos de la reunión. explota
+1:15:04
+ese conocimiento después para trabajarlo y una para dictarle al compu que existen muchas de código abierto, ahí te mando
+1:15:10
+el link si queréis poner debajo del capítulo. Feliz, pero eh ¿por qué? Porque vas cuando hablas, cuando le dictas al
+1:15:17
+computador, ya sea al mail, a la I, al WhatsApp, etcétera, estás pensando en vivo en vez de estar editándote. Por lo
+1:15:23
+tanto, le vas a poder comunicar más información. Qué buen tips. Entonces, esas para mí son las tres que hay que ocupar. Un asistente general,
+1:15:30
+una para transcribir reuniones y una para dictarle al computador. Una sobrevalorada. Una sobrevalorada.
+1:15:35
+¡Upa! Una sobrevalorada. Yo creo que los navegadores con IA, así como Edge,
+1:15:41
+comet, día, etcétera, están un poco sobrevalorados. Al final la persona quiere navegar en internet. Eh, veo, yo
+1:15:47
+por ejemplo ocupo poco el navegador con lo ocupo es para una cosa muy puntual, pero yo creo que los navegadores con están sobrevalorados.
+1:15:53
+Hermoso. Un miedo real sobre la inteligencia artificial actual. Un miedo real es que los impactos de la
+1:15:58
+lleguen antes de que nos pongamos las pilas en corregir los problemas que van a generar. Una oportunidad que pocos están viendo
+1:16:03
+con Ida. Una oportunidad que pocos están viendo con IA. Eh,
+1:16:09
+la documentación que hablábamos antes, o sea, cuéntale a la dile así, júntate con ella así una hora
+1:16:15
+y empieza a decirle, "Oye, hazme preguntas para que me conozcas mejor,
+1:16:20
+¿cómo trabajo? No sé qué, etcétera, como en el contexto de lo que hace." Y cuéntale y díale así, "No, mira, yo trabajo en esto, yo hago esto, este es
+1:16:26
+mi proceso, este es mi equipo, pa. Pásale la información y luego le pides que en base a eso te genere los
+1:16:33
+documentos de proceso, te genere eh dónde están los cuellos de botella o cosas de ese estilo. Qué bacán. Qué bacán. Y el último, un
+1:16:39
+consejo para alguien que quiere subirse hoy día a la IA. Un consejo para alguien que quiere subirse hoy día a la IA. Eh, dos
+1:16:44
+consejos. El primero es, abre chat GPT, Clodo Yemina y empieza a hablarle. Ahora todos tienen cuenta gratuita, o sea, no
+1:16:50
+hay excusa. Tienes que saber hablar español y tener internet. O sea, no hay excusa. No hay excusa. Claro. Elige uno de esos tres, empieza a
+1:16:56
+hablarle, empieza a preguntarle de cómo te puede ayudar en lo que haces, cuéntale qué haces y te va a empezar a dar ideas. Eso es uno. Y lo segundo, le
+1:17:02
+recomiendo suscribirse a mi newsletter donde comparto las cosas de las últimas noticias y todo. Eh, que estuvo medo en pausa los últimos
+1:17:09
+meses, pero ya mañana vuelve con nueva edición, eh, porque está pasando de todo
+1:17:14
+y al final yo creo que ahí lo más importante es es entender las tendencias, no estar con la última
+1:17:19
+porque al final tú lo tienes que adoptar para lo que estás haciendo tú. Entonces, no te no tenés que andar cambiando de herramienta, no tienes no ocupa una para
+1:17:26
+los dolores tuyos y después cuando te des cuenta que hay una o una herramienta que resuelve otro dolor que tenía incorpórala
+1:17:32
+o recién ahí cámbiate porque lo más probable también que van a tener integraciones, o sea, por ejemplo, mucha gente se está yendo de chat GPT a Cloud hoy en día.
+1:17:38
+¿Por qué? Porque Cloud tiene algunas cosas más. ¿Qué pasó, Chat GPT? Ya la está sacando. Entonces, claro, a mí me
+1:17:43
+gusta más Cloud por cómo resuelve, por distintas cosas y está innovando más, pero chat es suficientemente bueno.
+1:17:49
+Entonces, ¿para qué me voy a cambiar directamente? cámbiate si efectivamente lo que soluciona la otra herramienta te
+1:17:54
+da algo que te mueve la aguja. Es verdad, ¿cachá? Entonces, lo importante es estar mirando la tendencia, entender las
+1:18:00
+capacidades actuales, eh, y cuestionarte. Yo creo que lo más importante es como el análisis profundo
+1:18:06
+de uno mismo para preguntarte cómo trabajo y qué cosas me gustan y cuáles no. Si a
+1:18:12
+ti te gusta algo, no se lo pasé a la pásale las cosas que no te gustan. Me gusta eso. Oye. Y lo otro, esto lo dejo
+1:18:19
+nás. Eh, fíjense en los títulos de los newsletter de Rodrigo. Oye, eh,
+1:18:25
+terminamos mención a Toct. Toc toc. Ingresen a Toctok ahora. Sitio obligatorio antes de comprar, vender o
+1:18:31
+arrendar una propiedad. En Toctok pueden encontrar eh propiedades para buscar, encontrar, eh vitrinear todo lo que
+1:18:38
+quieran. Rodrigo, podemos buscar un crédito hipotecario. Estamos con Alianza, con Banco Itaú, tenemos
+1:18:43
+mutuarias, tenemos un sinfín de oportunidades para encontrar un hipotecario en Chile. El 99% de las
+1:18:49
+personas en Chile tienen que comprarse una propiedad con financiamiento, así que son muy pocas las que tienen la plata debajo de la cama, básicamente.
+1:18:55
+Eh, y podemos llevarles también en la compra. Así que toc toc auspiciador oficial de Efecto podcast, don Rodrigo,
+1:19:01
+me despido. Muchas gracias por la invitación. Muchas gracias por la invitación, perdón por la por aceptar la invitación. No, yo feliz. Yo feliz. Aparte que se
+1:19:07
+pasa bien y como que se pasa rápido volando el tiempo. Hón, la Se me quedó [risas] afuera Open Clow, se me quedó afuera la Tam
+1:19:12
+GBT, se me quedó afuera un montón de cosas que me gustaría hablar, pero bienvenido siempre en este espacio.
+1:19:18
+En 20 capítulos más me tra de vuelta [risas] y que vamos así. Muchas gracias. Muy bien. Yo cambio la
+1:19:23
+cámara. Un abrazo a todos. Muchas gracias a todos los que llegaron hasta aquí. Nos vemos en una próxima edión de Efecto podcast. Chao chao ciao ciao
+1:19:30
+ciao.
+
