@@ -53,7 +53,9 @@ def fetch(video_id, lang):
         ], check=False, capture_output=True, text=True)
         files = sorted(Path(tmp).glob("*.vtt"))
         if not files:
-            print("   ", (result.stderr or result.stdout).strip().splitlines()[-1:] or "sin detalle")
+            detail = ((result.stderr or result.stdout).strip().splitlines() or ["sin detalle"])[-1]
+            # En GitHub Actions esto aparece como aviso en el resumen de la ejecución.
+            print(f"::warning title={video_id}::{detail[:300]}")
             return None
         return vtt_to_text(files[0].read_text(encoding="utf-8"))
 
