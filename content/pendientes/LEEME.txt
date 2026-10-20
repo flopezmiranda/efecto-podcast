@@ -1,0 +1,2 @@
+Transcripciones corregidas que esperan revisión antes de publicarse.
+Para publicarlas, muévelas a content/transcripts/.
