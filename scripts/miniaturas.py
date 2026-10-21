@@ -19,20 +19,20 @@ MUTED = (169, 164, 199)
 PHOTOS = ROOT / "content" / "miniaturas" / "fuente"
 GRAD = [(225, 92, 150), (192, 114, 231), (124, 145, 235), (60, 174, 234)]
 
-# (video, número, frase, foto, zoom). Cada foto se usa en dos o tres episodios con distinto encuadre.
+# (video, número, frase, foto, zoom). Las fotos con ropa cambiada se hicieron con IA en Canva.
 EPISODES = [
     ("wYvn_DWpl18", 1, "HACKEANDO LA MÚSICA CON [IA]", "chaleco", 1.0),
-    ("4cBSKxJolHc", 2, "DE LA PERSEVERANCIA A [MARTE]", "camisa-beige", 1.0),
+    ("4cBSKxJolHc", 2, "DE LA PERSEVERANCIA A [MARTE]", "blazer-azul", 1.0),
     ("p79_GEB515o", 3, "¿UN CHIP EN TU [CEREBRO]?", "camisa-celeste", 1.0),
     ("YbI-3aQ7OR8", 4, "NO MÁS [VENTA DE HUMO] EN MARKETING", "polera-gris", 1.0),
-    ("n8LxYjIbUCA", 5, "LANZA TU [MVP] HOY MISMO", "camisa-rayas", 1.0),
-    ("fCGOkxt7zlU", 6, "EL GOL DE [MESSI] QUE CAMBIÓ UN NEGOCIO", "polera-gris", 1.3),
-    ("j08Vcm6XAFY", 7, "5 TIPS PARA SER MÁS [PRODUCTIVO]", "camisa-beige", 1.3),
-    ("V4BEdzMjixk", 8, "LOS 7 SECRETOS DE [FACEBOOK]", "chaleco", 1.3),
-    ("bXWRxUJOy70", 9, "[FALABELLA] SE ENAMORÓ DE UNA MALA IDEA", "camisa-rayas", 1.3),
-    ("QkoM659gN1Q", 10, "¿ESTAMOS LISTOS PARA TANTA [TECNOLOGÍA]?", "camisa-celeste", 1.3),
-    ("mwaXlEqnlzQ", 11, "NO TODO ES [SABER]", "chaleco", 1.15),
-    ("NF46uDl243M", 12, "¡CRINGE! QUE NO TE FRENE EL [QUÉ DIRÁN]", "polera-gris", 1.15),
+    ("n8LxYjIbUCA", 5, "LANZA TU [MVP] HOY MISMO", "camisa-mezclilla", 1.0),
+    ("fCGOkxt7zlU", 6, "EL GOL DE [MESSI] QUE CAMBIÓ UN NEGOCIO", "polera-negra", 1.0),
+    ("j08Vcm6XAFY", 7, "5 TIPS PARA SER MÁS [PRODUCTIVO]", "camisa-beige", 1.0),
+    ("V4BEdzMjixk", 8, "LOS 7 SECRETOS DE [FACEBOOK]", "cuello-alto-negro", 1.0),
+    ("bXWRxUJOy70", 9, "[FALABELLA] SE ENAMORÓ DE UNA MALA IDEA", "camisa-rayas", 1.0),
+    ("QkoM659gN1Q", 10, "¿ESTAMOS LISTOS PARA TANTA [TECNOLOGÍA]?", "sueter-burdeo", 1.0),
+    ("mwaXlEqnlzQ", 11, "NO TODO ES [SABER]", "blazer-azul", 1.25),
+    ("NF46uDl243M", 12, "¡CRINGE! QUE NO TE FRENE EL [QUÉ DIRÁN]", "camisa-mezclilla", 1.25),
 ]
 
 # Posición de la cara en cada foto (fracción del ancho y del alto), para encuadrar.
@@ -42,6 +42,11 @@ FACES = {
     "polera-gris": (0.368, 0.34),
     "camisa-celeste": (0.389, 0.31),
     "camisa-rayas": (0.331, 0.30),
+    "sueter-burdeo": (0.35, 0.32),
+    "cuello-alto-negro": (0.40, 0.29),
+    "camisa-mezclilla": (0.375, 0.30),
+    "polera-negra": (0.40, 0.31),
+    "blazer-azul": (0.40, 0.38),
 }
 
 
