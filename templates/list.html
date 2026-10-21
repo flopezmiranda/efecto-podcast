@@ -51,6 +51,12 @@
   {% if next_url %}<a href="{{ next_url }}">Anteriores →</a>{% else %}<span></span>{% endif %}
 </nav>
 {% endif %}
+{% if page == 1 and guides %}
+<section class="home-guides" aria-labelledby="guias-title">
+  <h2 id="guias-title" class="section-title">Guías: lo que aprendimos de los invitados</h2>
+  {% include "_guides_list.html" %}
+</section>
+{% endif %}
 {% if faq %}
 <section class="faq" aria-labelledby="faq-title">
   <h2 id="faq-title" class="section-title">Preguntas frecuentes sobre {{ site.site_name }}</h2>

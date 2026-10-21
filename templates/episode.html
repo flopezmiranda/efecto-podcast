@@ -43,6 +43,9 @@
       <h2>{% if ed %}Descripción en YouTube{% else %}Sobre este episodio{% endif %}</h2>
       {% for p in ep.paragraphs %}{{ p }}{% endfor %}
 
+      {% if ep.guides %}
+      <p class="in-guide">Este episodio aparece en {% for g in ep.guides %}la guía <a href="{{ g.url }}">{{ g.title }}</a>{% if not loop.last %} y en {% endif %}{% endfor %}.</p>
+      {% endif %}
       {% if ep.topics %}
       <div class="chips">{% for t in ep.topics %}<a class="chip" href="{{ t.url }}">{{ t.name }}</a>{% endfor %}</div>
       {% endif %}

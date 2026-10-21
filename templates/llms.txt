@@ -17,7 +17,22 @@ Puedes citar este contenido indicando "{{ site.site_name }}" y el enlace al epis
 - [Temas]({{ base }}/temas/): episodios agrupados por tema
 - [Contacto]({{ base }}/contacto/): {{ site.contact_email }}
 
-## Episodios
+{% if guides %}## Guías
+
+Respuestas completas que reúnen lo dicho por varios invitados, con enlaces a los episodios.
+{% for g in guides %}
+- [{{ g.title }}]({{ base }}{{ g.url }}): {{ g.description }}
+{%- if full %}
+
+  {{ g.intro }}
+{% for sec in g.sections %}
+  ### {{ sec.title }}
+  {{ sec.html|striptags }}
+{% endfor %}
+{%- endif %}
+{%- endfor %}
+
+{% endif %}## Episodios
 {% for ep in episodes %}
 - [{{ ep.title }}]({{ base }}{{ ep.url }}): {{ ep.summary }}{% if ep.guests %} Invitados: {% for g in ep.guests %}{{ g.name }}{% if g.role %} ({{ g.role }}){% endif %}{% if not loop.last %}, {% endif %}{% endfor %}.{% endif %} {{ ep.date_human }}, {{ ep.duration_human }}.{% if ep.transcript %} Con transcripción.{% endif %}
 {%- if full %}

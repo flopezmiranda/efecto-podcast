@@ -67,6 +67,7 @@
       <a href="/" class="nav-home"{% if path == '/' %} aria-current="page"{% endif %}>Episodios</a>
       <a href="/temas/"{% if path.startswith('/temas') %} aria-current="page"{% endif %}>Temas</a>
       <a href="/invitados/"{% if path.startswith('/invitados') %} aria-current="page"{% endif %}>Invitados</a>
+      {% if guides %}<a href="/guias/" class="nav-guides"{% if path.startswith('/guias') %} aria-current="page"{% endif %}>Guías</a>{% endif %}
       <a href="/sobre-nosotros/" class="nav-about"{% if path == '/sobre-nosotros/' %} aria-current="page"{% endif %}>Nosotros</a>
       <a href="/buscar/" class="icon-link" aria-label="Buscar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
     </nav>
@@ -87,6 +88,7 @@
     <nav aria-label="Legal">
       <a href="/sobre-nosotros/">Sobre nosotros</a>
       {% if host and host.slug %}<a href="/{{ host.slug }}/">{{ host.name }}</a>{% endif %}
+      {% if guides %}<a href="/guias/">Guías</a>{% endif %}
       <a href="/invitados/">Invitados</a>
       <a href="/temas/">Temas</a>
       <a href="/contacto/">Contacto</a>

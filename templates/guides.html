@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% set title = "Guías de marketing, negocios e inteligencia artificial" %}
+{% set description = "Guías de " ~ site.site_name ~ " que reúnen lo que han dicho sus invitados sobre " ~ guides|map(attribute="title")|map("lower")|join(", ") ~ "." %}
+{% set schema = [{"@type": "CollectionPage", "@id": canonical ~ "#pagina", "name": "Guías de " ~ site.site_name, "url": canonical,
+  "isPartOf": {"@id": base ~ "/#sitio"},
+  "mainEntity": {"@type": "ItemList", "numberOfItems": guides|length, "itemListElement": guides|list_items}}] %}
+{% block content %}
+<h1 class="section-title">Guías</h1>
+<p class="intro muted">Cada guía responde una pregunta completa con lo que han dicho los invitados de {{ site.site_name }}, con enlaces a los episodios para profundizar.</p>
+{% include "_guides_list.html" %}
+{% endblock %}

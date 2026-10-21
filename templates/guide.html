@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% set title = guide.title %}
+{% set description = guide.description %}
+{% set og_type = "article" %}
+{% set schema = [
+  {"@type": "Article", "@id": canonical ~ "#guia", "headline": guide.title, "description": guide.description,
+   "url": canonical, "mainEntityOfPage": canonical, "inLanguage": site.language,
+   "datePublished": guide.published, "dateModified": guide.updated,
+   "author": {"@id": base ~ "/#conductor"}, "publisher": {"@id": base ~ "/#organizacion"},
+   "image": base ~ "/static/img/og.jpg", "isPartOf": {"@id": base ~ "/#sitio"},
+   "citation": guide.episodes|map("ep_ref")|list,
+   "mentions": guide.episodes|map(attribute="guests")|sum(start=[])|map("guest_ref")|list},
+  {"@type": "FAQPage", "@id": canonical ~ "#preguntas", "isPartOf": {"@id": canonical ~ "#guia"},
+   "mainEntity": guide.faq|map("faq_item")|list},
+  {"@type": "BreadcrumbList", "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Guías", "item": base ~ "/guias/"},
+    {"@type": "ListItem", "position": 2, "name": guide.title, "item": canonical}]}
+] %}
+{% block content %}
+<article class="guide">
+  <nav class="crumbs" aria-label="Ruta"><a href="/guias/">Guías</a> <span aria-hidden="true">/</span> <span>{{ guide.title }}</span></nav>
+  <p class="eyebrow grad-text">Guía de {{ site.site_name }}</p>
+  <h1>{{ guide.title }}</h1>
+  <p class="byline">Por <a href="/{{ host.slug }}/">{{ host.name }}</a> · Actualizada el <time datetime="{{ guide.updated }}">{{ guide.updated_human }}</time> · {{ guide.minutes }} min de lectura</p>
+
+  <div class="answer">
+    <p class="answer-label">Respuesta corta</p>
+    <p>{{ guide.intro }}</p>
+  </div>
+
+  <div class="guide-layout">
+    <div class="prose">
+      {% for sec in guide.sections %}
+      <h2 id="{{ sec.id }}">{{ sec.title }}</h2>
+      {{ sec.html }}
+      {% endfor %}
+
+      <h2 id="en-resumen">En resumen</h2>
+      <ul class="takeaways">{% for t in guide.takeaways %}<li>{{ t }}</li>{% endfor %}</ul>
+
+      <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+      <div class="qa">{% for q in guide.faq %}<h3>{{ q.q }}</h3><p>{{ q.a }}</p>{% endfor %}</div>
+
+      <p class="muted small">Esta guía reúne lo conversado en {{ site.site_name }} con sus invitados. No es un estudio de mercado: cada idea viene de un episodio que puedes ver completo más abajo.</p>
+    </div>
+
+    <aside class="chapters toc" aria-labelledby="toc-title">
+      <h2 id="toc-title">En esta guía</h2>
+      <ol>
+        {% for sec in guide.sections %}<li><a href="#{{ sec.id }}">{{ sec.title }}</a></li>{% endfor %}
+        <li><a href="#en-resumen">En resumen</a></li>
+        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+      </ol>
+    </aside>
+  </div>
+</article>
+
+{% if guide.episodes %}
+<section>
+  <h2 class="section-title">Episodios citados en esta guía</h2>
+  <div class="grid">{% for ep in guide.episodes %}{% include "_card.html" %}{% endfor %}</div>
+</section>
+{% endif %}
+{% endblock %}

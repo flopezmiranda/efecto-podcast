@@ -225,6 +225,42 @@ def redirect_page(target):
             f'<p><a href="{target}">Este episodio cambió de dirección</a></p></body></html>')
 
 
+MARKER_RE = re.compile(r"\[\[(ep|inv):([^\]|]+)(?:\|([^\]]+))?\]\]")
+
+
+def load_guides(episodes, guests):
+    """Guías temáticas de content/guias/*.json. Los marcadores [[ep:ID]] e [[inv:Nombre]] se vuelven enlaces."""
+    by_id = {e["id"]: e for e in episodes}
+    by_name = {g["name"]: g for g in guests}
+
+    def link(m):
+        kind, key, text = m.group(1), m.group(2).strip(), m.group(3)
+        target = by_id.get(key) if kind == "ep" else by_name.get(key)
+        if not target:
+            print(f"  aviso: marcador sin destino {m.group(0)}")
+            return html.escape(text or key)
+        label = text or (target["title"] if kind == "ep" else target["name"])
+        return f'<a href="{target["url"]}">{html.escape(label)}</a>'
+
+    guides = []
+    for path in sorted((CONTENT / "guias").glob("*.json")):
+        g = json.loads(path.read_text(encoding="utf-8"))
+        g["slug"] = path.stem
+        g["url"] = f"/guias/{path.stem}/"
+        g["sections"] = [{**sec, "id": slugify(sec["title"], 60), "html": Markup(MARKER_RE.sub(link, sec["html"]))}
+                         for sec in g["sections"]]
+        g["episodes"] = [by_id[i] for i in g.get("episodes", []) if i in by_id]
+        words = len(g["intro"].split()) + sum(len(re.sub(r"<[^>]+>", " ", sec["html"]).split()) for sec in g["sections"])
+        g["minutes"] = max(1, round(words / 220))
+        g["published"] = g.get("published") or datetime.now().date().isoformat()
+        g["updated"] = g.get("updated") or g["published"]
+        g["updated_human"] = fmt_date(g["updated"] + "T00:00:00")
+        for ep in g["episodes"]:
+            ep.setdefault("guides", []).append(g)
+        guides.append(g)
+    return guides
+
+
 def faq(config, episodes, topics, guests):
     names = [g["name"] for g in sorted(guests, key=lambda g: -len(g["episodes"]))][:5]
     values = {
@@ -307,15 +343,18 @@ def main():
     config = load_config()
     base = config["base_url"].rstrip("/")
     episodes, topics, guests = prepare(config)
+    guides = load_guides(episodes, guests)
 
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=select_autoescape(["html"]))
     env.filters["faq_item"] = lambda i: {"@type": "Question", "name": i["q"], "acceptedAnswer": {"@type": "Answer", "text": i["a"]}}
     env.filters["prune"] = prune
+    env.filters["ep_ref"] = lambda e: {"@id": base + e["url"] + "#episodio"}
+    env.filters["guest_ref"] = lambda g: {"@type": "Person", "name": g["name"], "url": base + g["url"]}
     env.filters["org"] = lambda name: {"@type": "CollegeOrUniversity", "name": name}
     env.filters["list_items"] = lambda xs: [{"@type": "ListItem", "position": i, "url": base + x["url"], "name": x.get("name") or x["title"]}
                                             for i, x in enumerate(xs, 1)]
     env.filters["tojson_safe"] = lambda v: Markup(json.dumps(v, ensure_ascii=False).replace("</", "<\\/"))
-    env.globals.update(site=config, base=base, year=datetime.now().year, top_topics=topics[:12],
+    env.globals.update(site=config, base=base, year=datetime.now().year, top_topics=topics[:12], guides=guides,
                        host=config["hosts"][0] if config.get("hosts") else None)
 
     if DIST.exists():
@@ -349,6 +388,11 @@ def main():
         if ep["old_slug"] != ep["slug"]:
             write(f"/episodios/{ep['old_slug']}/", redirect_page(base + ep["url"]))
 
+    for g in guides:
+        render(g["url"], "guide.html", "0.9", g["updated"], guide=g)
+    if guides:
+        render("/guias/", "guides.html", "0.7", max(g["updated"] for g in guides))
+
     for g in guests:
         render(g["url"], "guest.html", "0.6", g["episodes"][0]["date_iso"], guest=g,
                schema=[prune({**person({**g, "base": base}), "description": f"{g['name']}, {g['role']}. Conversó en {config['site_name']}.",
@@ -375,7 +419,8 @@ def main():
 
     write("/search.json", json.dumps([
         {"t": e["title"], "u": e["url"], "d": e["date_human"], "s": e["summary"],
-         "k": " ".join([t["name"] for t in e["topics"]] + [g["name"] for g in e["guests"]])} for e in episodes],
+         "k": " ".join([t["name"] for t in e["topics"]] + [g["name"] for g in e["guests"]])} for e in episodes]
+        + [{"t": g["title"], "u": g["url"], "d": "Guía", "s": g["description"], "k": "guía"} for g in guides],
         ensure_ascii=False))
 
     urls = []
@@ -398,8 +443,8 @@ def main():
     # Los buscadores con IA (ChatGPT, Claude, Perplexity, Gemini) pueden leer y citar el sitio.
     bots = "".join(f"User-agent: {b}\nAllow: /\n\n" for b in AI_BOTS)
     write("/robots.txt", f"{bots}User-agent: *\nAllow: /\nDisallow: /buscar/\n\nSitemap: {base}/sitemap.xml\n")
-    write("/llms.txt", env.get_template("llms.txt").render(episodes=episodes, topics=topics, guests=guests, full=False))
-    write("/llms-full.txt", env.get_template("llms.txt").render(episodes=episodes, topics=topics, guests=guests, full=True))
+    for full, name in ((False, "/llms.txt"), (True, "/llms-full.txt")):
+        write(name, env.get_template("llms.txt").render(episodes=episodes, topics=topics, guests=guests, full=full))
     if config.get("indexnow_key"):
         write(f"/{config['indexnow_key']}.txt", config["indexnow_key"])
     if config.get("adsense_client"):
