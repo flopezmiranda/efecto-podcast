@@ -57,37 +57,36 @@ def gradient_color(t):
     return tuple(round(a[k] + (b[k] - a[k]) * f) for k in range(3))
 
 
-def photo_background(name, zoom):
-    """Foto encuadrada en la cara, con el fondo difuminado y oscurecida abajo para el texto."""
+def photo_layer(base, name, zoom):
+    """Funde la foto con el fondo de la marca: a la derecha, difuminada y desvanecida hacia el texto."""
+    import numpy as np
     photo = Image.open(PHOTOS / f"felipe-{name}.jpg").convert("RGB")
-    scale = max(W / photo.width, H / photo.height) * zoom
+    scale = H * 1.05 * zoom / photo.height
     photo = photo.resize((round(photo.width * scale), round(photo.height * scale)), Image.LANCZOS)
     fx, fy = FACES[name]
-    left = min(max(0, round(fx * photo.width - 0.42 * W)), photo.width - W)
-    # Con más zoom la cara baja un poco, para que la cabeza no choque con el logo.
-    top = min(max(0, round(fy * photo.height - (0.38 + 0.15 * (zoom - 1)) * H)), photo.height - H)
-    img = photo.crop((left, top, left + W, top + H))
-    face = (fx * photo.width - left, fy * photo.height - top)
+    # Coloca la cara en el tercio derecho del cuadro.
+    ox, oy = round(0.74 * W - fx * photo.width), round(0.40 * H - fy * photo.height)
+    ox = max(ox, W - photo.width)               # que la foto llegue al borde derecho
+    oy = min(0, max(oy, H - photo.height))      # y cubra todo el alto
+    layer = Image.new("RGB", (W, H), BG)
+    layer.paste(photo, (ox, oy))
+    face = (ox + fx * photo.width, oy + fy * photo.height)
 
-    # Difuminado: la persona queda nítida y el resto del estudio se suaviza.
+    # La persona apenas suavizada; el estudio, muy difuminado.
     sharp = Image.new("L", (W, H), 0)
-    rx, ry = 300 * zoom, 380 * zoom
-    cx, cy = face[0], face[1] + 110 * zoom
-    ImageDraw.Draw(sharp).ellipse((cx - rx, cy - ry, cx + rx, cy + ry), fill=255)
-    sharp = sharp.filter(ImageFilter.GaussianBlur(110))
-    img = Image.composite(img, img.filter(ImageFilter.GaussianBlur(14)), sharp)
+    rx, ry = 260 * zoom, 340 * zoom
+    ImageDraw.Draw(sharp).ellipse((face[0] - rx, face[1] - ry + 80, face[0] + rx, face[1] + ry + 80), fill=255)
+    sharp = sharp.filter(ImageFilter.GaussianBlur(100))
+    layer = Image.composite(layer.filter(ImageFilter.GaussianBlur(1.2)), layer.filter(ImageFilter.GaussianBlur(16)), sharp)
+    layer = Image.blend(Image.new("RGB", (W, H), BG), layer, 0.82)  # un poco más oscura, para que mande el texto
 
-    # Viñeta suave y degradado oscuro abajo.
-    shade = Image.new("L", (W, H), 0)
-    d = ImageDraw.Draw(shade)
-    top_fade = int(H * 0.40)
-    for yy in range(top_fade, H):
-        d.line([(0, yy), (W, yy)], fill=min(235, int(255 * ((yy - top_fade) / (H - top_fade)) ** 0.8)))
-    vignette = Image.new("L", (W, H), 150)
-    ImageDraw.Draw(vignette).ellipse((-120, -160, W + 120, H + 60), fill=0)
-    vignette = vignette.filter(ImageFilter.GaussianBlur(140))
-    shade = Image.fromarray(__import__("numpy").maximum(__import__("numpy").array(shade), __import__("numpy").array(vignette)))
-    return Image.composite(Image.new("RGB", (W, H), BG), img, shade)
+    # Se desvanece hacia la izquierda (donde va el texto) y hacia abajo.
+    x = np.linspace(0, 1, W)
+    horiz = np.clip((x - 0.36) / 0.30, 0, 1) ** 1.4
+    y = np.linspace(0, 1, H)
+    vert = np.clip((1.0 - y) / 0.30, 0, 1)
+    alpha = (np.outer(vert, horiz) * 255).astype("uint8")
+    return Image.composite(layer, base, Image.fromarray(alpha))
 
 
 def background():
@@ -124,31 +123,33 @@ def layout(words, font, max_w, draw):
 
 
 def render(vid, number, text, photo, zoom, logo):
-    img = photo_background(photo, zoom) if photo else background()
+    img = background()
+    if photo:
+        img = photo_layer(img, photo, zoom)
     draw = ImageDraw.Draw(img)
     words = tokens(text)
-    max_w, x = 1120, 80
-    for size in range(112, 50, -4):
+    max_w, x = 640 if photo else 1100, 90
+    for size in range(140, 56, -4):
         font = ImageFont.truetype(FONT, size)
         lines = layout(words, font, max_w, draw)
         widest = max(draw.textlength(w, font=font) for w, _ in words)
-        if len(lines) <= 2 and widest <= max_w:
+        # El bloque cabe entre el logo y el borde inferior.
+        if len(lines) <= 4 and widest <= max_w and int(size * 1.08) * len(lines) <= 430:
             break
-    line_h = int(size * 1.06)
-    stroke = max(4, size // 14)
-    y = H - 62 - line_h * len(lines)
+    line_h = int(size * 1.08)
+    block_h = line_h * len(lines)
+    y = (H - block_h) // 2 + 20
     for line in lines:
         cx = x
         for word, hl in line:
-            draw.text((cx, y), word, font=font, fill=YELLOW if hl else WHITE,
-                      stroke_width=stroke, stroke_fill=(0, 0, 0))
+            draw.text((cx, y), word, font=font, fill=YELLOW if hl else WHITE)
             cx += draw.textlength(word + " ", font=font)
         y += line_h
 
     # Barra con el degradado de la marca bajo el texto.
-    bar_y = H - 34
+    bar_y = y + 18
     for i in range(260):
-        draw.line([(x + i, bar_y), (x + i, bar_y + 8)], fill=gradient_color(i / 259))
+        draw.line([(x + i, bar_y), (x + i, bar_y + 9)], fill=gradient_color(i / 259))
 
     # Logo original (sin efectos) y nombre arriba a la izquierda.
     lw = 92
