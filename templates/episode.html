@@ -8,6 +8,7 @@
 <article class="episode">
   <nav class="crumbs" aria-label="Ruta"><a href="/">Episodios</a> <span aria-hidden="true">/</span> <span>{{ ep.title }}</span></nav>
   <h1>{{ ep.title }}</h1>
+  {% if host and host.slug %}<p class="byline">Conducido por <a href="/{{ host.slug }}/">{{ host.name }}</a></p>{% endif %}
   <p class="meta">{% if ep.label %}{{ ep.label }} · {% endif %}<time datetime="{{ ep.date_iso }}">{{ ep.date_human }}</time> · {{ ep.duration_human }}</p>
   {% if ep.guests %}
   <p class="guests">Con {% for g in ep.guests %}<a href="{{ g.url }}">{{ g.name }}</a>{% if g.role %}, <span class="muted">{{ g.role }}</span>{% endif %}{% if not loop.last %} y {% endif %}{% endfor %}</p>

@@ -202,3 +202,18 @@ main { padding-top: 40px; padding-bottom: 72px; min-height: 60vh; }
 .qa h3 { font-size: 1.02rem; font-weight: 600; margin: 22px 0 6px; }
 .qa p { margin: 0; color: var(--muted); }
 .prose h2[id] { scroll-margin-top: 88px; }
+
+/* Página de autor */
+.author-head { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 44px; align-items: start; }
+.author-photo { width: 100%; height: auto; border-radius: var(--radius); box-shadow: 0 30px 60px -30px rgba(192, 114, 231, .5); }
+.author h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; margin: 0 0 8px; }
+.author-links { display: flex; gap: 16px; }
+.author-links a { color: var(--accent); font-weight: 600; }
+.author-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: none; margin: 24px 0 40px; }
+.author-cols li { margin-bottom: 10px; }
+.byline { font-size: .9rem; color: var(--muted); margin: 0 0 4px; }
+.byline a { color: var(--text); }
+@media (max-width: 760px) {
+  .author-head, .author-cols { grid-template-columns: 1fr; gap: 24px; }
+  .author-photo { max-width: 260px; }
+}

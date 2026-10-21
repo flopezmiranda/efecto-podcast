@@ -41,9 +41,13 @@
      "author": {"@id": base ~ "/#conductor"}, "publisher": {"@id": base ~ "/#organizacion"},
      "sameAs": site.social.values()|select|list},
     {"@type": "Person", "@id": base ~ "/#conductor", "name": host.name, "jobTitle": host.role,
-     "url": base ~ "/sobre-nosotros/", "worksFor": {"@id": base ~ "/#organizacion"}}
+     "url": base ~ ("/" ~ host.slug ~ "/" if host.slug else "/sobre-nosotros/"),
+     "image": base ~ host.image if host.image else none,
+     "sameAs": host.same_as or none, "knowsAbout": host.knows_about or none,
+     "worksFor": {"@type": "Organization", "name": host.works_for.name, "url": host.works_for.url} if host.works_for else none,
+     "alumniOf": host.education|map(attribute="name")|map("org")|list if host.education else none}
   ] + (schema or [])
-}|tojson_safe }}</script>
+}|prune|tojson_safe }}</script>
 {% block schema %}{% endblock %}
 {% if site.ga4_id %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4_id }}"></script>

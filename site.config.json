@@ -23,7 +23,21 @@
   },
 
   "hosts": [
-    {"name": "Felipe López Miranda", "role": "Conductor de Efecto Podcast", "same_as": []}
+    {
+      "name": "Felipe López Miranda",
+      "slug": "felipe-lopez-miranda",
+      "role": "CMO & Growth Lead en TOCTOC",
+      "image": "/static/img/felipe-lopez-miranda.jpg",
+      "works_for": {"name": "TOCTOC", "url": "https://www.toctoc.com"},
+      "same_as": ["https://www.linkedin.com/in/flopezmiranda/", "https://www.instagram.com/flopezmiranda/"],
+      "knows_about": ["Branding", "Contenido de marca", "Tecnología de datos", "Analítica web", "Performance marketing", "Marketing digital", "Transformación digital"],
+      "education": [
+        {"name": "Universidad Diego Portales", "degree": "Magíster en Dirección de Marketing y Gestión Comercial", "years": "2020 – 2022"},
+        {"name": "Florida International University", "degree": "Posgrado en Innovación y Transformación Digital", "years": "2022"},
+        {"name": "Universidad Adolfo Ibáñez", "degree": "Posgrado en Innovación y Gestión Digital", "years": "2014 – 2015"},
+        {"name": "Universidad Academia de Humanismo Cristiano", "degree": "Periodista, Licenciado en Comunicación Social", "years": "2006 – 2012"}
+      ]
+    }
   ],
 
   "contact_email": "contacto@efectopodcast.com",

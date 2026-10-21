@@ -310,6 +310,8 @@ def main():
 
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=select_autoescape(["html"]))
     env.filters["faq_item"] = lambda i: {"@type": "Question", "name": i["q"], "acceptedAnswer": {"@type": "Answer", "text": i["a"]}}
+    env.filters["prune"] = prune
+    env.filters["org"] = lambda name: {"@type": "CollegeOrUniversity", "name": name}
     env.filters["list_items"] = lambda xs: [{"@type": "ListItem", "position": i, "url": base + x["url"], "name": x.get("name") or x["title"]}
                                             for i, x in enumerate(xs, 1)]
     env.filters["tojson_safe"] = lambda v: Markup(json.dumps(v, ensure_ascii=False).replace("</", "<\\/"))
@@ -362,6 +364,11 @@ def main():
         title, _, body = page.read_text(encoding="utf-8").partition("\n")
         body = body.replace("{{ email }}", config["contact_email"]).replace("{{ site }}", config["site_name"])
         render(f"/{page.stem}/", "page.html", "0.3", title=title.strip(), body=Markup(body))
+
+    host = (config.get("hosts") or [None])[0]
+    if host and host.get("slug"):
+        bio = Markup(read_optional(CONTENT / "autor" / f"{host['slug']}.html"))
+        render(f"/{host['slug']}/", "author.html", "0.6", latest, bio=bio, episodes=episodes)
 
     render("/buscar/", "search.html", index=False)
     write("/404.html", env.get_template("404.html").render(canonical=base + "/404.html", path="/404"))

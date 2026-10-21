@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% set title = host.name ~ ", conductor de " ~ site.site_name %}
+{% set description = host.name ~ " es " ~ host.role ~ " y conductor de " ~ site.site_name ~ ", el podcast de marketing, negocios y emprendimiento. Biografía, formación y episodios." %}
+{% set image = base ~ host.image %}
+{% set og_type = "profile" %}
+{% set schema = [{"@type": "ProfilePage", "@id": canonical ~ "#pagina", "url": canonical, "name": title,
+  "mainEntity": {"@id": base ~ "/#conductor"}, "isPartOf": {"@id": base ~ "/#sitio"}}] %}
+{% block content %}
+<article class="author">
+  <div class="author-head">
+    <img class="author-photo" src="{{ host.image }}" alt="{{ host.name }} en el estudio de {{ site.site_name }}" width="640" height="800">
+    <div>
+      <p class="eyebrow grad-text">Conductor de {{ site.site_name }}</p>
+      <h1>{{ host.name }}</h1>
+      <p class="lead-small">{{ host.role }}</p>
+      <div class="prose">{{ bio }}</div>
+      <p class="author-links">{% for url in host.same_as %}<a href="{{ url }}" rel="me noopener" target="_blank">{{ "LinkedIn" if "linkedin" in url else "Instagram" if "instagram" in url else url }}</a>{% endfor %}</p>
+    </div>
+  </div>
+
+  <div class="author-cols prose">
+    <section>
+      <h2>Especialidades</h2>
+      <ul>{% for k in host.knows_about %}<li>{{ k }}</li>{% endfor %}</ul>
+    </section>
+    <section>
+      <h2>Formación</h2>
+      <ul>{% for e in host.education %}<li><strong>{{ e.degree }}</strong><br><span class="muted">{{ e.name }} · {{ e.years }}</span></li>{% endfor %}</ul>
+    </section>
+  </div>
+</article>
+
+<section>
+  <h2 class="section-title">Últimos episodios conducidos por {{ host.name.split(" ")[0] }}</h2>
+  <div class="grid">{% for ep in episodes[:9] %}{% include "_card.html" %}{% endfor %}</div>
+  <p><a class="btn btn-ghost" href="/">Ver los {{ episodes|length }} episodios</a></p>
+</section>
+{% endblock %}
