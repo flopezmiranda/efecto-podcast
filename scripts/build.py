@@ -170,7 +170,7 @@ def prepare(config):
         # "#saludmental" y la etiqueta "salud mental" son el mismo tema: se agrupan por slug sin guiones.
         # Las etiquetas van primero porque traen espacios y dan mejores nombres.
         topics = []
-        for raw in [t.lower() for t in ep.get("tags", [])] + hashtags:
+        for raw in [t.lower() for t in extra.get("topics", []) + ep.get("tags", [])] + hashtags:
             raw = aliases.get(topic_key(raw), raw)
             key = topic_key(raw)
             if not key or key in topics or key in blocked:
