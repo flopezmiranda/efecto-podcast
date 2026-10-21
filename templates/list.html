@@ -41,7 +41,7 @@
 <div class="grid">
 {% for ep in grid %}
   {% include "_card.html" %}
-  {% if loop.index == 6 and site.adsense_client %}<div class="grid-ad">{{ ad(site.adsense_slots.list) }}</div>{% endif %}
+  {% if loop.index == 6 and site.adsense_client and site.adsense_slots.list %}<div class="grid-ad">{{ ad(site.adsense_slots.list) }}</div>{% endif %}
 {% endfor %}
 </div>
 {% if pages > 1 %}

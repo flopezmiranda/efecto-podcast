@@ -50,6 +50,7 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","{{ site.ga4_id }}");</script>
 {% endif %}
 {% if site.adsense_client %}
+<meta name="google-adsense-account" content="{{ site.adsense_client }}">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense_client }}" crossorigin="anonymous"></script>
 {% endif %}
 </head>
