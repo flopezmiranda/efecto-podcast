@@ -86,6 +86,7 @@
     </nav>
     <nav aria-label="Legal">
       <a href="/sobre-nosotros/">Sobre nosotros</a>
+      {% if host and host.slug %}<a href="/{{ host.slug }}/">{{ host.name }}</a>{% endif %}
       <a href="/invitados/">Invitados</a>
       <a href="/temas/">Temas</a>
       <a href="/contacto/">Contacto</a>
