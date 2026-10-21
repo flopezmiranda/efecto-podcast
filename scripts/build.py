@@ -63,6 +63,8 @@ def parse_description(text):
     """Separa la descripción en párrafos, capítulos (marcas de tiempo) y hashtags."""
     chapters, kept = [], []
     for line in text.splitlines():
+        if "efectopodcast.com/episodios/" in line:
+            continue  # el enlace de vuelta al sitio que se pega en YouTube
         m = TIME_RE.match(line.strip())
         if m:
             chapters.append({"seconds": to_seconds(m.group(1)), "stamp": m.group(1), "title": m.group(2).strip()})
@@ -387,6 +389,8 @@ def main():
     write("/robots.txt", f"{bots}User-agent: *\nAllow: /\nDisallow: /buscar/\n\nSitemap: {base}/sitemap.xml\n")
     write("/llms.txt", env.get_template("llms.txt").render(episodes=episodes, topics=topics, guests=guests, full=False))
     write("/llms-full.txt", env.get_template("llms.txt").render(episodes=episodes, topics=topics, guests=guests, full=True))
+    if config.get("indexnow_key"):
+        write(f"/{config['indexnow_key']}.txt", config["indexnow_key"])
     if config.get("adsense_client"):
         pub = config["adsense_client"].replace("ca-", "")
         write("/ads.txt", f"google.com, {pub}, DIRECT, f08c47fec0942fa0\n")
