@@ -44,7 +44,7 @@
 <section class="marquee" aria-label="Invitados de {{ site.site_name }}">
   <p class="marquee-title">Han pasado por el estudio</p>
   <div class="marquee-track">
-    {% for round in [1, 2] %}{% for g in guests %}<a class="marquee-item" href="{{ g.url }}"{% if round == 2 %} aria-hidden="true" tabindex="-1"{% endif %}><strong>{{ g.name }}</strong><span>{{ g.role }}</span></a>{% endfor %}{% endfor %}
+    {% for round in [1, 2] %}{% for g in guests %}<a class="marquee-item" href="{{ g.url }}" title="{{ g.name }}, {{ g.role }}"{% if round == 2 %} aria-hidden="true" tabindex="-1"{% endif %}><strong>{{ g.name }}</strong><span>{{ g.role }}</span></a>{% endfor %}{% endfor %}
   </div>
 </section>
 {% endif %}

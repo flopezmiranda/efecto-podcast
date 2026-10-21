@@ -342,3 +342,7 @@ main { padding-top: 40px; padding-bottom: 72px; min-height: 60vh; }
   .aurora span, .grad-anim, .eq span, .stack-card, .marquee-track { animation: none !important; }
 }
 @media (max-width: 560px) { .hero2-logo { display: none; } }
+/* Todas las cajas de invitados del mismo tamaño */
+.marquee-item { flex: none; width: 280px; height: 78px; justify-content: center; white-space: normal; }
+.marquee-item strong { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.marquee-item span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.3; }
