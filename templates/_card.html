@@ -1,12 +1,14 @@
 <article class="card">
   <a href="{{ ep.url }}" class="card-thumb" tabindex="-1" aria-hidden="true">
     <img src="{{ ep.thumb_small }}" alt="{{ ep.title }}" loading="lazy" width="480" height="360">
+    {% if ep.short_label %}<span class="card-label">{{ ep.short_label }}</span>{% endif %}
     <span class="badge">{{ ep.duration }}</span>
+    <span class="card-play" aria-hidden="true"></span>
   </a>
   <div class="card-body">
-    <p class="meta"><time datetime="{{ ep.date_iso }}">{{ ep.date_human }}</time></p>
+    {% if ep.guests %}<p class="card-guest">{{ ep.guests|map(attribute='name')|join(' y ') }}</p>{% endif %}
     <h3><a href="{{ ep.url }}">{{ ep.title }}</a></h3>
-    {% if ep.guests %}<p class="card-guest">Con {{ ep.guests|map(attribute='name')|join(' y ') }}</p>{% endif %}
     <p class="card-summary">{{ ep.summary }}</p>
+    <p class="meta"><time datetime="{{ ep.date_iso }}">{{ ep.date_human }}</time> · {{ ep.duration_human }}</p>
   </div>
 </article>

@@ -7,43 +7,66 @@
 {% endif %}
 {% block content %}
 {% if page == 1 %}
-<section class="hero">
-  <img class="hero-logo" src="/static/img/logo.png" alt="Logo de {{ site.site_name }}" width="104" height="85">
-  <h1>{{ site.site_name }}</h1>
-  <p class="lead">{{ site.description }}</p>
-  <div class="cta">
-    {% if episodes %}<a class="btn btn-primary" href="{{ episodes[0].url }}">▶ Ver el último episodio</a>{% endif %}
-    {% if site.social.youtube %}<a class="btn btn-ghost" href="{{ site.social.youtube }}?sub_confirmation=1" target="_blank" rel="noopener">Suscríbete en YouTube</a>{% endif %}
+{% set latest = episodes[0] %}
+<section class="hero2">
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="wrap hero2-inner">
+    <div class="hero2-text">
+      <img class="hero2-logo" src="/static/img/logo.png" alt="Logo de {{ site.site_name }}" width="88" height="72">
+      <p class="eyebrow">El podcast de marketing, negocios y emprendimiento</p>
+      <h1><span>Efecto</span> <span class="grad-anim">Podcast</span></h1>
+      <div class="eq" aria-hidden="true">{% for i in range(14) %}<span style="--i:{{ i }}"></span>{% endfor %}</div>
+      <p class="lead">{{ site.description }}</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="{{ latest.url }}">▶ Ver el último episodio</a>
+        {% if site.social.youtube %}<a class="btn btn-ghost" href="{{ site.social.youtube }}?sub_confirmation=1" target="_blank" rel="noopener">Suscríbete en YouTube</a>{% endif %}
+      </div>
+      <ul class="stats">
+        <li><strong>{{ total_episodes }}</strong><span>episodios</span></li>
+        <li><strong>{{ guests|length }}</strong><span>invitados</span></li>
+        <li><strong>{{ total_hours }} h</strong><span>de conversación</span></li>
+      </ul>
+    </div>
+    <a class="hero2-stack" href="{{ latest.url }}" aria-label="Ver el último episodio: {{ latest.title }}">
+      {% for ep in episodes[1:3]|reverse %}<span class="stack-card back back{{ loop.index }}"><img src="{{ ep.thumb_small }}" alt="" width="480" height="360"></span>{% endfor %}
+      <span class="stack-card front">
+        <img src="{{ latest.thumbnail }}" alt="{{ latest.title }}" width="1280" height="720" fetchpriority="high">
+        <span class="play" aria-hidden="true"></span>
+        <span class="stack-caption">
+          <span class="eyebrow grad-text">Nuevo episodio · {{ latest.short_label }}</span>
+          <strong>{{ latest.title }}</strong>
+        </span>
+      </span>
+    </a>
   </div>
-  {% if topics %}
-  <div class="chips">{% for t in topics[:8] %}<a class="chip" href="{{ t.url }}">{{ t.name }}</a>{% endfor %}</div>
-  {% endif %}
 </section>
-{% if episodes %}
-{% set ep = episodes[0] %}
-<a class="featured" href="{{ ep.url }}">
-  <div class="featured-thumb">{% if ep.thumbnail %}<img src="{{ ep.thumbnail }}" alt="{{ ep.title }}" width="1280" height="720" fetchpriority="high">{% endif %}<span class="play" aria-hidden="true"></span></div>
-  <div class="featured-body">
-    <p class="eyebrow grad-text">Último episodio</p>
-    <h2>{{ ep.title }}</h2>
-    {% if ep.guests %}<p class="card-guest">Con {{ ep.guests|map(attribute='name')|join(' y ') }}</p>{% endif %}
-    <p class="muted">{{ ep.summary }}</p>
-    <p class="meta">{{ ep.date_human }} · {{ ep.duration_human }}</p>
+{% if guests %}
+<section class="marquee" aria-label="Invitados de {{ site.site_name }}">
+  <p class="marquee-title">Han pasado por el estudio</p>
+  <div class="marquee-track">
+    {% for round in [1, 2] %}{% for g in guests %}<a class="marquee-item" href="{{ g.url }}"{% if round == 2 %} aria-hidden="true" tabindex="-1"{% endif %}><strong>{{ g.name }}</strong><span>{{ g.role }}</span></a>{% endfor %}{% endfor %}
   </div>
-</a>
+</section>
 {% endif %}
-<h2 class="section-title">Todos los episodios</h2>
 {% set grid = episodes[1:] %}
 {% else %}
 <h1 class="section-title">Episodios <span class="muted">— página {{ page }} de {{ pages }}</span></h1>
 {% set grid = episodes %}
 {% endif %}
+{% set featured_season = site.home_featured_season %}
+{% set groups = [
+  ("Temporada " ~ featured_season, grid|selectattr("season", "equalto", featured_season)|list),
+  ("Especiales y temporada 1" if page == 1 else "", grid|rejectattr("season", "equalto", featured_season)|list),
+] if page == 1 and featured_season else [("", grid)] %}
+{% for heading, items in groups if items %}
+{% if heading %}<h2 class="section-title grid-title"><span>{{ heading }}</span></h2>{% endif %}
 <div class="grid">
-{% for ep in grid %}
+{% for ep in items %}
   {% include "_card.html" %}
   {% if loop.index == 6 and site.adsense_client and site.adsense_slots.list %}<div class="grid-ad">{{ ad(site.adsense_slots.list) }}</div>{% endif %}
 {% endfor %}
 </div>
+{% endfor %}
 {% if pages > 1 %}
 <nav class="pager" aria-label="Paginación">
   {% if prev_url %}<a href="{{ prev_url }}">← Más recientes</a>{% else %}<span></span>{% endif %}

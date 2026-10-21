@@ -147,6 +147,7 @@ def prepare(config):
             "season": season,
             "number": number,
             "label": label,
+            "short_label": f"T{season} · E{number}" if number is not None else label,
             "thumb_small": f"https://i.ytimg.com/vi/{ep['id']}/hqdefault.jpg",
             "paragraphs": paragraphs,
             "chapters": chapters,
@@ -380,6 +381,7 @@ def main():
         render(rel, "list.html", "1.0" if n == 1 else "0.4", latest,
                episodes=home[(n - 1) * per_page:n * per_page], page=n, pages=pages, topics=topics,
                faq=faq(config, episodes, topics, guests) if n == 1 else [],
+               guests=guests, total_episodes=len(episodes), total_hours=round(sum(e["duration_seconds"] for e in episodes) / 3600),
                prev_url=None if n == 1 else ("/" if n == 2 else f"/episodios/pagina/{n - 1}/"),
                next_url=f"/episodios/pagina/{n + 1}/" if n < pages else None)
 
