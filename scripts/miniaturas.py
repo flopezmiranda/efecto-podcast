@@ -1,4 +1,5 @@
-"""Genera las miniaturas de YouTube de la temporada 1 (1280x720, solo tipografía y marca).
+"""Genera las miniaturas de YouTube de la temporada 1 (1280x720), al estilo de la temporada 2:
+foto del estudio a pantalla completa y la frase abajo, con la palabra clave en amarillo.
 
 Cada texto marca entre [corchetes] la palabra que va destacada en amarillo, como en la temporada 2.
 
@@ -15,6 +16,7 @@ BG = (9, 6, 25)
 WHITE = (255, 255, 255)
 YELLOW = (255, 214, 10)
 MUTED = (169, 164, 199)
+PHOTO = ROOT / "content" / "miniaturas" / "fuente" / "felipe-estudio.jpg"
 GRAD = [(225, 92, 150), (192, 114, 231), (124, 145, 235), (60, 174, 234)]
 
 EPISODES = [
@@ -38,6 +40,20 @@ def gradient_color(t):
     i = min(int(t), len(GRAD) - 2)
     a, b, f = GRAD[i], GRAD[i + 1], t - i
     return tuple(round(a[k] + (b[k] - a[k]) * f) for k in range(3))
+
+
+def photo_background():
+    """La foto cubre todo el cuadro; abajo se oscurece para que el texto se lea."""
+    photo = Image.open(PHOTO).convert("RGB")
+    scale = max(W / photo.width, H / photo.height)
+    photo = photo.resize((round(photo.width * scale), round(photo.height * scale)), Image.LANCZOS)
+    img = photo.crop((0, 0, W, H))
+    shade = Image.new("L", (W, H), 0)
+    d = ImageDraw.Draw(shade)
+    top = int(H * 0.38)
+    for yy in range(top, H):
+        d.line([(0, yy), (W, yy)], fill=min(235, int(255 * ((yy - top) / (H - top)) ** 0.8)))
+    return Image.composite(Image.new("RGB", (W, H), BG), img, shade)
 
 
 def background():
@@ -74,30 +90,31 @@ def layout(words, font, max_w, draw):
 
 
 def render(vid, number, text, logo):
-    img = background()
+    img = photo_background() if PHOTO.exists() else background()
     draw = ImageDraw.Draw(img)
     words = tokens(text)
-    max_w, x = 1100, 90
-    for size in range(150, 60, -4):
+    max_w, x = 1120, 80
+    for size in range(112, 50, -4):
         font = ImageFont.truetype(FONT, size)
         lines = layout(words, font, max_w, draw)
         widest = max(draw.textlength(w, font=font) for w, _ in words)
-        if len(lines) <= 3 and widest <= max_w:
+        if len(lines) <= 2 and widest <= max_w:
             break
-    line_h = int(size * 1.08)
-    block_h = line_h * len(lines)
-    y = (H - block_h) // 2 + 20
+    line_h = int(size * 1.06)
+    stroke = max(4, size // 14)
+    y = H - 62 - line_h * len(lines)
     for line in lines:
         cx = x
         for word, hl in line:
-            draw.text((cx, y), word, font=font, fill=YELLOW if hl else WHITE)
+            draw.text((cx, y), word, font=font, fill=YELLOW if hl else WHITE,
+                      stroke_width=stroke, stroke_fill=(0, 0, 0))
             cx += draw.textlength(word + " ", font=font)
         y += line_h
 
     # Barra con el degradado de la marca bajo el texto.
-    bar_y = y + 18
+    bar_y = H - 34
     for i in range(260):
-        draw.line([(x + i, bar_y), (x + i, bar_y + 9)], fill=gradient_color(i / 259))
+        draw.line([(x + i, bar_y), (x + i, bar_y + 8)], fill=gradient_color(i / 259))
 
     # Logo original (sin efectos) y nombre arriba a la izquierda.
     lw = 92
