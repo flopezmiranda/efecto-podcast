@@ -65,8 +65,8 @@ def photo_layer(base, name, zoom):
     photo = photo.resize((round(photo.width * scale), round(photo.height * scale)), Image.LANCZOS)
     fx, fy = FACES[name]
     # Coloca la cara en el tercio derecho del cuadro.
-    ox, oy = round(0.74 * W - fx * photo.width), round(0.40 * H - fy * photo.height)
-    ox = max(ox, W - photo.width)               # que la foto llegue al borde derecho
+    ox, oy = round(0.28 * W - fx * photo.width), round(0.42 * H - fy * photo.height)
+    ox = min(ox, 0)                             # que la foto llegue al borde izquierdo
     oy = min(0, max(oy, H - photo.height))      # y cubra todo el alto
     layer = Image.new("RGB", (W, H), BG)
     layer.paste(photo, (ox, oy))
@@ -76,15 +76,18 @@ def photo_layer(base, name, zoom):
     sharp = Image.new("L", (W, H), 0)
     rx, ry = 260 * zoom, 340 * zoom
     ImageDraw.Draw(sharp).ellipse((face[0] - rx, face[1] - ry + 80, face[0] + rx, face[1] + ry + 80), fill=255)
-    sharp = sharp.filter(ImageFilter.GaussianBlur(100))
-    layer = Image.composite(layer.filter(ImageFilter.GaussianBlur(1.2)), layer.filter(ImageFilter.GaussianBlur(16)), sharp)
-    layer = Image.blend(Image.new("RGB", (W, H), BG), layer, 0.82)  # un poco más oscura, para que mande el texto
+    sharp = sharp.filter(ImageFilter.GaussianBlur(140))
+    layer = Image.composite(layer.filter(ImageFilter.GaussianBlur(1)), layer.filter(ImageFilter.GaussianBlur(24)), sharp)
+    layer = Image.blend(Image.new("RGB", (W, H), BG), layer, 0.85)  # un poco más oscura, para que mande el texto
 
-    # Se desvanece hacia la izquierda (donde va el texto) y hacia abajo.
+    # Se desvanece hacia la derecha (donde va el texto), arriba y abajo, con curvas suaves.
+    def smooth(t):
+        t = np.clip(t, 0, 1)
+        return t * t * (3 - 2 * t)
     x = np.linspace(0, 1, W)
-    horiz = np.clip((x - 0.36) / 0.30, 0, 1) ** 1.4
+    horiz = smooth((0.66 - x) / 0.34)
     y = np.linspace(0, 1, H)
-    vert = np.clip((1.0 - y) / 0.30, 0, 1)
+    vert = smooth((1.0 - y) / 0.38) * (0.55 + 0.45 * smooth(y / 0.30))
     alpha = (np.outer(vert, horiz) * 255).astype("uint8")
     return Image.composite(layer, base, Image.fromarray(alpha))
 
@@ -93,8 +96,8 @@ def background():
     img = Image.new("RGB", (W, H), BG)
     glow = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(glow)
-    d.ellipse((-300, -350, 650, 450), fill=(70, 22, 70))     # rosado arriba a la izquierda
-    d.ellipse((800, 330, 1650, 1050), fill=(18, 52, 95))     # celeste abajo a la derecha
+    d.ellipse((850, -350, 1800, 450), fill=(34, 12, 40))     # morado tenue arriba a la derecha
+    d.ellipse((700, 380, 1550, 1100), fill=(12, 30, 62))     # azul tenue abajo
     return Image.blend(img, glow.filter(ImageFilter.GaussianBlur(170)), 1.0)
 
 
@@ -128,17 +131,22 @@ def render(vid, number, text, photo, zoom, logo):
         img = photo_layer(img, photo, zoom)
     draw = ImageDraw.Draw(img)
     words = tokens(text)
-    max_w, x = 640 if photo else 1100, 90
-    for size in range(140, 56, -4):
+    max_w, x = (560, 650) if photo else (1100, 90)
+    for size in range(118, 56, -4):
         font = ImageFont.truetype(FONT, size)
         lines = layout(words, font, max_w, draw)
         widest = max(draw.textlength(w, font=font) for w, _ in words)
         # El bloque cabe entre el logo y el borde inferior.
         if len(lines) <= 4 and widest <= max_w and int(size * 1.08) * len(lines) <= 430:
             break
+    # Líneas parejas: el ancho más angosto que no agrega líneas.
+    tw = max_w
+    while tw > 200 and len(layout(words, font, tw - 10, draw)) == len(lines):
+        tw -= 10
+    lines = layout(words, font, tw, draw)
     line_h = int(size * 1.08)
     block_h = line_h * len(lines)
-    y = (H - block_h) // 2 + 20
+    y = (H - block_h) // 2
     for line in lines:
         cx = x
         for word, hl in line:
@@ -157,8 +165,8 @@ def render(vid, number, text, photo, zoom, logo):
     img.paste(lg, (x, 52), lg)
     small = ImageFont.truetype(FONT_SMALL, 34)
     draw.text((x + lw + 22, 52 + lg.height // 2), "EFECTO PODCAST", font=small, fill=WHITE, anchor="lm")
-    tag = ImageFont.truetype(FONT_SMALL, 30)
-    draw.text((W - 70, 52 + lg.height // 2), f"T1 · EP {number}", font=tag, fill=MUTED, anchor="rm")
+    tag = ImageFont.truetype(FONT_SMALL, 28)
+    draw.text((x, bar_y + 26), f"TEMPORADA 1 · EPISODIO {number}", font=tag, fill=MUTED)
 
     out = ROOT / "content" / "miniaturas" / f"E{number}T1-{vid}.jpg"
     img.save(out, "JPEG", quality=92)
