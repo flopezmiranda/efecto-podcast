@@ -327,13 +327,17 @@ def main():
         if index:
             sitemap.append((rel, lastmod, priority))
 
+    # En la portada, la temporada destacada va primero (del último episodio al primero);
+    # el resto sigue por fecha de publicación.
+    featured = config.get("home_featured_season")
+    home = sorted(episodes, key=lambda e: (0, -e["number"]) if featured and e["season"] == featured else (1, 0))
     per_page = config["episodes_per_page"]
     pages = max(1, math.ceil(len(episodes) / per_page))
     latest = episodes[0]["date_iso"] if episodes else None
     for n in range(1, pages + 1):
         rel = "/" if n == 1 else f"/episodios/pagina/{n}/"
         render(rel, "list.html", "1.0" if n == 1 else "0.4", latest,
-               episodes=episodes[(n - 1) * per_page:n * per_page], page=n, pages=pages, topics=topics,
+               episodes=home[(n - 1) * per_page:n * per_page], page=n, pages=pages, topics=topics,
                faq=faq(config, episodes, topics, guests) if n == 1 else [],
                prev_url=None if n == 1 else ("/" if n == 2 else f"/episodios/pagina/{n - 1}/"),
                next_url=f"/episodios/pagina/{n + 1}/" if n < pages else None)

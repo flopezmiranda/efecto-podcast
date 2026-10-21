@@ -37,6 +37,7 @@
   },
 
   "episodes_per_page": 24,
+  "home_featured_season": 2,
   "min_episodes_per_topic": 3,
 
   "topic_aliases": {
