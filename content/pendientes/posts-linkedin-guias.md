@@ -1,6 +1,6 @@
 # Posts de LinkedIn para compartir las guías
 
-Plan: una guía por semana, desde el perfil personal de Felipe. El enlace va en el primer comentario. Etiquetar a los invitados con @ y avisarles por mensaje privado. Compartir también desde la página de Efecto Podcast, en historias de Instagram y en el estado de WhatsApp.
+Plan: una guía por semana, desde el perfil personal de Felipe. El enlace va en el primer comentario. Compartir también desde la página de Efecto Podcast, en historias de Instagram y en el estado de WhatsApp.
 
 ## Semana 1: IA en marketing
 
@@ -13,7 +13,7 @@ Entrevisté a 7 expertos sobre inteligencia artificial en Efecto Podcast. Junté
 → Adoptarla es una decisión de la dirección, pero también hay que habilitar a los equipos.
 → Un agente ejecuta tareas completas; un GPT entrega información. Todo buen agente parte por un buen GPT.
 
-Gracias a @Rodrigo Rojo, @Ángel Izurieta, @Rodrigo Orellana, @Javier Arriola, @Simón Durán, @Benjamin Martínez y @Hussam Sufan por compartir su experiencia.
+Gracias a Rodrigo Rojo, Ángel Izurieta, Rodrigo Orellana, Javier Arriola, Simón Durán, Benjamin Martínez y Hussam Sufan por compartir su experiencia.
 
 La guía completa está en el primer comentario 👇
 
@@ -33,7 +33,7 @@ Lo que más me sorprendió:
 → Para un fondo como WeBoost, el equipo pesa cerca del 90% de la decisión.
 → Antes de pedir capital: un MVP validado, clientes que paguen y claridad total sobre en qué usarás la plata.
 
-Gracias a @Marcelo Díaz Bowen, @Carolina Matamala, @Benjamin Martínez, @Rodrigo Rojo, @Darío Poblete y @Tomás Collados.
+Gracias a Marcelo Díaz Bowen, Carolina Matamala, Benjamin Martínez, Rodrigo Rojo, Darío Poblete y Tomás Collados.
 
 Guía completa en el primer comentario 👇
 
@@ -50,12 +50,8 @@ En Efecto Podcast lo analizamos con quienes trabajan en esto todos los días. Lo
 → Elegir un influencer es como casarse: sus valores tienen que conversar con los de tu marca.
 → Darle libertad creativa al creador funciona mejor: en un experimento, la versión libre triplicó la interacción.
 
-Gracias a @Simón Durán, @Tomás Collados y @Javier Arriola.
+Gracias a Simón Durán, Tomás Collados y Javier Arriola.
 
 Guía completa en el primer comentario 👇
 
 Primer comentario: https://efectopodcast.com/guias/marketing-de-influencers/
-
-## Mensaje privado para cada invitado
-
-Hola [nombre], ¿cómo estás? Armé una guía sobre [tema] con lo mejor de las conversaciones de Efecto Podcast, y tu entrevista es parte central. Te cité y enlacé tu episodio: [enlace]. Lo publiqué recién en LinkedIn y te etiqueté. Si te hace sentido compartirlo, te lo agradecería mucho. ¡Un abrazo!
