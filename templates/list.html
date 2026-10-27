@@ -78,6 +78,7 @@
 <section class="home-guides" aria-labelledby="guias-title">
   <h2 id="guias-title" class="section-title">Guías: lo que aprendimos de los invitados</h2>
   {% include "_guides_list.html" %}
+  {% if glossary %}<p class="muted">¿Buscas una definición rápida? Revisa el <a href="/glosario/">glosario de marketing, negocios e IA</a>, con {{ glossary.terms|length }} términos explicados.</p>{% endif %}
 </section>
 {% endif %}
 {% if faq %}

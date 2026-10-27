@@ -1,0 +1,298 @@
+{
+  "intro": "Este glosario de Efecto Podcast, conducido por Felipe López Miranda, reúne términos de marketing, negocios, emprendimiento e inteligencia artificial que aparecen en las conversaciones del programa. Cada entrada parte con una definición breve y clara, y luego cuenta cómo se habló del concepto con fundadores, inversionistas y ejecutivos de marketing, con enlaces a los episodios donde se puede escuchar la conversación completa.",
+  "terms": [
+    {
+      "term": "Agente de IA",
+      "definition": "Un agente de IA es un sistema de inteligencia artificial que, además de responder, ejecuta tareas de forma autónoma: decide qué pasos seguir, usa herramientas y se conecta con otros sistemas para completar una acción, como agendar una reunión, actualizar un CRM o hacer una compra. Normalmente funciona sobre un modelo de lenguaje.",
+      "context": "En [[ep:2RSCZ5KAc64]] se explicó con un ejemplo: un GPT encuentra el pasaje más barato a Argentina, mientras que un agente lo selecciona y llega hasta el pago. [[inv:Rodrigo Rojo]] contó en [[ep:3UUCpRDicjM]] que usa uno propio por Telegram que revisa sus reuniones grabadas con Granola, anota tareas pendientes y crea leads en el CRM.",
+      "episodes": [
+        "2RSCZ5KAc64",
+        "3UUCpRDicjM",
+        "skz75DGqB6k",
+        "vqOFKk-pApw"
+      ]
+    },
+    {
+      "term": "Brand tracking",
+      "definition": "El brand tracking es la medición periódica de la salud de una marca mediante encuestas a consumidores. Sigue en el tiempo indicadores como conocimiento, consideración, preferencia y asociaciones de marca, para evaluar el efecto de las campañas y detectar cambios en la percepción frente a la competencia.",
+      "context": "[[inv:Javier Arriola González]], de ComparaOnline, mencionó en [[ep:Ick_0QhlCNQ]] estudios de brand tracking con Kantar y, en su paso por Uber, mediciones trimestrales con Ipsos. Como alternativa simple propuso una encuesta de atribución a cada cliente: con ella, la atribución a televisión pasó de 0% a 35% al activar ese medio.",
+      "episodes": [
+        "Ick_0QhlCNQ"
+      ]
+    },
+    {
+      "term": "Branding",
+      "definition": "El branding es el proceso de construir y gestionar una marca: definir su propósito, personalidad, identidad visual, tono y propuesta de valor, y comunicarlos de forma coherente en cada punto de contacto, para que las personas la reconozcan, la recuerden y la prefieran frente a otras opciones.",
+      "context": "Para [[inv:Javier Arriola González]], la marca está en todos los puntos de contacto, desde lo que publica el CEO hasta el flujo del usuario. En [[ep:Ick_0QhlCNQ]] explica cómo ComparaOnline se apropió del hábito de comparar como territorio de marca, con el personaje Comparini, y por qué conviene ser consistente en el tiempo en vez de cambiar de identidad cada seis meses.",
+      "episodes": [
+        "Ick_0QhlCNQ",
+        "52XNzjSdm08"
+      ]
+    },
+    {
+      "term": "Creador de contenido",
+      "definition": "Un creador de contenido es una persona que produce y publica de forma regular material propio, como videos, podcasts, textos o transmisiones en vivo, para una audiencia en plataformas digitales. Su trabajo combina ideas, producción y edición, y suele financiarse con publicidad, auspicios o aportes de su comunidad.",
+      "context": "[[inv:Simón Durán]], cofundador de Not Media, lo distinguió del influencer en [[ep:52XNzjSdm08]]: el creador investiga, tiene línea editorial y edición, como Pancho Melo con su video sobre cómo cargar una estufa Toyotomi con parafina. En [[ep:ysD1ANMGac8]] se analizó a IShowSpeed como un creador que se entiende a sí mismo como un producto que evoluciona con su audiencia.",
+      "episodes": [
+        "52XNzjSdm08",
+        "ysD1ANMGac8",
+        "AWP7-MFGts0",
+        "9eUNWkZrJB0"
+      ]
+    },
+    {
+      "term": "Crowdfunding",
+      "definition": "El crowdfunding, o financiamiento colectivo, es un mecanismo para reunir dinero a partir de aportes de muchas personas, normalmente a través de una plataforma en internet. Puede ser de donación, de recompensa, de preventa o de inversión, cuando quienes aportan reciben a cambio una participación en la empresa.",
+      "context": "[[inv:Rodrigo Rojo]] contó en [[ep:YGUqzNpw4GU]] que invirtió vía crowdfunding en Broota en Pawi, una startup de Concepción que desarrolla software para el registro médico de mascotas. [[inv:Marcelo Díaz Bowen]] lo considera en [[ep:j9NYnm_k_UI]] una jugada inteligente para startups B2C, porque la ronda también hace marketing, aunque advierte que exige control financiero.",
+      "episodes": [
+        "YGUqzNpw4GU",
+        "j9NYnm_k_UI"
+      ]
+    },
+    {
+      "term": "Customer journey",
+      "definition": "El customer journey, o viaje del cliente, es el recorrido completo que hace una persona al relacionarse con una marca, desde que descubre una necesidad hasta la compra, el uso y la posventa. Mapearlo permite identificar puntos de contacto, emociones, fricciones y oportunidades para mejorar la experiencia.",
+      "context": "[[inv:Gloria Ledermann]], ex gerenta de marketing de Copec, lo recomendó en [[ep:TMRAUjHXzYQ]] junto con estudios de mercado y, sobre todo, salir a terreno, como herramienta para encontrar dolores e insatisfacciones del cliente que luego se transforman en una propuesta de valor.",
+      "episodes": [
+        "TMRAUjHXzYQ"
+      ]
+    },
+    {
+      "term": "Design thinking",
+      "definition": "El design thinking es una metodología de innovación centrada en las personas que busca resolver problemas a partir de la empatía con el usuario. Suele organizarse en cinco etapas: empatizar, definir el problema, idear, prototipar y testear, iterando rápido con prototipos de bajo costo antes de invertir en grande.",
+      "context": "[[inv:Darío Iván Poblete Herrera]], coach de negocios, explicó en [[ep:8odqP10gjqg]] que para aplicarlo el número uno de la organización debe estar convencido y que la etapa de empatía sirve para descubrir necesidades latentes. Recomienda reunir personas de distintas áreas, contratar un moderador y no enamorarse de la solución.",
+      "episodes": [
+        "8odqP10gjqg"
+      ]
+    },
+    {
+      "term": "Effie",
+      "definition": "Los Premios Effie son reconocimientos internacionales a la eficacia en marketing y publicidad. A diferencia de los premios centrados solo en la creatividad, evalúan las campañas según sus objetivos, su estrategia, la idea y los resultados de negocio demostrables, y entregan distinciones como Oro, Plata y Bronce por categoría.",
+      "context": "[[inv:Javier Arriola González]] llegó a [[ep:Ick_0QhlCNQ]] con el segundo Effie Oro consecutivo de ComparaOnline, obtenido en la categoría de productos y servicios financieros, donde la marca compite con bancos y aseguradoras de presupuestos muy superiores.",
+      "episodes": [
+        "Ick_0QhlCNQ"
+      ]
+    },
+    {
+      "term": "Embajador de marca",
+      "definition": "Un embajador de marca es una persona que representa y promueve una marca de forma sostenida en el tiempo, porque comparte sus valores. Puede ser una figura externa con un acuerdo de largo plazo o un colaborador de la propia empresa que comunica, con credibilidad, lo que hace la organización.",
+      "context": "En [[ep:cJRQMuvzC98]] se planteó que, en industrias tradicionales como la minería, potenciar embajadores internos puede ser más creíble que contratar influencers, siempre que se les dé tiempo para crear contenido. [[inv:Simón Durán]] citó en [[ep:52XNzjSdm08]] el caso de los advocates de Enel Colombia durante un corte de luz en Bogotá.",
+      "episodes": [
+        "cJRQMuvzC98",
+        "52XNzjSdm08"
+      ]
+    },
+    {
+      "term": "Exit",
+      "definition": "Un exit, o salida, es el momento en que los fundadores e inversionistas de una startup venden total o parcialmente su participación y transforman en dinero el valor creado. Las formas más comunes son la adquisición por otra empresa, la venta de acciones a un nuevo inversionista o la salida a bolsa.",
+      "context": "[[inv:Marcelo Díaz Bowen]] explicó en [[ep:j9NYnm_k_UI]] que un fondo busca vender su participación en unos ocho años a al menos 10 veces lo invertido, y pide contabilidad IFRS y un data room ordenado para prepararlo. [[inv:Tomás Collados]] vendió su agencia de marketing de influenciadores a Moov Media, hito que abre la conversación en [[ep:ULzj5BZAkgE]].",
+      "episodes": [
+        "j9NYnm_k_UI",
+        "ULzj5BZAkgE"
+      ]
+    },
+    {
+      "term": "Experiencia de cliente (CX)",
+      "definition": "La experiencia de cliente, o customer experience (CX), es la percepción que una persona construye a partir de todas sus interacciones con una empresa, antes, durante y después de la compra. Gestionarla implica diseñar procesos, canales y la atención de las personas para que cada contacto sea coherente y satisfactorio.",
+      "context": "[[inv:Gloria Ledermann]] contó en [[ep:TMRAUjHXzYQ]] que en Copec, donde el combustible es un commodity, la diferenciación fue la experiencia, bajo la idea de que se atiende a personas y no a vehículos. Efecto Podcast también grabó especiales en el 6.º Congreso de Experiencia Cliente DEC, como [[ep:h-Ub76CPhOE]] con [[inv:Ignacio Idalsoaga]] y [[ep:NdJuRyjlO-E]] con [[inv:Carlos Mascias]].",
+      "episodes": [
+        "TMRAUjHXzYQ",
+        "HLy0pXiYgys",
+        "h-Ub76CPhOE",
+        "izKhUy3vmmc",
+        "NdJuRyjlO-E"
+      ]
+    },
+    {
+      "term": "GPT",
+      "definition": "GPT, sigla en inglés de transformador generativo preentrenado, es un tipo de modelo de lenguaje que genera texto prediciendo la palabra siguiente más probable. El término también se usa para los asistentes personalizados que responden a partir de instrucciones e información específica, como documentos o un sitio web.",
+      "context": "En [[ep:2RSCZ5KAc64]] se explicó que un GPT permite conversar con una base de datos y que, a diferencia de los antiguos chatbots con respuestas preprogramadas, funciona por probabilidades. También se destacó que todo agente de IA necesita un GPT por dentro, pero no al revés.",
+      "episodes": [
+        "2RSCZ5KAc64"
+      ]
+    },
+    {
+      "term": "Growth",
+      "definition": "Growth, o growth marketing, es una disciplina que busca hacer crecer un negocio mediante experimentación rápida y basada en datos a lo largo de todo el embudo, desde la adquisición hasta la retención y la recomendación. Combina marketing, producto, análisis y tecnología para descubrir qué palancas mueven realmente los números.",
+      "context": "[[inv:Carolina Matamala]], CEO de TOCTOC, lo definió en [[ep:LLutgvMLIbk]] como una forma de validar rápido y a bajo costo qué hace crecer el negocio, con experimentos reales donde lo que importa es si los números se mueven, sin enamorarse de ninguno. En [[ep:2RSCZ5KAc64]] se mencionaron células de IA que cruzan growth, marketing, tecnología y producto.",
+      "episodes": [
+        "LLutgvMLIbk",
+        "2RSCZ5KAc64"
+      ]
+    },
+    {
+      "term": "IA generativa",
+      "definition": "La IA generativa es la rama de la inteligencia artificial que crea contenido nuevo, como texto, imágenes, audio, video o código, a partir de patrones aprendidos de grandes volúmenes de datos. Funciona con modelos que responden a instrucciones escritas o habladas, llamadas prompts, como ocurre con ChatGPT o Gemini.",
+      "context": "[[inv:Ángel Izurieta]], ex Country Manager de Google Cloud Chile, recordó en [[ep:UeOfGW46YzY]] que nace del paper <em>Attention Is All You Need</em>, escrito por investigadores de Google para mejorar su traductor. En [[ep:skz75DGqB6k]], [[inv:Benjamin Martínez Arenas]] contó que Miido apostó a que esta tecnología maduraría rápido cuando recién aparecía ChatGPT.",
+      "episodes": [
+        "UeOfGW46YzY",
+        "skz75DGqB6k",
+        "Ick_0QhlCNQ",
+        "wYvn_DWpl18"
+      ]
+    },
+    {
+      "term": "Influencer",
+      "definition": "Un influencer es una persona con una comunidad en redes sociales capaz de influir en las opiniones o decisiones de compra de sus seguidores. Las marcas trabajan con ellos para ganar alcance, credibilidad o ventas, y suelen clasificarlos según el tamaño de su audiencia: nano, micro, macro y celebridades.",
+      "context": "En [[ep:cJRQMuvzC98]], Felipe López Miranda advirtió que no basta el número de seguidores: hay que revisar si la audiencia es real y si el perfil promociona demasiadas marcas a la vez. Con [[inv:Tomás Collados]], en [[ep:ULzj5BZAkgE]], se habló de por qué los micro y nanoinfluenciadores superan cada vez más a las celebridades.",
+      "episodes": [
+        "cJRQMuvzC98",
+        "ULzj5BZAkgE",
+        "52XNzjSdm08",
+        "ysD1ANMGac8"
+      ]
+    },
+    {
+      "term": "Insight",
+      "definition": "Un insight es una comprensión profunda de las motivaciones, creencias o tensiones que explican el comportamiento de las personas. En marketing, es una verdad sobre el cliente que no salta a la vista en los datos y que permite crear productos, mensajes o experiencias más relevantes para él.",
+      "context": "[[inv:Gloria Ledermann]] lo diferenció del dato en [[ep:TMRAUjHXzYQ]]: los datos muestran el comportamiento del cliente, mientras que el insight encuentra la causa, el porqué de ese comportamiento. Sin datos no hay insight, pero los datos solos no bastan.",
+      "episodes": [
+        "TMRAUjHXzYQ"
+      ]
+    },
+    {
+      "term": "KPI (indicador clave de desempeño)",
+      "definition": "Un KPI, sigla de key performance indicator o indicador clave de desempeño, es una métrica cuantificable que mide el avance hacia un objetivo importante del negocio, como ventas, retención, costo de adquisición o satisfacción. Sirve para monitorear resultados, comparar periodos y tomar decisiones con datos.",
+      "context": "[[inv:Carolina Matamala]] explicó en [[ep:LLutgvMLIbk]] que en el directorio prefiere llevar visión, propuestas y el avance de los KPI de tres grandes iniciativas del año, más que justificar metas no cumplidas. [[inv:Rodrigo Rojo]] propuso en [[ep:YGUqzNpw4GU]] que el indicador principal se ligue al valor que se entrega al cliente.",
+      "episodes": [
+        "LLutgvMLIbk",
+        "YGUqzNpw4GU"
+      ]
+    },
+    {
+      "term": "MVP (producto mínimo viable)",
+      "definition": "Un MVP, o producto mínimo viable, es la versión más simple de un producto que permite lanzarlo a clientes reales con el menor esfuerzo posible. Su objetivo es validar hipótesis sobre el problema y la solución, medir cómo responden los usuarios y aprender antes de invertir en desarrollos mayores.",
+      "context": "Efecto Podcast le dedicó [[ep:n8LxYjIbUCA|3 razones para lanzar tu MVP hoy mismo]], sobre cómo lanzar y probar una idea de negocio. En [[ep:skz75DGqB6k]], [[inv:Benjamin Martínez Arenas]] contó que el MVP de Miido solo registraba aplicaciones de fertilizante por WhatsApp, hasta que Concha y Toro les dijo que servía para toda su operación.",
+      "episodes": [
+        "n8LxYjIbUCA",
+        "skz75DGqB6k",
+        "j9NYnm_k_UI"
+      ]
+    },
+    {
+      "term": "North Star Metric",
+      "definition": "La North Star Metric, o métrica estrella del norte, es el indicador principal que resume el valor que un producto entrega a sus clientes y que orienta las decisiones de todo el equipo. Se elige porque anticipa el crecimiento sostenible del negocio, como los usuarios activos semanales o los pedidos completados.",
+      "context": "[[inv:Rodrigo Rojo]] defendió en [[ep:YGUqzNpw4GU]] que debe estar ligada al valor entregado al cliente y no definirse en términos de dinero o market share: si el equipo mejora la experiencia del cliente, los resultados financieros llegan como consecuencia.",
+      "episodes": [
+        "YGUqzNpw4GU"
+      ]
+    },
+    {
+      "term": "Performance marketing",
+      "definition": "El performance marketing es el marketing orientado a resultados medibles, como clics, registros, leads o ventas, en el que la inversión se optimiza según el rendimiento de cada campaña. Se apoya en medios digitales como buscadores, redes sociales y display, y en métricas como el costo por adquisición y el ROAS.",
+      "context": "En [[ep:Ick_0QhlCNQ]], [[inv:Javier Arriola González]] sostuvo que performance y branding deben construirse juntos, porque un anuncio que convierte pero contradice la personalidad de la marca la daña. [[inv:Daniel Cáceres]] advirtió en [[ep:HLy0pXiYgys]] que las agencias que solo venden campañas de performance se están volviendo commodity.",
+      "episodes": [
+        "Ick_0QhlCNQ",
+        "HLy0pXiYgys",
+        "3UUCpRDicjM",
+        "OIfS359K-1g"
+      ]
+    },
+    {
+      "term": "Presupuesto base cero",
+      "definition": "El presupuesto base cero es un método de planificación en que cada periodo parte desde cero y cada gasto debe justificarse según los objetivos del negocio, en lugar de tomar el presupuesto del año anterior y solo ajustarlo. Obliga a revisar qué actividades, campañas o medios realmente generan valor.",
+      "context": "[[inv:Rodrigo Orellana]], CEO de Futture, lo propuso en [[ep:vqOFKk-pApw]] para las gerencias de marketing: es un error suponer que crecer 50% exige 50% más de inversión, y conviene experimentar de forma controlada, por ejemplo reduciendo 20% la inversión pagada en un producto para medir su elasticidad al medio.",
+      "episodes": [
+        "vqOFKk-pApw"
+      ]
+    },
+    {
+      "term": "Product-market fit",
+      "definition": "El product-market fit, o ajuste producto-mercado, es la etapa en que un producto satisface una demanda real de un mercado suficientemente grande: los clientes lo compran, lo usan, vuelven y lo recomiendan. Suele considerarse la señal de que una startup está lista para invertir en escalar.",
+      "context": "[[inv:Marcelo Díaz Bowen]] explicó en [[ep:j9NYnm_k_UI]] que para un fondo como WeBoost es lo mínimo esperable: ya se hizo el MVP y hay clientes que pagaron por el producto. [[inv:Carolina Matamala]] advirtió en [[ep:LLutgvMLIbk]] que un producto sin ese ajuste obliga a marketing, ventas y servicio a remar contra la corriente.",
+      "episodes": [
+        "j9NYnm_k_UI",
+        "LLutgvMLIbk"
+      ]
+    },
+    {
+      "term": "Prompt",
+      "definition": "Un prompt es la instrucción o el conjunto de instrucciones que una persona entrega a un modelo de inteligencia artificial para obtener una respuesta. Puede incluir la tarea, el contexto, ejemplos, restricciones y el formato esperado; mientras más claro y completo es, más útil suele ser el resultado.",
+      "context": "En [[ep:3UUCpRDicjM]], [[inv:Rodrigo Rojo]] explicó que en el uso diario pesan más la tarea, el contexto y los modos de razonamiento que el prompt perfecto, y que la ingeniería de prompts importa cuando se paga por token vía API. En [[ep:2RSCZ5KAc64]] se presentó el prompting como una de las nuevas habilidades que trae la IA.",
+      "episodes": [
+        "3UUCpRDicjM",
+        "2RSCZ5KAc64",
+        "skz75DGqB6k"
+      ]
+    },
+    {
+      "term": "Punto de equilibrio",
+      "definition": "El punto de equilibrio es el nivel de ventas en que los ingresos de una empresa igualan exactamente sus costos totales, fijos y variables, de modo que no hay ganancias ni pérdidas. Desde ese punto, cada venta adicional empieza a generar utilidad, por lo que es una meta clave para cualquier negocio nuevo.",
+      "context": "[[inv:Daniel Cáceres]] contó en [[ep:HLy0pXiYgys]] que su jefe le dio un año para que Awna alcanzara el punto de equilibrio y lo lograron con prueba y error, cortando rápido lo que no funcionaba. [[inv:Marcelo Díaz Bowen]] pide en [[ep:j9NYnm_k_UI]] una proyección clara de cuándo se revertirán las pérdidas.",
+      "episodes": [
+        "HLy0pXiYgys",
+        "j9NYnm_k_UI"
+      ]
+    },
+    {
+      "term": "Rebranding",
+      "definition": "Un rebranding es la renovación profunda de una marca, que puede cambiar su nombre, logotipo, identidad visual, mensaje o posicionamiento. Las empresas lo hacen para adaptarse a un nuevo mercado o público, corregir una percepción o reflejar un cambio estratégico, con el riesgo de perder reconocimiento entre sus clientes.",
+      "context": "Efecto Podcast analizó en [[ep:F-ZYLWkf1aE]] el polémico rebranding de Jaguar y su intento de conectar con una nueva generación sin perder su esencia. En [[ep:bXWRxUJOy70]] se revisó cómo Falabella intentó unir sus marcas en una gran marca, un cambio que costó millones y terminó con un retroceso a su imagen anterior.",
+      "episodes": [
+        "F-ZYLWkf1aE",
+        "bXWRxUJOy70"
+      ]
+    },
+    {
+      "term": "ROAS",
+      "definition": "El ROAS, sigla de return on ad spend, es el retorno de la inversión publicitaria: los ingresos generados por una campaña divididos por lo que se gastó en ella. Un ROAS de 5 significa cinco pesos de venta por cada peso invertido en anuncios, pero no considera márgenes ni otros costos del negocio.",
+      "context": "En la conversación con [[inv:Rodrigo Rojo]] en [[ep:3UUCpRDicjM]] se advirtió que un ROAS alto no sirve si no se mira el margen: se recordaron campañas con ROAS de 12 o 15 que, al revisar la rentabilidad real, no ganaban dinero.",
+      "episodes": [
+        "3UUCpRDicjM"
+      ]
+    },
+    {
+      "term": "SEO",
+      "definition": "El SEO, sigla de search engine optimization u optimización para motores de búsqueda, es el conjunto de prácticas para que un sitio y sus contenidos aparezcan en los primeros resultados orgánicos, es decir, no pagados. Combina aspectos técnicos, contenido relevante y autoridad del sitio frente a otros que compiten por las mismas búsquedas.",
+      "context": "En [[ep:YTr7SZf44vk]], con [[inv:Hussam Sufan]], CEO de SearchBrand.ai, se abordó por qué el SEO dejó de ser solo para buscadores tradicionales y cómo la IA redefine lo que ChatGPT, Gemini o Perplexity muestran sobre una marca. [[inv:Simón Durán]] citó en [[ep:52XNzjSdm08]] un estudio con una caída cercana al 15% en las páginas vistas de Google desde la llegada de ChatGPT.",
+      "episodes": [
+        "YTr7SZf44vk",
+        "52XNzjSdm08",
+        "HLy0pXiYgys"
+      ]
+    },
+    {
+      "term": "Share of wallet",
+      "definition": "El share of wallet, o participación en la billetera, es la proporción del gasto total de un cliente en una categoría que se queda una marca determinada. Permite estimar cuánto más se puede crecer con los clientes actuales, por ejemplo mediante programas de fidelidad, ventas cruzadas u ofertas personalizadas.",
+      "context": "[[inv:Gloria Ledermann]] contó en [[ep:TMRAUjHXzYQ]] que en Copec construyeron un modelo para estimarlo, porque un cliente que carga dos veces al mes puede ser totalmente fiel o entregar solo la mitad de su consumo, y que lo aumentaban con misiones del programa de fidelidad.",
+      "episodes": [
+        "TMRAUjHXzYQ"
+      ]
+    },
+    {
+      "term": "Síndrome del impostor",
+      "definition": "El síndrome del impostor es un patrón psicológico en que una persona duda de sus propios logros y teme ser descubierta como un fraude, aunque existan pruebas objetivas de su capacidad. Quien lo vive suele atribuir sus éxitos a la suerte o a factores externos, y no a su esfuerzo o talento.",
+      "context": "[[inv:Rodrigo Rojo]] reconoció en [[ep:YGUqzNpw4GU]] que le costó más de diez años superarlo, pese a haber sido CEO interino de una startup. Lo logró al reconocer señales concretas, como las invitaciones a enseñar en magíster y MBA, y eso lo llevó a independizarse.",
+      "episodes": [
+        "YGUqzNpw4GU"
+      ]
+    },
+    {
+      "term": "Startup",
+      "definition": "Una startup es una empresa emergente diseñada para crecer rápido y de forma escalable, normalmente apoyada en tecnología o en un modelo de negocio innovador. Opera con alta incertidumbre, busca validar su propuesta en el mercado y suele financiarse con capital de inversionistas a cambio de participación.",
+      "context": "[[inv:Marcelo Díaz Bowen]], que ha invertido en más de 270 startups, explicó en [[ep:j9NYnm_k_UI]] que el equipo pesa cerca del 90% de su decisión de inversión. [[inv:Carolina Matamala]] eligió en [[ep:LLutgvMLIbk]] ser cabeza de ratón, aunque reconoció que no a todos les acomoda el cambio constante de una startup.",
+      "episodes": [
+        "j9NYnm_k_UI",
+        "LLutgvMLIbk",
+        "skz75DGqB6k",
+        "YGUqzNpw4GU"
+      ]
+    },
+    {
+      "term": "Valle de la muerte",
+      "definition": "El valle de la muerte es la etapa temprana de una startup en que gasta más dinero del que genera, antes de alcanzar ingresos suficientes o el punto de equilibrio. Es un periodo crítico, porque muchas empresas se quedan sin caja antes de validar su negocio o de conseguir nueva inversión.",
+      "context": "[[inv:Marcelo Díaz Bowen]] explicó en [[ep:j9NYnm_k_UI]] que la gran mayoría de las empresas en que invierte pierden dinero todos los meses y que parte del capital del fondo sirve para cubrir ese valle de la muerte, siempre que exista una proyección clara de cuándo se revertirán las pérdidas.",
+      "episodes": [
+        "j9NYnm_k_UI"
+      ]
+    },
+    {
+      "term": "Venture capital",
+      "definition": "El venture capital, o capital de riesgo, es un tipo de inversión en que fondos especializados aportan dinero a startups con alto potencial de crecimiento a cambio de una participación en la empresa. Asumen un riesgo alto con la expectativa de que algunas inversiones se multipliquen al venderse en el futuro.",
+      "context": "[[inv:Marcelo Díaz Bowen]], Co-Founder y Managing Partner de WeBoost, explicó en [[ep:j9NYnm_k_UI]] que un fondo reúne capital de inversionistas por hasta 10 años, toma una participación minoritaria con asiento en el directorio y busca vender a al menos 10 veces lo invertido. Lo resume como un matrimonio con cláusula de divorcio.",
+      "episodes": [
+        "j9NYnm_k_UI"
+      ]
+    }
+  ]
+}
