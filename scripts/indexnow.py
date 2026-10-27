@@ -10,11 +10,13 @@ import hashlib
 import json
 import re
 import urllib.request
+from datetime import date
 
 from common import ROOT, load_config
 
 DIST = ROOT / "dist"
 STATE = ROOT / "data" / "indexnow.json"
+LASTMOD = ROOT / "data" / "lastmod.json"  # fecha del último cambio real de cada página (para el sitemap)
 
 
 def page_hash(rel):
@@ -35,6 +37,12 @@ def main():
     old = json.loads(STATE.read_text()) if STATE.exists() else {}
     new = {rel: page_hash(rel) for rel in paths}
     changed = [base + rel for rel in paths if old.get(rel) != new[rel]]
+    lastmod = json.loads(LASTMOD.read_text()) if LASTMOD.exists() else {}
+    today = date.today().isoformat()
+    for rel in paths:
+        if old.get(rel) != new[rel]:
+            lastmod[rel] = today
+    LASTMOD.write_text(json.dumps(lastmod, indent=0, sort_keys=True) + "\n")
     if changed:
         body = json.dumps({"host": base.split("://", 1)[1], "key": key,
                            "keyLocation": f"{base}/{key}.txt", "urlList": changed[:10000]}).encode()

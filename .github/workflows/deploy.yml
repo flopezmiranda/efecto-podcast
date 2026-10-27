@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - run: pip install jinja2
+      - run: pip install jinja2 pillow
 
       - name: Importar videos de YouTube
         env:
@@ -71,7 +71,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - run: pip install jinja2
+      - run: pip install jinja2 pillow
 
       - run: python scripts/build.py && python scripts/indexnow.py
 
@@ -79,5 +79,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/indexnow.json
+          git add data/indexnow.json data/lastmod.json
           git diff --cached --quiet || (git commit -m "Registrar aviso a IndexNow" && git pull --rebase && git push)

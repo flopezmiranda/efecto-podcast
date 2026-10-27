@@ -32,6 +32,15 @@ Respuestas completas que reúnen lo dicho por varios invitados, con enlaces a lo
 {%- endif %}
 {%- endfor %}
 
+{% endif %}{% if glossary %}## Glosario
+
+- [Glosario de marketing, negocios e IA]({{ base }}/glosario/): {{ glossary.terms|length }} términos definidos con ejemplos de los episodios.
+{%- if full %}
+{% for t in glossary.terms %}
+  - {{ t.term }}: {{ t.definition }}
+{%- endfor %}
+{%- endif %}
+
 {% endif %}## Episodios
 {% for ep in episodes %}
 - [{{ ep.title }}]({{ base }}{{ ep.url }}): {{ ep.summary }}{% if ep.guests %} Invitados: {% for g in ep.guests %}{{ g.name }}{% if g.role %} ({{ g.role }}){% endif %}{% if not loop.last %}, {% endif %}{% endfor %}.{% endif %} {{ ep.date_human }}, {{ ep.duration_human }}.{% if ep.transcript %} Con transcripción.{% endif %}

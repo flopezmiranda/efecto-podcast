@@ -7,7 +7,7 @@
    "url": canonical, "mainEntityOfPage": canonical, "inLanguage": site.language,
    "datePublished": guide.published, "dateModified": guide.updated,
    "author": {"@id": base ~ "/#conductor"}, "publisher": {"@id": base ~ "/#organizacion"},
-   "image": base ~ "/static/img/og.jpg", "isPartOf": {"@id": base ~ "/#sitio"},
+   "image": image or base ~ "/static/img/og.jpg", "isPartOf": {"@id": base ~ "/#sitio"},
    "citation": guide.episodes|map("ep_ref")|list,
    "mentions": guide.episodes|map(attribute="guests")|sum(start=[])|map("guest_ref")|list},
   {"@type": "FAQPage", "@id": canonical ~ "#preguntas", "isPartOf": {"@id": canonical ~ "#guia"},

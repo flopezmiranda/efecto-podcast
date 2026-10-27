@@ -17,10 +17,22 @@
   {{ topic.intro }}
   {% if topic.guests %}<p class="muted">Invitados en este tema: {% for g in topic.guests %}{{ g }}{% if not loop.last %}, {% endif %}{% endfor %}.</p>{% endif %}
 </div>
+{% if topic.guides %}
+<div class="related-guides">
+  <p class="eyebrow grad-text">Guías sobre {{ topic.name|lower if topic.name != "ChatGPT" else topic.name }}</p>
+  {% for g in topic.guides %}<a class="related-guide" href="{{ g.url }}"><strong>{{ g.title }}</strong><span class="muted">{{ g.minutes }} min de lectura →</span></a>{% endfor %}
+</div>
+{% endif %}
 <div class="grid">
 {% for ep in episodes %}
   {% include "_card.html" %}
   {% if loop.index == 6 and site.adsense_client and site.adsense_slots.list %}<div class="grid-ad">{{ ad(site.adsense_slots.list) }}</div>{% endif %}
 {% endfor %}
 </div>
+{% if topic.questions %}
+<section class="topic-qa prose" aria-labelledby="qa-title">
+  <h2 id="qa-title" class="section-title">Preguntas sobre {{ topic.name|lower if topic.name != "ChatGPT" else topic.name }} que responden los episodios</h2>
+  <div class="qa">{% for q in topic.questions %}<h3>{{ q.q }}</h3><p>{{ q.a }}</p>{% endfor %}</div>
+</section>
+{% endif %}
 {% endblock %}

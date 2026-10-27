@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% set title = "Glosario de marketing, negocios e inteligencia artificial" %}
+{% set description = "Qué significan " ~ glossary.terms[:4]|map(attribute="term")|join(", ") ~ " y más términos de marketing, negocios e IA, explicados con ejemplos de Efecto Podcast." %}
+{% set schema = [
+  {"@type": "DefinedTermSet", "@id": canonical ~ "#glosario", "name": title, "url": canonical, "inLanguage": site.language,
+   "isPartOf": {"@id": base ~ "/#sitio"}, "publisher": {"@id": base ~ "/#organizacion"},
+   "hasDefinedTerm": glossary.terms|map("defined_term", canonical)|list},
+  {"@type": "BreadcrumbList", "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": base ~ "/"},
+    {"@type": "ListItem", "position": 2, "name": "Glosario", "item": canonical}]}
+] %}
+{% block content %}
+<article class="glossary">
+  <p class="eyebrow grad-text">Glosario de {{ site.site_name }}</p>
+  <h1 class="section-title">Glosario de marketing, negocios e IA</h1>
+  <p class="intro">{{ glossary.intro }}</p>
+  <nav class="glossary-index" aria-label="Términos">
+    {% for t in glossary.terms %}<a href="#{{ t.slug }}">{{ t.term }}</a>{% endfor %}
+  </nav>
+  <dl class="terms">
+    {% for t in glossary.terms %}
+    <div class="term" id="{{ t.slug }}">
+      <dt><h2>{{ t.term }}</h2></dt>
+      <dd>
+        <p class="definition">{{ t.definition }}</p>
+        {% if t.context %}<div class="term-context"><span class="qa-title">En {{ site.site_name }}</span>{{ t.context }}</div>{% endif %}
+        {% if t.episodes %}<p class="term-eps">Escúchalo en: {% for e in t.episodes %}<a href="{{ e.url }}">{{ e.title }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
+      </dd>
+    </div>
+    {% endfor %}
+  </dl>
+</article>
+{% endblock %}

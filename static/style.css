@@ -346,3 +346,29 @@ main { padding-top: 40px; padding-bottom: 72px; min-height: 60vh; }
 .marquee-item { flex: none; width: 280px; height: 78px; justify-content: center; white-space: normal; }
 .marquee-item strong { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .marquee-item span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.3; }
+
+/* Invitados y temas enriquecidos */
+.guest-said { margin: 8px 0 40px; padding: 24px 26px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); max-width: 860px; }
+.guest-said h2 { margin-top: 0; }
+.qa-title { margin: 26px 0 0; font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); font-weight: 600; }
+.related-guides { display: flex; flex-wrap: wrap; gap: 12px; align-items: stretch; margin: 0 0 30px; }
+.related-guides .eyebrow { flex-basis: 100%; margin: 0; }
+.related-guide { display: flex; flex-direction: column; gap: 4px; padding: 14px 18px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); text-decoration: none; max-width: 420px; transition: border-color .15s; }
+.related-guide:hover { border-color: var(--violet); }
+.related-guide span { font-size: .84rem; }
+.topic-qa { max-width: 820px; }
+
+/* Glosario */
+.glossary-index { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 36px; }
+.glossary-index a { padding: 5px 12px; border-radius: 999px; background: var(--surface-2); box-shadow: inset 0 0 0 1px var(--line); text-decoration: none; font-size: .84rem; }
+.glossary-index a:hover { background: var(--grad); box-shadow: none; }
+.terms { margin: 0; max-width: 860px; }
+.term { padding: 22px 0; border-top: 1px solid var(--line); scroll-margin-top: 88px; }
+.term dt h2 { font-size: 1.3rem; font-weight: 600; margin: 0 0 8px; }
+.term dd { margin: 0; }
+.definition { font-size: 1.04rem; margin: 0 0 12px; }
+.term-context { color: var(--muted); font-size: .95rem; }
+.term-context .qa-title { display: block; margin: 0 0 4px; }
+.term-context p { margin: 0 0 8px; }
+.term-context a, .term-eps a { color: var(--accent); }
+.term-eps { font-size: .86rem; color: var(--muted); margin: 6px 0 0; }

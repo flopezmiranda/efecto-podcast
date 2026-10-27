@@ -229,8 +229,8 @@ def redirect_page(target):
 MARKER_RE = re.compile(r"\[\[(ep|inv):([^\]|]+)(?:\|([^\]]+))?\]\]")
 
 
-def load_guides(episodes, guests):
-    """Guías temáticas de content/guias/*.json. Los marcadores [[ep:ID]] e [[inv:Nombre]] se vuelven enlaces."""
+def linker(episodes, guests):
+    """Convierte los marcadores [[ep:ID]], [[ep:ID|texto]] e [[inv:Nombre]] en enlaces internos."""
     by_id = {e["id"]: e for e in episodes}
     by_name = {g["name"]: g for g in guests}
 
@@ -243,12 +243,35 @@ def load_guides(episodes, guests):
         label = text or (target["title"] if kind == "ep" else target["name"])
         return f'<a href="{target["url"]}">{html.escape(label)}</a>'
 
+    return lambda text: Markup(MARKER_RE.sub(link, text))
+
+
+def load_glossary(episodes, guests):
+    """Glosario de content/glosario.json, con un ancla por término."""
+    path = CONTENT / "glosario.json"
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text(encoding="utf-8"))
+    by_id = {e["id"]: e for e in episodes}
+    link = linker(episodes, guests)
+    for t in data["terms"]:
+        t["slug"] = slugify(t["term"], 50)
+        t["context"] = link(t.get("context", ""))
+        t["episodes"] = [by_id[i] for i in t.get("episodes", []) if i in by_id]
+    data["terms"].sort(key=lambda t: slugify(t["term"]))
+    return data
+
+
+def load_guides(episodes, guests):
+    """Guías temáticas de content/guias/*.json. Los marcadores [[ep:ID]] e [[inv:Nombre]] se vuelven enlaces."""
+    by_id = {e["id"]: e for e in episodes}
+    link = linker(episodes, guests)
     guides = []
     for path in sorted((CONTENT / "guias").glob("*.json")):
         g = json.loads(path.read_text(encoding="utf-8"))
         g["slug"] = path.stem
         g["url"] = f"/guias/{path.stem}/"
-        g["sections"] = [{**sec, "id": slugify(sec["title"], 60), "html": Markup(MARKER_RE.sub(link, sec["html"]))}
+        g["sections"] = [{**sec, "id": slugify(sec["title"], 60), "html": link(sec["html"])}
                          for sec in g["sections"]]
         g["episodes"] = [by_id[i] for i in g.get("episodes", []) if i in by_id]
         words = len(g["intro"].split()) + sum(len(re.sub(r"<[^>]+>", " ", sec["html"]).split()) for sec in g["sections"])
@@ -298,7 +321,8 @@ def episode_schema(ep, base, config):
         video["hasPart"] = clips
     guests = [person({**g, "base": base}) for g in ep["guests"]]
     episode = {"@type": "PodcastEpisode", "@id": url + "#episodio", "name": ep["title"], "url": url,
-               "datePublished": ep["date_iso"], "description": ep["summary"], "timeRequired": ep["duration_iso"],
+               "datePublished": ep["date_iso"], "dateModified": ep["date_modified"],
+               "description": ep["summary"], "timeRequired": ep["duration_iso"],
                "inLanguage": config["language"], "image": ep["thumbnail"],
                "partOfSeries": {"@id": base + "/#podcast"},
                "author": {"@id": base + "/#conductor"}, "publisher": {"@id": base + "/#organizacion"},
@@ -344,18 +368,32 @@ def main():
     config = load_config()
     base = config["base_url"].rstrip("/")
     episodes, topics, guests = prepare(config)
+    # Fecha del último cambio real de cada página (la registra scripts/indexnow.py al publicar).
+    lastmod_file = ROOT / "data" / "lastmod.json"
+    changed_on = json.loads(lastmod_file.read_text()) if lastmod_file.exists() else {}
+    for ep in episodes:
+        ep["date_modified"] = max(ep["date_iso"], changed_on.get(ep["url"], ""))
     guides = load_guides(episodes, guests)
+    glossary = load_glossary(episodes, guests)
+    for t in topics:
+        ids = {e["id"] for e in episodes if t in e["topics"]}
+        t["guides"] = [g for g in guides if len(ids & {e["id"] for e in g["episodes"]}) >= 2]
+        t["questions"] = [q for e in episodes if t in e["topics"] and e["editorial"] for q in e["editorial"]["preguntas"][:1]][:6]
 
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=select_autoescape(["html"]))
     env.filters["faq_item"] = lambda i: {"@type": "Question", "name": i["q"], "acceptedAnswer": {"@type": "Answer", "text": i["a"]}}
     env.filters["prune"] = prune
+    env.filters["defined_term"] = lambda t, url: {"@type": "DefinedTerm", "@id": f"{url}#{t['slug']}", "name": t["term"],
+                                                  "description": t["definition"], "url": f"{url}#{t['slug']}",
+                                                  "inDefinedTermSet": url + "#glosario"}
+    env.filters["clip"] = lambda t, n=158: t if len(t) <= n else t[:n - 1].rsplit(" ", 1)[0].rstrip(",;:") + "…"
     env.filters["ep_ref"] = lambda e: {"@id": base + e["url"] + "#episodio"}
     env.filters["guest_ref"] = lambda g: {"@type": "Person", "name": g["name"], "url": base + g["url"]}
     env.filters["org"] = lambda name: {"@type": "CollegeOrUniversity", "name": name}
     env.filters["list_items"] = lambda xs: [{"@type": "ListItem", "position": i, "url": base + x["url"], "name": x.get("name") or x["title"]}
                                             for i, x in enumerate(xs, 1)]
     env.filters["tojson_safe"] = lambda v: Markup(json.dumps(v, ensure_ascii=False).replace("</", "<\\/"))
-    env.globals.update(site=config, base=base, year=datetime.now().year, top_topics=topics[:12], guides=guides,
+    env.globals.update(site=config, base=base, year=datetime.now().year, top_topics=topics[:12], guides=guides, glossary=glossary,
                        host=config["hosts"][0] if config.get("hosts") else None)
 
     if DIST.exists():
@@ -363,6 +401,17 @@ def main():
     shutil.copytree(ROOT / "static", DIST / "static")
 
     sitemap = []
+
+    try:
+        from og import make_og
+    except ImportError:  # sin Pillow se usa la imagen general
+        make_og = None
+
+    def og_image(name, title, kicker):
+        if not make_og:
+            return None
+        make_og(title, kicker, DIST / "static" / "og" / f"{name}.jpg")
+        return f"{base}/static/og/{name}.jpg"
 
     def render(rel, template, priority="0.5", lastmod=None, index=True, **ctx):
         write(rel, env.get_template(template).render(canonical=base + rel, path=rel, **ctx))
@@ -381,6 +430,7 @@ def main():
         render(rel, "list.html", "1.0" if n == 1 else "0.4", latest,
                episodes=home[(n - 1) * per_page:n * per_page], page=n, pages=pages, topics=topics,
                faq=faq(config, episodes, topics, guests) if n == 1 else [],
+               image=og_image("portada", config["tagline"], "El podcast de marketing, negocios y emprendimiento") if n == 1 else None,
                guests=guests, total_episodes=len(episodes), total_hours=round(sum(e["duration_seconds"] for e in episodes) / 3600),
                prev_url=None if n == 1 else ("/" if n == 2 else f"/episodios/pagina/{n - 1}/"),
                next_url=f"/episodios/pagina/{n + 1}/" if n < pages else None)
@@ -390,8 +440,12 @@ def main():
         if ep["old_slug"] != ep["slug"]:
             write(f"/episodios/{ep['old_slug']}/", redirect_page(base + ep["url"]))
 
+    if glossary:
+        render("/glosario/", "glossary.html", "0.8", None, glossary=glossary,
+               image=og_image("glosario", "Glosario de marketing, negocios e inteligencia artificial", "Glosario"))
+
     for g in guides:
-        render(g["url"], "guide.html", "0.9", g["updated"], guide=g)
+        render(g["url"], "guide.html", "0.9", g["updated"], guide=g, image=og_image(f"guia-{g['slug']}", g["title"], "Guía"))
     if guides:
         render("/guias/", "guides.html", "0.7", max(g["updated"] for g in guides))
 
@@ -403,7 +457,8 @@ def main():
 
     for t in topics:
         eps = [e for e in episodes if t in e["topics"]]
-        render(t["url"], "topic.html", "0.6", eps[0]["date_iso"], topic=t, episodes=eps)
+        render(t["url"], "topic.html", "0.6", eps[0]["date_iso"], topic=t, episodes=eps,
+               image=og_image(f"tema-{t['slug']}", f"{t['name']}: episodios y entrevistas", "Tema"))
     render("/temas/", "topics.html", "0.5", latest, topics=topics)
 
     for page in sorted((CONTENT / "pages").glob("*.html")):
@@ -436,6 +491,7 @@ def main():
                      f"<video:player_loc>https://www.youtube.com/embed/{ep['id']}</video:player_loc>"
                      f"<video:duration>{ep['duration_seconds']}</video:duration>"
                      f"<video:publication_date>{ep['published']}</video:publication_date></video:video>")
+        lastmod = max(filter(None, [lastmod, changed_on.get(rel)]), default=None)
         lm = f"<lastmod>{lastmod}</lastmod>" if lastmod else ""
         urls.append(f"<url><loc>{base}{rel}</loc>{lm}<priority>{prio}</priority>{video}</url>")
     write("/sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n'

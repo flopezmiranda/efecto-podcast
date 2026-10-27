@@ -3,6 +3,9 @@
 {% set description = guest.name ~ (", " ~ guest.role if guest.role else "") ~ ". Mira " ~ ("su entrevista" if guest.episodes|length == 1 else "sus " ~ guest.episodes|length ~ " entrevistas") ~ " en " ~ site.site_name ~ ": " ~ guest.episodes[0].title ~ "." %}
 {% set image = guest.episodes[0].thumbnail %}
 {% set og_type = "profile" %}
+{% set schema = (schema or []) + [{"@type": "BreadcrumbList", "itemListElement": [
+  {"@type": "ListItem", "position": 1, "name": "Invitados", "item": base ~ "/invitados/"},
+  {"@type": "ListItem", "position": 2, "name": guest.name, "item": canonical}]}] %}
 {% block content %}
 <nav class="crumbs" aria-label="Ruta"><a href="/invitados/">Invitados</a> <span aria-hidden="true">/</span> <span>{{ guest.name }}</span></nav>
 <h1 class="section-title">{{ guest.name }}</h1>
@@ -10,6 +13,16 @@
   {% if guest.role %}<p class="lead-small">{{ guest.role }}</p>{% endif %}
   <p>{{ guest.name }} conversó en {{ site.site_name }} {% if guest.episodes|length == 1 %}en el episodio «{{ guest.episodes[0].title }}», publicado el {{ guest.episodes[0].date_human }}. {{ guest.episodes[0].summary }}{% else %}en {{ guest.episodes|length }} episodios: {% for e in guest.episodes %}«{{ e.title }}» ({{ e.date_human }}){% if loop.revindex == 2 %} y {% elif not loop.last %}, {% endif %}{% endfor %}.{% endif %}</p>
 </div>
+{% for ep in guest.episodes if ep.editorial %}
+<section class="guest-said prose">
+  <h2>Ideas clave de su conversación en «{{ ep.title }}»</h2>
+  <ul class="takeaways">{% for i in ep.editorial.ideas_clave %}<li>{{ i }}</li>{% endfor %}</ul>
+  {% for c in ep.editorial.citas if c.autor == guest.name %}<blockquote class="quote"><p>«{{ c.texto[0]|upper }}{{ c.texto[1:] }}»</p><cite>{{ c.autor }}</cite></blockquote>{% endfor %}
+  <p class="qa-title">Preguntas que responde este episodio</p>
+  <div class="qa">{% for q in ep.editorial.preguntas[:3] %}<h3>{{ q.q }}</h3><p>{{ q.a }}</p>{% endfor %}</div>
+  <p><a href="{{ ep.url }}">Ver el episodio completo con resumen y transcripción →</a></p>
+</section>
+{% endfor %}
 <h2 class="section-title">{% if guest.episodes|length == 1 %}Episodio{% else %}Episodios{% endif %}</h2>
 <div class="grid">
 {% for ep in guest.episodes %}{% include "_card.html" %}{% endfor %}

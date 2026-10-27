@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% set page_title = (title if (title|length) + (site.site_name|length) > 62 else title ~ " | " ~ site.site_name) if title else (site.home_title or site.site_name ~ " — " ~ site.tagline) %}
 <title>{{ page_title }}</title>
-<meta name="description" content="{{ description or site.description }}">
+<meta name="description" content="{{ (description or site.description)|clip }}">
 <link rel="canonical" href="{{ canonical }}">
 {% if noindex %}<meta name="robots" content="noindex, follow">{% else %}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">{% endif %}
 {% if prev_url %}<link rel="prev" href="{{ base }}{{ prev_url }}">{% endif %}
@@ -14,7 +14,7 @@
 <meta property="og:locale" content="{{ site.locale }}">
 <meta property="og:type" content="{{ og_type or 'website' }}">
 <meta property="og:title" content="{{ title or site.site_name }}">
-<meta property="og:description" content="{{ description or site.description }}">
+<meta property="og:description" content="{{ (description or site.description)|clip(200) }}">
 <meta property="og:url" content="{{ canonical }}">
 <meta property="og:image" content="{{ image or (base ~ '/static/img/og.jpg') }}">
 <meta name="twitter:card" content="summary_large_image">
@@ -89,6 +89,7 @@
       <a href="/sobre-nosotros/">Sobre nosotros</a>
       {% if host and host.slug %}<a href="/{{ host.slug }}/">{{ host.name }}</a>{% endif %}
       {% if guides %}<a href="/guias/">Guías</a>{% endif %}
+      {% if glossary %}<a href="/glosario/">Glosario</a>{% endif %}
       <a href="/invitados/">Invitados</a>
       <a href="/temas/">Temas</a>
       <a href="/contacto/">Contacto</a>
