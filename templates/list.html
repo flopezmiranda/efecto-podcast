@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_macros.html" import ad %}
+{% from "_macros.html" import ad, newsletter %}
 {% set title = None if page == 1 else "Episodios — página " ~ page %}
 {% set noindex = False %}
 {% if faq %}
@@ -48,6 +48,7 @@
   </div>
 </section>
 {% endif %}
+{{ newsletter("portada") }}
 {% set grid = episodes[1:] %}
 {% else %}
 <h1 class="section-title">Episodios <span class="muted">— página {{ page }} de {{ pages }}</span></h1>

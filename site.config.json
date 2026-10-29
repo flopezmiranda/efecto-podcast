@@ -40,6 +40,12 @@
     }
   ],
 
+  "newsletter": {
+    "name": "Efecto Newsletter",
+    "url": "https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7346352735975292928",
+    "pitch": "Los aprendizajes de marketing, negocios e inteligencia artificial que dejan las conversaciones de Efecto Podcast, directo en tu LinkedIn."
+  },
+
   "contact_email": "contacto@efectopodcast.com",
   "social": {
     "youtube": "https://www.youtube.com/@efecto_podcast",

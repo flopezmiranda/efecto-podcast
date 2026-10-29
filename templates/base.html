@@ -83,6 +83,7 @@
       <p class="muted">{{ site.tagline }}</p>
     </div>
     <nav aria-label="Redes">
+      {% if site.newsletter %}<a href="{{ site.newsletter.url }}" rel="noopener" target="_blank" onclick="window.gtag&&gtag('event','newsletter_click',{ubicacion:'pie'})">{{ site.newsletter.name }}</a>{% endif %}
       {% for name, url in site.social.items() if url %}<a href="{{ url }}" rel="me noopener" target="_blank">{{ {'youtube': 'YouTube', 'tiktok': 'TikTok', 'linkedin': 'LinkedIn', 'facebook': 'Facebook'}.get(name, name|capitalize) }}</a>{% endfor %}
     </nav>
     <nav aria-label="Legal">

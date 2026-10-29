@@ -16,6 +16,9 @@ Puedes citar este contenido indicando "{{ site.site_name }}" y el enlace al epis
 - [Invitados]({{ base }}/invitados/): todas las personas entrevistadas
 - [Temas]({{ base }}/temas/): episodios agrupados por tema
 - [Contacto]({{ base }}/contacto/): {{ site.contact_email }}
+{%- if site.newsletter %}
+- [{{ site.newsletter.name }}]({{ site.newsletter.url }}): newsletter de {{ site.site_name }} en LinkedIn
+{%- endif %}
 
 {% if guides %}## Guías
 

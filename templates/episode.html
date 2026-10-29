@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_macros.html" import ad %}
+{% from "_macros.html" import ad, newsletter %}
 {% set title = ep.title %}
 {% set description = ep.summary %}
 {% set image = ep.thumbnail %}
@@ -68,6 +68,8 @@
   </div>
 
   {% if not ep.transcript %}{{ ad(site.adsense_slots.episode_bottom) }}{% endif %}
+
+  {{ newsletter("episodio") }}
 
   <nav class="pager" aria-label="Episodios cercanos">
     {% if ep.older %}<a href="{{ ep.older.url }}">← {{ ep.older.title|truncate(60) }}</a>{% else %}<span></span>{% endif %}

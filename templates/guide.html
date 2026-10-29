@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% from "_macros.html" import newsletter %}
 {% set title = guide.title %}
 {% set description = guide.description %}
 {% set og_type = "article" %}
@@ -37,6 +38,8 @@
 
       <h2 id="en-resumen">En resumen</h2>
       <ul class="takeaways">{% for t in guide.takeaways %}<li>{{ t }}</li>{% endfor %}</ul>
+
+      {{ newsletter("guia", true) }}
 
       <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
       <div class="qa">{% for q in guide.faq %}<h3>{{ q.q }}</h3><p>{{ q.a }}</p>{% endfor %}</div>
