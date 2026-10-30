@@ -98,6 +98,7 @@
       <a href="/terminos/">Términos</a>
     </nav>
   </div>
+  {% if host and host.projects %}<p class="wrap muted small other-projects">Otros proyectos de {{ host.name }}: {% for pr in host.projects %}<a href="{{ pr.url }}" target="_blank" rel="noopener">{{ pr.name }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
   <p class="wrap muted small legal">© {{ year }} {{ site.site_name }}®. {{ site.site_name }} es una marca registrada. Todos los derechos reservados.</p>
 </footer>
 {% block scripts %}{% endblock %}

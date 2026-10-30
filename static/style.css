@@ -389,3 +389,6 @@ main { padding-top: 40px; padding-bottom: 72px; min-height: 60vh; }
   .newsletter { grid-template-columns: 1fr; text-align: left; gap: 14px; }
   .newsletter .btn { justify-self: start; }
 }
+.other-projects { margin-bottom: 4px; }
+.other-projects a { color: var(--text); }
+.author-cols { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }

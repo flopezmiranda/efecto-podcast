@@ -14,7 +14,7 @@
       <h1>{{ host.name }}</h1>
       <p class="lead-small">{{ host.role }}</p>
       <div class="prose">{{ bio }}</div>
-      <p class="author-links">{% for url in host.same_as %}<a href="{{ url }}" rel="me noopener" target="_blank">{{ "LinkedIn" if "linkedin" in url else "Instagram" if "instagram" in url else url }}</a>{% endfor %}</p>
+      <p class="author-links">{% for url in host.same_as %}<a href="{{ url }}" rel="me noopener" target="_blank">{{ "LinkedIn" if "linkedin" in url else "Instagram" if "instagram" in url else "Sitio personal" }}</a>{% endfor %}</p>
     </div>
   </div>
 
@@ -23,6 +23,12 @@
       <h2>Especialidades</h2>
       <ul>{% for k in host.knows_about %}<li>{{ k }}</li>{% endfor %}</ul>
     </section>
+    {% if host.projects %}
+    <section>
+      <h2>Otros proyectos</h2>
+      <ul>{% for pr in host.projects %}<li><a href="{{ pr.url }}" target="_blank" rel="noopener">{{ pr.name }}</a>{% if pr.about != pr.name and pr.about not in pr.url %}<br><span class="muted">{{ pr.about }}</span>{% endif %}</li>{% endfor %}</ul>
+    </section>
+    {% endif %}
     <section>
       <h2>Formación</h2>
       <ul>{% for e in host.education %}<li><strong>{{ e.degree }}</strong><br><span class="muted">{{ e.name }} · {{ e.years }}</span></li>{% endfor %}</ul>

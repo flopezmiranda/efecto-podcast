@@ -29,7 +29,11 @@
       "role": "CMO & Growth Lead en TOCTOC",
       "image": "/static/img/felipe-lopez-miranda.jpg",
       "works_for": {"name": "TOCTOC", "url": "https://www.toctoc.com"},
-      "same_as": ["https://www.linkedin.com/in/flopezmiranda/", "https://www.instagram.com/flopezmiranda/"],
+      "same_as": ["https://flopezmiranda.com/", "https://www.linkedin.com/in/flopezmiranda/", "https://www.instagram.com/flopezmiranda/"],
+      "projects": [
+        {"name": "flopezmiranda.com", "url": "https://flopezmiranda.com/", "about": "Sitio personal de Felipe López Miranda"},
+        {"name": "Drone Imagen", "url": "https://droneimagen.cl/", "about": "droneimagen.cl"}
+      ],
       "knows_about": ["Branding", "Contenido de marca", "Tecnología de datos", "Analítica web", "Performance marketing", "Marketing digital", "Transformación digital"],
       "education": [
         {"name": "Universidad Diego Portales", "degree": "Magíster en Dirección de Marketing y Gestión Comercial", "years": "2020 – 2022"},
