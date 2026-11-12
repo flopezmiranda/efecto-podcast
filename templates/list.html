@@ -54,11 +54,7 @@
 <h1 class="section-title">Episodios <span class="muted">— página {{ page }} de {{ pages }}</span></h1>
 {% set grid = episodes %}
 {% endif %}
-{% set featured_season = site.home_featured_season %}
-{% set groups = [
-  ("Temporada " ~ featured_season, grid|selectattr("season", "equalto", featured_season)|list),
-  ("Especiales y temporada 1" if page == 1 else "", grid|rejectattr("season", "equalto", featured_season)|list),
-] if page == 1 and featured_season else [("", grid)] %}
+{% set groups = sections if sections else [("", grid)] %}
 {% for heading, items in groups if items %}
 {% if heading %}<h2 class="section-title grid-title"><span>{{ heading }}</span></h2>{% endif %}
 <div class="grid">

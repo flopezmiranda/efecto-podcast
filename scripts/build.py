@@ -418,10 +418,12 @@ def main():
         if index:
             sitemap.append((rel, lastmod, priority))
 
-    # En la portada, la temporada destacada va primero (del último episodio al primero);
-    # el resto sigue por fecha de publicación.
-    featured = config.get("home_featured_season")
-    home = sorted(episodes, key=lambda e: (0, -e["number"]) if featured and e["season"] == featured else (1, 0))
+    # En la portada, las temporadas van de la más nueva a la más antigua (cada una del último
+    # episodio al primero) y al final los especiales y cápsulas, por fecha.
+    home = sorted(episodes, key=lambda e: (0, -e["season"], -e["number"]) if e["number"] is not None else (1, 0))
+    seasons = sorted({e["season"] for e in episodes if e["season"]}, reverse=True)
+    home_sections = [(f"Temporada {n}", [e for e in home if e["season"] == n]) for n in seasons]
+    home_sections.append(("Especiales y #EfectoTip", [e for e in home if e["number"] is None]))
     per_page = config["episodes_per_page"]
     pages = max(1, math.ceil(len(episodes) / per_page))
     latest = episodes[0]["date_iso"] if episodes else None
@@ -431,9 +433,13 @@ def main():
                episodes=home[(n - 1) * per_page:n * per_page], page=n, pages=pages, topics=topics,
                faq=faq(config, episodes, topics, guests) if n == 1 else [],
                image=og_image("portada", config["tagline"], "El podcast de marketing, negocios y emprendimiento") if n == 1 else None,
+               sections=home_sections if n == 1 else None,
                guests=guests, total_episodes=len(episodes), total_hours=round(sum(e["duration_seconds"] for e in episodes) / 3600),
                prev_url=None if n == 1 else ("/" if n == 2 else f"/episodios/pagina/{n - 1}/"),
                next_url=f"/episodios/pagina/{n + 1}/" if n < pages else None)
+
+    for n in range(pages + 1, 4):  # páginas de listado que ya no existen
+        write(f"/episodios/pagina/{n}/", redirect_page(base + "/"))
 
     for ep in episodes:
         render(ep["url"], "episode.html", "0.8", ep["date_iso"], ep=ep, schema=episode_schema(ep, base, config))
