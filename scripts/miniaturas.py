@@ -201,6 +201,24 @@ GUEST_PHOTOS = {
 }
 
 
+# Cuadro real del invitado en el estudio, sacado del video: cara (fracción del ancho y alto) y escala.
+GUEST_FRAMES = {
+    "Darío Poblete": ("dario-poblete", 0.508, 0.19, 1.12),
+    "Daniel Cáceres": ("daniel-caceres", 0.545, 0.25, 1.02),
+    "Carolina Matamala": ("carolina-matamala", 0.52, 0.30, 1.02),
+    "Rodrigo Rojo": ("rodrigo-rojo", 0.573, 0.31, 1.0),
+}
+
+
+def enhance(im):
+    """Mejora un cuadro de video comprimido: nitidez, contraste y color."""
+    from PIL import ImageEnhance
+    im = im.filter(ImageFilter.UnsharpMask(radius=2, percent=110, threshold=2))
+    im = ImageEnhance.Contrast(im).enhance(1.10)
+    im = ImageEnhance.Color(im).enhance(1.06)
+    return ImageEnhance.Brightness(im).enhance(1.04)
+
+
 def guest_portrait(img, guest, center, radius):
     """Retrato circular del invitado con un anillo del degradado de la marca."""
     name, cx, cy, side = GUEST_PHOTOS[guest]
@@ -243,14 +261,30 @@ def render_t2(vid, number, text, photo, guest, logo):
     scale = H * 1.08 / pic.height
     pic = pic.resize((round(pic.width * scale), round(pic.height * scale)), Image.LANCZOS)
     fx, fy = FACES[photo]
-    target = 0.62 if guest in GUEST_PHOTOS else 0.72
-    ox = max(round(target * W - fx * pic.width), W - pic.width)
+    duo = guest in GUEST_FRAMES
+    target = 0.57 if duo else 0.72
+    ox = round(target * W - fx * pic.width) if duo else max(round(target * W - fx * pic.width), W - pic.width)
     oy = min(0, max(round(0.40 * H - fy * pic.height), H - pic.height))
     layer = Image.new("RGB", (W, H), (6, 8, 26))
     layer.paste(pic, (ox, oy))
-    face = (ox + fx * pic.width, oy + fy * pic.height)
+    faces = [(ox + fx * pic.width, oy + fy * pic.height)]
+    if duo:
+        # El invitado, desde un cuadro real del episodio, a la derecha; se funde con Felipe al centro.
+        name, gx, gy, gscale = GUEST_FRAMES[guest]
+        frame = enhance(Image.open(PHOTOS / "invitados" / f"estudio-{name}.jpg").convert("RGB"))
+        k = H * gscale / frame.height
+        frame = frame.resize((round(frame.width * k), round(frame.height * k)), Image.LANCZOS)
+        gox = round(0.83 * W - gx * frame.width)
+        goy = round(0.40 * H - gy * frame.height)
+        glayer = Image.new("RGB", (W, H), (6, 8, 26))
+        glayer.paste(frame, (gox, goy))
+        seam = np.clip((np.linspace(0, 1, W) - 0.70) / 0.07, 0, 1)
+        seam = seam * seam * (3 - 2 * seam)
+        layer = Image.composite(glayer, layer, Image.fromarray((np.tile(seam, (H, 1)) * 255).astype("uint8")))
+        faces.append((gox + gx * frame.width, goy + gy * frame.height))
     sharp = Image.new("L", (W, H), 0)
-    ImageDraw.Draw(sharp).ellipse((face[0] - 250, face[1] - 260, face[0] + 250, face[1] + 420), fill=255)
+    for face in faces:
+        ImageDraw.Draw(sharp).ellipse((face[0] - 200, face[1] - 230, face[0] + 200, face[1] + 380), fill=255)
     sharp = sharp.filter(ImageFilter.GaussianBlur(130))
     layer = Image.composite(layer.filter(ImageFilter.GaussianBlur(1)), layer.filter(ImageFilter.GaussianBlur(26)), sharp)
 
@@ -259,7 +293,7 @@ def render_t2(vid, number, text, photo, guest, logo):
         return t * t * (3 - 2 * t)
     x = np.linspace(0, 1, W)
     y = np.linspace(0, 1, H)
-    start = 0.26 if guest in GUEST_PHOTOS else 0.34
+    start = 0.24 if duo else 0.34
     alpha = np.outer(smooth((1 - y) / 0.42), smooth((x - start) / 0.28)) * 0.92
     img = Image.composite(layer, img, Image.fromarray((alpha * 255).astype("uint8")))
 
@@ -274,8 +308,6 @@ def render_t2(vid, number, text, photo, guest, logo):
         gd.line([(i, 0), (i, H)], fill=gradient_color(i / (W * 0.55)))
     img = Image.composite(grad, img, mask.point(lambda v: int(v * 0.30)))
 
-    if guest in GUEST_PHOTOS:
-        guest_portrait(img, guest, (W - 200, H - 230), 150)
 
     draw = ImageDraw.Draw(img)
     # Logo original y nombre.
