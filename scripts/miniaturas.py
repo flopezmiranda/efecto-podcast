@@ -210,6 +210,38 @@ GUEST_FRAMES = {
 }
 
 
+# Caras que el detector no encuentra: (centro x, centro y, tamaño) en píxeles de la foto original.
+FACE_OVERRIDES = {
+    "felipe-chaleco.jpg": (520, 290, 170),
+    "felipe-cuello-alto-negro.jpg": (640, 260, 215),
+    "felipe-sueter-burdeo.jpg": (560, 290, 200),
+    "estudio-dario-poblete.jpg": (648, 138, 165),
+}
+
+
+def find_face(path, pic):
+    """Centro y tamaño de la cara más grande de la foto (con OpenCV), o el valor fijado a mano."""
+    if path.name in FACE_OVERRIDES:
+        return FACE_OVERRIDES[path.name]
+    import cv2
+    import numpy as np
+    gray = cv2.cvtColor(np.array(pic), cv2.COLOR_RGB2GRAY)
+    cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+    found = cascade.detectMultiScale(gray, 1.08, 5, minSize=(60, 60))
+    if not len(found):
+        raise SystemExit(f"No encontré la cara en {path.name}: agrégala a FACE_OVERRIDES")
+    x, y, w, h = max(found, key=lambda r: r[2] * r[3])
+    return x + w / 2, y + h / 2, w
+
+
+def grade(im):
+    """Misma gradación para todas las fotos: algo de contraste y un tinte azul del estudio."""
+    from PIL import ImageEnhance
+    im = ImageEnhance.Contrast(im).enhance(1.06)
+    tint = Image.new("RGB", im.size, (20, 40, 95))
+    return Image.blend(im, tint, 0.08)
+
+
 def enhance(im):
     """Mejora un cuadro de video comprimido: nitidez, contraste y color."""
     from PIL import ImageEnhance
@@ -256,45 +288,45 @@ def render_t2(vid, number, text, photo, guest, logo):
     d.ellipse((-200, -380, 520, 260), fill=(55, 22, 80))
     img = glow.filter(ImageFilter.GaussianBlur(160))
 
-    # Foto a la derecha, nítida en la persona y difuminada hacia la izquierda y abajo.
-    pic = Image.open(PHOTOS / f"felipe-{photo}.jpg").convert("RGB")
-    scale = H * 1.08 / pic.height
-    pic = pic.resize((round(pic.width * scale), round(pic.height * scale)), Image.LANCZOS)
-    fx, fy = FACES[photo]
+    # Personas: cada foto se escala según el tamaño de la cara, para que todas queden iguales.
     duo = guest in GUEST_FRAMES
-    target = 0.57 if duo else 0.72
-    ox = round(target * W - fx * pic.width) if duo else max(round(target * W - fx * pic.width), W - pic.width)
-    oy = min(0, max(round(0.40 * H - fy * pic.height), H - pic.height))
-    layer = Image.new("RGB", (W, H), (6, 8, 26))
-    layer.paste(pic, (ox, oy))
-    faces = [(ox + fx * pic.width, oy + fy * pic.height)]
+    people = [(PHOTOS / f"felipe-{photo}.jpg", (0.57 if duo else 0.71) * W)]
     if duo:
-        # El invitado, desde un cuadro real del episodio, a la derecha; se funde con Felipe al centro.
-        name, gx, gy, gscale = GUEST_FRAMES[guest]
-        frame = enhance(Image.open(PHOTOS / "invitados" / f"estudio-{name}.jpg").convert("RGB"))
-        k = H * gscale / frame.height
-        frame = frame.resize((round(frame.width * k), round(frame.height * k)), Image.LANCZOS)
-        gox = round(0.83 * W - gx * frame.width)
-        goy = round(0.40 * H - gy * frame.height)
-        glayer = Image.new("RGB", (W, H), (6, 8, 26))
-        glayer.paste(frame, (gox, goy))
-        seam = np.clip((np.linspace(0, 1, W) - 0.70) / 0.07, 0, 1)
-        seam = seam * seam * (3 - 2 * seam)
-        layer = Image.composite(glayer, layer, Image.fromarray((np.tile(seam, (H, 1)) * 255).astype("uint8")))
-        faces.append((gox + gx * frame.width, goy + gy * frame.height))
+        people.append((PHOTOS / "invitados" / f"estudio-{GUEST_FRAMES[guest][0]}.jpg", 0.835 * W))
+    face_px = 150 if duo else 175
+    layer = Image.new("RGB", (W, H), (6, 8, 26))
+    faces = []
+    for i, (path, tx) in enumerate(people):
+        pic = Image.open(path).convert("RGB")
+        if i:
+            pic = enhance(pic)
+        cx, cy, size = find_face(path, pic)
+        k = face_px / size
+        pic = pic.resize((round(pic.width * k), round(pic.height * k)), Image.LANCZOS)
+        ox, oy = round(tx - cx * k), round(0.37 * H - cy * k)
+        part = Image.new("RGB", (W, H), (6, 8, 26))
+        part.paste(pic, (ox, oy))
+        if i == 0:
+            layer = part
+        else:
+            seam = np.clip((np.linspace(0, 1, W) - 0.69) / 0.07, 0, 1)
+            seam = seam * seam * (3 - 2 * seam)
+            layer = Image.composite(part, layer, Image.fromarray((np.tile(seam, (H, 1)) * 255).astype("uint8")))
+        faces.append((tx, 0.37 * H))
+    layer = grade(layer)
     sharp = Image.new("L", (W, H), 0)
     for face in faces:
-        ImageDraw.Draw(sharp).ellipse((face[0] - 200, face[1] - 230, face[0] + 200, face[1] + 380), fill=255)
-    sharp = sharp.filter(ImageFilter.GaussianBlur(130))
-    layer = Image.composite(layer.filter(ImageFilter.GaussianBlur(1)), layer.filter(ImageFilter.GaussianBlur(26)), sharp)
+        ImageDraw.Draw(sharp).ellipse((face[0] - 190, face[1] - 210, face[0] + 190, face[1] + 360), fill=255)
+    sharp = sharp.filter(ImageFilter.GaussianBlur(120))
+    layer = Image.composite(layer.filter(ImageFilter.GaussianBlur(0.6)), layer.filter(ImageFilter.GaussianBlur(24)), sharp)
 
     def smooth(t):
         t = np.clip(t, 0, 1)
         return t * t * (3 - 2 * t)
     x = np.linspace(0, 1, W)
     y = np.linspace(0, 1, H)
-    start = 0.24 if duo else 0.34
-    alpha = np.outer(smooth((1 - y) / 0.42), smooth((x - start) / 0.28)) * 0.92
+    start = 0.26 if duo else 0.34
+    alpha = np.outer(smooth((1 - y) / 0.42), smooth((x - start) / 0.28)) * 0.94
     img = Image.composite(layer, img, Image.fromarray((alpha * 255).astype("uint8")))
 
     # Número de episodio gigante, con el degradado de la marca y transparente.
