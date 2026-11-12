@@ -1,4 +1,4 @@
-"""Genera las miniaturas de YouTube de la temporada 1 (1280x720), al estilo de la temporada 2:
+"""Genera las miniaturas de YouTube de las temporadas 1 y 2 (1280x720), al estilo de la temporada 2:
 foto del estudio a pantalla completa y la frase abajo, con la palabra clave en amarillo.
 
 Cada texto marca entre [corchetes] la palabra que va destacada en amarillo, como en la temporada 2.
@@ -33,6 +33,20 @@ EPISODES = [
     ("QkoM659gN1Q", 10, "¿ESTAMOS LISTOS PARA TANTA [TECNOLOGÍA]?", "sueter-burdeo", 1.0),
     ("mwaXlEqnlzQ", 11, "NO TODO ES [SABER]", "blazer-azul", 1.25),
     ("NF46uDl243M", 12, "¡CRINGE! QUE NO TE FRENE EL [QUÉ DIRÁN]", "camisa-mezclilla", 1.25),
+]
+
+# Temporada 2: (video, número, frase, foto, zoom, invitado).
+EPISODES_T2 = [
+    ("tJ37gNshgjQ", 1, "¿ESTAMOS EN EL [LIMBO]?", "camisa-beige", 1.0, ""),
+    ("YGUqzNpw4GU", 2, "¿HABLEMOS DE [IA]?", "polera-negra", 1.0, "Rodrigo Rojo"),
+    ("F-ZYLWkf1aE", 3, "¿QUÉ HIZO [JAGUAR] CON SU MARCA?", "blazer-azul", 1.0, ""),
+    ("ysD1ANMGac8", 4, "¿QUIÉN ES [SPEED]?", "camisa-mezclilla", 1.0, ""),
+    ("OIfS359K-1g", 5, "¿FUERA DE AQUÍ, [TIKTOK]?", "cuello-alto-negro", 1.0, ""),
+    ("LLutgvMLIbk", 6, "¿COLA DE LEÓN O [CABEZA DE RATÓN]?", "sueter-burdeo", 1.0, "Carolina Matamala"),
+    ("8odqP10gjqg", 7, "¿NECESITAS UN [COACH] DE NEGOCIO?", "chaleco", 1.0, "Darío Poblete"),
+    ("HLy0pXiYgys", 8, "DE VENDEDOR A [CEO]", "polera-gris", 1.0, "Daniel Cáceres"),
+    ("2RSCZ5KAc64", 9, "¿LA IA TE QUITARÁ EL [TRABAJO]?", "camisa-celeste", 1.0, ""),
+    ("cJRQMuvzC98", 10, "¿TU NEGOCIO NECESITA UN [INFLUENCER]?", "camisa-rayas", 1.0, ""),
 ]
 
 # Posición de la cara en cada foto (fracción del ancho y del alto), para encuadrar.
@@ -125,7 +139,7 @@ def layout(words, font, max_w, draw):
     return lines + [line]
 
 
-def render(vid, number, text, photo, zoom, logo):
+def render(vid, number, text, photo, zoom, logo, season=1, guest=""):
     img = background()
     if photo:
         img = photo_layer(img, photo, zoom)
@@ -137,7 +151,7 @@ def render(vid, number, text, photo, zoom, logo):
         lines = layout(words, font, max_w, draw)
         widest = max(draw.textlength(w, font=font) for w, _ in words)
         # El bloque cabe entre el logo y el borde inferior.
-        if len(lines) <= 4 and widest <= max_w and int(size * 1.08) * len(lines) <= 430:
+        if len(lines) <= 4 and widest <= max_w and int(size * 1.08) * len(lines) + (50 if guest else 0) <= 430:
             break
     # Líneas parejas: el ancho más angosto que no agrega líneas.
     tw = max_w
@@ -146,7 +160,10 @@ def render(vid, number, text, photo, zoom, logo):
     lines = layout(words, font, tw, draw)
     line_h = int(size * 1.08)
     block_h = line_h * len(lines)
-    y = (H - block_h) // 2
+    kicker_h = 50 if guest else 0
+    y = (H - block_h - kicker_h) // 2 + kicker_h
+    if guest:
+        draw.text((x, y - kicker_h), f"CON {guest.upper()}", font=ImageFont.truetype(FONT_SMALL, 30), fill=(213, 141, 243))
     for line in lines:
         cx = x
         for word, hl in line:
@@ -166,9 +183,9 @@ def render(vid, number, text, photo, zoom, logo):
     small = ImageFont.truetype(FONT_SMALL, 34)
     draw.text((x + lw + 22, 52 + lg.height // 2), "EFECTO PODCAST", font=small, fill=WHITE, anchor="lm")
     tag = ImageFont.truetype(FONT_SMALL, 28)
-    draw.text((x, bar_y + 26), f"TEMPORADA 1 · EPISODIO {number}", font=tag, fill=MUTED)
+    draw.text((x, bar_y + 26), f"TEMPORADA {season} · EPISODIO {number}", font=tag, fill=MUTED)
 
-    out = ROOT / "content" / "miniaturas" / f"E{number}T1-{vid}.jpg"
+    out = ROOT / "content" / "miniaturas" / f"E{number}T{season}-{vid}.jpg"
     img.save(out, "JPEG", quality=92)
     return out
 
@@ -177,6 +194,8 @@ def main():
     logo = Image.open(ROOT / "static" / "img" / "logo.png").convert("RGBA")
     for vid, number, text, photo, zoom in EPISODES:
         print(render(vid, number, text, photo, zoom, logo).name)
+    for vid, number, text, photo, zoom, guest in EPISODES_T2:
+        print(render(vid, number, text, photo, zoom, logo, season=2, guest=guest).name)
 
 
 if __name__ == "__main__":
