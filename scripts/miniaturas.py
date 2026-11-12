@@ -192,6 +192,41 @@ def render(vid, number, text, photo, zoom, logo, season=1, guest=""):
 
 CYAN = (94, 211, 255)
 
+# Retrato de cada invitado: centro del recorte (fracción del ancho y alto) y lado del cuadrado (fracción del ancho).
+GUEST_PHOTOS = {
+    "Daniel Cáceres": ("daniel-caceres", 0.515, 0.31, 0.44),
+    "Darío Poblete": ("dario-poblete", 0.51, 0.42, 0.70),
+    "Rodrigo Rojo": ("rodrigo-rojo", 0.535, 0.30, 0.62),
+    "Carolina Matamala": ("carolina-matamala", 0.505, 0.42, 0.50),
+}
+
+
+def guest_portrait(img, guest, center, radius):
+    """Retrato circular del invitado con un anillo del degradado de la marca."""
+    name, cx, cy, side = GUEST_PHOTOS[guest]
+    pic = Image.open(PHOTOS / "invitados" / f"{name}.jpg").convert("RGB")
+    sw = side * pic.width
+    box = (cx * pic.width - sw / 2, cy * pic.height - sw / 2, cx * pic.width + sw / 2, cy * pic.height + sw / 2)
+    d = radius * 2
+    face = pic.crop(tuple(round(v) for v in box)).resize((d, d), Image.LANCZOS)
+    mask = Image.new("L", (d * 4, d * 4), 0)
+    ImageDraw.Draw(mask).ellipse((0, 0, d * 4 - 1, d * 4 - 1), fill=255)
+    mask = mask.resize((d, d), Image.LANCZOS)
+    x, y = center[0] - radius, center[1] - radius
+    # Sombra y anillo.
+    shadow = Image.new("L", img.size, 0)
+    ImageDraw.Draw(shadow).ellipse((x - 18, y - 6, x + d + 18, y + d + 30), fill=170)
+    img.paste(Image.new("RGB", img.size, (0, 0, 0)), (0, 0), shadow.filter(ImageFilter.GaussianBlur(24)))
+    ring = 8
+    ring_img = Image.new("RGB", (d + ring * 2, d + ring * 2))
+    rd = ImageDraw.Draw(ring_img)
+    for i in range(d + ring * 2):
+        rd.line([(i, 0), (i, d + ring * 2)], fill=gradient_color(i / (d + ring * 2)))
+    ring_mask = Image.new("L", ((d + ring * 2) * 4,) * 2, 0)
+    ImageDraw.Draw(ring_mask).ellipse((0, 0, (d + ring * 2) * 4 - 1, (d + ring * 2) * 4 - 1), fill=255)
+    img.paste(ring_img, (x - ring, y - ring), ring_mask.resize((d + ring * 2,) * 2, Image.LANCZOS))
+    img.paste(face, (x, y), mask)
+
 
 def render_t2(vid, number, text, photo, guest, logo):
     """Diseño de la temporada 2: foto a la derecha, número gigante de fondo y título abajo."""
@@ -208,7 +243,8 @@ def render_t2(vid, number, text, photo, guest, logo):
     scale = H * 1.08 / pic.height
     pic = pic.resize((round(pic.width * scale), round(pic.height * scale)), Image.LANCZOS)
     fx, fy = FACES[photo]
-    ox = max(round(0.72 * W - fx * pic.width), W - pic.width)
+    target = 0.62 if guest in GUEST_PHOTOS else 0.72
+    ox = max(round(target * W - fx * pic.width), W - pic.width)
     oy = min(0, max(round(0.40 * H - fy * pic.height), H - pic.height))
     layer = Image.new("RGB", (W, H), (6, 8, 26))
     layer.paste(pic, (ox, oy))
@@ -223,7 +259,8 @@ def render_t2(vid, number, text, photo, guest, logo):
         return t * t * (3 - 2 * t)
     x = np.linspace(0, 1, W)
     y = np.linspace(0, 1, H)
-    alpha = np.outer(smooth((1 - y) / 0.42), smooth((x - 0.34) / 0.30)) * 0.92
+    start = 0.26 if guest in GUEST_PHOTOS else 0.34
+    alpha = np.outer(smooth((1 - y) / 0.42), smooth((x - start) / 0.28)) * 0.92
     img = Image.composite(layer, img, Image.fromarray((alpha * 255).astype("uint8")))
 
     # Número de episodio gigante, con el degradado de la marca y transparente.
@@ -236,6 +273,9 @@ def render_t2(vid, number, text, photo, guest, logo):
     for i in range(W):
         gd.line([(i, 0), (i, H)], fill=gradient_color(i / (W * 0.55)))
     img = Image.composite(grad, img, mask.point(lambda v: int(v * 0.30)))
+
+    if guest in GUEST_PHOTOS:
+        guest_portrait(img, guest, (W - 200, H - 230), 150)
 
     draw = ImageDraw.Draw(img)
     # Logo original y nombre.
