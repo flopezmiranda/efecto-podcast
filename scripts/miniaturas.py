@@ -190,12 +190,106 @@ def render(vid, number, text, photo, zoom, logo, season=1, guest=""):
     return out
 
 
+CYAN = (94, 211, 255)
+
+
+def render_t2(vid, number, text, photo, guest, logo):
+    """Diseño de la temporada 2: foto a la derecha, número gigante de fondo y título abajo."""
+    import numpy as np
+    img = Image.new("RGB", (W, H), (6, 8, 26))
+    glow = Image.new("RGB", (W, H), (6, 8, 26))
+    d = ImageDraw.Draw(glow)
+    d.ellipse((-300, 250, 700, 1050), fill=(10, 50, 95))
+    d.ellipse((-200, -380, 520, 260), fill=(55, 22, 80))
+    img = glow.filter(ImageFilter.GaussianBlur(160))
+
+    # Foto a la derecha, nítida en la persona y difuminada hacia la izquierda y abajo.
+    pic = Image.open(PHOTOS / f"felipe-{photo}.jpg").convert("RGB")
+    scale = H * 1.08 / pic.height
+    pic = pic.resize((round(pic.width * scale), round(pic.height * scale)), Image.LANCZOS)
+    fx, fy = FACES[photo]
+    ox = max(round(0.72 * W - fx * pic.width), W - pic.width)
+    oy = min(0, max(round(0.40 * H - fy * pic.height), H - pic.height))
+    layer = Image.new("RGB", (W, H), (6, 8, 26))
+    layer.paste(pic, (ox, oy))
+    face = (ox + fx * pic.width, oy + fy * pic.height)
+    sharp = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(sharp).ellipse((face[0] - 250, face[1] - 260, face[0] + 250, face[1] + 420), fill=255)
+    sharp = sharp.filter(ImageFilter.GaussianBlur(130))
+    layer = Image.composite(layer.filter(ImageFilter.GaussianBlur(1)), layer.filter(ImageFilter.GaussianBlur(26)), sharp)
+
+    def smooth(t):
+        t = np.clip(t, 0, 1)
+        return t * t * (3 - 2 * t)
+    x = np.linspace(0, 1, W)
+    y = np.linspace(0, 1, H)
+    alpha = np.outer(smooth((1 - y) / 0.42), smooth((x - 0.34) / 0.30)) * 0.92
+    img = Image.composite(layer, img, Image.fromarray((alpha * 255).astype("uint8")))
+
+    # Número de episodio gigante, con el degradado de la marca y transparente.
+    num = f"{number:02d}"
+    big = ImageFont.truetype(FONT, 470)
+    mask = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(mask).text((40, -40), num, font=big, fill=255)
+    grad = Image.new("RGB", (W, H))
+    gd = ImageDraw.Draw(grad)
+    for i in range(W):
+        gd.line([(i, 0), (i, H)], fill=gradient_color(i / (W * 0.55)))
+    img = Image.composite(grad, img, mask.point(lambda v: int(v * 0.30)))
+
+    draw = ImageDraw.Draw(img)
+    # Logo original y nombre.
+    lw = 70
+    lg = logo.resize((lw, round(logo.height * lw / logo.width)), Image.LANCZOS)
+    img.paste(lg, (64, 44), lg)
+    draw.text((64 + lw + 18, 44 + lg.height // 2), "EFECTO PODCAST", font=ImageFont.truetype(FONT_SMALL, 30), fill=WHITE, anchor="lm")
+    # Insignia de temporada.
+    badge_font = ImageFont.truetype(FONT_SMALL, 24)
+    label = "TEMPORADA 2"
+    bw = draw.textlength(label, font=badge_font) + 40
+    bx, by = W - 64 - bw, 46
+    draw.rounded_rectangle((bx, by, bx + bw, by + 46), radius=23, fill=(9, 6, 25), outline=CYAN, width=2)
+    draw.text((bx + bw / 2, by + 23), label, font=badge_font, fill=WHITE, anchor="mm")
+
+    # Título abajo a la izquierda.
+    words = tokens(text)
+    max_w, x0 = 660, 64
+    for size in range(112, 56, -4):
+        font = ImageFont.truetype(FONT, size)
+        lines = layout(words, font, max_w, draw)
+        widest = max(draw.textlength(w, font=font) for w, _ in words)
+        if len(lines) <= 3 and widest <= max_w:
+            break
+    tw = max_w
+    while tw > 200 and len(layout(words, font, tw - 10, draw)) == len(lines):
+        tw -= 10
+    lines = layout(words, font, tw, draw)
+    line_h = int(size * 1.04)
+    y0 = H - 66 - line_h * len(lines)
+    if guest:
+        draw.text((x0, y0 - 44), f"CON {guest.upper()}", font=ImageFont.truetype(FONT_SMALL, 30), fill=CYAN)
+    for line in lines:
+        cx = x0
+        for word, hl in line:
+            draw.text((cx, y0), word, font=font, fill=CYAN if hl else WHITE,
+                      stroke_width=2, stroke_fill=(6, 8, 26))
+            cx += draw.textlength(word + " ", font=font)
+        y0 += line_h
+    # Barra de la marca a lo ancho, abajo.
+    for i in range(W):
+        draw.line([(i, H - 10), (i, H)], fill=gradient_color(i / (W - 1)))
+
+    out = ROOT / "content" / "miniaturas" / f"E{number}T2-{vid}.jpg"
+    img.save(out, "JPEG", quality=92)
+    return out
+
+
 def main():
     logo = Image.open(ROOT / "static" / "img" / "logo.png").convert("RGBA")
     for vid, number, text, photo, zoom in EPISODES:
         print(render(vid, number, text, photo, zoom, logo).name)
     for vid, number, text, photo, zoom, guest in EPISODES_T2:
-        print(render(vid, number, text, photo, zoom, logo, season=2, guest=guest).name)
+        print(render_t2(vid, number, text, photo, guest, logo).name)
 
 
 if __name__ == "__main__":
