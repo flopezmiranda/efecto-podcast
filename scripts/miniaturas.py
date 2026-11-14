@@ -35,18 +35,18 @@ EPISODES = [
     ("NF46uDl243M", 12, "¡CRINGE! QUE NO TE FRENE EL [QUÉ DIRÁN]", "camisa-mezclilla", 1.25),
 ]
 
-# Temporada 2: (video, número, frase, foto, zoom, invitado).
+# Temporada 2: (video, número, frase, foto, zoom, invitado). Las poleras de la T2 se generaron con IA en Canva.
 EPISODES_T2 = [
-    ("tJ37gNshgjQ", 1, "¿ESTAMOS EN EL [LIMBO]?", "camisa-beige", 1.0, ""),
-    ("YGUqzNpw4GU", 2, "¿HABLEMOS DE [IA]?", "polera-negra", 1.0, "Rodrigo Rojo"),
-    ("F-ZYLWkf1aE", 3, "¿QUÉ HIZO [JAGUAR] CON SU MARCA?", "blazer-azul", 1.0, ""),
-    ("ysD1ANMGac8", 4, "¿QUIÉN ES [SPEED]?", "camisa-mezclilla", 1.0, ""),
-    ("OIfS359K-1g", 5, "¿FUERA DE AQUÍ, [TIKTOK]?", "cuello-alto-negro", 1.0, ""),
-    ("LLutgvMLIbk", 6, "¿COLA DE LEÓN O [CABEZA DE RATÓN]?", "sueter-burdeo", 1.0, "Carolina Matamala"),
-    ("8odqP10gjqg", 7, "¿NECESITAS UN [COACH] DE NEGOCIO?", "chaleco", 1.0, "Darío Poblete"),
-    ("HLy0pXiYgys", 8, "DE VENDEDOR A [CEO]", "polera-gris", 1.0, "Daniel Cáceres"),
-    ("2RSCZ5KAc64", 9, "¿LA IA TE QUITARÁ EL [TRABAJO]?", "camisa-celeste", 1.0, ""),
-    ("cJRQMuvzC98", 10, "¿TU NEGOCIO NECESITA UN [INFLUENCER]?", "camisa-rayas", 1.0, ""),
+    ("tJ37gNshgjQ", 1, "¿ESTAMOS EN EL [LIMBO]?", "t2-gris-claro", 1.0, ""),
+    ("YGUqzNpw4GU", 2, "¿HABLEMOS DE [IA]?", "t2-azul-marino", 1.0, "Rodrigo Rojo"),
+    ("F-ZYLWkf1aE", 3, "¿QUÉ HIZO [JAGUAR] CON SU MARCA?", "t2-verde-oliva", 1.0, ""),
+    ("ysD1ANMGac8", 4, "¿QUIÉN ES [SPEED]?", "t2-burdeo", 1.0, ""),
+    ("OIfS359K-1g", 5, "¿FUERA DE AQUÍ, [TIKTOK]?", "t2-negra", 1.0, ""),
+    ("LLutgvMLIbk", 6, "¿COLA DE LEÓN O [CABEZA DE RATÓN]?", "t2-blanca", 1.0, "Carolina Matamala"),
+    ("8odqP10gjqg", 7, "¿NECESITAS UN [COACH] DE NEGOCIO?", "t2-azul-petroleo", 1.0, "Darío Poblete"),
+    ("HLy0pXiYgys", 8, "DE VENDEDOR A [CEO]", "t2-beige", 1.0, "Daniel Cáceres"),
+    ("2RSCZ5KAc64", 9, "¿LA IA TE QUITARÁ EL [TRABAJO]?", "t2-celeste", 1.0, ""),
+    ("cJRQMuvzC98", 10, "¿TU NEGOCIO NECESITA UN [INFLUENCER]?", "t2-verde-bosque", 1.0, ""),
 ]
 
 # Posición de la cara en cada foto (fracción del ancho y del alto), para encuadrar.
