@@ -46,6 +46,13 @@
     }
   ],
 
+  "promo": {
+    "youtube_id": "97XtGuiNToE",
+    "eyebrow": "Temporada 4 · Muy pronto",
+    "title": "Vuelve Efecto Podcast",
+    "text": "Nuevos invitados y nuevas conversaciones sobre marketing, data, inteligencia artificial y negocios, sin filtro. Mientras tanto, revive algunas de las frases que nos dejaron Ángel Izurieta, Rodrigo Rojo, Rodrigo Orellana y Gloria Ledermann."
+  },
+
   "newsletter": {
     "name": "Efecto Newsletter",
     "url": "https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7346352735975292928",

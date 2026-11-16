@@ -2,8 +2,16 @@
 {% from "_macros.html" import ad, newsletter %}
 {% set title = None if page == 1 else "Episodios — página " ~ page %}
 {% set noindex = False %}
+{% set schema = [] %}
 {% if faq %}
-{% set schema = [{"@type": "FAQPage", "@id": base ~ "/#preguntas", "mainEntity": faq|map("faq_item")|list}] %}
+{% set schema = schema + [{"@type": "FAQPage", "@id": base ~ "/#preguntas", "mainEntity": faq|map("faq_item")|list}] %}
+{% endif %}
+{% if promo %}
+{% set schema = schema + [{"@type": "VideoObject", "@id": base ~ "/#promo", "name": promo.video_title,
+  "description": promo.description, "thumbnailUrl": [promo.thumbnail], "uploadDate": promo.published,
+  "duration": promo.duration_iso, "embedUrl": "https://www.youtube.com/embed/" ~ promo.youtube_id,
+  "contentUrl": "https://www.youtube.com/watch?v=" ~ promo.youtube_id, "inLanguage": site.language,
+  "publisher": {"@id": base ~ "/#organizacion"}}] %}
 {% endif %}
 {% block content %}
 {% if page == 1 %}
@@ -48,6 +56,25 @@
   </div>
 </section>
 {% endif %}
+{% if promo %}
+<section class="promo" aria-labelledby="promo-title">
+  <div class="player promo-player" data-id="{{ promo.youtube_id }}">
+    <button type="button" class="player-facade" aria-label="Reproducir: {{ promo.video_title }}">
+      <img src="{{ promo.thumbnail }}" alt="{{ promo.video_title }}" width="1280" height="720" loading="lazy">
+      <span class="play" aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="promo-text">
+    <p class="eyebrow grad-text">{{ promo.eyebrow }}</p>
+    <h2 id="promo-title">{{ promo.title }}</h2>
+    <p class="muted">{{ promo.text }}</p>
+    <div class="cta">
+      {% if site.social.youtube %}<a class="btn btn-primary" href="{{ site.social.youtube }}?sub_confirmation=1" target="_blank" rel="noopener">🔔 Suscríbete para el estreno</a>{% endif %}
+      <a class="btn btn-ghost" href="https://www.youtube.com/watch?v={{ promo.youtube_id }}" target="_blank" rel="noopener">Ver en YouTube</a>
+    </div>
+  </div>
+</section>
+{% endif %}
 {{ newsletter("portada") }}
 {% set grid = episodes[1:] %}
 {% else %}
@@ -87,3 +114,4 @@
 </section>
 {% endif %}
 {% endblock %}
+{% block scripts %}{% if promo %}<script src="/static/player.js" defer></script>{% endif %}{% endblock %}

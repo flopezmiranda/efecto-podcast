@@ -392,3 +392,11 @@ main { padding-top: 40px; padding-bottom: 72px; min-height: 60vh; }
 .other-projects { margin-bottom: 4px; }
 .other-projects a { color: var(--text); }
 .author-cols { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+
+/* Promo de temporada */
+.promo { display: grid; grid-template-columns: 1.15fr 1fr; gap: 36px; align-items: center; margin: 48px 0 8px; padding: 22px; border-radius: calc(var(--radius) + 4px); background: linear-gradient(135deg, rgba(225, 92, 150, .12), rgba(60, 174, 234, .10)); box-shadow: inset 0 0 0 1px rgba(192, 114, 231, .35); }
+.promo .player { margin: 0; }
+.promo h2 { font-size: clamp(1.6rem, 3.6vw, 2.4rem); line-height: 1.1; font-weight: 700; margin: 0 0 12px; }
+.promo .muted { margin: 0 0 20px; }
+.promo .cta { justify-content: flex-start; }
+@media (max-width: 860px) { .promo { grid-template-columns: 1fr; gap: 20px; padding: 14px; } }

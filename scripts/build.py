@@ -424,6 +424,14 @@ def main():
     seasons = sorted({e["season"] for e in episodes if e["season"]}, reverse=True)
     home_sections = [(f"Temporada {n}", [e for e in home if e["season"] == n]) for n in seasons]
     home_sections.append(("Especiales y #EfectoTip", [e for e in home if e["number"] is None]))
+    # Video promocional destacado en la portada (los clips cortos no se listan como episodios).
+    promo = None
+    if config.get("promo"):
+        raw = next((e for e in load_episodes() if e["id"] == config["promo"]["youtube_id"]), None)
+        if raw:
+            promo = {**config["promo"], "video_title": raw["title"], "thumbnail": raw.get("thumbnail"),
+                     "published": raw["published"], "duration_iso": iso_duration(raw["duration_seconds"]),
+                     "description": summary(raw.get("description", ""), 300)}
     per_page = config["episodes_per_page"]
     pages = max(1, math.ceil(len(episodes) / per_page))
     latest = episodes[0]["date_iso"] if episodes else None
@@ -434,6 +442,7 @@ def main():
                faq=faq(config, episodes, topics, guests) if n == 1 else [],
                image=og_image("portada", config["tagline"], "El podcast de marketing, negocios y emprendimiento") if n == 1 else None,
                sections=home_sections if n == 1 else None,
+               promo=promo if n == 1 else None,
                guests=guests, total_episodes=len(episodes), total_hours=round(sum(e["duration_seconds"] for e in episodes) / 3600),
                prev_url=None if n == 1 else ("/" if n == 2 else f"/episodios/pagina/{n - 1}/"),
                next_url=f"/episodios/pagina/{n + 1}/" if n < pages else None)
