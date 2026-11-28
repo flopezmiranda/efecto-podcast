@@ -432,6 +432,11 @@ def main():
             promo = {**config["promo"], "video_title": raw["title"], "thumbnail": raw.get("thumbnail"),
                      "published": raw["published"], "duration_iso": iso_duration(raw["duration_seconds"]),
                      "description": summary(raw.get("description", ""), 300)}
+    channel_file = ROOT / "data" / "channel.json"
+    channel = json.loads(channel_file.read_text()) if channel_file.exists() else {}
+    spotify_show = re.search(r"open\.spotify\.com/show/(\w+)", config["social"].get("spotify") or "")
+    listen = {"youtube_list": channel.get("uploads_playlist"),
+              "spotify_show": spotify_show.group(1) if spotify_show else None}
     per_page = config["episodes_per_page"]
     pages = max(1, math.ceil(len(episodes) / per_page))
     latest = episodes[0]["date_iso"] if episodes else None
@@ -442,7 +447,7 @@ def main():
                faq=faq(config, episodes, topics, guests) if n == 1 else [],
                image=og_image("portada", config["tagline"], "El podcast de marketing, negocios y emprendimiento") if n == 1 else None,
                sections=home_sections if n == 1 else None,
-               promo=promo if n == 1 else None,
+               promo=promo if n == 1 else None, listen=listen if n == 1 else None,
                guests=guests, total_episodes=len(episodes), total_hours=round(sum(e["duration_seconds"] for e in episodes) / 3600),
                prev_url=None if n == 1 else ("/" if n == 2 else f"/episodios/pagina/{n - 1}/"),
                next_url=f"/episodios/pagina/{n + 1}/" if n < pages else None)

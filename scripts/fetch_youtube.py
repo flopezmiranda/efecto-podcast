@@ -10,7 +10,7 @@ import sys
 import urllib.parse
 import urllib.request
 
-from common import load_config, load_episodes, save_episodes, slugify
+from common import ROOT, load_config, load_episodes, save_episodes, slugify
 
 API = "https://www.googleapis.com/youtube/v3/"
 
@@ -65,7 +65,10 @@ def main():
     existing = {ep["id"]: ep for ep in load_episodes()}
     used_slugs = {ep["slug"] for ep in existing.values()}
 
-    ids = all_video_ids(uploads_playlist(config))
+    playlist = uploads_playlist(config)
+    # Se guarda para el reproductor del canal en el sitio (embed de la lista de subidas).
+    (ROOT / "data" / "channel.json").write_text(json.dumps({"uploads_playlist": playlist}) + "\n")
+    ids = all_video_ids(playlist)
     print(f"{len(ids)} videos en el canal")
 
     episodes = []

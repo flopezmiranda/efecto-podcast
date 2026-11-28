@@ -400,3 +400,13 @@ main { padding-top: 40px; padding-bottom: 72px; min-height: 60vh; }
 .promo .muted { margin: 0 0 20px; }
 .promo .cta { justify-content: flex-start; }
 @media (max-width: 860px) { .promo { grid-template-columns: 1fr; gap: 20px; padding: 14px; } }
+
+/* Embeds de YouTube y Spotify */
+.listen-on { margin-top: 64px; }
+.listen-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.listen-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
+.listen-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.listen-head a { color: var(--accent); font-weight: 600; font-size: .9rem; text-decoration: none; }
+.embed iframe { width: 100%; border: 0; border-radius: 12px; display: block; }
+.embed-video iframe { aspect-ratio: 16 / 9; }
+.embed-spotify iframe { height: 352px; }

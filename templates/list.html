@@ -98,6 +98,25 @@
   {% if next_url %}<a href="{{ next_url }}">Anteriores →</a>{% else %}<span></span>{% endif %}
 </nav>
 {% endif %}
+{% if listen and (listen.youtube_list or listen.spotify_show) %}
+<section class="listen-on" aria-labelledby="listen-title">
+  <h2 id="listen-title" class="section-title">Escucha y mira {{ site.site_name }}</h2>
+  <div class="listen-grid">
+    {% if listen.youtube_list %}
+    <div class="listen-card">
+      <div class="listen-head"><strong>YouTube</strong><a href="{{ site.social.youtube }}?sub_confirmation=1" target="_blank" rel="noopener">Suscribirme →</a></div>
+      <div class="embed embed-video"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list={{ listen.youtube_list }}" title="{{ site.site_name }} en YouTube" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+    </div>
+    {% endif %}
+    {% if listen.spotify_show %}
+    <div class="listen-card">
+      <div class="listen-head"><strong>Spotify</strong><a href="{{ site.social.spotify }}" target="_blank" rel="noopener">Seguir en Spotify →</a></div>
+      <div class="embed embed-spotify"><iframe src="https://open.spotify.com/embed/show/{{ listen.spotify_show }}?utm_source=generator&theme=0" title="{{ site.site_name }} en Spotify" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
 {% if page == 1 and guides %}
 <section class="home-guides" aria-labelledby="guias-title">
   <h2 id="guias-title" class="section-title">Guías: lo que aprendimos de los invitados</h2>
