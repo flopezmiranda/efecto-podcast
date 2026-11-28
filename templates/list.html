@@ -98,21 +98,21 @@
   {% if next_url %}<a href="{{ next_url }}">Anteriores →</a>{% else %}<span></span>{% endif %}
 </nav>
 {% endif %}
-{% if listen and (listen.youtube_list or listen.spotify_show) %}
+{% if site.social.youtube or site.social.spotify %}
 <section class="listen-on" aria-labelledby="listen-title">
   <h2 id="listen-title" class="section-title">Escucha y mira {{ site.site_name }}</h2>
-  <div class="listen-grid">
-    {% if listen.youtube_list %}
-    <div class="listen-card">
-      <div class="listen-head"><strong>YouTube</strong><a href="{{ site.social.youtube }}?sub_confirmation=1" target="_blank" rel="noopener">Suscribirme →</a></div>
-      <div class="embed embed-video"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list={{ listen.youtube_list }}" title="{{ site.site_name }} en YouTube" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
-    </div>
+  <div class="platforms">
+    {% if site.social.youtube %}
+    <a class="platform platform-yt" href="{{ site.social.youtube }}?sub_confirmation=1" target="_blank" rel="noopener" aria-label="{{ site.site_name }} en YouTube">
+      <svg viewBox="0 0 28 20" width="56" height="40" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11.2 5.8v8.4L18.4 10z" fill="#fff"/></svg>
+      <span>YouTube</span>
+    </a>
     {% endif %}
-    {% if listen.spotify_show %}
-    <div class="listen-card">
-      <div class="listen-head"><strong>Spotify</strong><a href="{{ site.social.spotify }}" target="_blank" rel="noopener">Seguir en Spotify →</a></div>
-      <div class="embed embed-spotify"><iframe src="https://open.spotify.com/embed/show/{{ listen.spotify_show }}?utm_source=generator&theme=0" title="{{ site.site_name }} en Spotify" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
-    </div>
+    {% if site.social.spotify %}
+    <a class="platform platform-sp" href="{{ site.social.spotify }}" target="_blank" rel="noopener" aria-label="{{ site.site_name }} en Spotify">
+      <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#1ED760"/><path d="M6.2 9.3c3.9-1.2 8.6-.8 11.9 1.2M6.8 12.6c3.2-.9 7-.6 9.7 1M7.4 15.6c2.6-.7 5.4-.5 7.6.8" stroke="#000" stroke-width="1.7" stroke-linecap="round" fill="none"/></svg>
+      <span>Spotify</span>
+    </a>
     {% endif %}
   </div>
 </section>
